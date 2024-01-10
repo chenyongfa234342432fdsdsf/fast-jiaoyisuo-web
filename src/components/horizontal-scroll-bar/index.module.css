@@ -1,0 +1,29 @@
+:local(.scoped) {
+  @apply relative flex flex-row items-center;
+
+  .bar-wrapper {
+    @apply flex flex-row scroll-smooth;
+
+    > * {
+      @apply my-auto mr-2;
+    }
+
+    > :last-child {
+      @apply mr-0;
+    }
+
+    overflow-x: scroll;
+  }
+  
+  .icon-circle {
+    @apply w-3 h-6 relative bg-card_bg_color_02 rounded-full drop-shadow-md;
+
+    > * {
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-0;
+
+      use {
+        @apply w-1 h-2; 
+      }
+    }
+  }
+}

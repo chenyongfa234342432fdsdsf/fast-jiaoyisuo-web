@@ -1,0 +1,37 @@
+:local(.scoped) {
+  .company-submit-button {
+    @apply relative w-full;
+    
+    .company-submit-button-prev-step {
+      @apply absolute left-0 top-1 text-brand_color;
+    }
+    
+    .company-submit-button-step {
+      @apply flex items-center py-12 justify-between w-full;
+
+      .company-submit-modify {
+        width: 186px;
+        height: 46px;
+        @apply cursor-pointer text-base text-text_color_01 flex items-center justify-center font-medium rounded;
+      } 
+      
+      .company-submit-button-draft {
+        width: 186px;
+        height: 46px;
+        @apply cursor-pointer text-base text-brand_color font-medium bg-brand_color_special_02 flex items-center justify-center border rounded border-brand_color;
+      } 
+      
+
+
+      .company-submit-button-next {
+        width: 186px;
+        height: 46px;
+        @apply cursor-pointer text-base text-button_text_02 font-medium flex items-center justify-center border rounded border-brand_color;
+      }
+
+      .company-submit-comare {
+        width: 258px;
+      }
+    }
+  }
+}

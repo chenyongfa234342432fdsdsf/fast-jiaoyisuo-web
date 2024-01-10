@@ -1,0 +1,9 @@
+:local(.fixeds) {
+  @apply fixed top-14 w-full z-10;
+}
+
+:local(.scoped) {
+  .arco-spin-loading-layer-inner {
+    @apply fixed;
+  }
+}

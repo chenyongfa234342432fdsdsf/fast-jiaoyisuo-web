@@ -1,0 +1,108 @@
+:local(.scoped) {
+  .user-safety-record-wrap {
+    @apply flex flex-col items-center;
+
+    .user-settings-header-info {
+      .operate {
+        @apply flex items-end;
+
+        a, svg {
+          font-size: 16px;
+        }
+
+        a {
+          line-height: 21px;
+          @apply text-brand_color;
+
+          & > div {
+            @apply -mt-1;
+          }
+        }
+      }
+    }
+
+    .sefety-record-list {
+      width: 1200px;
+
+      .sefety-record-list-wrap {
+        .list {
+          /* box-shadow: 0 2px 10px rgb(0 0 0 / 10%); */
+          @apply bg-bg_color rounded-lg overflow-hidden mb-5;
+
+          .header, .table-header, .item {
+            @apply px-5 py-4;
+          }
+
+          .header {
+            @apply flex justify-between bg-brand_color_special;
+
+            .title {
+              label {
+                font-size: 16px;
+                @apply font-normal text-text_color_01;
+              }
+            }
+
+            .tips {
+              label {
+                @apply text-text_color_02;
+              }
+            }
+          }
+
+          .table-header, .item {
+            border: 1px solid var(--line_color_01);
+            @apply bg-card_bg_color_01 border-t-0;
+          }
+          
+          .table-header, .item {
+            @apply flex;
+
+            .time, .ip, .city, .login-method, .result {
+              @apply flex items-center px-2;
+
+              label {
+                @apply text-text_color_01;
+              }
+            }
+
+            .time, .city, .ip, .result {
+              flex: 2;
+            }
+
+            .login-method {
+              @apply flex-1;
+            }
+
+            .result, .login-method {
+              @apply flex justify-end;
+            }
+          }
+          
+          .item {
+            &:last-child {
+              @apply rounded-b-lg;
+            }
+
+            &:hover {
+              @apply bg-brand_color_special_02;
+            }
+          }
+
+          .no-result {
+            @apply flex flex-col justify-center items-center my-5;
+      
+            .text {
+              @apply mb-6 mt-3;
+      
+              label {
+                font-size: 14px;
+                @apply text-text_color_03;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

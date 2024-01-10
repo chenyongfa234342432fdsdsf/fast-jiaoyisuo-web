@@ -1,0 +1,7 @@
+:local(.scoped) {
+  &.arco-input-number {
+    input {
+      @apply pr-2;
+    }
+  }
+}

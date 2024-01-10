@@ -1,0 +1,73 @@
+:local(.scoped) {
+  .order-info {
+    @apply flex flex-1 my-6 items-center text-sm text-text_color_01;
+
+    height: 64px;
+    border-radius: 2rem;
+
+    image {
+      @apply h-16 w-auto;
+    }
+
+    svg {
+      @apply h-16 w-auto;
+    }
+  }
+
+  .state-icon {
+    width: 68px;
+    
+    @apply h-16 mr-8;
+  }
+
+  .order-info .left {
+    @apply flex flex-col font-medium;
+
+    width: 28%;
+  }
+
+  .order-info .right {
+    @apply flex flex-col text-right flex-1 pr-9 font-medium;
+
+    .amount {
+      @apply w-48 overflow-hidden text-ellipsis whitespace-normal text-base;
+    }
+  }
+
+  .font-color {
+    @apply text-buy_up_color;
+  }
+
+  .success {
+    @apply bg-success_color_special_02;
+
+    .font-color {
+      @apply text-success_color;
+    }
+  }
+
+  .fail {
+    @apply bg-warning_color_special_02;
+
+    .font-color {
+      @apply text-warning_color;
+    }
+  }
+
+  .processing {
+    @apply bg-card_bg_color_04;
+
+    .font-color {
+      @apply text-text_color_01;
+    }
+  }
+
+  .error {
+    @apply bg-brand_color_special_02;
+
+    .font-color {
+      @apply text-brand_color_special;
+    }
+  }
+}
+

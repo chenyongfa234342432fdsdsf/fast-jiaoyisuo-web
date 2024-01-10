@@ -1,0 +1,236 @@
+:local(.trade-setting-main-wrap) {
+  .list-wrap {
+    .title {
+      @apply text-base mb-6 mt-3;
+    }
+
+    .list {
+      @apply mb-8 text-sm flex justify-between cursor-pointer;
+
+      .label {
+        .sub-label {
+          @apply text-text_color_02;
+        }
+
+        .tips-icon {
+          @apply ml-2;
+
+          & > div {
+            @apply -mt-1;
+          }
+
+          svg {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .value {
+        label {
+          @apply cursor-pointer text-text_color_02;
+        }
+
+        .icon-wrap {
+          @apply text-xl text-icon_color;
+        }
+      }
+    }
+
+    .list-margin-spacing {
+      margin-bottom: 14px!important;
+    }
+  }
+
+  .order-list-wrap {
+    .value {
+      @apply flex gap-6;
+    }
+  }
+
+  .line {
+    border-top: 1px solid  var(--line_color_02);
+    @apply pt-5;
+  }
+
+  .line-width-full {
+    @apply -mx-4 px-4;
+  }
+
+  .tips {
+    @apply bg-brand_color_special_02 rounded flex items-center text-brand_color mb-2 py-2 px-4;
+
+    min-height: 38px;
+
+    .icon-wrap {
+      @apply mr-1 text-xs;
+    }
+  }
+}
+
+:local(.trade-setting-radio-style) {
+  .radio {
+    line-height: 22px;
+
+    @apply mb-6;
+
+    svg {
+      @apply mr-2;
+    }
+  }
+
+  & .arco-radio:last-child .radio {
+    @apply mb-0;
+  }
+
+  .icon {
+    line-height: 22px;
+    @apply mb-6;
+
+    &:last-child {
+      @apply mb-0;
+    }
+
+    svg {
+      @apply mr-2;
+    }
+  }
+}
+
+.trade-setting-drawer-style {
+  .arco-drawer-scroll {
+    @apply px-6;
+
+    .arco-drawer-header {
+      border-bottom: 1px solid  var(--line_color_02);
+      @apply h-auto px-0;
+
+      .arco-drawer-header-title {
+        @apply text-text_color_01 font-medium mt-7 mb-5 text-xl;
+      }
+
+    }
+
+    .arco-drawer-close-icon {
+      @apply text-xl mt-3
+      }
+
+    .arco-drawer-content {
+      @apply px-0;
+
+      .list-wrap {
+        @apply text-sm ;
+
+        .title {
+          @apply text-text_color_02 mt-2 text-sm;
+        }
+
+        .list {
+          @apply text-sm mb-6;
+
+          .icon-wrap {
+            @apply text-sm
+            }
+
+          .arco-switch {
+            @apply -mt-1
+            }
+
+          .label {
+            .sub-label {
+              @apply mt-1
+              }
+
+            .arco-radio {
+              @apply pl-0
+              }
+          }
+
+          .normal-icon {
+            .icon-wrap {
+              @apply text-2xl
+              }
+          }
+
+          .sub-value {
+            .arco-switch {
+              @apply top-3
+              }
+          }
+        }
+
+        .line-width-full {
+          @apply pt-4 mb-4
+          }
+      }
+
+
+    }
+  }
+}
+
+.order-wrap.trade-setting-drawer-style {
+  .arco-drawer-scroll {
+    .arco-drawer-header {
+      @apply border-none
+      }
+
+    .tips {
+      @apply -mt-3 text-xs
+      }
+  }
+
+  .label {
+    @apply font-normal
+    }
+
+  .arco-btn {
+    @apply font-medium
+    }
+
+  .title {
+    @apply mt-0 mb-4
+    }
+
+  .list {
+    @apply mb-5
+    }
+
+  .order-list-wrap {
+    @apply pt-2
+    }
+}
+
+:local(.futures-settings-drawer-mask-style) {
+  .arco-drawer-mask {
+    @apply bg-transparent;
+  }
+}
+
+:local(.contract-setting-pop-up-no-result) {
+  .no-result {
+    @apply flex-1 flex flex-col justify-center items-center mt-8;
+
+    svg {
+      @apply mb-5;
+    }
+
+    label {
+      @apply text-text_color_03 text-sm font-normal;
+    }
+  }
+}
+
+:local(.trade-layout-settings) {
+  @apply w-full;
+
+  & > div {
+    @apply justify-between;
+  }
+
+  .layout-option {
+    .icon {
+      width: 104px!important;
+      height: 78px!important;
+    }
+  }
+}

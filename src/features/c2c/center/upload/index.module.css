@@ -1,0 +1,27 @@
+:local(.scope) {
+  .upload-icon {
+    @apply flex justify-center items-center rounded;
+
+    width: 140px;
+    height: 140px;
+    border: 1px dashed var(--line_color_01);
+  }
+
+  .appeal-upload-item {
+    width: 140px;
+    height: 140px;
+    @apply mr-3.5 mb-3 relative border-line_color_01 border-dashed border rounded;
+    
+    .appeal-upload-icon {
+      @apply absolute -top-1 -right-1;
+    }
+
+    .img-box {
+      @apply w-full h-full;
+
+      & > img {
+        @apply max-w-full max-h-full;
+      }
+    }
+  }
+}  

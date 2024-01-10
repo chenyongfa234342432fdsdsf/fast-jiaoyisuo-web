@@ -1,0 +1,208 @@
+:local(.scoped) {
+  @apply flex-1 h-full bg-bg_color;
+
+  .personal-center-wrap {
+    @apply h-full flex flex-col;
+
+    .header {
+      @apply flex flex-col justify-center items-center py-10 bg-card_bg_color_01;
+
+      .header-wrap {
+        width: 1200px;
+        @apply flex;
+
+        .user-account-security-info {
+          @apply flex-1;
+
+          .title {
+            @apply mb-6;
+  
+            h1 {
+              font-size: 40px;
+              @apply text-text_color_01 leading-10 font-normal;
+            }
+          }
+    
+          .status {
+            .tips {
+              @apply mb-4;
+  
+              label {
+                @apply text-base text-text_color_03;
+              }
+            }
+            
+            .list {
+              @apply flex;
+  
+              .item {
+                @apply mr-4;
+  
+                .item-wrap {
+                  @apply flex;
+    
+                  .text {
+                    @apply mr-2;
+    
+                    label {
+                      @apply text-sm text-text_color_01;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .safety-record {
+          @apply flex items-end;
+
+          a {
+            font-size: 16px;
+          }
+
+          a {
+            line-height: 21px;
+            @apply text-brand_color;
+
+            & > div {
+              @apply -mt-1;
+            }
+          }
+        }
+      }
+    }
+
+    .safety-verification {
+      @apply flex justify-center py-8 bg-bg_color flex-1;
+
+      .safety-verification-wrap {
+        width: 1200px;
+
+        .subtitle {
+          @apply pb-8;
+
+          label {
+            @apply text-text_color_01 text-2xl leading-6 font-normal;
+          }
+        }
+
+        .safety-verification-item {
+          @apply mb-6;
+
+          .item {
+            @apply flex px-8 py-6 bg-card_bg_color_01 rounded relative;
+
+            .item-name, .item-text, .item-settings {
+              @apply flex flex-1 items-center;
+            }
+
+            .item-text, .item-settings {
+              @apply justify-end;
+            }
+
+            .item-name {
+              svg {
+                @apply mr-4;
+              }
+
+              label {
+                @apply text-base font-medium leading-4 text-text_color_01;
+              }
+            }
+
+            .item-text {
+              label {
+                line-height: 14px;
+                @apply text-sm font-medium;
+              }
+            }
+
+            .item-settings {
+              .arco-btn {
+                line-height: 14px;
+                @apply mr-2 text-sm font-normal;
+              }
+
+              .arco-switch {
+                @apply ml-3;
+              }
+
+              .delete-btn {
+                @apply text-warning_color;
+              }
+
+              a, label {
+                @apply text-brand_color;
+              }
+
+              .verified {
+                @apply text-success_color;
+              }
+            }
+
+            .item-status {
+              @apply absolute right-0 top-0;
+
+              .tag {
+                padding: 2px 6px;
+                @apply flex rounded-bl-md rounded-tr-md;
+
+                .icon, .text {
+                  @apply flex;
+                }
+
+                .text {
+                  @apply transform scale-90;
+  
+                  label {
+                    @apply text-xs;
+                  }
+                }
+
+                .icon {
+                  height: 18px;
+                  @apply flex justify-center items-center mr-1;
+                }
+              }
+
+              .tag:first-child {
+                height: 21px;
+              }
+
+              .on {
+                background: rgb(80 177 108 / 20%);
+                @apply text-success_color;
+              }
+        
+              .off {
+                background: rgb(241 174 61 / 20%);
+                @apply text-tips_color;
+              }
+
+            }
+          }
+        }
+
+        .modify-item {
+          @apply flex justify-between px-8 py-4 bg-card_bg_color_01 mb-6 rounded;
+
+          .name {
+            label {
+              @apply text-text_color_01 text-base leading-4 font-medium;
+            }
+          }
+
+          .settings {
+            @apply cursor-pointer;
+
+            label {
+              line-height: 14px;
+              @apply text-text_color_03 text-sm font-normal mr-2 cursor-pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

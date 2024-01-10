@@ -1,0 +1,75 @@
+:local(.container) { 
+  /* stylelint-disable-next-line selector-class-pattern */
+  
+  .arco-select-popup {
+    @apply w-96;
+  }
+  
+  .country-select {
+    @apply h-96;
+  }
+ 
+  .arco-select-popup-inner {
+    @apply max-h-96;
+  }
+  
+  .basic-information {
+    width: 1200px;
+    @apply m-auto;
+
+    .basic-information-title {
+      @apply font-bold text-lg pl-3 mt-6 border-l-4 border-brand_color mb-4 flex items-center;
+      
+      .basic-information-tip {
+        @apply pl-4  text-text_color_04 text-base;
+      }
+    }
+
+    .initialperson-form {
+      @apply text-2xl my-6 font-bold;
+      
+      .basic-tip {
+        @apply text-xs text-text_color_04 mt-2 last:mb-16;
+      }
+      
+      .initialperson-content {
+        @apply px-24;
+        
+        .c2cavarar {
+          @apply w-36 h-36 flex items-center justify-center bg-card_bg_color_02;
+          
+          img {
+            @apply z-1;
+          }
+        }
+        
+        .initialperson-instruct {
+          @apply px-8 py-6 text-base font-medium bg-card_bg_color_02 rounded;
+        }
+        
+        .initialperson-vedio {
+          @apply mt-8;
+        }
+      }
+    }
+    
+    .arco-form-label-item {
+      label {
+        @apply flex items-center;
+      }
+    }
+    
+    .initialperson-checkbox {
+      @apply flex font-medium mt-12 mb-6;
+        
+      .initialperson-text {
+        @apply text-brand_color;
+      }
+    }
+    
+    .initialperson-buttons {
+      @apply w-96 h-10 rounded-md text-base bg-brand_color mb-8 flex justify-center items-center text-text_color_04;
+    }
+  }
+
+}

@@ -1,0 +1,47 @@
+:local(.scoped) {
+  @apply flex w-full text-xs text-line_color_03 items-center h-full px-2;
+
+  .left{
+
+  }
+
+  .main {
+    @apply flex-1 ml-8 px-2 flex items-center;
+
+    .line {
+      @apply w-px bg-line_color_01 mr-2;
+
+      height: 10px;
+    }
+
+    .item {
+      @apply flex items-center;
+
+      .name{
+
+      }
+
+      .change {
+        @apply ml-2 mr-3;
+
+      }
+
+      .last-price {
+        @apply mr-2;
+      }
+
+
+    }
+  }
+
+  .right {
+    @apply flex items-center  text-text_color_03;
+
+    .item {
+      @apply flex items-center;
+
+
+
+    }
+  }
+}

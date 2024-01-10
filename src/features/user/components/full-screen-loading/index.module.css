@@ -1,0 +1,4 @@
+:local(.scoped) {
+  z-index: 5;
+  @apply absolute inset-0 justify-center items-center;
+}

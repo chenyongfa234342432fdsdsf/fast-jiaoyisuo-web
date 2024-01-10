@@ -1,0 +1,89 @@
+:local(.scope) {
+  .direct-wrapper {
+    /* @apply */
+  }
+
+  
+  
+  .select-text {
+    @apply text-text_color_02;
+  }
+
+  .deal-type-wrapper {
+    .inside,
+    .otc-status,
+    .outside {
+      width: fit-content;
+      height: 22px;
+      padding: 2px 6px;
+      border-radius: 2px;
+      @apply text-xs flex items-center justify-center;
+    }
+
+    .inside {
+      @apply bg-buy_up_color_special_02 text-buy_up_color;
+    }
+
+    .outside {
+      @apply bg-brand_color_special_02 text-brand_color;
+    }
+    
+    .otc-status {
+      color: #3F74D6;
+      background-color: #3F74D61A;
+    }
+  }
+
+  .arco-table-cell {
+    @apply text-text_color_01;
+  }
+  
+  .select-text {
+    @apply text-text_color_02;
+  }
+
+  .order-id {
+    text-decoration-line: underline;
+    @apply cursor-pointer;
+  }
+
+  .status-wrapper {
+    .order-time-remaining {
+      @apply flex;
+    }
+  }
+
+  .against-wrapper {
+    color: #3F74D6;
+    text-decoration-line: underline;
+    @apply cursor-pointer;
+  }
+  
+  .against-wrapper-otc {
+    color: #3F74D6;
+  }
+}
+
+:local(.order-detail-modal) {
+  @apply p-8;
+  
+  .detail-modal-header {
+    @apply flex justify-between items-center;
+    
+    svg {
+      @apply text-xl;
+    }
+  }
+
+  .arco-modal-content {
+    @apply p-0;
+  }
+  
+  .detail-modal-item {
+    @apply flex justify-between items-center mt-4;
+    
+    .detail-modal-item-label {
+      @apply text-text_color_02 text-sm;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+:local(.scoped) {
+  @apply h-44;
+  
+  .arco-carousel-arrow-left, .arco-carousel-arrow-right {
+    @apply w-12 h-12 bg-bg_color drop-shadow-md;
+
+    > * {
+      @apply mt-0;
+    }
+
+  }
+
+  .arco-carousel-arrow-left {
+    @apply -translate-y-1/2 -left-[65px];
+
+    /* 
+    * push arrow icon into banner if not enough width
+    * 1200px(arco fixed width) + 65px(arrow icon plus gap) * 2 = 1330px
+    */
+    @media only screen and (max-width: 1330px) {
+      @apply left-0;
+    }
+  }
+
+  .arco-carousel-arrow-right {
+    @apply -translate-y-1/2 -right-[65px];
+
+    @media only screen and (max-width: 1330px) {
+      @apply right-0;
+    }
+  }
+
+  .arco-carousel-indicator-wrapper {
+    @apply hidden;
+  }
+
+  .arco-carousel-slide {
+    @apply gap-x-0;
+
+    > * {
+      @apply flex flex-row gap-x-8 !important;
+
+      span {
+        @apply w-72 h-44 rounded-lg cursor-pointer;
+
+        img {
+          @apply w-full h-full rounded-lg;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,78 @@
+:local(.scoped) {
+  @apply flex  flex-col overflow-auto ;
+
+  height: 410px;
+
+  .arco-radio {
+    @apply leading-normal	;
+  }
+
+  .arco-radio-group {
+    @apply w-full pr-4 ;
+  }
+
+  .custom-radio-card {
+    @apply flex p-2 rounded;
+  }
+
+  .custom-radio-card-mask {
+    @apply flex flex-shrink-0 items-center justify-center w-3.5 h-3.5 mr-1.5 rounded-full;
+
+    margin-top: 2.5px;
+    border: 1px solid var(--color-border-2);
+  }
+
+  .custom-radio-card-mask-dot {
+    @apply rounded-full w-2 h-2 ;
+  }
+
+  .custom-radio-card-title {
+    @apply text-sm;
+  }
+
+
+  .custom-radio-card-right {
+    @apply border-success_color;
+  }
+
+  .custom-radio-card-right .custom-radio-card-mask {
+    @apply border-success_color;
+  }
+
+  .custom-radio-card-right {
+    @apply bg-success_color_lightbg;
+
+  }
+
+  .custom-radio-card-right .custom-radio-card-title {
+    @apply text-success_color;
+
+  }
+
+  .custom-radio-card-right .custom-radio-card-mask-dot {
+    @apply bg-success_color;
+  }
+
+  /** 失败 */
+  .custom-radio-card-error {
+    @apply border-warning_color;
+  }
+
+  .custom-radio-card-error .custom-radio-card-mask {
+    @apply border-warning_color;
+  }
+
+  .custom-radio-card-error {
+    @apply bg-warning_color_lightbg;
+
+  }
+
+  .custom-radio-card-error .custom-radio-card-title {
+    @apply text-warning_color;
+
+  }
+
+  .custom-radio-card-error .custom-radio-card-mask-dot {
+    @apply bg-warning_color;
+  }
+}

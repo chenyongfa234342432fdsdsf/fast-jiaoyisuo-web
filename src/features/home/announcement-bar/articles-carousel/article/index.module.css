@@ -1,0 +1,5 @@
+:local(.scoped) {
+  .article-body {
+    @apply flex flex-row grow justify-between text-text_color_03;
+  }
+}

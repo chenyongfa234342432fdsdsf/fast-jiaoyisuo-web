@@ -1,0 +1,35 @@
+
+:local(.scoped) {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-bg_color rounded py-2;
+  
+  .cell-wrap {
+    @apply flex cursor-pointer px-5 py-2 items-center text-text_color_01 text-xs;
+  
+    .icon {
+      @apply w-2 h-2 ml-1;  
+    }
+
+    &:hover {
+      @apply text-brand_color;
+    }
+  }
+}
+  
+:local(.trigger-wrapper) {
+  min-width: 64px;
+  @apply cursor-pointer mx-2;
+  
+  .icon {
+    @apply ml-1 w-2 h-auto;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    .icon {
+      @apply rotate-180;
+    }
+  }
+}
+  

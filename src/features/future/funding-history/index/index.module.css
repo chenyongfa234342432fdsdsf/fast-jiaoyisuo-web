@@ -1,0 +1,39 @@
+:local(.index-price-wrapper) {
+  .price-list-table {
+    th {
+      @apply bg-card_bg_color_01 text-text_color_02 text-sm px-4 py-2 font-normal;
+    }
+
+    td {
+      @apply text-xs px-4 py-3;
+    }
+
+    th,
+    td {
+      @apply text-center;
+
+      &:first-child {
+        @apply text-left;
+      }
+
+      &:last-child {
+        @apply text-right;
+      }
+    }
+  }
+
+  .chart-rate-wrap {
+    @apply w-full mt-4;
+
+    height: 340px;
+  }
+}
+
+
+:local(.rate-info-chart-wrapper) {
+  @apply p-4;
+
+  .header {
+    @apply flex items-center justify-between;
+  }
+}

@@ -1,0 +1,64 @@
+:local(.scoped) {
+  @apply w-1/2 m-auto;
+
+  .arco-steps-item {
+    /*
+    * arco icon w-10, h-10 = 2.5rem
+    * arco label width = 140px, hardcoded by arco component 
+    */
+    .arco-steps-item-icon {
+      /* half of label width minus by icon radius to center icon */ 
+      margin-left: calc(70px - 1.25rem);
+
+      .arco-steps-icon {
+        @apply w-10 h-10 flex justify-center items-center;
+      }
+    }
+
+    .arco-steps-item-tail {
+      /* top == radius of icon */
+      @apply top-5 p-0 border-dashed h-0 border-b-4 border-line_color_01;
+
+      /* half of label width plus icon radius to align tail divider at the edge of icon */
+      left: calc(70px + 1.25rem)
+    }
+
+    .arco-steps-item-title {
+      @apply text-2xl;
+
+      svg {
+        @apply w-10 h-2;
+      }
+    }
+  }
+
+  .arco-steps-item-wait {
+    .arco-steps-icon {
+      @apply bg-bg_button_disabled text-text_color_04;
+    }
+
+    .arco-steps-item-title {
+      @apply text-text_color_04;
+    }
+  }
+
+  .arco-steps-item-active {
+    .arco-steps-icon {
+      @apply text-button_text_02;
+    }
+
+    .arco-steps-item-title {
+      @apply font-normal;
+    }
+  }
+
+  .arco-steps-item-content {
+    @apply mt-3;
+  }
+
+  >:last-child {
+    .arco-steps-item-tail {
+      @apply border-none;
+    }
+  }
+}

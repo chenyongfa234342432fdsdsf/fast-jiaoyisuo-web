@@ -1,0 +1,207 @@
+:local(.scoped) {
+  @apply flex w-full;
+
+  .trigger-price-show {
+    .arco-input-inner-wrapper {
+      @apply pr-6 overflow-hidden;
+    }
+  }
+
+  &.mode-sell {
+    .submit-btn {
+      @apply bg-sell_down_color hover:bg-sell_down_color_hover text-button_text_01 !important;
+    }
+
+    .slider-wrap {
+      .arco-slider-bar, .arco-slider-dot-active {
+        @apply bg-sell_down_color border-sell_down_color;
+      }
+    }
+
+    .arco-slider-button {
+      &::after {
+        @apply bg-sell_down_color border-sell_down_color;
+      }
+    }
+  }
+
+  &.mode-buy {
+    .submit-btn {
+      @apply bg-buy_up_color hover:bg-buy_up_color_hover text-button_text_01 !important;
+    }
+
+    .slider-wrap {
+      .arco-slider-bar, .arco-slider-dot-active {
+        @apply bg-buy_up_color border-buy_up_color;
+      }
+
+      .arco-slider-button {
+        &::after {
+          @apply bg-buy_up_color border-buy_up_color;
+        }
+      }
+    }
+  }
+
+  .arco-form {
+    &.arco-form-horizontal {
+      .arco-form-item {
+        @apply relative mb-3;
+
+        .arco-form-item-wrapper {
+          @apply w-full min-w-full;
+        }
+      }
+    }
+
+    .arco-form-message {
+      @apply hidden !important;
+    }
+
+    /* .arco-input-number-prefix {
+      @apply text-text_color_02 ;
+    }
+
+    .arco-input-number-suffix {
+      @apply text-text_color_01;
+    }
+
+    .arco-input-inner-wrapper-disabled {
+      @apply text-text_color_04 bg-bg_button_disabled;
+    }
+
+    .arco-input-inner-wrapper {
+      @apply bg-bg_sr_color;
+    } */
+  }
+
+  .slider-wrap {
+    @apply mb-9 mt-0.5;
+
+    &.arco-slider-with-marks {
+      @apply px-1.5;
+    }
+
+    .arco-slider-road::before {
+      height: 4px;
+    }
+
+    .arco-slider-dot {
+      border-width: 4px;
+      @apply bg-icon_color;
+    }
+
+    .arco-slider-button {
+      top: -1.5px;
+      width: 16px;
+      height: 16px;
+
+      &::after {
+        border-width: 8px;
+      }
+
+      &::before {
+        @apply bg-button_text_01 !important;
+      }
+    }
+
+    .arco-slider-bar {
+      @apply h-1;
+    }
+
+    .arco-slider-marks {
+      @apply top-4;
+
+      .arco-slider-marks-text {
+        @apply text-text_color_01 text-xs;
+      }
+    }
+
+    .arco-slider-button {
+      &::before {
+        width: 8px;
+        height: 8px;
+        background: var(--color-bg-2);
+        content: '';
+        @apply absolute transform -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 z-1 rounded-full;
+      }
+    }
+  }
+
+
+  .futures-option-wrap {
+    @apply mb-2;
+
+    .arco-checkbox {
+      @apply pl-0;
+    }
+
+    .arco-checkbox-text {
+      @apply text-xs;
+    }
+  }
+
+  .trade-amount-market-wrap {
+    @apply mb-0 !important;
+
+    .arco-form-message {
+      /* @apply absolute bottom-0; */
+    }
+  }
+
+  .login-btn-wrap {
+    a {
+      @apply font-medium;
+    }
+  }
+
+  .arco-input-number {
+    input {
+      @apply text-right pr-2 !important;
+    }
+  }
+
+  .arco-input-group {
+    .arco-input-inner-wrapper {
+      .arco-input-group-prefix {
+        @apply text-text_color_02;
+      }
+
+      .arco-input-group-suffix {
+        @apply text-text_color_01;
+      }
+
+      input {
+        &.arco-input-disabled {
+          -webkit-text-fill-color: var(--text_color_04);
+        }
+
+        &::placeholder {
+          @apply text-text_color_04;
+        }
+      }
+    }
+  }
+
+  .price-text {
+    .arco-input-inner-wrapper {
+      @apply pr-1 !important;
+    }
+  }
+
+
+
+  .arco-select-suffix {
+    @apply ml-0 !important;
+  }
+
+  .arco-input-number-suffix {
+    .arco-select-single {
+      @apply w-5 !important;
+
+      .arco-select-view {
+        @apply pl-0 !important;
+      }
+    }
+  }
+}

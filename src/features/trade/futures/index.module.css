@@ -1,0 +1,135 @@
+:local(.scoped) {
+  .mode-line .tab {
+    height: 41px !important;
+  }
+
+  .trade-main-wrap {
+    @apply px-3 bg-bg_color;
+
+
+
+    .arco-input-inner-wrapper-disabled {
+      @apply bg-bg_button_disabled !important;
+
+      -webkit-text-fill-color: var(--text_color_02) !important;
+
+    }
+
+    .arco-form-item-control-children {
+      @apply h-full;
+    }
+
+    .form-wrap {
+      @apply flex w-full pt-2.5;
+
+      .form-left, .form-right {
+        @apply flex-1 flex-wrap shrink overflow-hidden;
+      }
+
+      .form-left {
+        @apply pr-8 pl-1;
+      }
+
+      .form-right {
+        @apply pr-1.5 pl-1;
+      }
+    }
+
+    .futures-options-wrap {
+      @apply flex text-xs pt-0 mb-2 text-text_color_02;
+
+      svg {
+        @apply mr-1;
+      }
+
+      .futures-del-assets-wrap {
+        @apply cursor-pointer;
+      }
+
+      .futures-stop-options-wrap {
+        @apply ml-9 cursor-pointer;
+      }
+    }
+
+    .assets-wrap {
+      @apply flex mb-2 text-xs text-text_color_02 justify-between;
+
+      .label {
+        @apply mr-2;
+      }
+
+      .num {
+        @apply text-text_color_01 flex items-center;
+
+        .icon-wrap {
+          @apply ml-0.5;
+        }
+      }
+
+    }
+
+    .tabs-wrap {
+      @apply py-1;
+    }
+  }
+
+  .trade-tab-wrap {
+    @apply relative;
+
+    border-bottom: 1px solid var(--line_color_02);
+
+    .trade-tab-menu-wrap {
+      @apply absolute right-3 transform -translate-y-1/2 top-1/2;
+    }
+  }
+
+  .trade-order-type-tab-wrap {
+    @apply relative;
+
+    .trade-order-type-tab-menu-wrap {
+      @apply absolute right-3 transform -translate-y-1/2 top-1/2;
+    }
+  }
+
+  .trade-no-login-wrap {
+    @apply px-4 py-12 flex items-center flex-col;
+
+    .img {
+      font-size: 160px;
+    }
+
+    .btn {
+      @apply flex gap-8 w-full;
+    }
+  }
+
+  &.is-side {
+    .trade-main-wrap {
+      .form-wrap {
+        .form-left {
+          @apply pr-1.5 pl-1;
+        }
+
+        .form-right {
+          @apply pr-1.5 pl-1;
+        }
+      }
+    }
+  }
+
+  .futures-group-select-wrap, .margin-select-wrap {
+    @apply bg-bg_sr_color mr-1 h-6 rounded text-xs;
+
+    .arco-select-view {
+      @apply h-full;
+    }
+
+    input, .arco-select-view-value {
+      @apply flex items-center text-xs;
+    }
+
+    input::placeholder {
+      @apply text-text_color_01;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+:local(.scope) { 
+
+}
+
+
+:local(.confirm-receipt-container) { 
+  width: 444px;
+  @apply rounded-lg p-8;
+
+  .align-items {
+    @apply items-start !important;
+  }
+  
+  .arco-alert-info {
+    @apply bg-brand_color_special_02 !important;
+  }
+  
+  .arco-alert-content {
+    @apply text-brand_color text-xs !important;
+  }
+  
+  .arco-modal-header {
+    @apply h-auto p-0 !important;
+  }
+  
+  .arco-modal-title {
+    @apply flex  text-text_color_01 font-medium text-xl;
+  }
+  
+  .arco-modal-close-icon {
+    @apply text-base;
+  }
+  
+  .arco-modal-content {
+    @apply px-0 pb-0;
+  }
+  
+  .coins-trade-content {
+    @apply text-text_color_01 mb-6 text-base;
+    
+    .coins-trade-title {
+      @apply text-text_color_01 mt-6;
+    }
+    
+    .coins-trade-name {
+      @apply flex justify-between mt-3 mb-2;
+      
+      .coins-trade-surname {
+        width: 120px;
+        word-break: break-all;
+        @apply text-text_color_01 font-medium;
+      }
+    }
+    
+    .coins-trade-tips {
+      @apply w-full p-3 bg-card_bg_color_02 text-sm text-text_color_03; 
+    }
+    
+    .coins-content-detail {
+      .coins-content-detail-item {
+        @apply flex justify-between mt-3;
+
+        > span:first-child {
+          @apply text-text_color_02;
+        }
+        
+        > span:last-child {
+          @apply text-text_color_01;
+        }
+        
+        .coins-content-num {
+          max-width: 260px;
+          word-break: keep-all;
+          @apply inline-block overflow-ellipsis overflow-hidden;
+        }
+      }
+    }
+    
+
+    
+    .coins-not-select-radio {
+      @apply flex items-center;
+      
+      .coins-select-item {
+        @apply flex pl-3 items-center;
+
+        span {
+          @apply pl-1 text-text_color_02 text-sm;
+        }
+
+        svg {
+          @apply mt-0.5 text-sm;
+        }
+      }
+    }
+    
+    .coins-not-select-radio:last-child {
+      @apply ml-8;
+    }
+  }
+  
+
+  
+  .coins-trade-button {
+    @apply w-full h-10 flex justify-between items-center mb-2 rounded;
+
+    .coins-trade-cancel {
+      width: 180px;
+      @apply flex justify-center items-center text-text_color_02 rounded border border-line_color_01 h-10;
+    }
+    
+    .coins-trade-ok {
+      width: 180px;
+      @apply flex justify-center font-medium items-center text-button_text_02  h-10;
+    }
+    
+    .coins-trade-disable {
+      span {
+        @apply text-text_color_04 !important;
+      }
+      
+    }
+  }
+}

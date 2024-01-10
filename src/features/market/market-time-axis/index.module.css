@@ -1,0 +1,55 @@
+:local(.scoped) {
+  .market-time-axis {
+    .label {
+      @apply text-base font-medium;
+    }
+  }
+
+  .market-axis-timeline {
+    @apply my-8;
+
+    .market-axis-item {
+      @apply pb-8 box-border;
+
+      .arco-timeline-item-dot-line {
+        @apply w-1.5 bg-line_color_02 border-0;
+      }
+
+      .arco-timeline-item-dot-content {
+        @apply w-3;
+
+        .arco-timeline-item-dot {
+          @apply w-3 h-3;
+        }
+      }
+
+      .axis-item-content {
+        @apply h-16 bg-card_bg_color_01 rounded-lg box-border p-6 flex items-center;
+
+        .axis-item-name {
+          flex: 2;
+        }
+
+        .axis-item-price {
+          @apply mx-1 flex-1;
+        }
+
+        .axis-item-operation {
+          @apply ml-1 flex justify-end items-center cursor-pointer flex-1;
+
+          .item-operation-text {
+            @apply text-success_color mr-3;
+          }
+        }
+
+        .warning-text {
+          @apply text-warning_color;
+        }
+
+        .success-text {
+          @apply text-success_color;
+        }
+      }
+    }
+  }
+}

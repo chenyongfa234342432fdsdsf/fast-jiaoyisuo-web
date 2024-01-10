@@ -1,0 +1,75 @@
+:local(.container) { 
+  .success-button {
+    @apply h-10 flex justify-center items-center border-none;
+
+    span {
+      @apply font-medium;
+    }
+  }
+
+  
+  .arco-btn-size-default {
+    @apply p-0;
+  }
+}
+
+:local(.appealcontainer) { 
+  .appeal-component-button {
+    @apply w-full h-10 rounded mt-8 text-button_text_02 font-medium flex bg-brand_color justify-center items-center;
+  }
+  
+  .appeal-alert {
+    @apply mb-6;
+
+    svg {
+      @apply w-3 h-3 -mt-0.5;
+    }
+
+    .arco-alert {
+      @apply items-start !important;
+    }
+    
+    .arco-alert-info {
+      @apply bg-brand_color_special_02 !important;
+    }
+    
+    .arco-alert-content {
+      @apply text-brand_color text-xs !important;
+    }
+  }
+
+  .coins-not-select-radio {
+    @apply mb-4;
+    
+    .coins-select-item {
+      @apply flex items-center;
+
+      span {
+        @apply pl-2 text-text_color_01 text-sm;
+      }
+
+      svg {
+        @apply mt-0.5 text-xs;
+      }
+    }
+    
+    .coins-not-select-tip {
+      @apply w-full p-3 mt-2 rounded bg-card_bg_color_02 text-text_color_03 text-xs;
+    }
+
+    .coins-not-select-handle {
+      @apply w-full flex justify-end text-brand_color text-xs mt-1;
+    }
+    
+    .coins-select-textarea {
+      @apply mt-4;
+
+      textarea {
+        height: 140px !important;
+        @apply resize-none bg-card_bg_color_02 text-text_color_04 p-3 text-xs;
+      }
+
+    }
+  }
+ 
+}

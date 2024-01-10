@@ -1,0 +1,29 @@
+:local(.scoped) {
+  .arco-input-inner-wrapper {
+    height: 42px;
+    @apply bg-bg_sr_color border-transparent;
+
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }  
+
+    &::placeholder {
+      @apply relative text-text_color_04 text-sm;   
+    }
+  }
+
+  .check-error {
+    .arco-input-inner-wrapper {
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+}
+
+
+
+

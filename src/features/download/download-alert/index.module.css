@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply flex flex-row items-center bg-card_bg_color_01 justify-center h-10 gap-x-6;
+
+  img {
+    @apply w-5 h-5;
+  }
+}

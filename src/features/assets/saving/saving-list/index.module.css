@@ -1,0 +1,112 @@
+:local(.scoped) {
+  .root {
+    @apply flex flex-col;
+
+    .header {
+      @apply flex flex-row mt-8 items-center;
+  
+      .select-item {
+        @apply w-48 mr-6 text-base text-text_color_01
+      }
+
+      .arco-select-single .arco-select-view-value {
+        @apply flex !important
+      }
+    }
+
+    .list {
+      @apply flex flex-row items-center flex-wrap justify-between mb-12;
+
+      .list-item {
+        @apply flex flex-col rounded bg-card_bg_color_01 px-5 py-3 mt-5 cursor-pointer;
+
+        width: 48%;
+
+        .item-top {
+          @apply flex flex-row justify-between items-center;
+
+          .top-left {
+            @apply flex flex-row items-center text-base text-text_color_01;
+
+            .left-icon {
+              @apply w-8 h-8 mr-4;
+            }
+
+            .left-line {
+              @apply h-8 mx-5 bg-card_bg_color_02;
+
+              width: 1px;
+            }
+
+            .left-account {
+              @apply h-7 px-2 rounded flex items-center;
+
+              background: linear-gradient(225deg, #FFF4E7 0%, #FDE2B6 32%, #FFB437 100%, #F4A334 100%);
+              transform: skew(335deg);
+
+              span {
+                @apply text-sm text-text_color_01;
+
+                transform: skew(25deg);
+              }
+            }
+          }
+
+          .next-icon {
+            @apply w-6 h-6;
+          }
+        }
+
+        .item-bottom {
+          @apply flex flex-row items-center justify-between mt-5;
+
+          .profit-item {
+            @apply flex flex-col text-sm text-text_color_03;
+
+            .profit-num {
+              @apply text-text_color_01 mt-2;
+
+              font-weight: bold;
+            }
+
+            .profit-total {
+              @apply text-buy_up_color mt-2;
+
+              font-weight: bold;
+            }
+
+            .profit-total-red {
+              @apply text-sell_down_color mt-2;
+
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .empty {
+      @apply mt-16
+    }
+
+    .arco-pagination {
+      @apply h-8 float-right mb-12 !important
+    }
+
+    .arco-pagination-option {
+      @apply h-8 !important
+    }
+
+    .arco-select-view {
+      @apply h-8 text-sm text-text_color_03 flex flex-row items-center !important 
+    }
+
+    .arco-pagination-jumper-input {
+      @apply h-8 text-sm text-text_color_04 !important
+    }
+
+    .arco-pagination-total-text {
+      @apply text-sm text-text_color_03 mr-4 flex items-center !important
+    }
+  }
+}

@@ -1,0 +1,52 @@
+:local(.scoped) {
+  @apply mt-8;
+
+  .arco-form-label-item {;
+    label {
+      @apply flex items-center;
+      
+      strong {
+        @apply hidden;
+      }
+    }
+
+    .arco-badge-status-dot {
+      @apply bg-text_color_01 w-1 h-1;
+    }
+    
+    .arco-badge-status-text {
+      @apply text-base;
+    }
+  }
+
+  /*   
+  .arco-form-message {
+    @apply mt-1;
+  } */
+  
+  .company-upload-down {
+    .upload-download {
+      font-size: 14px;
+      @apply relative -top-4 text-text_color_02;
+      
+      span {
+        @apply text-brand_color cursor-pointer border-b border-b-brand_color;
+      }
+    }
+  }
+  
+  .website {
+    .arco-form-message {
+      @apply invisible;
+    }
+  }
+  
+  
+  .company-material-switch {
+    @apply flex items-center w-32 mx-auto text-brand_color mb-12;
+
+    span {
+      @apply mr-2;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+:local(.payment-column) {
+  .payment-icon {
+    @apply w-0.5 h-3 inline-flex mr-1;
+  }
+}
+
+:local(.action-btn) {
+  min-width: 104px;
+  height: 38px;
+
+  @apply font-medium text-sm;
+}

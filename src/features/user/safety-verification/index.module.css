@@ -1,0 +1,25 @@
+:local(.scoped) {  
+  .user-safety-verification-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .user-form-title {
+        @apply mb-0;
+      }
+
+      .verify-mode {
+        @apply mt-5;
+
+        .item {
+          @apply mb-5;
+
+          label {
+            font-size: 14px;
+            line-height: 14px;
+            @apply text-brand_color font-medium cursor-pointer;
+          }
+        }
+      }
+    }
+  }
+}

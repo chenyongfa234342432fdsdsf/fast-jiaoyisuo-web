@@ -1,0 +1,5 @@
+:local(.rate-info-chart-wrapper) {
+  .arco-spin-children {
+    @apply h-full w-full;
+  }
+}

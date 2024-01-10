@@ -1,0 +1,91 @@
+:local(.scoped) { 
+  .root {
+    @apply flex flex-col;
+
+    .form {
+      @apply flex flex-row items-center flex-wrap;
+
+      .select-item {
+        @apply w-44 h-10 text-base rounded flex items-center border border-line_color_02
+      }
+
+      .search-btn {
+        @apply w-28 h-10 rounded ml-6 text-base mb-4;
+
+        font-weight: 500;
+      }
+
+      .reset-btn {
+        @apply border-line_color_02 text-text_color_03 mb-4
+      }
+    }
+
+    .list {
+      @apply flex flex-row items-center flex-wrap justify-between mb-12;
+
+      .list-item {
+        @apply flex flex-col rounded bg-card_bg_color_01 px-5 py-3 mt-5 cursor-pointer relative;
+
+        width: 48%;
+
+        .item-status {
+          @apply absolute top-0 right-0 text-sm text-text_color_04 bg-buy_up_color w-28 py-1 flex items-center justify-center rounded-tr-sm rounded-bl-2xl;
+
+          font-weight: bold
+        }
+
+        .item-top {
+          @apply text-sm text-text_color_03 border-solid border-b border-card_bg_color_02 pb-4
+        }
+
+        .item-content {
+          @apply flex flex-row items-center justify-between mt-6;
+
+          .content-left {
+            @apply flex flex-col
+          }
+
+          .content-item {
+            @apply text-base text-text_color_01;
+
+            .content-item-key {
+              @apply text-text_color_03 mr-5
+            }
+          }
+
+          .content-right {
+            @apply flex flex-row items-center w-7/12 justify-between
+          }
+
+          .next-icon {
+            @apply w-4 h-4
+          }
+        }
+      }
+    }
+
+    .empty {
+      @apply mt-16
+    }
+
+    .arco-pagination {
+      @apply h-8 float-right my-12 !important
+    }
+
+    .arco-pagination-option {
+      @apply h-8 !important
+    }
+
+    .arco-select-view {
+      @apply h-8 text-sm text-text_color_03 flex flex-row items-center !important 
+    }
+
+    .arco-pagination-jumper-input {
+      @apply h-8 text-sm text-text_color_04 !important
+    }
+
+    .arco-pagination-total-text {
+      @apply text-sm text-text_color_03 mr-4 flex items-center !important
+    }
+  }
+}

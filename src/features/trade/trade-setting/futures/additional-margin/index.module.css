@@ -1,0 +1,68 @@
+:local(.scoped) {
+  .margin-preference {
+    .container {
+      @apply flex mt-6;
+  
+      .options {
+        border: 1px solid var(--card_bg_color_01);
+        @apply p-2 flex-1 bg-card_bg_color_01 cursor-pointer rounded-lg;
+  
+        label {
+          @apply cursor-pointer;
+        }
+  
+        &:first-child {
+          @apply mr-4;
+        }
+  
+        &:last-child {
+          @apply ml-4;
+        }
+  
+        .options-wrap {
+          @apply flex flex-col justify-between p-4 bg-card_bg_color_03 rounded-lg relative h-full;
+
+          .content-wrap {
+            @apply flex flex-col mb-2;
+
+            .text {
+              @apply mb-2;
+      
+              label {
+                font-size: 16px;
+                @apply text-text_color_01 font-medium;
+              }
+            }
+      
+            .content {
+              p {
+                font-size: 14px;
+                @apply text-text_color_02 font-normal;
+              }
+            }
+          }
+
+          .checked-icon {
+            top: 1px;
+            @apply absolute right-0;
+    
+            & > div {
+              margin-top: -1px;
+              @apply align-super;
+            }
+    
+            svg {
+              width: 22px;
+              height: 15px;
+            }
+          }
+        }
+  
+      }
+  
+      .checked {
+        border: 1px solid var(--brand_color);
+      }
+    }
+  }
+}

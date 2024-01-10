@@ -1,0 +1,63 @@
+:local(.scope) {
+  .coin-switch-container {
+    @apply flex justify-between items-center pr-4 pl-3 rounded;
+
+    width: 380px;
+    height: 100px;
+    border: 1px solid var(--line_color_01);
+
+    .coin-switch-left {
+      .coin-switch {
+        @apply flex justify-between items-center;
+
+        .fixed-text {
+          @apply text-text_color_03 ml-2;
+
+          font-weight: 400;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 22px;
+        }
+
+        .sub-text {
+          @apply text-text_color_01 ml-6;
+
+          width: 200px;
+          font-weight: 500;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 22px;
+        }
+
+        .coin-switch-icon, .sub-text {
+          transition: 0.25s all ease-in-out;
+        }
+
+        &.up-reverse {
+          .coin-switch-icon, .sub-text {
+            transform: translateY(44px);
+            transition: 0.25s all ease-in-out;
+          }
+        }
+
+        &.down-reverse {
+          .coin-switch-icon, .sub-text {
+            transform: translateY(-44px);
+            transition: 0.25s all ease-in-out;
+          }
+        }
+      }
+
+      .coin-switch-center {
+        @apply flex justify-between items-center my-1.5 ml-0.5;
+      }
+
+    }
+
+    .coin-switch-right {
+    }
+  }
+}
+
+:local(.modal) {
+}

@@ -1,0 +1,45 @@
+:local(.scoped) {
+  .kyc-header {
+    .kyc-header-header {
+      @apply flex items-center mb-8 justify-between py-8   bg-card_bg_color_01;
+  
+      .kyc-header-container {
+        width: 1200px;
+        @apply flex items-center mx-auto justify-between;
+  
+        .kyc-header-title {
+  
+          @apply flex items-center;
+          
+          span {
+            font-size: 32px;
+            @apply font-medium text-text_color_01 mr-4;
+          }
+          
+          svg {
+            font-size: 40px;
+          }
+                
+          .company-avatar {
+            @apply text-2xl;
+          }
+       
+        }
+        
+        .kyc-header-person {
+          @apply px-3 py-2 bg-card_bg_color_03 rounded-3xl flex items-center;
+
+          span {
+            @apply pl-1 text-text_color_02 pr-1;
+          }
+          
+          .kyc-verified {
+            margin-top: 1px;
+            @apply text-2xl;
+          }
+        }
+      }
+  
+    }
+  }
+}

@@ -1,0 +1,109 @@
+:local(.scoped) {
+  .company-submit-header {
+    @apply flex items-center mb-12 justify-between py-8   bg-card_bg_color_02;
+
+    .company-header-container {
+      width: 1200px;
+      @apply flex items-center mx-auto justify-between;
+
+      .company-submit-title {
+
+        @apply flex items-center;
+        
+        span {
+          @apply font-medium text-3xl text-text_color_01 ml-4;
+        }
+              
+        .company-avatar {
+          @apply w-10 h-10;
+        }
+    
+      }
+      
+      .company-submit-person {
+        span {
+          @apply pl-2 pr-1;
+        }
+      }
+    }
+
+  }
+  
+  .company-submit-header-step {
+    width: 840px;
+    @apply overflow-hidden mx-auto;
+
+    .arco-steps-item-title {
+      @apply whitespace-normal;
+    }
+
+    .arco-steps-item:last-child {
+      .arco-steps-item-tail {
+        @apply hidden !important;
+      }
+    }
+
+    .company-submit-step {
+      @apply mt-4;
+        
+      .arco-steps-item-tail {
+        height: 3px;
+        @apply bg-line_color_02;
+      }
+
+      /* .arco-steps-item-content {
+        @apply -ml-3;
+      } */
+
+
+      .arco-steps-item-title {
+        @apply mt-2 text-text_color_04;
+      }
+      
+      .arco-steps-item-active, .arco-steps-item-finish {
+        .arco-steps-item-title {
+          @apply text-text_color_01;
+        }
+      }
+    }
+
+    .company-submit-alert {
+      @apply mt-8 text-brand_color bg-brand_color_special_02 py-2.5 rounded;
+        
+      .arco-alert-content {
+        @apply text-brand_color;
+      }
+    }
+  }
+
+  .arco-steps-item-active {
+    @apply text-text_color_05;
+  }
+  
+  .company-avatars-step {
+    @apply w-9 h-9 ml-10 -mt-4 z-10;
+  }
+  
+  .company-index-step {
+    margin-left: 54px;
+    @apply w-6 h-6 -mt-2 bg-brand_color text-button_text_02 text-base font-medium flex justify-center items-center rounded-full z-10;
+  }
+  
+  .company-index-not-step {
+    margin-left: 54px;
+    @apply w-6 h-6 -mt-2 bg-bg_button_disabled text-base font-medium text-text_color_04 flex justify-center items-center rounded-full z-10;
+  }
+    
+  .arco-alert {
+    @apply items-start;
+  }
+    
+  .company-select-type {
+    .company-information-title {
+      @apply font-bold text-base pl-3 mt-6 border-l-4 border-brand_color mb-4;
+    }
+  }
+    
+    
+}
+

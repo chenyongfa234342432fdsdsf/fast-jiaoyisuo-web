@@ -1,0 +1,44 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .empty {
+    & svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .list-item-top20 {
+    @apply flex items-center justify-between;
+
+    height: 54px;
+
+    .list-item-top20-l-box {
+      @apply flex items-center relative;
+
+      .list-item-top20-icon {
+        @apply absolute;
+      }
+
+      .list-item-top20-index {
+        @apply w-8 pl-2 text-text_color_01;
+      }
+
+      .list-item-top20-phone {
+        @apply text-text_color_01 text-sm font-normal not-italic;
+      }
+    }
+
+    .list-item-top20-r-box {
+      .list-item-top20-money {
+        @apply text-text_color_01 text-sm font-normal not-italic;
+      }
+    }
+  }
+
+  .line {
+    @apply bg-line_color_02 w-full;
+
+    height: 1px;
+  }
+}

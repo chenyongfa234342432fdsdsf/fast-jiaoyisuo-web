@@ -1,0 +1,40 @@
+:local(.scoped) {
+  .company-select-type {
+    .company-information-title {
+      font-size: 20px;
+      @apply font-medium  mb-6;
+    }
+
+  }
+  
+  .company-select-type:first-child {
+    .company-information-title {
+      @apply font-medium mt-8  mb-6;
+    }
+  }
+
+  .arco-form-label-item {
+    label {
+      @apply flex items-center text-text_color_01;
+
+      strong {
+        @apply hidden;
+      }
+    }
+  }
+  
+  .arco-select-view {
+    height: 44.5px !important;
+    line-height: 44.5px !important;
+  }
+  
+  .arco-form-message {
+    @apply invisible;
+  }
+
+  .company-phone-form {
+    .arco-select-popup {
+      @apply w-96;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+:local(.asset-popup-tips) {
+  width: 360px;
+
+  .arco-modal-close-icon {
+    right: 28px;
+    @apply top-8;
+    
+    svg {
+      @apply w-5 h-5 text-icon_color;
+    }
+  }
+
+  .arco-modal-content {
+    @apply px-8 pb-8 pt-0;
+  }
+  
+  .arco-modal-footer {
+    @apply flex border-none pb-8 px-8 pt-0;
+  
+    button {
+      @apply flex-1 h-10 text-sm font-medium;
+    }
+  }
+  
+  .footer {
+    @apply flex mt-6;
+  
+    .arco-btn {
+      @apply flex-1 h-10 text-sm font-medium;
+    }
+  
+    .arco-btn-secondary {
+      @apply ml-0 mr-4 h-10 text-sm font-medium;
+    }
+  }
+
+
+  .assets-popup-wrap {
+    .popup-icon {
+      @apply flex justify-center items-center my-8 text-base font-medium;
+  
+      .icon {
+        svg {
+          width: 78px;
+          height: 78px;
+        }
+      }  
+    }
+
+    .slot-content {
+      @apply text-sm leading-6 text-text_color_01;
+    }
+  }
+
+  .arco-btn-secondary:not(.arco-btn-disabled) {
+    @apply text-text_color_02 bg-transparent border-line_color_01;
+  }
+
+  .arco-btn-secondary:hover {
+    @apply hover:text-text_color_02 bg-card_bg_color_01 border-line_color_01 !important;
+  }
+}

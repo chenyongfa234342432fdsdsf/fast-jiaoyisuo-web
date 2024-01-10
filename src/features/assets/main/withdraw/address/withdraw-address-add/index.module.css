@@ -1,0 +1,42 @@
+:local(.scoped) {
+  .arco-modal-content {
+    @apply px-8 pb-8;
+  }
+
+  .add-address-wrap {
+    .assets-label {
+      @apply mb-2 text-sm text-text_color_03;
+    }
+
+    .arco-col-19 {
+      @apply w-full flex-1;
+    }
+
+    .arco-modal-header {
+      @apply px-8 pt-8;
+    }
+
+    .arco-modal-close-icon {
+      top: 26px;
+    
+      @apply text-xl right-8;
+    }
+
+    .arco-btn-secondary.arco-btn-disabled {
+      @apply text-sm font-medium;
+    }
+
+    .arco-input-inner-wrapper .arco-input {
+      height: 46px;
+      @apply text-sm;
+    }
+
+    .arco-form-message {
+      @apply mt-1;
+    }
+
+    .arco-form-item.arco-form-item-error {
+      @apply mb-6;
+    }
+  }
+}

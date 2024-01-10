@@ -1,0 +1,157 @@
+:local(.scoped) {
+  .container {
+    .checked-icon {
+      @apply absolute right-0 top-0;
+
+      & > div {
+        @apply mt-0 align-super;
+      }
+
+      svg {
+        width: 22px;
+        height: 15px;
+      }
+    }
+
+    .user-tips {
+      padding: 10px 16px;
+      @apply mb-8 -mt-3;
+    }
+
+    .options {
+      margin-bottom: 10px;
+      border: 1px solid var(--card_bg_color_01);
+      border-radius: 4px;
+      @apply p-3 bg-card_bg_color_01 cursor-pointer relative;
+
+      &.disable {
+        @apply bg-card_bg_color_02 cursor-not-allowed !important;
+
+        .title label {
+          @apply text-text_color_04 !important;
+        }
+
+        .content label {
+          @apply text-text_color_04 !important;
+        }
+      }
+
+      label {
+        @apply cursor-pointer;
+      }
+
+      .title {
+        @apply mb-1;
+
+        label {
+          font-size: 16px;
+          @apply text-text_color_01 font-medium;
+        }
+      }
+
+      .content {
+        label {
+          font-size: 12px;
+          @apply text-text_color_02 font-normal;
+        }
+      }
+
+    }
+
+    .checked {
+      border: 1px solid var(--brand_color);
+      @apply bg-brand_color_special_02;
+
+      .title {
+        label {
+          @apply text-brand_color;
+        }
+      }
+
+      .content {
+        label {
+          @apply text-text_color_01;
+        }
+      }
+    }
+
+    .btn {
+      .arco-btn {
+        @apply w-full h-10;
+      }
+    }
+
+
+    .arco-checkbox-group {
+      max-height: 275px;
+      overflow-y: auto;
+      @apply w-full;
+    }
+
+  }
+
+  .title-wrap {
+    @apply mt-6 text-text_color_02 mb-4;
+
+    .title {
+      @apply font-medium  text-base mb-1 text-text_color_01;
+    }
+  }
+
+  .sub-title {
+    @apply text-text_color_02 text-xs flex justify-between;
+
+    .arco-radio-group {
+      /* @apply !important ; */
+      border-radius: 2px;
+
+      .arco-radio-button {
+        width: 40px;
+        height: 20px;
+        border-radius: 2px;
+      }
+
+      .arco-radio-checked{
+
+      }
+
+      .arco-radio-button-inner {
+        @apply flex items-center justify-center;
+      }
+    }
+
+  }
+
+  .list-wrap {
+    height: 200px;
+    @apply mb-4 overflow-auto;
+
+    .it {
+      @apply flex mb-4;
+
+      svg {
+        font-size: 16px;
+      }
+
+      & > div:first-child, & > div:last-child {
+        @apply mt-0;
+      }
+
+      .currency {
+        @apply flex-1 ml-2;
+      }
+
+      .price {
+        @apply mr-2;
+
+        label {
+          &:first-child {
+            @apply mr-2;
+          }
+        }
+      }
+    }}
+
+}
+
+

@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply mt-10;
+
+  .tabs-wrap {
+    @apply flex justify-between items-center;
+
+    .link {
+      @apply text-sm text-brand_color;
+
+      line-height: 22px;
+    }
+  }
+}

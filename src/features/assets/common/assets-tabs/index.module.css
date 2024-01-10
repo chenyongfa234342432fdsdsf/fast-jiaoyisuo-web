@@ -1,0 +1,19 @@
+:local(.scoped) {
+  .assets-tabs-button {
+    .tab {
+      .item {
+        @apply px-5 h-9 p-0 text-text_color_02 text-sm rounded !important;
+      }
+    }
+
+    .active {
+      .item {
+        @apply text-text_color_01 !important;
+      }
+    }
+  }
+
+  .size-default {
+    @apply gap-8 !important;
+  }
+}

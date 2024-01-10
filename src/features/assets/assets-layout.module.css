@@ -1,0 +1,241 @@
+:local(.layout-wrapper) {
+  @apply flex bg-bg_color flex-1 flex-col;
+
+  .assets-menus-wrapper {
+    @apply w-full border-r border-line_color_02;
+  }
+
+  .arco-spin, .arco-spin-children {
+    @apply w-full h-full;
+  }
+
+  .arco-btn-secondary:not(.arco-btn-disabled) {
+    @apply text-text_color_01 bg-bg_sr_color !important;
+  }
+
+  .arco-btn-secondary:not(.arco-btn-disabled):hover {
+    @apply hover:text-text_color_01 bg-button_hover_01 !important;
+  }
+
+  .network-select-icon {
+    svg {
+      @apply w-2 h-2;
+    }
+  }
+
+  .input-search-icon {
+    svg {
+      @apply text-sm;
+    }
+  }
+  
+  div.assets-wrapper {
+    min-height: 520px;
+    margin-top: 50px;
+    @apply flex-1 flex flex-col;
+
+    .assets-wrapper-header {
+      height: 108px;
+      @apply bg-card_bg_color_01 flex items-center mb-6;
+
+      .header-center {
+        max-width: 1264px;
+
+        @apply flex self-center px-8 flex-1 justify-center;
+      }
+  
+      .header-full {
+        @apply w-full px-8
+      }
+
+      .arco-btn-secondary:not(.arco-btn-disabled) {
+        @apply text-text_color_01 bg-line_color_02 !important;
+      }
+    
+      .arco-btn-secondary:not(.arco-btn-disabled):hover {
+        @apply hover:text-text_color_01 bg-bg_sr_color !important;
+      }
+
+      .arco-btn-secondary.arco-btn-disabled {
+        @apply bg-button_hover_01 !important;
+      }
+    }
+
+    .children-center {
+      max-width: 1264px;
+
+      @apply flex self-center px-8 justify-center;
+
+      .asset-item-wrap {
+        @apply flex flex-row items-center mt-6 first:mt-0;
+      }
+    }
+
+    .children-full {
+      @apply w-full px-8
+    }
+
+    .children-wrapper {
+      @apply flex-1 flex flex-col;
+    }
+
+    .tips-text {
+      @apply border-text_color_02 border-b border-dashed cursor-pointer;
+    }
+
+    .arco-select-size-default.arco-select-single .arco-select-view {
+      height: 46px;
+    }
+
+    .arco-tabs-content {
+      @apply pt-8;
+    }
+
+    .arco-table .arco-btn {
+      @apply mr-1 cursor-pointer text-brand_color px-1;
+    }
+
+    .arco-table {
+      .arco-table-empty-row .arco-table-td {
+        @apply bg-transparent !important;
+      }
+    }
+    
+    .assets-table-light {
+      .arco-table-scroll-position-left .arco-table-col-fixed-right-first::after, .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+        box-shadow: inset -6px 0 8px -6px var(--nc-16) !important;
+      }
+    }
+  
+    .assets-table-dark {
+      .arco-table-scroll-position-left .arco-table-col-fixed-right-first::after, .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+        box-shadow: none;
+      }
+    }
+
+    .opt-btn {
+      @apply w-full text-sm font-medium;
+
+      height: 40px;
+    }
+
+    .opt-button {
+      @apply w-full px-4 block text-sm text-center rounded bg-brand_color text-button_text_02 font-medium;
+
+      height: 40px;
+      line-height: 40px;
+
+      &:hover {
+        @apply bg-brand_color_hover;
+      }
+    }
+
+    .opt-button-gray {
+      @apply block text-sm w-full text-center px-4 rounded bg-bg_sr_color text-text_color_01 font-medium;
+
+      height: 40px;
+      line-height: 40px;
+
+      &:hover {
+        @apply bg-button_hover_01;
+      }
+    }
+
+    .opt-button-disable {    
+      @apply block rounded text-sm w-full text-center px-4 bg-line_color_01 text-text_color_01 font-medium;
+
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+
+  .arco-col-19 {
+    @apply w-full flex-1;
+  }
+
+  .assets-label {
+    @apply mb-2 text-sm text-text_color_02;
+  }
+
+  .is-up {
+    @apply text-buy_up_color;
+
+    .percent {
+      @apply bg-buy_up_color_lightbg;
+    }
+      
+  }
+
+  .is-down {
+    @apply text-sell_down_color;
+
+    .percent {
+      @apply bg-sell_down_color_lightbg;
+    }
+  }
+
+  .arco-input {
+    @apply text-sm !important;
+  }
+
+  .page-wrap {
+    @apply flex justify-end mt-2;
+
+    .arco-select-view, .arco-pagination .arco-pagination-jumper-input {
+      height: 40px !important;
+      line-height: 38px !important;
+    }
+  }
+
+  /** 解决 chrome 自动填充背景色问题 */
+  input:-internal-autofill-selected {
+    box-shadow: inset 0 0 0 50px var(--nc-12) !important;
+  }
+}
+
+:local(.assets-menus) {
+  @apply flex justify-center fixed w-full bg-bg_color z-10;
+
+  .header-center {
+    @apply flex self-center px-8 flex-1;
+
+    max-width: 1264px;
+
+  }
+
+  .header-full {
+    @apply w-full px-8
+  }
+
+  .assets-menu-item {
+    @apply h-12 text-base text-text_color_02 mx-7 cursor-pointer flex relative flex-row items-center font-medium first:ml-0;
+
+    &.is-selected,
+    &:hover {
+      @apply text-brand_color;
+    }
+
+    .status-bar {
+      @apply absolute bottom-0 left-0 bg-brand_color w-full;
+
+      height: 2px;
+    }
+
+    svg {
+      @apply w-6 h-6;
+    }
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+}
+
+:local(.home-index) {
+  border-top: solid 1px #30373F;
+
+  .assets-wrapper-header {
+    margin-top: -24px;
+    background-color: transparent !important;
+  }
+}

@@ -1,0 +1,97 @@
+:local(.scope) {
+  .limit-order-tip {
+    @apply text-sm;
+  }
+
+  .limit-order-illustration {
+    @apply mt-2;
+
+    .limit-illustration-title {
+      @apply text-text_color_05  flex justify-between;
+
+      .limit-illustration-handle {
+        @apply flex;
+
+        .illustration-handle-buy {
+          @apply first:mr-4;
+        }
+
+        .limit-illustration-handle-buy {
+          @apply text-text_color_01;
+        }
+
+        .limit-illustration-handle-sell {
+          @apply text-text_color_03;
+        }
+
+      }
+    }
+
+    .limit-illustration-img {
+      @apply flex items-center my-2;
+
+      .limit-illustration-merit {
+        @apply w-9 relative h-24;
+
+        div:first-child {
+          top: 12px;
+          @apply absolute;
+        }
+
+
+        div:last-child {
+          top: 57px;
+          @apply absolute;
+        }
+      }
+
+      .illustration-img-detail {
+        width: 304px;
+        @apply h-24 ml-1;
+      }
+
+      img {
+        width: 304px;
+      }
+    }
+
+    .limit-illustration-explain {
+      @apply text-text_color_03 flex justify-center text-sm;
+
+      .illustration-explain-text {
+        @apply relative ml-4;
+      }
+
+      .illustration-explain-text::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-brand_color;
+      }
+
+      .illustration-explain-not-text {
+        @apply relative;
+      }
+
+      .illustration-explain-not-text::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-text_color_01;
+      }
+
+    }
+  }
+
+  .limit-order-content {
+    @apply text-text_color_03 mt-2 text-sm;
+  }
+
+  .limit-order-remarks {
+    @apply mt-4 text-text_color_03 ;
+
+    .order-remarks {
+      @apply text-text_color_03 mt-2;
+    }
+
+    div {
+      @apply last:mt-3;
+    }
+  }
+}

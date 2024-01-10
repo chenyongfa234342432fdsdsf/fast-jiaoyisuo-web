@@ -1,0 +1,40 @@
+:local(.scoped) {
+
+  @apply relative flex items-center justify-center;
+
+  .gradient-background {
+    height: 300px;
+    background: linear-gradient(180deg, rgb(241 174 61 / 10%) 0%, rgb(241 174 61 / 0%) 100%);
+    @apply absolute top-0 left-0 right-0;
+  }
+
+  .user-register-wrap {
+    @apply py-8 flex flex-col items-center ;
+    
+
+    .placeholder {
+      height: 188px;
+      @apply mb-8;
+    }
+
+    .btn-wrap {
+      width: 380px;
+      @apply mt-10;
+
+      .arco-btn {
+        height: 46px;
+        @apply w-full text-base leading-4 font-normal;
+      }
+  
+      .login {
+        font-size: 14px;
+        line-height: 14px;
+        @apply font-medium;
+  
+        label {
+          @apply text-text_color_03;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:local(.main-chain-wrap) {
+  @apply flex items-center;
+
+  .payment-item {
+    @apply flex items-center justify-center;
+
+    .line {
+      @apply w-0.5 h-2.5 mr-1 rounded-2xl;
+    }
+  }
+}

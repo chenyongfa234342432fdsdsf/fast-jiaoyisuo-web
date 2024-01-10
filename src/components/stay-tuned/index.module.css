@@ -1,0 +1,27 @@
+:local(.scoped) {
+  @apply flex-1 justify-center items-center flex flex-col;
+
+  .stay-tuned-wrap {
+    @apply flex justify-center items-center;
+
+    .placeholder {
+      img {
+        width: 260px;
+        height: 234px;
+      }
+
+      .text {
+        @apply text-center;
+
+        p {
+          @apply font-medium text-base text-text_color_01 mb-2;
+        }
+  
+        label {
+          font-size: 12px;
+          @apply font-normal text-text_color_03;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+:local(.scoped) {
+  .arco-drawer-scroll .arco-drawer-close-icon {
+    @apply text-icon_color;
+  }
+
+  .arco-popover-content {
+    padding: 6px 0;
+  }
+
+  .arco-drawer-scroll {
+    .arco-drawer-header {
+      @apply h-auto px-6 border-line_color_02;
+  
+      .arco-drawer-header-title {
+        @apply text-text_color_01 font-medium mt-7 mb-5 text-xl;
+      }  
+    }
+      
+    .arco-drawer-close-icon {
+      @apply text-xl mt-3
+    }
+
+    .arco-drawer-content {
+      @apply p-0;
+    }
+
+    .arco-drawer-footer {
+      @apply border-t-0 px-6 pb-10;
+
+      .arco-btn {
+        @apply w-full h-10 mt-8 text-sm font-medium;
+      }
+    }
+  } 
+}
+
+:local(.list-wrap) {
+  .list-item {
+    @apply py-4 px-6 flex justify-between text-text_color_01 border-line_color_02 border-b;
+  }
+
+  .group-list-item {
+    @apply py-3 mx-6 flex justify-between text-text_color_01 border-line_color_02 border-b last:border-b-0;
+  }
+
+  .coin-name {
+    @apply flex items-center text-sm font-medium;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .list-right {
+    @apply flex flex-row items-center;
+
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+
+  .item-value {
+    @apply flex flex-col items-end;
+
+    .currency {
+      @apply text-xs text-text_color_02;
+    }
+  }
+  
+}
+
+
+:local(.menu-cells) {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-bg_color rounded py-2;
+    
+  .cell-wrap {
+    @apply flex cursor-pointer px-5 py-2 items-center text-text_color_01 text-sm;
+    
+    .icon {
+      @apply w-2 h-2 ml-1;  
+    }
+
+    .is-selected {
+      @apply text-brand_color;
+    }
+  
+    &:hover {
+      @apply bg-bg_color_03;
+    }
+  }
+}
+    
+
+    

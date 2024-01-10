@@ -1,0 +1,134 @@
+:local(.scope) { 
+  @apply bg-bg_color;
+  
+  .coinspaybuy-container {
+    width: 1200px;
+    @apply mx-auto relative;
+    
+    .coinspaybuy-title {
+      margin-top: 84px;
+      @apply flex  items-center;
+
+      .select-img {
+        img {
+          @apply mr-2 w-6 h-6 rounded-full;
+        }
+      }
+
+      svg {
+        font-size: 26px;
+        @apply pr-2 mt-0.5;
+      }
+      
+      span {
+        @apply text-text_color_01 font-medium text-xl;
+      }
+    }
+    
+    .coinspaybuy-all-price {
+      @apply text-text_color_01 mt-8 mb-2;
+
+      span:first-child {
+        font-size: 32px;
+        @apply font-medium;
+      }
+      
+      span:last-child {
+        @apply ml-2 text-xl font-medium;
+      }
+    }
+    
+    .coinspaybuy-sub-title {
+      width: 380px;
+      @apply text-text_color_01 mt-10 mb-4 text-base font-medium;
+    }
+    
+    .coinspaybuy-paymethod {
+      width: 380px;
+
+      .coinspaybuy-paymethod-item {
+        height: 54px;
+        @apply w-full rounded mb-4 border flex border-line_color_01 items-center justify-between px-6 text-text_color_01 text-sm;
+        
+        .coinspaybuy-paymethod-alipay {
+          border-left-color: #6195F6;
+          @apply border-l-2 pl-1;
+        }
+        
+        .coinspaybuy-paymethod-preferential {
+          height: 22px;
+          @apply px-1 inline-flex justify-center items-center bg-brand_color_special_02 rounded-sm text-xs text-brand_color ml-3;
+        }
+      }
+      
+      .coinspaybuy-paymethod-selected {
+        @apply border-brand_color;
+      }
+      
+
+    }
+
+    .coinspaybuy-disclaimers {
+      width: 380px;
+      @apply text-text_color_03;
+
+      span {
+        @apply text-brand_color;
+      }
+    }
+    
+    .coinspaybuy-button {
+      margin-bottom: 126px;
+      @apply mt-8;
+    }
+    
+    .coinspaybuy-back {
+      top: 84px;
+      @apply absolute cursor-pointer left-0 text-text_color_03;
+
+      svg {
+        @apply text-sm;
+      }
+    }
+  }
+
+  .tab-wrap {
+    .tab .item {
+      @apply text-text_color_02;
+    }
+
+    .active .item {
+      @apply !text-text_color_01 !rounded-lg !h-10;
+    }
+  }
+}
+
+
+:local(.modal-intel) {
+  width: 360px;
+
+  .arco-modal-title {
+    @apply !text-center !text-base;
+  }
+
+  .arco-btn {
+    @apply text-sm;
+  }
+
+  .arco-modal-footer {
+    padding: 0 32px 32px!important;
+    border-top: unset!important;
+  }
+
+  .arco-modal-content {
+    padding: 24px 32px!important;
+  }
+
+  .arco-modal-header {
+    padding: 32px 32px 0!important;
+  }
+  
+  .arco-modal-close-icon {
+    @apply !top-8;
+  }
+}

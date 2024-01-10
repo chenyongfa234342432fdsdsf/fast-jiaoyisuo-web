@@ -1,0 +1,84 @@
+:local(.scoped) {
+  .container {
+    .arco-radio-group, .arco-radio {
+      @apply w-full;
+    }
+
+    .currency-list {
+      max-height: 275px;
+      @apply mb-5 overflow-y-auto -mr-4;
+    }
+
+    .arco-radio-group {
+      @apply w-full pr-4;
+    }
+
+    .arco-radio {
+      @apply mr-0;
+    }
+
+    .user-tips {
+      padding: 10px 16px;
+      @apply -mt-3;
+    }
+
+    .btn {
+      @apply flex;
+
+      .arco-btn {
+        @apply w-full h-10;
+      }
+    }
+
+    .has-cancel {
+      .arco-btn {
+        &:first-child {
+          margin-right: 10px;
+          @apply bg-card_bg_color_03 border-line_color_01;
+        }
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+:local(.settlement-currency-setting-checkbox) {
+  border-bottom: 1px solid var(--line_color_02);
+  @apply flex justify-between items-center py-4;
+
+  & > div {
+    @apply mt-0;
+  }
+
+  svg {
+    font-size: 16px;
+  }
+
+  .currency, .price {
+    label {
+      font-size: 14px;
+      @apply font-medium text-text_color_01;
+    }
+  }
+
+  .currency {
+    @apply flex-1 ml-2;
+  }
+
+  .price {
+    label {
+      &:first-child {
+        @apply mr-2;
+      }
+    }
+  }
+}
+
+:local(.settlement-currency-popup) {
+  .arco-modal-header {
+    @apply mb-0;
+  }
+}

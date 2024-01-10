@@ -1,0 +1,249 @@
+:local(.container) { 
+  @apply bg-bg_color w-full h-full;
+
+  input:focus::-webkit-contacts-auto-fill-button {
+    opacity: 0;
+  }
+
+  .arco-input {
+    &:focus {
+      @apply border-line_color_01 !important;
+    }
+  }
+
+  input {
+    &::placeholder {
+      @apply relative text-text_color_04 text-sm;
+
+      top: -1px;
+    }
+  }
+  
+  .kyc-certification-title {
+    @apply mt-0 !important;
+  }
+  
+
+  .user-verified-container {
+    width: 840px;
+    @apply mx-auto;
+
+    .arco-alert-info {
+      font-size: 12px !important;
+      border-radius: 4px;
+      @apply bg-brand_color_special_02;
+    }
+
+    .arco-form-item {
+      padding-bottom: 16px;
+    }
+  
+
+    .arco-form-message {
+      @apply invisible;
+
+      div {
+        @apply relative top-1;
+      }
+    }
+    
+    @apply m-auto  bg-bg_color;
+    /* stylelint-disable-next-line selector-class-pattern */
+    .user-verified-title {
+      @apply flex items-center mb-12;
+    
+      img {
+        @apply w-10 h-10;
+      }
+    
+      span {
+        @apply font-bold text-2xl mr-1;
+      }
+      
+      .user-verified-authentication {
+        @apply text-xl;
+      }
+    }
+  
+    .arco-alert-warning {
+      @apply bg-brand_color_animate;
+    }
+    
+    .arco-form-item-error {
+      .arco-picker:hover, .arco-picker {
+        @apply bg-bg_color border-warning_color !important;
+      }
+    }
+    
+    .arco-picker {
+      @apply bg-bg_color border-line_color_01;
+        
+      input {
+        &::placeholder {
+          @apply text-text_color_04 text-sm;
+          
+          top: 0;
+        }
+      }
+    }
+    
+    .arco-input {
+      height: 46px;
+      @apply bg-bg_color border-line_color_01;
+    }
+
+    .arco-form-item-error {
+      .arco-input:hover {
+        @apply bg-bg_color border-warning_color !important;
+      }
+      
+      .arco-input {
+        height: 46px;
+        @apply bg-bg_color border-warning_color !important;
+      }
+  
+    }
+    
+          
+    .arco-col-12:nth-child(odd) {
+      padding-right: 8px !important;
+    }
+    
+    .arco-col-12:nth-child(even) {
+      padding-left: 8px !important;
+    }
+
+    .arco-form-label-item {
+      label {
+        @apply text-text_color_01;
+      }
+    }
+  
+    
+    .arco-input-error:hover {
+      @apply bg-bg_color border-warning_color !important;
+    }
+    
+    .arco-input-error {
+      @apply border-warning_color bg-bg_color;
+    }
+  
+    .arco-alert {
+      padding: 11px;
+      @apply bg-brand_color_special_02 rounded;
+    }
+  
+    .arco-alert-content {
+      @apply text-brand_color font-medium;
+    }
+  
+    .basic-information {
+      @apply mt-4;
+    
+      .basic-information-title {
+        @apply font-medium text-base mt-6 mb-4;
+      }
+      
+      .basic-information-requirement {
+        @apply relative pl-3 text-text_color_03 my-1;
+        
+        span {
+          @apply text-brand_color;
+        }
+      }
+      
+      .basic-information-country {
+        .arco-select-view {
+          height: 46px !important;
+          padding-left: 12px !important;
+          @apply bg-bg_color border-line_color_01;
+          
+          input {
+            &::placeholder {
+              @apply relative text-sm;
+            }
+          }
+    
+          .country-render-format {
+            height: 46px !important;
+          }
+        }
+      }
+      
+      .basic-information-requirement::before {
+        content: ' ';
+        @apply w-1 h-1 bg-brand_color absolute left-0 top-2 rounded-full;
+      }
+    
+      .basic-information-photoaddress {
+        @apply relative;
+
+        width: 343px !important;
+        height: 200px !important;
+
+        .arco-form-message {
+          @apply visible flex items-center justify-center;
+        }
+
+        .basic-information-close {
+          @apply absolute -top-1.5 -right-1.5 z-10;
+
+          svg {
+            @apply text-lg;
+          }
+        }
+
+      }
+      
+      
+      
+      .arco-form-item-status-error {
+        .arco-select-view {
+          @apply border-warning_color bg-bg_color;
+        }
+  
+        .arco-select-view:hover {
+          @apply bg-bg_color border-warning_color !important;
+        }
+      } 
+  
+      .arco-form-item-error {
+        .arco-picker:hover, .arco-picker {
+          @apply bg-bg_color border-warning_color !important;
+        }
+      }
+    
+      .basic-information-tip {
+        /* border-dashed */
+        @apply font-medium pl-6  text-text_color_03 h-80;
+      
+        span {
+          @apply text-warning_color;
+        }
+      }
+    }
+  
+    .verified-submit {
+      @apply flex justify-center mt-10;
+    
+      .verified-go-back {
+        @apply w-80 h-12 rounded text-base font-medium flex justify-center items-center text-text_color_05;
+      }
+    
+      .verified-go-submit {
+        @apply w-80 ml-6 h-12 text-base font-medium  flex justify-center items-center text-button_text_02;
+      }
+    }
+  
+    .arco-form-label-item {
+      label {
+        @apply flex items-center;
+      }
+    }
+  
+    .arco-picker-size-default {
+      @apply w-full;
+    }
+  
+  }
+}

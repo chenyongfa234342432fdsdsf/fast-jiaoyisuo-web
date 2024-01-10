@@ -1,0 +1,11 @@
+:local(.scope) { 
+  .paymethods-icon {
+    svg {
+      @apply w-4 h-2 m-0.5;
+    }
+  }
+
+  .offset {
+    top: 5.5px;
+  }
+}

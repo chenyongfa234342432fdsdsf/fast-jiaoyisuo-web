@@ -1,0 +1,52 @@
+:local(.container) { 
+  @apply flex;
+  /* stylelint-disable-next-line selector-class-pattern */
+  .applications-uploads {
+    @apply flex;
+
+    .upload-trigger-tips {
+      @apply text-xs pl-4;
+    }
+    
+    .upload-trigger-type {
+      @apply mt-6 text-warning_color;
+    }
+    
+    .upload-trigger-delete {
+      @apply text-brand_color mt-16;
+    }
+
+    .upload-trigger-content {
+      @apply flex;
+    }
+  }
+
+  .upload-trigger-picture {
+    @apply bg-transparent w-36 h-36 flex flex-col items-center justify-center border-dashed	border border-line_color_03 text-base;
+    
+    .upload-trigger-video {
+      @apply w-36 h-36 relative;
+      
+      video {
+        @apply w-36 h-36 object-fill;
+      }
+      
+      .upload-trigger-pannel {
+        @apply absolute w-36 h-36 top-0 left-0;
+      }
+    }
+    
+    .upload-trigger-handle {
+      @apply font-bold mt-4;
+    }
+
+  }
+  
+  .upload-trigger-container-video {
+    @apply w-96 h-96 relative;
+
+    video {
+      @apply w-96 h-96 object-fill;
+    }
+  }
+}

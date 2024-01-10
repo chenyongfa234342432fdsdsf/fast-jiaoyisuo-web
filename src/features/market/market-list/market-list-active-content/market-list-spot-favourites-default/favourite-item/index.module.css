@@ -1,0 +1,35 @@
+:local(.scoped) {
+  width: 276px;
+  @apply flex flex-col bg-card_bg_color_01 rounded h-32 px-4 py-6;
+
+  > * {
+    @apply flex flex-row items-center justify-between;
+  }
+
+  .arco-checkbox {
+    @apply m-0;
+  }
+
+  .arco-checkbox-checked {
+    .arco-checkbox-mask {
+      @apply bg-brand_color;
+    }
+  }
+
+  .arco-checkbox-mask {
+    @apply w-5 h-5 flex justify-center items-center;
+  
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .coin-logo {
+    @apply w-8 h-8;
+
+    img {
+      @apply rounded-full;
+    }
+  }
+}

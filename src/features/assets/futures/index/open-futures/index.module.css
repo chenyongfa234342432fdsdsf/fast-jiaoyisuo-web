@@ -1,0 +1,29 @@
+:local(.open-futures-root) {
+  @apply w-full flex flex-col items-center;
+
+  .open-futures-wrap {
+    width: 500px;
+    @apply flex flex-col items-center;
+  }
+
+  .open-icon {
+    @apply mt-8;
+
+    svg {
+      width: 66px;
+      height: 68px;
+    }
+  }
+
+  .open-title {
+    @apply text-xl font-medium text-text_color_01 mt-6 mb-2;
+  }
+
+  .open-text {
+    @apply text-sm leading-6 text-text_color_02 mb-6;
+  }
+
+  .open-btn {
+    width: 380px;
+  }
+}

@@ -1,0 +1,35 @@
+:local(.trade-pair-assets-wrapper) {
+  @apply h-full flex flex-col py-2.5 pl-4 pr-7;
+
+  .assets-item {
+    @apply w-full flex flex-row items-center justify-between text-text_color_01 mb-3;
+
+    .title {
+      @apply text-sm font-medium
+    }
+
+    .header-right {
+      @apply flex flex-row items-center;
+
+      .right-btn {
+        @apply h-6 ml-2.5 text-xs px-4;
+      }
+
+      .right-btn:hover {
+        @apply bg-button_hover_01
+      }
+    }
+
+    .coin-name {
+      @apply text-xs
+    }
+
+    .available {
+      @apply text-xs text-text_color_02  ml-1
+    }
+
+    .num {
+      @apply text-xs w-3/5 text-end overflow-hidden overflow-ellipsis whitespace-nowrap
+    }
+  }
+}

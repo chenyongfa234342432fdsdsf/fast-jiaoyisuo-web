@@ -1,0 +1,118 @@
+:local(.scoped) {
+  .inmail-header-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @apply px-10 flex justify-between;
+
+    .title {
+      label {
+        font-size: 32px;
+        @apply text-text_color_01 font-medium;
+      }
+    }
+
+    .settings {
+      @apply flex items-center;
+
+      .hide-read {
+        .icon-wrap {
+          @apply w-4 h-4;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        .checkbox-label {
+          @apply ml-2 text-text_color_02;
+        }
+      }
+
+      .all-read, .more {
+        @apply ml-6 w-5 h-5;
+
+        svg {
+          @apply w-5 h-5 text-xl;
+        }
+      }
+
+      .setting {
+        @apply mt-1 ml-6 w-6 h-6;
+
+        .setting-icon {
+          @apply w-5 h-5;
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+
+      .all-read-icon {
+        svg {
+          @apply text-brand_color;
+        }
+      }
+    }
+  }
+}
+
+:local(.inmail-modal) {
+  width: 360px;
+
+  .inmail-modal-content {
+    @apply flex flex-col items-center justify-center relative;
+
+    .inmail-modal-close-icon {
+      @apply absolute top-0 right-0 w-5 h-5;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .inmail-modal-icon {
+      @apply w-20 h-20;
+
+      svg {
+        @apply w-20 h-20;
+      }
+    }
+
+    .inmail-modal-text {
+      @apply mt-6 text-sm font-normal text-center text-text_color_01;
+    }
+  }
+
+  .arco-modal-footer {
+    @apply mt-6;
+
+    .inmail-modal-footer-left, .inmail-modal-footer-right {
+      width: 140px;
+      @apply h-10 rounded text-sm text-center flex items-center justify-center cursor-pointer font-medium;
+    }
+  
+    .inmail-modal-footer-left {
+      border: 1px solid var(--line_color_01);
+      @apply text-text_color_02;
+    }
+  
+    .inmail-modal-footer-right {
+      @apply bg-brand_color text-button_text_02;
+    }
+  }
+}
+
+:local(.setting-tooltip-wrap) {
+  .arco-tooltip-content {
+    @apply border-none !important;
+  }
+
+  .setting-tooltip {
+    @apply flex items-center;
+  
+    .setting-tooltip-text {
+      @apply mr-2 text-xs text-button_text_01;
+    }
+  }
+}

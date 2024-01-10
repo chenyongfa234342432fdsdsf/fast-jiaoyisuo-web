@@ -1,0 +1,262 @@
+:local(.scoped) {
+  @apply flex-1 bg-bg_color;
+
+  .order-book-wrap {
+    @apply flex flex-col justify-center;
+
+    .order-book-header {
+      box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+      @apply flex justify-center bg-bg_color z-1;
+
+      .order-book-header-wrap {
+        width: 1200px;
+        @apply flex items-center h-14;
+
+        .arco-breadcrumb-item {
+          label {
+            @apply cursor-pointer;
+          }
+
+        }
+
+        .arco-breadcrumb-item-separator {
+          @apply mr-3;
+        }
+      }
+
+    }
+
+    .order-book-container {
+      @apply flex justify-center bg-bg_color;
+
+      .order-book-container-wrap {
+        width: 1200px;
+
+        .title {
+          @apply flex items-center my-10;
+
+          .text {
+            label {
+              font-size: 36px;
+              @apply font-medium text-text_color_01;
+            }
+          }
+
+          .currency {
+            @apply ml-8;
+
+            label {
+              font-size: 20px;
+              @apply font-medium text-text_color_01;
+            }
+
+            .arco-select {
+              .arco-select-view {
+                .arco-select-view-value {
+                  font-size: 20px;
+                  @apply font-medium text-text_color_01
+                }
+              }
+
+              .arco-select-suffix-icon {
+                @apply ml-1;
+
+                svg {
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .menu {
+            @apply flex-1 flex justify-end;
+
+            .arco-select-view {
+              height: 30px;
+              line-height: 30px;
+              border-color: transparent!important;
+              @apply bg-bg_sr_color !important;
+            }
+
+            .deep-handicap, .merge-depth {
+              @apply mr-10;
+
+              label {
+                font-size: 14px;
+                @apply text-text_color_01 mr-2;
+              }
+            }
+
+            .back {
+              @apply flex items-center;
+
+              & > div {
+                margin-top: 1px;
+              }
+
+              label {
+                @apply text-text_color_03 mr-1 cursor-pointer;
+
+                &:hover {
+                  @apply text-brand_color;
+                }
+              }
+            }
+          }
+        }
+
+        .content {
+          @apply flex;
+
+          .buy-content, .sell-content {
+            border: 1px solid var(--line_color_02);
+            @apply flex flex-col flex-1 rounded;
+
+            .header {
+              @apply p-4;
+
+              .header-title {
+                label {
+                  font-size: 16px;
+                  @apply text-text_color_01 font-medium;
+                }
+              }
+
+              .table-header {
+                @apply flex mt-5;
+
+                .buy-and-sell, .price, .amount, .turnover, .total, .grand-total {
+                  label {
+                    font-size: 14px;
+                    @apply font-normal text-text_color_03;
+                  }
+                }
+
+                .buy-and-sell {
+                  @apply w-14;
+                }
+
+                .price, .amount, .turnover, .total, .grand-total {
+                  @apply ml-1;
+                }
+              }
+            }
+
+            .container {
+              .container-wrap {
+                .cell {
+                  @apply px-4 relative overflow-hidden;
+
+                  .cell-wrap {
+                    @apply flex py-2;
+
+                    .buy-and-sell, .price, .amount, .turnover, .total, .grand-total {
+                      label {
+                        font-size: 14px;
+                        line-height: 22px;
+                        @apply font-normal text-text_color_01;
+                      }
+                    }
+
+                    .buy-and-sell {
+                      @apply w-14;
+                    }
+
+                    .price, .amount, .turnover, .total, .grand-total {
+                      @apply ml-1;
+                    }
+                  }
+
+                  .progress {
+                    @apply absolute inset-y-0 right-0;
+                  }
+
+                  &:last-child {
+                    @apply mb-0;
+                  }
+
+                  &:hover {
+                    background: var(--bg_color_03);
+                    @apply cursor-pointer;
+                  }
+                }
+              }
+            }
+          }
+
+          .buy-content {
+            @apply mr-5;
+
+            .container {
+              .container-wrap {
+                .cell {
+                  .cell-wrap {
+                    .buy-and-sell {
+                      label {
+                        @apply text-buy_up_color;
+                      }
+                    }
+                  }
+                }
+
+                .progress {
+                  @apply bg-buy_up_color_special_02;
+                }
+              }
+            }
+          }
+
+          .sell-content {
+            @apply ml-5;
+
+            .container {
+              .container-wrap {
+                .cell {
+                  .cell-wrap {
+                    .buy-and-sell {
+                      label {
+                        @apply text-sell_down_color;
+                      }
+                    }
+                  }
+                }
+
+                .progress {
+                  @apply bg-sell_down_color_special_02;
+                }
+              }
+            }
+          }
+
+          .price, .amount, .turnover, .total, .grand-total {
+            @apply flex flex-1 justify-end items-center;
+
+            label {
+              @apply text-xs;
+            }
+          }
+
+          .buy-and-sell {
+            @apply flex justify-start items-center;
+          }
+        }
+      }
+    }
+  }
+}
+
+:local(.order-book-currency-search) {
+  @apply p-2;
+
+  input {
+    height: 30px;
+  }
+}
+
+:local(.order-book-no-result) {
+  @apply flex flex-col items-center justify-center;
+
+  label {
+    @apply text-text_color_03;
+  }
+}

@@ -1,0 +1,75 @@
+:local(.container) { 
+  .area-code-select {
+    @apply h-96;
+  }
+  
+  .country-render-format {
+    @apply flex;
+
+    img {
+      @apply rounded-full w-6 h-6;
+    }
+  }
+  
+  .country-render-encode {
+    @apply ml-2;
+  }
+ 
+  .arco-select-popup-inner {
+    @apply max-h-96;
+  }
+  
+  .useful-expressions {
+    @apply px-3 inline-block;
+    
+    .country-input {
+      @apply mt-3;
+
+      .arco-input {
+        height: 46px;
+      }
+    }
+
+    .useful-expressions-item {
+      @apply h-12 flex items-center text-base font-medium border-line_color_01 border-b pl-3;
+    }
+  }
+
+  .area-code-select {
+    li {
+      @apply h-12 flex items-center justify-between;
+
+      img {
+        @apply mr-1 rounded-full w-6 h-6;
+      }
+    }
+  
+    .country-select-label {
+      @apply flex items-center text-sm;
+
+      .country-select-nothandle {
+        @apply ml-1 px-3 py-0.5 rounded-sm text-text_color_02 bg-bg_button_disabled text-xs;
+      }
+    }
+    
+    
+    .country-select-shortname {
+      @apply flex items-center text-sm;
+  
+      
+      div:last-child {
+        @apply w-8 ml-1;
+      }
+    }
+  
+    .country-select-img {
+      @apply w-10 h-6 mr-2 !important;
+    }
+  
+    .country-select-nodata {
+      @apply flex justify-center mt-3 font-medium;
+    }
+  }
+  
+  
+}

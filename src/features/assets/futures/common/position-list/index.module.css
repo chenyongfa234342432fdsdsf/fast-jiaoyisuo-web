@@ -1,0 +1,142 @@
+:local(.futures-position-table) {
+  overflow-y: auto;
+  @apply flex flex-col;
+
+  /* 无数据时隐藏滚动条 */
+  &.no-data {
+    .arco-table-content-inner,
+    .arco-table-body {
+      @apply h-full overflow-hidden;
+
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+    }
+
+    .arco-table table {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .arco-table-cell-wrap-value .navigation-link:hover {
+    @apply text-brand_color;
+  }
+
+  &.auto-width {
+    .arco-table {
+      .arco-table-td {
+        .arco-table-cell {
+          .arco-table-cell-wrap-value {
+            >div {
+              @apply whitespace-nowrap overflow-x-hidden;
+            }
+          }
+        }
+      }
+
+      .arco-table-th {
+        .arco-table-th-item {
+          .arco-table-th-item-title {
+            @apply whitespace-nowrap overflow-x-hidden inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .arco-table-header {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--card_bg_color_01);
+    }
+  }
+
+  .arco-table-col-fixed-right-first::after {
+    @apply bottom-0;
+  }
+
+  .arco-spin {
+    @apply block;
+  }
+
+  .tips-text {
+    @apply border-text_color_03 border-b border-dashed cursor-pointer;
+  }
+
+  .tips-wrap {
+    @apply flex-1 text-xs py-2 px-1;
+  }
+
+  .arco-table-body .arco-table-col-fixed-right {
+    @apply bg-bg_color;
+  }
+
+  .arco-table-body {
+    @apply bg-bg_color;
+
+    /* 不设为透明是因为透明会出现遮挡 */
+    .arco-table-td {
+      @apply bg-bg_color;
+    }
+  }
+
+  .icon {
+    @apply ml-2;
+
+    svg {
+      @apply text-xs;
+    }
+  }
+
+  .list {
+    @apply flex flex-col;
+
+    .list-item {
+      @apply flex flex-row items-center;
+
+      .coin-icon {
+        @apply w-8 h-8 mr-4
+        }
+
+      .arco-btn {
+        height: 38px;
+        @apply text-text_color_01 text-sm px-6 !important
+        }
+    }
+    
+  }
+
+  &.auto-width {
+    .arco-table {
+      .arco-table-td {
+        .arco-table-cell {
+          .arco-table-cell-wrap-value {
+            >div {
+              @apply whitespace-nowrap overflow-x-hidden;
+            }
+          }
+        }
+      }
+
+      .arco-table-th {
+        .arco-table-th-item {
+          .arco-table-th-item-title {
+            @apply whitespace-nowrap overflow-x-hidden inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  /* .empty {
+    @apply mt-16
+    } */
+}
+
+:local(.more-popup-wrapper) {
+  .arco-popover-content {
+    @apply px-0;
+  }
+}

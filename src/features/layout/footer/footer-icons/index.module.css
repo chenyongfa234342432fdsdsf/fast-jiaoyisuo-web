@@ -1,0 +1,9 @@
+:local(.scoped) {
+  font-size: 20px;
+  @apply grid grid-cols-5 mt-6 gap-5 cursor-pointer;
+
+  img {
+    @apply w-5 h-5;
+  }
+      
+}

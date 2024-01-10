@@ -1,0 +1,36 @@
+/* This CSS is common to all pages */
+@import './preflight.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './global.css';
+@import './arco.css';
+@import './arcoplate.css';
+
+.layout-wrap {
+  @apply bg-bg_color min-h-screen flex flex-col;
+
+  .arco-layout-content {
+    @apply flex flex-col;
+
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.layout-fullscreen-wrap {
+  @apply min-h-screen flex flex-col;
+
+  margin: 0;
+
+  .arco-layout-content {
+    @apply flex flex-col;
+  }
+
+  .arco-layout-content > div {
+    @apply flex-1;
+  }
+
+  .arco-btn-primary:not(.arco-btn-disabled) {
+    @apply bg-brand_color hover:bg-brand_color_hover;
+  }
+}

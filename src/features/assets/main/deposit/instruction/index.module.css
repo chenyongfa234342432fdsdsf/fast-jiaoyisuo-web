@@ -1,0 +1,21 @@
+:local(.scoped) {
+  .remind-wrap {
+    @apply w-full flex px-3 py-2 bg-bg_sr_color rounded;
+    
+    min-height: 40px;
+    
+    .remind-info {
+      @apply pr-4 w-full text-xs text-text_color_01 break-words whitespace-pre-wrap;
+    
+      line-height: 22px;
+    
+      p, span {
+        @apply break-words whitespace-pre-wrap;
+      }
+    }
+
+    .msg {
+      @apply w-3 h-3 mt-1 mr-2;
+    }
+  }
+}

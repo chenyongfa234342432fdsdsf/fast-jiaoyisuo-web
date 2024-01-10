@@ -1,0 +1,30 @@
+:local(.assets-left-wrapper) {
+  @apply flex flex-col mt-6 text-text_color_01 mr-32;
+
+  min-width: 380px;
+  max-width: 486px;
+}
+
+:local(.assets-right-wrapper) {
+  @apply flex flex-col mt-6 pr-4;
+
+  width: 380px;
+}
+
+.local(.assets-sub-title) {
+  @apply flex flex-1 mb-8;
+
+  .num {
+    @apply flex justify-center items-center w-6 h-6 bg-brand_color rounded-[50%] text-lg font-bold text-button_text_01;
+
+    line-height: 22px;
+  }
+
+  .info {
+    @apply ml-2 font-semibold text-base text-text_color_01;
+  }
+
+  .svg {
+    @apply w-6 h-6;
+  }
+}

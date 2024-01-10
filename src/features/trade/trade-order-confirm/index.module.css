@@ -1,0 +1,47 @@
+:local(.scoped) {
+  .wrap {
+    &.symbol-wrap {
+      @apply mb-4 text-base;
+
+      .symbol {
+        @apply text-text_color_01;
+      }
+
+      .buy-text {
+        @apply text-buy_up_color;
+      }
+
+      .sell-text {
+        @apply text-sell_down_color;
+
+      }
+    }
+    @apply flex justify-between mb-2.5;
+
+    .label {
+      @apply text-text_color_02;
+    }
+
+    .value {
+      @apply text-text_color_01;
+    }
+
+
+
+
+  }
+
+  .setting {
+    @apply mt-5;
+
+    .tips-wrap {
+
+      @apply text-sm text-text_color_03;
+
+      .tips {
+        @apply text-brand_color;
+      }
+    }
+  }
+
+}

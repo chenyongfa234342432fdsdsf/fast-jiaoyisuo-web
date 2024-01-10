@@ -1,0 +1,11 @@
+:local(.scoped) {
+  @apply cursor-pointer flex flex-row items-center;
+
+  > * {
+    @apply text-text_color_03;
+  }
+
+  svg {
+    @apply w-4 h-4;
+  }
+}

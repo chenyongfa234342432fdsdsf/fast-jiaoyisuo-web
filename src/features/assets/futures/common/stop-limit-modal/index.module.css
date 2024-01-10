@@ -1,0 +1,47 @@
+:local(.stop-limit-modal-root) {
+  /* height: 75%; */
+
+  .arco-select-view {
+    @apply h-10 bg-bg_sr_color border-0 !important;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply h-10 bg-bg_sr_color border-transparent !important;
+
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }  
+  }
+
+  .stop-limit-modal-wrapper {
+    @apply flex flex-col h-full;
+
+    .modal-tabs {
+      @apply w-full p-4 pb-0 bg-card_bg_color_03;
+  
+      .tabs-cell {
+        @apply w-full bg-card_bg_color_01 p-0.5 rounded flex items-center cursor-pointer;
+  
+        .tab-cell {
+          @apply w-1/2 h-full flex items-center justify-center text-sm text-text_color_02;
+  
+          line-height: 30px;
+        }
+  
+        .active-tab-cell {
+          @apply bg-card_bg_color_03 rounded text-text_color_01;
+        }
+      }
+    }
+
+    .stop-limit-content {
+      height: 504px;
+      @apply px-8;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+:local(.scoped) {
+  .user-anti-phishing-code-wrap {
+    .arco-form-item {
+      @apply mb-1 mt-6;
+    }
+
+    .user-tips {
+      @apply mb-2;
+    }
+
+    .text {
+      @apply mb-6;
+
+      label {
+        @apply text-text_color_03 text-xs leading-3 font-normal break-all;
+      }
+    }
+
+    .card {
+      border: 0.5px solid var(--line_color_01);
+      @apply rounded;
+
+      .card-wrap {
+        @apply p-4;
+
+        .header {
+          @apply flex;
+
+          .icon {
+            @apply w-10 h-10 mr-2 rounded-full overflow-hidden;
+          }
+
+          .name, .code {
+            @apply leading-10;
+          }
+
+          .name {
+            label {
+              @apply text-sm font-medium text-brand_color;
+            }
+          }
+
+          .code {
+            @apply flex-1 text-right truncate ml-1;
+
+            label {
+              border: 0.5px solid var(--line_color_01);
+              @apply p-1 text-xs font-normal text-text_color_03 rounded;
+
+              span {
+                @apply text-text_color_01;
+              }
+            }
+          }
+        }
+
+        .main {
+          @apply w-full mt-6;
+
+          span {
+            @apply w-full mb-2 h-3 bg-bg_sr_color block;
+
+            &:nth-child(3) {
+              @apply w-3/5;
+            }
+          }
+        }
+
+        .footer {
+          @apply mt-6;
+
+          p {
+            font-size: 13px;
+            @apply leading-5 font-normal text-text_color_03;
+
+            label {
+              @apply text-brand_color;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

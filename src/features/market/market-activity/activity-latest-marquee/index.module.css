@@ -1,0 +1,122 @@
+:local(.empty-wrapper) {
+  /* position: sticky;
+  position: -webkit-sticky; Safari */
+  bottom: 0;
+  height: 60px;
+  @apply bg-bg_color sticky;
+}
+
+:local(.scoped) {
+  bottom: 0;
+  height: 60px;
+  @apply bg-brand_color_special_02 sticky;
+  
+  .activity-wrap-marquee {
+    width: 1200px;
+    @apply m-auto;
+
+    .content-wrap {
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .content-wrap {
+      @apply flex flex-1 px-6 cursor-pointer;
+  
+      .item-time {
+        @apply w-16;
+      }
+  
+      .item-name {
+        @apply flex-1;
+      }
+  
+      .item-price, .item-value {
+        @apply flex-1 text-right;
+      } 
+  
+      .item-operation {
+        @apply ml-1 flex justify-end items-center cursor-pointer flex-1;
+  
+        .operation-text {
+          img {
+            border-radius: 50%;
+          }
+  
+          svg {
+            @apply w-4 h-4;
+          }
+        }
+      }
+    }
+  }
+
+  .drawer-header {
+    width: 1200px;
+    @apply flex justify-between m-auto font-semibold text-xl;
+  }
+
+  .activity-header {
+    @apply h-9 flex mt-6 px-6 bg-card_bg_color_02 rounded-lg box-border items-center text-xs text-text_color_02 !important;
+  }
+
+  .content-axis-wrap {
+    height: 42px;
+    @apply py-6 pr-6 flex flex-1 cursor-pointer text-sm text-text_color_01;
+
+    .item-time {
+      @apply w-16;
+    }
+
+    .item-name {
+      @apply flex-1;
+    }
+
+    .item-price, .item-value {
+      @apply flex-1 text-right;
+    } 
+
+    .item-operation {
+      @apply ml-1 flex justify-end items-center cursor-pointer flex-1;
+
+      .operation-text {
+        @apply mx-2;
+
+        img {
+          border-radius: 50%;
+        }
+
+        svg {
+          @apply w-4 h-4;
+        }
+      }
+    }
+
+    .warning-text {
+      @apply text-warning_color;
+    }
+
+    .success-text {
+      @apply text-success_color;
+    }
+  }
+
+  .arco-drawer-header {
+    width: 1200px;
+    height: 122px;
+    @apply m-auto border-none pt-8 px-0;
+  }
+
+  .arco-drawer-header {
+    width: 1200px;
+    height: 122px;
+    @apply m-auto border-none pt-8 px-0;
+  }
+  
+  .arco-drawer-content {
+    width: auto;
+    @apply m-auto p-0;
+  }
+}
+
+

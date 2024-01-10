@@ -1,0 +1,14 @@
+:local(.scoped) {
+  .search-tradepair {
+    @apply flex mb-8
+    }
+
+  div.search-tradepair .arco-select, div.search-tradepair .arco-select .arco-select-view {
+    @apply h-10 rounded border border-line_color_02;
+    
+    width: 180px;
+    height: 46px;
+    line-height: 46px;
+    background: none;
+  }
+}

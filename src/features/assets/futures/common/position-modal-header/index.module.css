@@ -1,0 +1,12 @@
+:local(.position-modal-header-root) {
+  @apply px-0 w-full flex flex-col border-b border-line_color_02 bg-card_bg_color_03 rounded-tl-lg rounded-tr-lg;
+
+  .position-modal-header-title {
+    line-height: 30px;
+    @apply flex items-center justify-between text-xl text-text_color_01 font-medium;
+  }
+
+  .name-cell {
+    @apply flex items-center mt-2 mb-4;
+  }
+}

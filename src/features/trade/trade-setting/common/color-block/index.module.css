@@ -1,0 +1,46 @@
+:local(.scoped) {
+  .color-block-settings {
+    .container {
+      @apply flex mt-6;
+  
+      .options {
+        border: 1px solid var(--card_bg_color_01);
+        @apply p-2 flex-1 bg-card_bg_color_01 cursor-pointer rounded-lg;
+  
+        label {
+          @apply cursor-pointer;
+        }
+  
+        &:first-child {
+          @apply mr-4;
+        }
+  
+        &:last-child {
+          @apply ml-4;
+        }
+  
+        .options-wrap {
+          @apply flex flex-col justify-between p-4 bg-card_bg_color_03 rounded-lg relative h-full;
+          
+          .image {
+            margin-bottom: 10px;
+          }
+
+          .checked-box {
+            @apply text-center;
+
+            .arco-checkbox-text {
+              font-size: 14px;
+              @apply font-normal text-text_color_01;
+            }
+          }
+        }
+  
+      }
+  
+      .checked {
+        border: 1px solid var(--brand_color);
+      }
+    }
+  }
+}

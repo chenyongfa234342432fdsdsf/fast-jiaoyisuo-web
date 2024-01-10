@@ -1,0 +1,33 @@
+:local(.scoped) {
+  .user-safety-items-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .checked-box {
+        @apply mt-8 flex flex-col;
+
+        .items {
+          @apply flex;
+
+          .icon {
+            @apply mr-2;
+
+            svg {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .arco-checkbox {
+          font-size: 14px;
+          @apply mb-6 text-text_color_01;
+        }
+
+        .arco-btn {
+          height: 46px;
+          @apply text-base leading-4 font-normal;
+        }
+      }
+    }
+  }
+}

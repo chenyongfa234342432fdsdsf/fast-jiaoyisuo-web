@@ -1,0 +1,71 @@
+:local(.scoped) {}
+
+:local(.c2c-order-book-header-wrap) {
+  @apply mb-4;
+
+  .c2c-order-book-header-wrap {
+    @apply flex;
+
+    .arco-btn {
+      @apply ml-2 h-10;
+    }
+  }
+}
+
+:local(.c2c-order-book-table-header) {
+  .c2c-order-book-table-header-wrap {
+    @apply flex;
+
+    .gear, .price, .quantity {
+      @apply flex-1;
+
+      label {
+        font-size: 12px;
+        @apply text-text_color_03 font-normal;
+      }
+    }
+
+    .price, .quantity {
+      @apply text-right;
+    }
+  }
+}
+
+:local(.c2c-order-book-container-wrap) {
+  @apply my-2;
+
+  .c2c-order-book-container-wrap {
+    .buy, .sell {
+      @apply flex h-5 leading-5;
+
+      .gear, .price, .quantity {
+        @apply flex-1;
+  
+        label {
+          font-size: 12px;
+          @apply text-text_color_03 font-normal;
+        }
+      }
+
+      .price, .quantity {
+        @apply text-right;
+      }
+    }
+
+    .buy {
+      .gear, .price {
+        label {
+          @apply text-buy_up_color;
+        }
+      }
+    }
+
+    .sell {
+      .gear, .price {
+        label {
+          @apply text-sell_down_color;
+        }
+      }
+    }
+  }
+}

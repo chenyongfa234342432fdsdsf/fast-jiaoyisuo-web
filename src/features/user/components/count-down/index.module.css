@@ -1,0 +1,11 @@
+:local(.scoped) {
+  .user-count-down-btn-wrap {
+    @apply flex justify-center items-center;
+
+    button {
+      z-index: 4;
+      @apply text-base leading-4 font-normal text-brand_color h-10;
+    }
+  }
+}
+  

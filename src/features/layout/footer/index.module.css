@@ -1,0 +1,23 @@
+:local(.scoped) {
+  width: 1200px !important;
+  @apply w-full flex flex-col bg-bg_color mx-auto px-8 xl:px-0;
+  
+  .footer-wrap {
+    @apply flex flex-row pt-24 pb-12 justify-between;
+  
+    .footer-logo {
+      @apply flex flex-col text-lg text-brand_color font-semibold;
+    }
+  
+    .menu-list {
+      @apply mb-2.5 last:mb-0 text-sm text-text_color_02
+      }
+  }
+  
+  .footer-bootom {
+    @apply h-20 border-t border-line_color_02 flex items-center justify-center text-sm text-text_color_03 font-semibold
+    }
+}
+  
+  
+  

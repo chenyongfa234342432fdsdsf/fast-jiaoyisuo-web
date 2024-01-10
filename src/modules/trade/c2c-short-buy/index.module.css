@@ -1,0 +1,19 @@
+:local(.fixeds) {
+  @apply fixed top-14 w-full z-10;
+}
+
+:local(.scoped) {
+  .buy-title {
+    width: 1200px;
+    @apply h-40 flex items-center justify-between font-medium m-auto my-0;
+
+    .buy-title-header {
+      @apply text-3xl;
+    }
+
+    .buy-title-detail {
+      @apply w-96 text-text_color_03 text-center;
+    }
+  }
+
+}

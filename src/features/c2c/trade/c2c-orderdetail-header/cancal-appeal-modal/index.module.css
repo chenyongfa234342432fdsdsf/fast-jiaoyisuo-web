@@ -1,0 +1,43 @@
+
+
+:local(.cancal-trade-modal) { 
+  width: 444px;
+  @apply rounded-lg p-8;
+
+  .arco-select-popup {
+    @apply border-none py-2 bg-card_bg_color_03 !important;
+    
+    .arco-select-option {
+      height: 38px  !important;
+      @apply flex items-center;
+    }
+  }
+
+  .arco-modal-header {
+    @apply h-auto p-0 !important;
+  }
+  
+  .arco-modal-title {
+    @apply flex text-text_color_01 font-medium text-xl;
+  }
+  
+  .arco-modal-close-icon {
+    @apply text-base;
+
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+  
+  .arco-modal-content {
+    @apply px-0 pb-0 pt-4 !important;
+  }
+  
+  .cancal-trade-button {
+    @apply w-full h-10 flex justify-between items-center  rounded;
+    
+    .cancal-trade-ok {
+      @apply flex w-full justify-center items-center text-button_text_02  h-10;
+    }
+  }
+}

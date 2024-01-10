@@ -1,0 +1,48 @@
+:local(.stop-limit-wrapper) {
+  .header {
+    @apply flex items-center justify-between;
+
+    .future-info {
+      @apply flex;
+
+      .future-name {
+        @apply font-medium mr-2;
+      }
+
+      .future-group {
+        @apply flex items-center rounded-sm text-xs px-2 bg-brand_color_special_02 text-brand_color;
+      }
+    }
+  }
+}
+
+:local(.stop-limit-form-wrapper) {
+  @apply p-4 rounded-lg bg-card_bg_color_01 mb-4;
+
+  .form-item {
+    @apply flex items-center justify-between mb-2;
+
+    .label {
+      @apply text-text_color_02;
+    }
+
+    .input-box {
+      @apply rounded;
+
+      &.input-box-disabled {
+        @apply bg-bg_button_disabled;
+
+        .arco-input-inner-wrapper,
+        .arc-select,
+        .arco-select-view {
+          @apply border-0;
+
+          height: 30px;
+          font-size: 14px;
+          line-height: 30px;
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}

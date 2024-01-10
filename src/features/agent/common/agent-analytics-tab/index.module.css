@@ -1,0 +1,20 @@
+:local(.scoped) {
+  .btn {
+    @apply px-5 rounded-full text-sm text-text_color_02 font-medium mr-3;
+
+    height: 42px;
+
+  }
+
+  .arco-btn-text:not(.arco-btn-disabled):not(.arco-btn-loading):hover {
+    @apply bg-transparent;
+  }
+
+  .arco-btn-secondary {
+    @apply text-button_text_02 bg-brand_color text-base !important;
+  }
+
+  .arco-btn-text {
+    @apply bg-none text-base;
+  }
+}

@@ -1,0 +1,16 @@
+:local(.scoped) {
+  .user-retrieve-reset-password-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .security {
+        @apply mt-4;
+
+
+        a {
+          @apply text-sm;
+        }
+      }
+    }
+  }
+}

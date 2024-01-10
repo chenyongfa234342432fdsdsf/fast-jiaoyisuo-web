@@ -1,0 +1,37 @@
+
+:local(.scope) {
+  .search-wrapper {
+    padding: 16px 16px 8px;
+  }
+
+  .option-row {
+    height: 42px;
+    @apply flex items-center cursor-pointer;
+    
+    &:hover {
+      @apply bg-bg_color_03;
+    }
+
+    .option-content {
+      @apply px-4;
+    }
+
+    .icon-wrapper {
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+    }
+  
+    .coin-wrapper {
+      @apply text-sm text-text_color_01 ml-2;
+    }
+
+  }
+
+  .selected {
+    @apply text-brand_color !important;
+  }
+
+}

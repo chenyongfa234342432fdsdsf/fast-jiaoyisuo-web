@@ -1,0 +1,128 @@
+:local(.scoped) {
+  .arco-modal-content {
+    @apply p-0 !important;
+  }
+
+  .arco-modal-close-icon {
+    top: 31px;
+
+    svg {
+      @apply text-base;
+    }
+  }
+
+  .arco-modal-header {
+    height: 78px;
+    border-bottom: 1px solid var(--line_color_02);
+  }
+
+  .modal-wrap {
+    @apply flex;
+
+    .left-height {
+      height: 22px;
+    }
+
+    .right-height {
+      height: 30px;
+    }
+
+    .main {
+      @apply flex justify-between items-center mt-4 gap-2;
+
+      .main-select {
+        height: 22px;
+        @apply flex items-center text-sm;
+
+        line-height: 22px;
+
+        .arco-checkbox {
+          @apply pl-0;
+        }
+      }
+
+      .select-title-wrap {
+        width: 203px;
+        @apply flex justify-between items-center cursor-pointer;
+      }
+
+      .main-select-title {
+        max-width: 182px;
+        @apply overflow-hidden whitespace-nowrap text-ellipsis;
+      }
+    }
+
+    .left-wrap {
+      width: 290px;
+      height: 495px;
+      border-right: 1px solid var(--line_color_02);
+      @apply p-8 box-border;
+
+      .main-title {
+        @apply text-base font-medium;
+      }
+
+      .next-icon {
+        svg {
+          @apply text-sm;
+        }
+      }
+    }
+
+    .right-wrap {
+      width: 364px;
+      height: 391px;
+
+      /* height: 358px; */
+      
+      @apply pt-8 box-border overflow-y-auto;
+
+      .ma-wrap {
+        @apply mx-8;
+      }
+
+      .input-wrap {
+        height: 30px;
+        @apply flex items-center;
+
+        input {
+          height: 30px;
+        }
+
+        .color {
+          width: 30px;
+          height: 30px;
+          @apply ml-2 rounded;
+        }
+
+        .arco-input-inner-wrapper {
+          @apply bg-bg_sr_color;
+        }
+      }
+
+      .des-title {
+        @apply text-text_color_01 text-sm mt-8;
+
+        line-height: 22px;
+      }
+
+      .des {
+        @apply text-xs text-text_color_02 mt-2;
+
+        line-height: 18px;
+      }
+
+      .oper {
+        width: 300px;
+        height: 40px;
+        @apply absolute bottom-8 flex justify-between items-center gap-5 mt-8;
+
+        .button {
+          height: 40px;
+          @apply flex-1 font-medium;
+        }
+      }
+    }
+  }
+
+}

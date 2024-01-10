@@ -1,0 +1,19 @@
+:local(.position-price-root) {
+  @apply flex flex-col my-6;
+
+  .price-item {
+    @apply flex items-center justify-between text-sm text-text_color_02 mb-4 last:mb-0;
+
+    .value {
+      @apply text-text_color_01;
+    }
+  }
+
+  .lates-price-item {
+    @apply cursor-pointer;
+
+    .value {
+      @apply text-brand_color;
+    }
+  }
+}

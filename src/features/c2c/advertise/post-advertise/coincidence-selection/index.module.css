@@ -1,0 +1,31 @@
+:local(.scoped) {
+  @apply mt-4;
+
+  > div:nth-child(2) {
+    span {
+      @apply cursor-pointer;
+    }
+    @apply flex-1 cursor-pointer;
+  }
+
+  > div:nth-child(3) {
+    color: var(--or-05);
+    @apply cursor-pointer font-medium;
+  }
+  @apply flex justify-between items-center;
+
+  .coincident-flex {
+    > div {
+      padding: 7px 22px;
+      color: var(--nc-05);
+      line-height: 22px;
+      @apply text-center font-medium cursor-pointer rounded mr-2.5 h-9;
+    }
+    @apply flex;
+  }
+
+  .coincident-index {
+    color: var(--nc-01) !important;
+    background-color: var(--nc-09);
+  }
+}

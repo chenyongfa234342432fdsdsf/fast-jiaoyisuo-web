@@ -1,0 +1,86 @@
+:local(.inmail-setting-main-wrap) {
+  @apply px-2 pt-8;
+
+  .arco-drawer-header {
+    height: 30px;
+    border-bottom: 1px solid transparent;
+
+    .arco-drawer-header-title {
+      @apply w-full;
+
+      .inmail-setting-drawer-icon {
+        @apply mt-0.5 w-5 h-5;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+  }
+
+  .list-wrap {
+    .title {
+      @apply text-base mb-6 mt-3;
+    }
+
+    .list {
+      @apply mb-5 text-sm flex justify-between;
+
+      .label {
+        .sub-label {
+          @apply text-text_color_03;
+        }
+      }
+
+      .value {
+        .icon-wrap {
+          @apply text-xl text-icon_color;
+        }
+      }
+    }
+
+  }
+
+  .inmail-list-wrap {
+    .value {
+      @apply flex gap-6;
+    }
+  }
+
+  .line {
+    border-top: 1px solid  var(--line_color_02);
+    @apply pt-5;
+  }
+
+  .tips {
+    @apply bg-brand_color_special_02 rounded flex items-center text-brand_color mb-5 py-3 px-4;
+
+    min-height: 38px;
+
+    .tipes-icon {
+      @apply w-3 h-3 pt-px;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .icon-wrap {
+      @apply mr-1 text-xs;
+    }
+  }
+
+  .inmail-setting-btn {
+    @apply flex;
+
+    .arco-btn {
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}

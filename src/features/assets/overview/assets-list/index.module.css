@@ -1,0 +1,37 @@
+:local(.assets-list-wrapper) {
+  .list-wrap {
+    @apply border-t border-line_color_02 pt-4;
+  }
+    
+  .list-item {
+    @apply flex justify-between my-3 p-2 h-16 text-base items-center cursor-pointer;
+
+    .asset-name {
+      @apply flex items-center text-text_color_01 font-medium;
+
+      svg {
+        @apply w-5 h-auto;
+      }
+    }
+
+    .asset-total {
+      @apply flex flex-col items-end;
+
+      .total-num {
+        @apply text-text_color_01 font-medium
+      }
+
+      .total-amount {
+        @apply text-sm mt-1 text-text_color_02
+      }
+    }
+
+    .arrow-icon {
+      @apply text-base ml-6;
+    }
+  }
+
+  .list-item:hover, .list-item:active {
+    @apply bg-card_bg_color_01;
+  }
+}

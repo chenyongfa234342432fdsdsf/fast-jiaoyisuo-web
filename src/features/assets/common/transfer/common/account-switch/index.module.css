@@ -1,0 +1,35 @@
+:local(.scope) {
+  .transfer-direction-wrap {
+    @apply flex;
+
+    .transfer-from, .transfer-to {
+      @apply flex-1;
+    }
+
+    .transfer-direction-icon {
+      margin-top: 28px;
+      @apply flex w-5 mx-3 justify-center items-center;
+    }
+
+    .account-switch {
+      .coin-switch-icon, .transfer-select-account {
+        transition: 0.25s all ease-in-out;
+      }
+  
+      &.left-reverse {
+        .coin-switch-icon, .transfer-select-account {
+          transform: translateX(230px);
+          transition: 0.25s all ease-in-out;
+        }
+      }
+  
+      &.right-reverse {
+        .coin-switch-icon, .transfer-select-account {
+          transform: translateX(-230px);
+          transition: 0.25s all ease-in-out;
+        }
+      }
+    }
+  }
+}
+  

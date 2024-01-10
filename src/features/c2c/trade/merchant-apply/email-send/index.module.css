@@ -1,0 +1,6 @@
+:local(.scope) {
+  .countdown-seconds,
+  .send-email-code {
+    @apply text-brand_color;
+  }
+}

@@ -1,0 +1,40 @@
+:local(.scoped) {
+  .c2c-payment-wrap {
+    .header {
+      @apply flex items-center mb-3 px-3;
+
+      .title {
+        @apply flex-1;
+
+        label {
+          &:first-child {
+            font-size: 16px;
+            @apply text-text_color_01 font-medium mr-2;
+          }
+
+          &:last-child {
+            font-size: 12px;
+            @apply text-text_color_03 font-normal;
+          }
+        }
+      }
+
+      .add {
+        .arco-btn {
+          @apply p-0;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+
+    }
+
+    .operate {
+      .arco-btn {
+        @apply mr-3;
+      }
+    }
+  }
+}

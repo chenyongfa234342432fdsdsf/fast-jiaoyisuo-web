@@ -1,0 +1,29 @@
+:local(.payment-type-info-root) {
+  @apply flex items-center;
+
+  .more-img {
+    @apply w-2 h-2;
+
+    img {
+      @apply w-2 h-2;
+    }
+  }
+}
+
+:local(.payment-content) {
+  .payment-item {
+    @apply flex items-center justify-center;
+
+    .line {
+      @apply w-0.5 h-2.5 mr-1 rounded-2xl;
+    }
+  }
+
+  .payment-item-gray {
+    @apply text-text_color_04;
+
+    .line {
+      @apply bg-text_color_04;
+    }
+  }
+}

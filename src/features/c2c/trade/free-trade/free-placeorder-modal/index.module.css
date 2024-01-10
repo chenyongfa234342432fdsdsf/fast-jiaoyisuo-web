@@ -1,0 +1,340 @@
+:local(.scope) { 
+
+}
+
+
+:local(.free-placeorder-container) { 
+  @apply rounded-lg p-8 w-auto;
+  
+  .free-placeorder-title {
+    @apply flex items-center;
+  }
+  
+  .arco-modal-close-icon {
+    svg {
+      @apply text-xl;
+    }
+  }
+  
+  .arco-select-popup {
+    @apply border-none pt-2;
+
+    .arco-select-option {
+      @apply h-8 flex items-center;
+    }
+  }
+
+  .arco-modal-header {
+    @apply h-auto p-0 !important;
+  }
+  
+  .show-limits-nums {
+    max-width: 162px;
+    @apply break-all;
+  }
+  
+  .arco-modal-title {
+    @apply flex text-text_color_01 font-medium text-base;
+  }
+  
+  .arco-modal-close-icon {
+    @apply text-base;
+  }
+  
+  .arco-icon-hover.arco-radio-icon-hover::before {
+    @apply w-auto h-auto !important;
+  }
+  
+  .arco-modal-content {
+    @apply px-0 pb-0;
+  }
+  
+  .arco-form-label-item {
+    @apply mb-1;
+
+    label {
+      @apply text-text_color_01;
+    }
+  }
+  
+  .coins-trade-content {
+    @apply flex;
+    
+    .coins-trade-detail {
+      width: 287px;
+      
+      @apply bg-card_bg_color_01 p-6 rounded-lg;
+      
+      .business-name {
+        @apply flex items-center;
+
+        .business-name-avater {
+          @apply rounded-full text-button_text_02 text-xs flex justify-center items-center relative;
+
+          width: 22px;
+          height: 22px;
+          background: linear-gradient(180deg, #FFBC24 0%, #FFD15C 100%);
+
+          .business-name-badge {
+            right: 0.5px;
+            bottom: -6px;
+            @apply absolute;
+          }
+        }
+        
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      
+      
+      .business-num {
+        @apply text-text_color_02 text-xs mt-2;
+
+        .order-rate {
+          border-left: 1px solid; 
+          @apply ml-2 pl-2 border-line_color_01;
+        }
+      }
+    }
+  
+    
+    .coins-trade-form {
+      @apply ml-6;
+
+      width: 280px;
+      
+      .country-icon {
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+
+      .arco-form-item-error {
+        .arco-input {
+          @apply bg-card_bg_color_03 text-sm !important;
+        }
+      }
+
+      .arco-select-view {
+        @apply bg-card_bg_color_03 !important;
+      }
+      
+      .short-coins-handle-sell {
+        .arco-form-message {
+          top: 68px !important;
+          @apply absolute left-0;
+        }
+      }
+
+      .short-coins-handle {
+        @apply relative;
+
+        .arco-form-item {
+          @apply mb-6;
+        }
+        
+        .arco-form-message {
+          top: 66px;
+          @apply absolute left-0;
+        }
+        
+        .arco-input-inner-wrapper {
+          width: 280px !important;
+          @apply pr-10;
+        }
+      }
+          
+      .sell-paythods {
+        @apply flex items-center cursor-pointer justify-between w-full h-10 rounded border border-line_color_01;
+      
+        .sell-detail-paythod {
+          @apply text-text_color_01 text-sm pl-1 relative ml-3 flex;
+
+          /* span:first-child {
+            top: 5px;
+            @apply h-2.5 w-0.5 absolute bg-brand_color left-0;
+          } */
+
+          span {
+            @apply text-text_color_01;
+          }
+          
+          .sell-paythod-numbers {
+            word-break: keep-all;
+            @apply ml-4 w-32 overflow-ellipsis  overflow-hidden;
+          }
+        }
+        
+        .sell-arrow-black {
+          @apply mr-3;
+
+          svg {
+            @apply text-base;
+          }
+        }
+      }
+      
+      .arco-form-item-symbol {
+        @apply hidden;
+      }
+      
+      .arco-input {
+        width: 280px;
+        @apply h-10 text-sm;
+      }
+      
+      .coins-trade-submit {
+        @apply flex justify-between items-center mt-6;
+        
+        .coins-trade-cancel {
+          width: 132px;
+          @apply h-10 bg-bg_sr_color  cursor-pointer text-text_color_01 flex items-center justify-center rounded font-medium;
+        }
+      }
+    }
+  }
+  
+  .submit-trade-content {
+    width: 380px;
+    
+    .trade-button-detail {
+      @apply mb-8;
+      
+      .button-detail-item {
+        @apply w-full flex justify-between mb-4;
+
+        span:first-child {
+          @apply text-text_color_02;
+        }
+      }
+      
+      .button-detail-item:last-child {
+        @apply mb-0;
+      }
+      
+      .button-detail-paythod {
+
+        @apply text-text_color_01 flex  text-sm pl-1 relative mb-1;
+
+        .button-detail-paythod-text {
+          max-width: 150px;
+          word-break: keep-all;
+          @apply inline-block overflow-ellipsis overflow-hidden;
+        }
+      }
+      
+    }
+
+    .submit-trade-button {
+      @apply w-full flex justify-between;
+
+      .trade-button-modify {
+        width: 180px;
+        @apply h-10 flex justify-center items-center rounded border border-line_color_01 text-text_color_02 font-medium cursor-pointer;
+      }
+
+      .trade-button-submit {
+        width: 180px;
+        @apply h-10 text-sm flex justify-center items-center font-medium text-button_text_02 bg-brand_color rounded cursor-pointer;
+      }
+    }
+    
+  }
+  
+  .arco-select-view-value {
+    @apply flex items-center;
+  }
+  
+  .select-text {
+    height: 34px;
+    @apply flex items-center;
+
+    > div {
+      @apply text-text_color_01 text-sm pl-1 relative;
+
+      span:first-child {
+        top: 5px;
+        @apply h-2.5 w-0.5 absolute bg-brand_color left-0;
+      }
+    }
+  }
+
+  .arco-radio-checked {
+    .arco-radio-mask-wrapper {
+      @apply w-3 h-3 border border-brand_color flex justify-center items-center rounded-full;
+    }
+    
+  }
+  
+  .arco-radio .arco-radio-mask {
+    @apply w-3 h-3;
+  }
+  
+  .arco-radio .arco-radio-mask::after {
+    @apply w-2 h-2;
+  }
+  
+
+  .arco-radio-checked .arco-radio-mask::after {
+    @apply bg-transparent !important;
+  }
+
+  .arco-radio-checked .arco-radio-mask {
+    @apply w-1.5 h-1.5 !important;
+  }
+  
+  .select-pay-methods {
+    width: 380px;
+    
+    .sell-pay-detail-group:last-child {
+      @apply mb-0 !important;
+    }
+
+    .sell-pay-detail-group {
+      width: 380px;
+      @apply pb-4 mb-4 border-b border-line_color_02;
+
+      .sell-radio-detail {
+        @apply w-full flex justify-between;
+
+        .sell-radio-methods {
+          word-break: keep-all;
+          @apply overflow-ellipsis  overflow-hidden;
+
+          svg {
+            @apply w-4 h-4;
+          }
+        }
+      }
+      
+
+      
+
+
+      .sell-pay-detail {
+        @apply text-text_color_01 text-sm pl-1 relative mb-3;
+
+        span:first-child {
+          top: 5px;
+          @apply h-2.5 w-0.5 absolute bg-brand_color left-0;
+        }
+
+        span {
+          @apply text-text_color_01 font-medium;
+        }
+        
+      }
+    }
+    
+    .arco-radio {
+      @apply pl-0 flex items-center;
+
+      .arco-radio-text {
+        width: 94.5%;
+        @apply -mt-0.5;
+      }
+    }
+  }
+}

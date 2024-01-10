@@ -1,0 +1,107 @@
+:local(.scoped) {
+  .arco-table-content-inner {
+    min-height: 360px;
+  }
+
+  .market-common-table .arco-table-td {
+    font-size: 16px;
+  }
+
+  .arco-table-th,
+  .arco-table-td {
+    @apply border-none;
+  }
+
+  .header {
+    @apply flex justify-between items-center mb-6;
+
+    >:first-child {
+      @apply text-[32px] my-0;
+    }
+  }
+
+  .name-column {
+    .full-name {
+      font-size: 12px;
+      @apply text-text_color_02;
+    }
+
+    .base-symbol-name {
+    }
+
+    .quote-symbol-name {
+      font-size: 12px;
+      transform: translateY(-2px);
+      @apply flex items-end;
+    }
+  }
+
+  .arco-table-tr {
+    @apply cursor-pointer;
+
+    .arco-table-td {
+      @apply bg-transparent;
+    }
+
+    :first-child {
+      .arco-table-cell {
+        @apply my-auto;
+
+        > * {
+          @apply flex items-center;
+        }
+      }
+    }
+  }
+
+  .arco-table-th {
+    height: 42px;
+    @apply bg-card_bg_color_01 border-b-0 !important;
+
+    .arco-table-th-item {
+      @apply h-full;
+    }
+  }
+
+  .arco-table-hover .arco-table-tr:hover .arco-table-td {
+    @apply bg-card_bg_color_01 !important;
+  }
+
+  tbody .arco-table-tr {
+    max-height: 64px;
+  }
+
+  .logo-column {
+    img {
+      @apply rounded-full;
+    }
+  }
+
+
+  .arco-carousel-indicator-item {
+    width: 35px;
+    height: 8px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-radius: 16px;
+
+    /* 只能强行覆盖 */
+    @apply bg-brand_color_special_02 border-bg_color !important;
+
+    &:hover {
+      @apply bg-brand_color !important;
+
+    }
+  }
+
+  .arco-carousel-indicator-item-active {
+    @apply bg-brand_color !important;
+
+  }
+
+  .arco-carousel-arrow {
+    > * {
+      display: none;
+    }
+  }
+}

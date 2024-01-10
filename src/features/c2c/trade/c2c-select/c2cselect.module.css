@@ -1,0 +1,60 @@
+:local(.container) { 
+  .useful-expressions {
+    @apply px-4 inline-block mb-2;
+    
+    
+    .country-input {
+      @apply h-8 mt-3;
+      
+      .arco-input-group {
+        @apply h-8;
+        
+        input {
+          @apply text-xs;
+        }
+      }
+      
+      .arco-input {
+        @apply pl-2 !important;
+      }
+
+      .arco-input-inner-wrapper {
+        @apply h-8;
+      }
+    }
+
+    .useful-expressions-item {
+      @apply h-12 flex items-center font-medium border-line_color_01 border-b pl-3;
+    }
+    
+    .close {
+      @apply w-4 h-4  relative left-2;
+    }
+  }
+
+  li {
+    @apply h-10 flex items-center px-4 !important;
+  }
+  
+  .arco-select-option-hover {
+    @apply text-brand_color  !important;
+  }
+  
+  .country-select-img {
+    @apply h-6 mr-2 !important;
+  }
+  
+  .country-select-nodata {
+    @apply flex justify-center mt-3 font-medium;
+  }
+  
+  .arco-select-view-value {
+    @apply flex items-center;
+  }
+  
+  .country-icon {
+    svg {
+      @apply w-2 h-2;
+    }
+  }
+}

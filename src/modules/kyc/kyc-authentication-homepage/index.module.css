@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply bg-bg_color w-full h-full;
+
+
+  .authentication-homepage-container {
+  }
+}

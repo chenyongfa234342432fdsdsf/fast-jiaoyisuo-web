@@ -1,0 +1,70 @@
+:local(.scoped) {
+  .kyc-statement-container {
+    width: 840px;
+    @apply mx-auto overflow-hidden;
+    
+    .kyc-statement-title {
+      @apply flex items-center;
+
+      .kyc-statement-tip {
+        @apply text-xl;
+
+        svg {
+          margin-top: 3px;
+          font-size: 20px;
+        }
+      }
+      
+      span {
+        font-size: 22px;
+        @apply font-medium ml-4;
+      }
+    }
+    
+    .kyc-statement-header {
+      @apply text-sm  mt-4 mb-8;
+    }
+
+    .kyc-statement-content {
+      @apply text-sm  relative flex;
+    }
+
+    .kyc-statement-content::before {
+      content: '·';
+    }
+    
+    .kyc-statement-box {
+      @apply mt-8 text-text_color_02 text-sm;
+
+      span {
+        @apply ml-1;
+      }
+      
+      svg {
+        @apply text-sm;
+      }
+    }
+    
+    .kyc-statement-button {
+      @apply flex justify-between mt-8;
+      
+      .kyc-statement-prev {
+        width: 404px;
+        height: 46px;
+        @apply cursor-pointer rounded flex justify-center items-center text-text_color_05 font-medium;
+      }
+      
+      .kyc-statement-next {
+        width: 404px;
+        height: 46px;
+        @apply cursor-pointer rounded flex justify-center items-center text-button_text_02 font-medium;
+      }
+      
+      .kyc-statement-not {
+        width: 404px;
+        height: 46px;
+        @apply bg-card_bg_color_04 cursor-not-allowed rounded flex justify-center items-center text-text_color_03 font-medium;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+:local(.scoped) {
+  @apply mt-9;
+
+  .withdraw-result {
+    @apply w-96 flex flex-col m-auto;
+
+    .icon-info {
+      @apply text-center text-text_color_01 text-xl font-medium;
+
+      svg {
+        @apply w-20 h-20;
+      }
+    }
+
+    .withdraw-count {
+      @apply flex justify-between my-8 text-sm;
+
+      span {
+        @apply text-text_color_02;
+      }
+
+      p {
+        @apply text-text_color_01;
+      }
+    }
+
+    .timeline-start {
+      .arco-timeline-item-content, .arco-timeline-item-label {
+        @apply text-brand_color text-sm;
+      }
+    }
+
+    .timeline-end {
+      .arco-timeline-item-content, .arco-timeline-item-label {
+        @apply text-text_color_02 text-sm;
+      }
+
+      .arco-timeline-item-dot {
+        @apply bg-line_color_01;
+      }
+    }
+
+    .arco-timeline-item-content {
+      @apply mb-3
+    }
+
+    .arco-timeline-item-dot-line {
+      @apply top-3.5 -bottom-2
+    }
+  }
+}
+  

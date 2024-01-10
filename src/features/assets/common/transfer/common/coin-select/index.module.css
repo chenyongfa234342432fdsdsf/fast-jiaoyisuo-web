@@ -1,0 +1,32 @@
+:local(.select-content) {
+  .select-render {
+    @apply flex items-center w-full h-10 rounded;
+  }
+
+  .select-option {
+    @apply flex items-center cursor-pointer text-text_color_01 text-sm font-normal;
+
+    height: 42px;
+    line-height: 22px;
+  }
+
+  .left {
+    @apply flex items-center;
+
+    .image {
+      @apply flex justify-center items-center mr-2 w-5 h-5 rounded-full overflow-hidden;
+    }
+  }
+
+  &.arco-select-option {
+    @apply px-4;
+  }
+}
+
+:local(.select-search-wrap) {
+  @apply m-4 h-8 inline-block;
+  
+  .search-input {
+    @apply h-full bg-bg_sr_color border-transparent;
+  }
+}

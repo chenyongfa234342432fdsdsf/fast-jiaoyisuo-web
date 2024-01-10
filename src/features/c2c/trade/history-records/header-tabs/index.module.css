@@ -1,0 +1,25 @@
+:local(.scope) {
+  padding-top: 24px;
+  padding-bottom: 42px;
+
+  .tab {
+    .item {
+      color: var(--text_color_02) !important;
+    }
+  }
+
+  .tab.active {
+    .item {
+      color: var(--text_color_01) !important;
+      @apply mb-[2px];
+
+      &::after {
+        bottom: -8px;
+        height: 2px;
+        border-radius: 11px;
+        content: '';
+        @apply bg-brand_color w-3/4 absolute;
+      }
+    }
+  }
+}

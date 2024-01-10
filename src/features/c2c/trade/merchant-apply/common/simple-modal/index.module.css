@@ -1,0 +1,49 @@
+
+:local(.modal) {
+  .arco-modal-content,
+  .arco-modal-header {
+    height: auto !important;
+    @apply px-8 !important;
+  }
+
+  .arco-modal-content {
+    @apply pt-0 pb-8;
+  }
+  
+  .arco-modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    @apply text-center pt-8 pb-6 !important; 
+  }
+
+  .content-wrapper {
+    @apply pb-6 text-text_color_01 text-sm;
+  }
+
+  .actions {
+    @apply flex justify-between;
+
+    .button {
+      width: 100%;
+      height: 40px;
+      border-radius: 4px;
+      @apply bg-brand_color text-button_text_02 flex items-center justify-center cursor-pointer;
+    }
+
+    .chat-button,
+    .cancel-button {
+      border: 1px solid var(--brand_color);
+      @apply bg-card_bg_color_03 text-brand_color;
+    }
+  }
+
+  .continue-dismiss {
+    .content-wrapper {
+      @apply pb-0;
+    }
+
+    .title {
+      @apply text-text_color_01 pb-2;
+    }
+  }
+}

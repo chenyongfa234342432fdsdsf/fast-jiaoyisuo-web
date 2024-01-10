@@ -1,0 +1,100 @@
+:local(.scope) {
+  .card-content {
+    margin-bottom: 60px;
+    border-radius: 8px;
+    @apply bg-card_bg_color_01 w-full p-6 relative;
+  }
+
+  .title-row {
+    .title-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .name {
+      font-weight: 500;
+      font-size: 20px;
+      @apply text-text_color_01;
+    }
+
+    @apply flex items-center mb-2 cursor-default;
+  }
+
+  .amount-row {
+    font-weight: 500;
+    font-size: 24px;
+    @apply text-brand_color mb-6 flex;
+
+    .unit {
+      @apply ml-2;
+    }
+  }
+
+  .reminder-message-row {
+    font-weight: 400;
+    font-size: 16px;
+    @apply text-text_color_01 mb-6;
+  }
+
+  .nav-row {
+    @apply flex;
+
+    .button-wrapper {
+      @apply flex items-center cursor-pointer mr-8;
+
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        @apply text-brand_color mr-3;
+      }
+
+      .icon-wrap {
+        height: 100%;
+        @apply flex justify-center items-center;
+      }
+    }
+  }
+
+  .action-row {
+    @apply pb-8 flex justify-center w-full;
+
+    .action-button {
+      width: 380px;
+      height: 46px;
+      font-weight: 500;
+      font-size: 16px;
+      border-radius: 4px;
+      @apply flex justify-center items-center text-button_text_02;
+    }
+
+    .action-button-pending {
+      @apply bg-brand_color_special_02 text-brand_color;
+    }
+
+    .action-button-apply {
+      @apply bg-brand_color cursor-pointer;
+    }
+
+    .action-button-dismiss {
+      @apply bg-bg_sr_color text-text_color_01 cursor-pointer;
+    }
+
+    .action-button-terminating {
+      @apply bg-sell_down_color_special_02 text-sell_down_color;
+    }
+  }
+
+  .float-right-img {
+    @apply absolute right-0 top-0;
+  }
+}
+
+:local(.modal-class) {
+  .arco-modal {
+    width: 340px !important;
+  }
+
+  .button.ok-button {
+    @apply text-button_text_02;
+  }
+}

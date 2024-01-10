@@ -1,0 +1,30 @@
+:local(.container) {
+  .bid {
+    @apply bg-card_bg_color_01 px-8;
+
+    display: flex;
+    width: 1200px;
+    height: 98px;
+    border-radius: 8px;
+    
+    .bid-item {
+      @apply flex-1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      >div {
+        &:first-child {
+          @apply mb-1;
+        }
+
+        &:last-child {
+          @apply text-base font-medium;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,36 @@
+:local(.searchform) {
+  @apply flex mt-10 justify-between items-center;
+
+  .arco-select {
+    width: 150px;
+    @apply mr-6 !important;
+  }
+
+  .arco-select-view {
+    @apply h-10 leading-10 bg-bg_sr_color border-0 !important;
+  }
+
+  .arco-input-inner-wrapper {
+    width: 214px;
+    @apply h-10 bg-bg_sr_color border-transparent;
+
+ 
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }
+    
+  }
+
+  .asset-opt {
+    @apply text-brand_color cursor-pointer;
+
+    svg {
+      @apply text-sm ml-2;
+    }
+  }
+  
+}  

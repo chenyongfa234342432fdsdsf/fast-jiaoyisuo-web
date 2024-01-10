@@ -1,0 +1,39 @@
+:local(.scoped) {
+  @apply flex flex-col;
+    
+  .asset-labal {
+    @apply text-sm text-text_color_03;
+  }
+        
+  /* .eyes-icon {
+    svg {
+      @apply ml-2 w-5 h-5 cursor-pointer;
+    }  
+  } */
+      
+  .assets-number {
+    @apply mt-2 text-2xl;
+      
+    font-weight: 400;
+  }
+    
+  .total-wrap {
+    @apply flex justify-between items-center;
+  }
+    
+  .assets-item-wrap {
+    @apply flex flex-wrap mt-8;
+    
+    .asset-item {
+      @apply flex flex-col flex-1 mb-8 mr-20 last:mr-0;
+          
+      .label {
+        @apply text-text_color_03 text-xs;
+      }
+          
+      .value {
+        @apply mt-2 text-text_color_01 ml-1 whitespace-nowrap;
+      }
+    }
+  }
+}

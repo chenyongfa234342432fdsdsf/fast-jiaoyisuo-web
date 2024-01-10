@@ -1,0 +1,19 @@
+:local(.scoped) {
+  height: 486px;
+  @apply flex flex-row justify-between items-center px-16;
+
+  >:first-child {
+    width: 480px;
+    @apply flex flex-col gap-y-6 justify-center;
+  }
+
+  >:last-child {
+    @apply mt-auto;
+  }
+
+  .arco-btn, a {
+    width: 200px;
+    height: 46px;
+    @apply font-medium;
+  }
+}

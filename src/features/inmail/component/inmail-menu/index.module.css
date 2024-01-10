@@ -1,0 +1,73 @@
+:local(.scoped) {
+  .inmail-menu-wrap {
+    min-width: 360px;
+    min-height: 557px;
+    @apply h-full pt-8 bg-bg_color;
+
+    .arco-menu .arco-menu-item {
+      @apply pl-8 rounded-none;
+    }
+
+    .inmail-menu {
+      @apply h-full bg-transparent;
+
+      .arco-menu-inner {
+        @apply p-0;
+
+        .arco-menu-selected {
+          &::before {
+            content: '';
+            @apply absolute inset-y-0 left-0 w-1 bg-brand_color;
+          }
+        }
+      }
+
+      .arco-menu-item {
+        @apply h-12 py-3.5 box-border bg-transparent;
+      }
+
+      .arco-menu-selected {
+        @apply text-text_color_01 bg-card_bg_color_02;
+      }
+
+      .inmail-menu-content {
+        @apply flex items-center justify-between;
+
+        .inmail-menu-box {
+          @apply flex-1 flex items-center overflow-hidden;
+
+          .inmail-menu-text {
+            @apply text-sm flex-1 pr-2 truncate text-text_color_02;
+          }
+
+          .menu-icon {
+            svg {
+              @apply mr-2 text-2xl;
+            }
+          }
+        }
+
+        .inmail-menu-num {
+          @apply text-xs font-normal text-text_color_03;
+        }
+      }
+    }
+  }
+
+  .no-data {
+    width: 360px;
+    @apply h-full flex flex-col justify-center items-center;
+
+    .no-data-text {
+      @apply text-text_color_02;
+    }
+
+    .no-data-image {
+      @apply w-44 h-44;
+    }
+  }
+}
+
+.inmail-menu-main {
+  @apply bg-bg_color;
+}

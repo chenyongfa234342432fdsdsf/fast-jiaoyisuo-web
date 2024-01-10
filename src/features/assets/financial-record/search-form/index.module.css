@@ -1,0 +1,54 @@
+:local(.scoped) {
+  @apply mb-2 w-full min-w-full flex text-text_color_01 flex-wrap;
+
+  line-height: 44px;
+
+  .search-item {
+    @apply flex flex-wrap items-center;  
+  }
+
+  .arco-select {
+    height: 40px;
+    @apply w-36 !important;
+  }
+
+  .label-name {
+    @apply mr-2.5;
+  }
+
+  .mb-filter-block {
+    @apply mb-4 mr-5;
+  }
+
+  .arco-btn {
+    height: 40px;
+    @apply text-sm !important; 
+  }
+
+  .arco-select-view {
+    height: 40px !important;
+    @apply rounded-lg !important;
+  }
+  
+  .arco-select-view, .arco-picker {
+    @apply bg-bg_sr_color border-transparent !important;
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }
+    
+  }
+
+  .arco-picker-focused .arco-picker-input-active input, .arco-picker-focused:hover .arco-picker-input-active input {
+    @apply bg-transparent;
+  }
+  
+  .arco-select-popup {
+    @apply border-none !important;
+  }
+}  
+

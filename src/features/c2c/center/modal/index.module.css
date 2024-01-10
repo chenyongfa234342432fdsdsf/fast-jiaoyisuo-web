@@ -1,0 +1,42 @@
+:local(.modal) {
+  @apply bg-card_bg_color_03 relative !important;
+  
+  .arco-modal-content {
+    @apply p-8;
+
+    .arco-select-popup {
+      @apply border-none bg-card_bg_color_03;
+
+      .arco-select-option-hover {
+        @apply bg-card_bg_color_02;
+      }
+
+      .arco-select-popup-inner {
+        @apply overflow-hidden;
+      }
+    }
+  }
+
+  .close {
+    @apply absolute top-8 right-8;
+  }
+
+  .footer {
+    @apply flex justify-between items-center;
+
+    .button {
+      @apply flex-1 h-10 rounded text-button_text_02;
+
+      font-weight: 500;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+    }
+    
+    .cancel {
+      @apply mr-5 bg-transparent text-text_color_02;
+
+      border: 1px solid var(--line_color_01);
+    }
+  }
+}  

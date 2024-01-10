@@ -1,0 +1,78 @@
+:local(.select-search-wrap) {
+  @apply m-4 h-8 inline-block;
+    
+  .search-input {
+    @apply h-full bg-bg_sr_color border-transparent;
+  }
+}
+
+:local(.select-nodata-wrap) {
+  @apply m-auto my-3 text-text_color_02;
+}
+
+:local(.select-value-wrap) {
+  @apply flex items-center justify-between py-3 border-b border-line_color_02;
+
+  .transfer-info {
+    @apply flex flex-col;
+
+    .info-account {
+      @apply text-sm text-text_color_01 mb-1;
+
+      line-height: 22px;
+    }
+
+    .info-amount {
+      @apply text-xs text-text_color_02;
+    }
+  }
+
+  .new-cell {
+    @apply w-full flex items-center justify-between;
+
+    .new-text {
+      @apply text-sm text-text_color_01;
+
+      line-height: 22px;
+    }
+  }
+}
+
+:local(.select-info-render) {
+  height: 40px; 
+
+  @apply flex items-center text-sm font-medium;
+
+  .current-tag {
+    @apply flex px-1 rounded-sm bg-brand_color_special_02 text-center ml-1;
+
+    height: 18px;
+
+    .current-tag-text {
+      @apply text-xs text-brand_color;
+
+      line-height: 18px;
+      transform: scale(0.83);
+    }
+  }
+
+  .new-tag {
+    @apply flex px-1 rounded-sm bg-success_color_special_02 text-center ml-1;
+
+    height: 18px;
+
+    .new-tag-text {
+      @apply text-xs text-success_color;
+
+      line-height: 18px;
+      transform: scale(0.83);
+    }
+  }
+
+  img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    @apply mr-2.5;
+  }  
+}

@@ -1,0 +1,12 @@
+:local(.container) {
+  @apply bg-bg_color;
+
+  .chatbox-order {
+    width: 1200px;
+    @apply mx-auto flex mt-8 justify-between;
+
+    .order-detail {
+      width: 560px;
+    }
+  }
+}

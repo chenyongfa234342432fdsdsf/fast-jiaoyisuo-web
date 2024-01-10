@@ -1,0 +1,22 @@
+:local(.scoped) {
+  @apply flex justify-center items-center;
+
+  .user-settings-add-payment-wrap {
+    width: 1200px;
+    @apply flex my-8;
+
+    .form, .placeholder {
+      @apply flex-1;
+    }
+
+    .form {
+      .title {
+        @apply mb-8;
+
+        label {
+          @apply text-text_color_01 text-4xl leading-9 font-medium;
+        }
+      }
+    }
+  }
+}

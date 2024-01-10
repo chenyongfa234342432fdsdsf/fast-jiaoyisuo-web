@@ -1,0 +1,21 @@
+:local(.scoped) {
+  /* @apply mt-8; */
+
+  .arco-tabs-header-nav-line .arco-tabs-header-title-text {
+    @apply w-full p-0 text-center;
+  }
+
+  .arco-tabs-header-nav-rounded .arco-tabs-header-title {
+    @apply rounded m-0 mr-8 p-0 text-base text-text_color_03 !important
+    }
+
+  .arco-tabs-header-nav-rounded .arco-tabs-header-title:hover {
+    background: none !important;
+  }
+
+  .arco-tabs-header-nav-rounded .arco-tabs-header-title-active, .arco-tabs-header-nav-rounded .arco-tabs-header-title-active:hover {
+    @apply bg-card_bg_color_01 text-base text-text_color_01 px-5 py-3  !important;
+
+    font-weight: 500;
+  }
+}

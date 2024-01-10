@@ -1,0 +1,39 @@
+:local(.scope) { 
+  @apply text-base font-medium text-text_color_01;
+
+  .select-img {
+    img {
+      @apply w-5 h-5 rounded-full;
+    }
+
+  }
+  
+  .arco-select-popup {
+    @apply border-none bg-card_bg_color_03;
+
+    .arco-select-option {
+      @apply bg-card_bg_color_03;
+    }
+
+    .arco-select-option:hover {
+      @apply bg-bg_color_03 !important;
+    }
+  }
+  
+  /* .arco-select-option {
+    .select-img {
+    }
+  } */
+
+  .arco-input-inner-wrapper {
+    @apply border-none;
+  }
+  
+  .select-text {
+    @apply text-sm pl-2;
+  }
+
+  .arco-input-group {
+    @apply bg-bg_sr_color rounded;
+  }
+}

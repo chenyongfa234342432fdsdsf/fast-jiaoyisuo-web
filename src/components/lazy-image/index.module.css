@@ -1,0 +1,16 @@
+:local(.scoped) {
+  @apply flex flex-col justify-center items-center text-center object-cover;
+
+  label {
+    @apply text-text_color_03;
+  }
+  
+  .placeholder-img {
+    @apply object-contain m-auto !important;
+  }
+}
+
+.lazy-radius {
+  border-radius: 50%;
+  @apply overflow-hidden;
+}

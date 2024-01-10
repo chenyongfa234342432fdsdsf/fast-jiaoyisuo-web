@@ -1,0 +1,11 @@
+:local(.position-price-root) {
+  @apply flex flex-col mt-6 mb-1;
+
+  .price-item {
+    @apply flex items-center justify-between text-sm text-text_color_02 mb-4 last:mb-0;
+
+    .value {
+      @apply text-text_color_01;
+    }
+  }
+}

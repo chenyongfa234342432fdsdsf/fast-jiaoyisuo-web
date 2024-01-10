@@ -1,0 +1,14 @@
+:local(.scoped) {
+  &.wrap {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    @apply absolute flex items-center justify-center right-4 bg-card_bg_color_02 cursor-pointer;
+  }
+  
+
+  &.star {
+    @apply w-4 h-4;
+  }
+  
+}

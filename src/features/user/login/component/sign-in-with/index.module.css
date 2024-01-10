@@ -1,0 +1,78 @@
+:local(.sign-in-width-wrap) {
+  .sign-in-width-header {
+    @apply my-6 flex items-center;
+
+    label {
+      @apply mx-4 text-text_color_03;
+    }
+
+    .header-divider {
+      border-top: 0.5px solid var(--line_color_02);
+      @apply flex-1;
+    }
+  }
+
+  .arco-btn {
+    @apply block w-full border border-text_color_01 bg-bg_color;
+
+    .sign-button-icon {
+      @apply w-4 h-4 mr-2 mb-px;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    span {
+      @apply font-medium text-text_color_01;
+    }
+  }
+}
+
+:local(.bind-account-popup) {
+  .popup-icon {
+    @apply mb-0;
+
+    .bind-account-icon {
+      @apply w-9 h-9;
+  
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .bind-account-text {
+      @apply text-base font-medium;
+    }
+  }
+
+  .slot-content {
+    @apply mb-0;
+
+    .bind-account-popup-content {
+      .content-text {
+        @apply my-6 text-center text-text_color_01 w-full inline-block;
+      }
+
+      .content-text-left {
+        @apply my-4 text-left;
+      }
+
+      .content-input {
+        @apply h-10 mb-4 py-2 px-3 rounded-lg box-border font-medium bg-bg_sr_color;
+      }
+
+      .footer-checkobx {
+        @apply mb-2;
+
+        span {
+          @apply text-xs ml-2 text-text_color_02;
+        }
+      }
+    }
+  }
+}
+
+.mx-none-button {
+  @apply mx-0 !important;
+}

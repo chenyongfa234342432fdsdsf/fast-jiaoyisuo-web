@@ -1,0 +1,171 @@
+:local(.scoped) {
+  height: inherit;
+  @apply w-full pb-3;
+  
+  .arco-spin {
+    height: inherit;
+    @apply w-full;
+
+    .arco-spin-children {
+      height: inherit;
+      @apply w-full 
+    }
+  }
+
+  .trade-deal-tab {
+    font-size: 14px;
+    @apply flex text-text_color_03 mb-2 ml-3.5;
+
+    div {
+      @apply first:ml-0 ml-7 cursor-pointer;
+    }
+
+    .selected-tab {
+      @apply text-text_color_01;
+    }
+  }
+
+  .trade-deal-table {
+    height: inherit;
+    @apply overflow-y-scroll flex-1 px-4;
+
+    .deal-table-header-last {
+      div:first-child {
+        width: 70px !important;
+        @apply mr-2 !important;
+      }
+
+      div:nth-child(2) {
+        width: 100px !important;
+        @apply mr-4 !important;
+      }
+
+      div:nth-child(3) {
+        width: 100px !important;
+        @apply pl-1 !important;
+      }
+    }
+
+    .deal-table-header {
+      @apply flex justify-between text-xs sticky bg-bg_color top-0 w-full z-10 pb-1 left-0   text-text_color_03  last:text-right;
+
+      div:first-child {
+        @apply text-start;
+
+        width: 110px;
+      }
+
+      div {
+        @apply last:text-right;
+
+        width: 80px;
+      }
+
+
+      div:nth-child(2) {
+        width: 80px;
+        @apply text-right;
+      }
+    }
+
+    .deal-table-body {
+      .deal-note-date {
+        @apply mt-4;
+
+        img {
+          @apply w-28;
+        }
+
+        .suppor-lazy-image {
+          .rv-image {
+            @apply flex justify-center;
+          }
+        }
+      }
+      
+      .deal-table-tr-last {
+        div:first-child {
+          width: 70px !important;
+          @apply mr-2;
+        }
+
+        div:nth-child(2) {
+          width: 100px !important;
+          @apply justify-end mr-4 !important;
+        }
+
+        div:nth-child(3) {
+          width: 100px !important;
+          @apply pl-1 !important;
+        }
+      }
+
+      .deal-table-tr {
+        min-height: 22px;
+        @apply flex justify-between relative font-medium;
+
+        div {
+          font-size: 12px;
+          @apply text-center break-all flex items-center last:justify-end;
+        }
+
+        div:first-child {
+          width: 110px;
+          @apply mr-1.5;
+        }
+
+        div:nth-child(2) {
+          width: 80px;
+          @apply text-right justify-end;
+        }
+
+        div:nth-child(3) {
+          width: 80px;
+          @apply text-right pl-3;
+        }
+
+        .table-price-green {
+          @apply text-success_color;
+        }
+
+        .table-price-red {
+          @apply text-warning_color;
+        }
+      }
+
+      @keyframes bganimation {
+        0% {
+          @apply opacity-100;
+        }
+
+        100% {
+          @apply opacity-0;
+        }
+      }
+
+      .deal-table-tr-green::before {
+        background: linear-gradient(to left, var(--buy_up_color_special_03), rgba(0 128 0 / 0%) 90%);
+        animation-name: bganimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        content: "";
+        @apply absolute block right-0 top-0 w-full h-full;
+      }
+
+      .deal-table-tr-red::before {
+        background: linear-gradient(to left, var(--sell_down_color_special_03), rgba(255 0 0 / 0%) 90%);
+        animation-name: bganimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        content: "";
+        @apply absolute block right-0 top-0 w-full h-full;
+      }
+    }
+  }
+}

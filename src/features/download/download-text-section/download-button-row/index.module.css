@@ -1,0 +1,41 @@
+:local(.scoped) {
+  @apply flex flex-row gap-x-8 items-center;
+
+  button {
+    @apply rounded-sm h-10 bg-text_color_01 justify-center !important;
+
+    span {
+      @apply text-bg_color font-medium
+    }
+
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+
+  .qr-wrapper {
+    width: 124px;
+    height: 124px;
+    @apply flex justify-center items-center bg-icon_color rounded mb-3;
+
+    canvas {
+      width: 110px !important;
+      height: 110px !important;
+      @apply p-2 rounded bg-white;
+    }
+  } 
+  
+  .qr-canvas {
+    width: 124px;
+  }
+
+
+  button {
+    width: 196px;
+    height: 48px !important;
+
+    span {
+      margin-left: 4px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+:local(.order-status-wrapper) {
+  @apply flex flex-col items-center py-4 bg-card_bg_color_01 rounded-lg;
+
+  .order-no {
+    @apply flex items-center justify-between px-3 py-1.5 rounded bg-bg_sr_color text-text_color_03;
+  }
+}
+
+:local(.order-detail-page-layout-wrapper) {
+  @apply text-sm;
+}
+
+:local(.prop-list-item-wrapper) {
+  @apply text-sm flex justify-between py-2 first:pt-4;
+}
+
+:local(.modal-wrapper) {
+  .arco-modal {
+    width: auto;
+    min-width: 480px;
+    max-width: 80vw;
+
+    .arco-modal-content {
+      @apply overflow-y-auto;
+
+      max-height: 80vh;
+    }
+  }
+}
+
+:local(.logs-table-wrapper) {
+  .arco-table {
+    .arco-table-th {
+      .arco-table-th-item-title {
+        @apply text-text_color_02 font-normal;
+      }
+    }
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-td,
+    .arco-table-th,
+    .arco-table-th-item {
+      @apply text-sm border-none whitespace-nowrap;
+
+      &:first-child {
+        @apply pl-0;
+      }
+    }
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-th {
+      @apply bg-transparent;
+    }
+
+    .arco-table-th {
+      @apply border-b border-solid border-line_color_02;
+    }
+
+    tbody .arco-table-td {
+      @apply text-text_color_01;
+    }
+
+    tbody .arco-table-td:last-child, thead .arco-table-th-item:last-child {
+      @apply pr-0;
+    }
+  }
+}

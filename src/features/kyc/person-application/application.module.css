@@ -1,0 +1,194 @@
+:local(.container) { 
+  @apply bg-bg_color;
+  
+  .kyc-header-title {
+    svg {
+      @apply mt-1;
+    }
+  }
+  
+  input {
+    &::placeholder {
+      @apply relative text-text_color_04 text-sm;
+
+      top: -1px;
+    }
+  }
+  
+  .arco-picker-size-default {
+    height: 44px !important;
+      
+    input {
+      &::placeholder {
+        @apply text-text_color_04 text-sm;
+        
+        top: 0;
+      }
+    }
+  }
+  
+  .arco-checkbox-checked {
+    .arco-checkbox-mask {
+      @apply border-0 !important;
+    }
+  }
+  
+  .arco-select-view {
+    height: 46px !important;
+    @apply bg-bg_color border-line_color_01 !important;
+
+    .country-render-format {
+      margin-top: 3px;
+    }
+
+    input {
+      &::placeholder {
+        @apply relative text-sm;
+
+        top: 0;
+      }
+    }
+  } 
+  
+
+
+  .user-verified-container {
+    width: 840px;
+    @apply m-auto bg-bg_color;
+    /* stylelint-disable-next-line selector-class-pattern */
+    .user-verified-title {
+      @apply flex items-center mb-12;
+      
+      img {
+        @apply w-10 h-10;
+      }
+      
+      span {
+        @apply font-bold text-2xl;
+      }
+    }
+    
+    .arco-form-label-item {
+      label {
+        @apply flex items-center;
+  
+        strong {
+          @apply hidden;
+        }
+      }
+    }
+    
+    .arco-form-label-item {
+      label {
+        @apply text-text_color_01 font-medium;
+      }
+
+    }
+
+    .arco-input {
+      @apply placeholder-text_color_04 text-text_color_01 !important;
+    }
+    
+    .arco-alert-icon-wrapper {
+      height: 14px;
+
+      svg {
+        @apply mt-0.5 text-sm;
+      }
+    }
+    
+    .arco-form-message {
+      @apply invisible;
+    }
+    
+    .arco-alert-warning {
+      @apply bg-brand_color_animate;
+    }
+    
+    .arco-picker-suffix-icon {
+      svg {
+        @apply text-base !important;
+      }
+    }
+    
+    .arco-alert {
+      padding: 11px;
+      @apply bg-brand_color_special_02 rounded;
+    }
+    
+    .arco-alert-content {
+      @apply text-brand_color text-xs;
+    }
+    
+    .basic-information {
+      .basic-information-title {
+        @apply font-medium text-xl my-8;
+      }
+    }
+    
+    .arco-col-12:nth-child(even) {
+      padding-right: 8px !important;
+    }
+    
+    .arco-col-12:nth-child(odd) {
+      padding-left: 8px !important;
+    }
+    
+    .verified-submit {
+      @apply flex justify-center mt-8;
+      
+      .verified-go-back {
+        width: 404px;
+        height: 46px;
+        @apply rounded text-base font-medium flex justify-center items-center text-text_color_05;
+      }
+      
+      .verified-go-submit {
+        width: 404px;
+        height: 46px;
+        @apply ml-6 h-11 text-base font-medium rounded flex justify-center items-center text-button_text_02;
+      }
+    }
+    
+    .verified-kyc-requirement {
+      @apply mt-4;
+    }
+    
+    .arco-form-label-item {
+      label {
+        @apply flex items-center;
+      }
+    }
+    
+    .arco-picker-size-default {
+      @apply w-full;
+    }
+    
+    .basic-information-showerror {
+      width: 336px;
+
+      .arco-form-message {
+        @apply visible flex items-center justify-center;
+      }
+    }
+    
+    .cert-type {
+      .arco-select-view-value {
+        @apply flex items-center;
+      }
+    }
+    
+    .showerror-handle {
+      .upload-trigger-picture {
+        width: 343px;
+      }
+
+      .applications-uploads {
+        width: 343px;
+      }
+    }
+  
+  }
+  
+ 
+}

@@ -1,0 +1,8 @@
+:local(.scoped) {
+  @apply flex justify-end mt-2;
+
+  .arco-select-view, .arco-pagination .arco-pagination-jumper-input {
+    height: 40px !important;
+    line-height: 38px !important;
+  }
+}  

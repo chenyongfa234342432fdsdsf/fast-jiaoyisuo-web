@@ -1,0 +1,291 @@
+:local(.future-group-modal) {
+  width: 444px;
+  max-height: 624px;
+
+  .future-group-container {
+    max-height: 426px;
+    overflow-y: overlay;
+    @apply px-4 relative;
+  }
+
+  .arco-modal-header {
+    @apply h-auto p-8;
+  }
+
+  .arco-modal-content {
+    @apply pt-0 mb-4;
+  }
+
+  .arco-modal-footer {
+    @apply border-t-0 p-8 pt-0;
+
+    .arco-btn-size-default {
+      @apply p-0;
+    }
+
+    .arco-btn-secondary {
+      border: 0 !important;
+      @apply text-text_color_02 bg-transparent !important;
+
+      span {
+        outline: 1px;
+        outline-style: solid;
+        outline-color: var(--line_color_01);
+        @apply flex rounded justify-center items-center w-full h-full;
+      }
+    }
+  }
+
+  .future-group-closeicon {
+    @apply text-xl;
+  }
+
+  .arco-modal-close-icon {
+    top: 40px;
+    right: 32px;
+  }
+
+
+  .button:first-child :hover {
+    @apply border-line_color_01 overflow-hidden text-text_color_02 bg-transparent !important;
+
+    border: 1px !important;
+
+    span:hover {
+      outline: 1px  !important;
+      outline-style: solid  !important;
+      outline-color: var(--line_color_01) !important;
+    }
+  }
+
+  .contract-select-group-content-new {
+    @apply border-2  border-brand_color_animate !important;
+
+    border-radius: 7.5px;
+
+    .contract-group-content {
+      box-shadow: 0;
+    }
+  }
+
+  .new-contract-group-contaner {
+    border: 2px solid transparent;
+    @apply sticky left-0  mb-2 top-0 z-10  overflow-hidden rounded-lg;
+
+    .new-contract-group {
+      height: 60px;
+      @apply mx-auto relative overflow-hidden;
+
+      .profit-select-img {
+        img {
+          width: 26px;
+          height: 16px;
+        }
+
+        top: -1.5px;
+        right: -1.5px;
+        width: 26px;
+        height: 16px;
+        @apply absolute z-1;
+      }
+
+      .contract-group-img {
+        @apply absolute left-0 top-0 w-full;
+
+        img {
+          height: 60px;
+          @apply w-full;
+        }
+      }
+
+
+      .contract-group-label {
+        top: 18px;
+        @apply absolute left-4  text-button_text_01 z-1 font-medium text-base;
+      }
+
+      .contract-group-icon {
+        top: 18px;
+        @apply absolute right-4;
+
+        svg {
+          @apply text-base;
+        }
+      }
+    }
+  }
+
+  .profit-total-content {
+    min-height: 68px;
+    border-radius: 6px;
+    @apply relative overflow-hidden;
+  }
+
+  .contract-select-show {
+    border-radius: 6px 0 0;
+  }
+
+  .profit-contract-group-green {
+    /* .contract-group {
+      @apply text-sell_down_color !important;
+    } */
+
+    .group-content-rate {
+      @apply text-sell_down_color !important;
+    }
+  }
+
+  .profit-contract-group-red {
+    /* .contract-group {
+      @apply text-buy_up_color_animate  !important;
+    } */
+
+    .group-content-rate {
+      @apply text-buy_up_color_animate !important;
+    }
+
+    .contract-group-icon-line {
+      background-color: var(--sell_down_color_special_03) !important;
+      box-shadow: 0.5px 0 0 var(--sell_down_color_special_03) !important;
+    }
+
+  }
+
+  .profit-contract-group {
+    min-height: 70px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    @apply relative mb-2  w-full bg-card_bg_color_03;
+
+    .profit-total-income {
+      span {
+        height: 18px;
+        @apply absolute bg-buy_up_color  text-button_text_01 flex justify-center items-center rounded-br-lg left-0 top-0 z-1;
+        /* stylelint-disable-next-line number-max-precision */
+        font-size: 10px; transform: scale(0.83333); transform-origin: 0 0;
+        @apply p-1;
+      }
+
+    }
+
+    .profit-total-income-bg {
+      span {
+        @apply bg-sell_down_color ;
+      }
+    }
+
+    .profit-select-img {
+      img {
+        width: 26px;
+        height: 16px;
+      }
+
+      width: 26px;
+      height: 16px;
+      @apply absolute top-0 right-0 z-1;
+    }
+
+
+    img {
+      @apply absolute w-full left-0;
+
+      top: -2px;
+      height: 70px;
+    }
+
+    .contract-group-label {
+      @apply absolute left-4 top-6 font-medium text-button_text_01 z-1;
+
+      .increase-wrap {
+        font-size: 22px;
+        @apply text-button_text_01;
+      }
+
+      span {
+        @apply text-sm ml-1;
+      }
+    }
+
+    .contract-group {
+      @apply absolute rounded top-8 flex justify-center text-xs items-center px-2  text-buy_up_color;
+
+      right: 65px;
+      min-width: 26px;
+      height: 22px;
+      background: rgb(255 255 255 / 80%);
+
+    }
+
+    .contract-group-unrealized-profit {
+      @apply text-sell_down_color_animate !important;
+    }
+
+    .contract-group-icon-line {
+      right: 49px;
+      width: 0.5px;
+      height: 68px;
+      background-color: var(--buy_up_color_special_03);
+      box-shadow: 0.5px 0 0  var(--buy_up_color_special_03);
+      @apply absolute;
+    }
+
+
+
+    .contract-group-icon {
+      width: 48.5px;
+      height: 70px;
+      @apply flex justify-center items-center absolute right-0 top-0;
+
+      svg {
+        @apply text-base;
+      }
+    }
+
+    .contract-group-content {
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+      @apply p-4 bg-white;
+
+      .group-content-item {
+        @apply flex justify-between mb-4;
+
+        span:first-child {
+          @apply text-sm text-text_color_02;
+        }
+
+        span:last-child {
+          @apply text-sm text-button_text_02;
+        }
+
+        .group-content-rate {
+          @apply text-buy_up_color;
+        }
+      }
+
+      .group-content-item:last-child {
+        @apply mb-0;
+      }
+    }
+
+  }
+
+  .contract-select-group-content {
+    @apply border-2 rounded-lg border-buy_up_color_animate overflow-hidden;
+
+    .contract-group-content {
+      box-shadow: 0;
+    }
+
+
+  }
+
+  .contract-select-group-content-red {
+    @apply border-2 rounded-lg border-sell_down_color_animate;
+
+    /* .contract-group {
+      @apply text-buy_up_color_animate;
+    } */
+
+  }
+}

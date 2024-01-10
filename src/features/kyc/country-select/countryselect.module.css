@@ -1,0 +1,90 @@
+:local(.container) { 
+  .country-select {
+    @apply h-96;
+
+    li {
+      @apply h-12 flex items-center justify-between;
+
+      img {
+        @apply mr-1 rounded-full w-6 h-6;
+      }
+    } 
+  
+    .country-select-label {
+      @apply flex items-center text-sm;
+
+      .country-select-nothandle {
+        @apply ml-1 px-3 py-0.5 rounded-sm text-text_color_02 bg-bg_button_disabled text-xs;
+      }
+    }
+  
+    .country-select-img {
+      @apply w-10 h-6 mr-2 !important;
+    }
+  
+    .country-select-nodata {
+      @apply flex justify-center mt-3 font-medium;
+    }
+  }
+  
+  .country-select-shortname {
+    @apply flex items-center text-sm;
+  }
+  
+  .country-render-format {
+    @apply flex items-center;
+
+    img {
+      width: 22px;
+      height: 22px;
+      @apply rounded-full;
+    }
+
+    .country-render-name {
+      @apply ml-1;
+    }
+  }
+ 
+  .arco-select-popup-inner {
+    @apply max-h-96;
+  }
+
+  .country-select-modal {
+    .arco-modal {
+      @apply rounded-xl bg-card_bg_color_03 p-5;
+    }
+    
+    
+    
+    .arco-modal-title {
+      @apply text-left font-bold text-lg;
+    }
+
+    
+    .arco-modal-header {
+      @apply border-0; 
+    }
+    
+    .arco-modal-footer {
+      @apply border-0;
+    }
+    
+    .arco-btn-secondary {
+      @apply border-line_color_01 bg-transparent text-text_color_03;
+    }
+    
+    .arco-btn-secondary:hover {
+      @apply border-line_color_01 bg-transparent text-text_color_03;
+    }
+  
+    .arco-modal-content {
+      @apply font-medium;
+      
+      .country-select-tips {
+        @apply text-sm text-brand_color mt-3;
+      }
+    }
+  
+  }
+
+}

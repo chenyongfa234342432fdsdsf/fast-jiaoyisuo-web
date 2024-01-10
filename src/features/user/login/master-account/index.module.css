@@ -1,0 +1,101 @@
+:local(.scoped) {
+  @apply flex-1 h-full flex flex-col;
+
+  .master-account-body {
+    padding-top: 140px;
+    @apply flex-1 bg-bg_color;
+
+    .main {
+      width: 1200px;
+      @apply m-auto h-full;
+
+      .master-account-wrap {
+        @apply flex ;
+
+        .master-account-back {
+          @apply h-6 flex items-center;
+
+          svg {
+            width: 14px;
+            height: 14px;
+            @apply mr-1;
+          }
+      
+          label {
+            @apply text-text_color_02 text-base leading-4 font-medium cursor-pointer;
+          }
+        }
+
+
+        .master-account-content {
+          width: 388px;
+          @apply m-auto;
+  
+          p {
+            font-size: 32px;
+            @apply mb-8 font-semibold text-text_color_01;
+          }
+  
+          .content-text {
+            @apply mb-6 block text-text_color_03;
+          }
+
+          .content-country {
+            height: 46px;
+            border: 1px solid var(--line_color_01);
+            @apply p-3 mb-1 flex items-center justify-between rounded-lg text-text_color_04 cursor-pointer;
+
+            .content-country-left {
+              @apply flex-1 flex items-center;
+
+              .arco-image-img {
+                @apply w-4 h-4 m-px rounded-full;
+              }
+
+              span {
+                @apply flex-1 pt-0.5 ml-2 block font-medium;
+              }
+            }
+
+            .content-country-icon {
+              @apply w-2 h-2 mt-0.5;
+
+              svg {
+                @apply w-full h-full;
+              }
+            }
+          }
+
+          .content-serivce {
+            @apply text-xs cursor-pointer text-text_color_03;
+          }
+
+          .service-agreement {
+            @apply flex cursor-pointer;
+
+            .service-agreement-icon {
+              @apply w-3 h-3 mt-0.5;
+
+              svg {
+                @apply w-full h-full;
+              }
+            }
+
+            .text {
+              @apply ml-2 text-xs text-text_color_03;
+            }
+          }
+
+          .arco-input {
+            @apply mt-8 rounded-lg;
+          }
+  
+          .master-account-button {
+            @apply w-full rounded-lg;
+          }
+        }
+      }
+
+    }
+  }
+}

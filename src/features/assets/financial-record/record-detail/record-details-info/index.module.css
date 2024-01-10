@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply flex flex-col;
+
+  .details-item-info {
+    @apply flex flex-row items-center justify-between py-2 first:pt-0;
+  }
+
+  .label {
+    @apply text-sm text-text_color_02;
+  }
+
+  .value {
+    @apply text-sm text-text_color_01;
+  }
+}

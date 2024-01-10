@@ -1,0 +1,32 @@
+:local(.scoped) {
+  .gainers-grid {
+    @apply grid grid-cols-3 gap-4 text-center;
+
+    .grid-item {
+      @apply py-4 px-8 bg-card_bg_color_01 cursor-pointer;
+
+      .grid-item-text {
+        @apply text-base font-medium mb-1 rounded w-full truncate;
+      }
+    }
+  }
+
+  .no-result {
+    @apply w-full flex flex-col justify-center items-center;
+
+    .icon {
+      svg {
+        width: 175px;
+        height: 158px;
+      }
+    }
+
+    .text {
+      @apply mb-6 mt-3;
+
+      label {
+        @apply text-sm text-text_color_03;
+      }
+    }
+  }
+}

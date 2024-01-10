@@ -1,0 +1,14 @@
+:local(.scoped) {
+  .total-wrap {
+    @apply flex justify-between items-center;
+  }
+
+  .operate-wrap {
+    @apply flex;
+
+    a {
+      @apply ml-5;
+    }
+  }
+
+}

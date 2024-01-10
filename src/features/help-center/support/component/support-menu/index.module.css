@@ -1,0 +1,85 @@
+:local(.scoped) {
+  .support-menu-main {
+    @apply w-full;
+
+    .arco-menu-selected {
+      @apply text-text_color_01;
+    }
+
+    .menu-select-text {
+      @apply text-text_color_01 font-medium;
+    }
+
+
+    .menu-select {
+      .arco-menu-inline-header {
+        @apply relative rounded-none bg-card_bg_color_02;
+
+        &::before {
+          content: '';
+          @apply absolute inset-y-0 left-0 w-1 bg-brand_color;
+        }
+      }
+    }
+
+    .hidden-icon {
+      .arco-menu-icon-suffix {
+        @apply hidden;
+      }
+    }
+
+    .arco-menu-inner {
+      @apply p-0;
+
+      .arco-menu-inline {
+        .arco-menu-inline-header {
+          @apply pl-0 py-3 pr-12 box-border;
+
+          .arco-menu-icon-suffix {
+            @apply right-9;
+          }
+  
+          .menu-arrow-icon {
+            @apply w-2 h-2;
+  
+            svg {
+              @apply w-2 h-2;
+            }
+          }
+        }
+      }
+
+
+      .arco-menu-item {
+        @apply rounded-none;
+      }
+    }
+
+    .support-menu-logo {
+      @apply pl-7 flex items-center;
+
+      .support-lazy-img {
+        @apply w-6 h-6 overflow-hidden;
+      }
+
+      .menu-logo-text {
+        @apply text-sm ml-2 flex-1 text-text_color_01 font-medium truncate;
+      }
+    }
+
+    .arco-menu-item {
+      &:hover {
+        @apply text-text_color_01;
+      }
+    }
+
+    .arco-menu-item.arco-menu-selected {
+      @apply relative text-text_color_01;
+
+      &::before {
+        content: '';
+        @apply absolute inset-y-0 left-0 w-1 bg-brand_color;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+:local(.scope) {
+  @apply bg-bg_color;
+
+  .banner {
+    top: 116px;
+    @apply absolute w-full;
+
+    img {
+      top: inherit;
+      height: 210px;
+      @apply w-full;
+    }
+  }
+
+  .logo-row {
+    position: absolute;
+    top: 116px;
+    height: 210px;
+    @apply w-full;
+
+    .logo {
+      width: 1200px;
+      @apply m-auto flex justify-end;
+    }
+  }
+
+  .header {
+    margin-top: 40px;
+
+    .header-title {
+      @apply text-button_text_02 mb-4 whitespace-nowrap;
+
+      font-weight: 600;
+      font-size: 40px;
+    }
+
+    .bullets {
+      .wrap {
+        @apply flex mb-2;
+      }
+
+      .item {
+        min-width: 230px;
+        font-weight: 400;
+        font-size: 16px;
+        @apply mr-8 text-button_text_02;
+      }
+
+      .item::before {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        vertical-align: middle;
+        border-radius: 50%;
+        content: '';
+        @apply bg-button_text_02 mr-2;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    max-width: 1200px;
+    @apply mx-auto;
+  }
+
+  .row-title {
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+}

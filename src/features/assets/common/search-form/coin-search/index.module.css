@@ -1,0 +1,13 @@
+:local(.scoped) {
+  div.assets-search-input .arco-input-inner-wrapper {
+    @apply h-10 rounded border border-line_color_02 bg-bg_color !important;
+    
+    background: none;
+  }
+  
+}  
+
+:local(.search-input-bgc) {
+  @apply bg-bg_sr_color;
+
+}

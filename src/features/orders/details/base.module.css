@@ -1,0 +1,90 @@
+:local(.order-status-wrapper) {
+  @apply flex flex-col items-center py-4 bg-card_bg_color_02 rounded-lg;
+
+  .order-no {
+    @apply flex items-center justify-between px-3 py-1.5 rounded bg-bg_button_disabled text-text_color_02;
+  }
+}
+
+:local(.order-detail-page-layout-wrapper) {
+  @apply text-sm;
+}
+
+:local(.prop-list-item-wrapper) {
+  @apply text-sm flex justify-between py-2 first:pt-4;
+}
+
+:local(.modal-wrapper) {
+  .arco-modal {
+    width: auto;
+    min-width: 480px;
+    max-width: 80vw;
+
+    .arco-modal-content {
+      @apply overflow-y-auto px-8 pt-0;
+
+      max-height: 80vh;
+    }
+
+    .arco-modal-header {
+      @apply py-8;
+    }
+  }
+}
+
+:local(.logs-table-wrapper) {
+  width: 480px;
+  
+  .arco-table {
+    .arco-table-th {
+      .arco-table-th-item-title {
+        @apply text-text_color_02 font-normal;
+      }
+    }
+
+    .arco-table-header {
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar,
+      ::-webkit-scrollbar-thumb {
+        @apply bg-transparent;
+      }
+    }
+
+
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-td,
+    .arco-table-th,
+    .arco-table-th-item {
+      @apply text-sm border-none;
+
+      &:first-child {
+        @apply pl-0;
+      }
+    }
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-th {
+      @apply bg-transparent whitespace-nowrap;
+    }
+
+    .arco-table-th {
+      @apply border-b border-solid border-line_color_02;
+    }
+  }
+
+  /** 分页太多的情况下只能拓宽宽度 */
+  &.much-page {
+    width: 600px;
+  }
+}
+
+:local(.tabs-wrapper) {
+  .tab {
+    .item {
+      font-size: 16px !important;
+    }
+  }
+}

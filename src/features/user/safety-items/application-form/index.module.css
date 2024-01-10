@@ -1,0 +1,96 @@
+:local(.scoped) {
+  .user-safety-items-application-form-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .tips {
+        @apply mt-8;
+
+        .describe {
+          @apply flex;
+
+          & > div {
+            @apply block;
+          }
+
+          svg {
+            @apply mr-1 align-super;
+          }
+
+          p {
+            @apply text-xs font-normal text-text_color_03 mb-2;
+          }
+        }
+      }
+
+      .update-image {
+        @apply flex;
+
+        .sample, .update {
+          padding: 10px;
+          @apply flex-1 bg-bg_sr_color rounded;
+        }
+
+        .sample {
+          @apply mr-3;
+
+          & > div {
+            @apply w-full h-full;
+          }
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+
+        .update {
+          @apply ml-3 flex flex-col justify-center items-center relative;
+
+          .arco-upload-trigger, .update-wrap {
+            @apply w-full h-full;
+          }
+
+          .arco-upload-trigger, .update-wrap {
+            & > div, svg {
+              @apply w-full h-full;
+            }
+          }
+
+          .update-wrap {
+            @apply bg-cover bg-center bg-no-repeat rounded;
+          }
+
+          .update-text {
+            @apply absolute left-0 right-0 bottom-11 text-center;
+
+            label {
+              @apply text-sm text-text_color_01;
+            }
+          }
+        }
+
+      }
+
+      .arco-checkbox {
+        @apply text-text_color_03 text-xs leading-3 font-normal pl-0 break-all;
+
+        svg {
+          @apply mr-2;
+        }
+
+        a {
+          @apply text-brand_color;
+        }
+      }
+
+      .service-agreement {
+        @apply flex;
+
+        & > div {
+          @apply flex items-center;
+        }
+      }
+
+    }
+  }
+}

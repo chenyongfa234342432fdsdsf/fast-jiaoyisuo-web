@@ -1,0 +1,111 @@
+:local(.scope) { 
+  .footer-container {
+    @apply bg-bg_color;
+    
+    .footer-container-handle-title {
+      margin-bottom: 60px;
+      @apply flex justify-between items-center;
+    }
+
+    .footer-container-handle {
+      width: 1200px;
+      padding: 120px 0;
+      @apply mx-auto;
+
+      .footer-title {
+        font-size: 28px;
+        @apply font-medium text-text_color_01;
+      }
+    
+      .footer-trade-select {
+        @apply bg-card_bg_color_01 h-10 rounded-3xl;
+
+        .trade-radio-button {
+          @apply px-6 py-2 flex items-center justify-center rounded-3xl font-medium text-base;
+        }
+    
+        .arco-radio-group .arco-radio {
+          @apply mr-0 p-0;
+        }
+      }
+    
+      .footer-select-list {
+        @apply flex justify-between font-medium;
+
+        .footer-tradetype-detail {
+          width: 374px;
+          height: 326px;
+          @apply flex flex-col justify-center items-center bg-card_bg_color_01 rounded-lg;
+        
+          .footer-select-icon {
+            width: 84px;
+            height: 84px;
+
+            .company-avatars {
+              width: 84px;
+              height: 84px;
+            }
+            
+            svg {
+              width: 84px;
+              height: 84px;
+              @apply text-5xl;
+            }
+          }
+        
+          .footer-select-title {
+            @apply text-xl mt-8 mb-4 text-text_color_01;
+          }
+          
+          .footer-select-detail {
+            width: 210px;
+            @apply mx-auto text-center text-text_color_02;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer-select-advantage {
+    @apply bg-bg_color;
+
+    .footer-advantage-container {
+      width: 1200px;
+      @apply mx-auto pb-20;
+
+      .footer-title {
+        font-size: 28px;
+        @apply text-text_color_01 font-medium;
+      }
+      
+      .footer-advantage-list {
+        @apply flex  mt-12;
+        
+        .arco-collapse {
+          @apply border-0 !important;
+        }
+        
+        .arco-collapse-item-header {
+          @apply py-6 border-0 bg-bg_color pl-0 !important;
+        }
+        
+        .arco-collapse-item {
+          @apply border-b border-b-line_color_02 !important;
+        }
+
+        .arco-collapse-item-content {
+          @apply bg-transparent;
+        }
+        
+        .arco-collapse-item-content-box {
+          padding-left: 13px;
+          @apply pb-6 pt-0 pl-0 text-text_color_02;
+        }
+        
+        .arco-collapse-item-header-title {
+          @apply text-text_color_01 font-semibold text-base !important;
+        }
+      }
+    }
+  }
+}

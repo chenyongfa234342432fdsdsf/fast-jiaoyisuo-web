@@ -1,0 +1,20 @@
+:local(.scoped) {
+  @apply h-full;
+
+  .arco-input-inner-wrapper {
+    @apply bg-transparent border-line_color_01;
+  }
+
+  .arco-input-inner-wrapper-focus {
+    @apply border-brand_color;
+  }
+
+  .arco-input-group-prefix {
+    @apply mr-2;
+  }
+
+  .arco-input {
+    @apply p-0 bg-transparent;
+  }
+
+}

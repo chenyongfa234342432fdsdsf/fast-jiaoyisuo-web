@@ -1,0 +1,103 @@
+:local(.scoped) {
+  .arco-form-item-wrapper {
+    flex: none;
+    width: 100%;
+
+    input {
+      @apply text-sm !important;
+    }
+  }
+
+  
+
+  .item-wrap {
+    .item-name {
+      @apply font-medium text-text_color_01;
+
+      font-size: 14px;
+    }
+
+    .item-desc {
+      @apply text-buy_up_color bg-buy_up_color_special_02 ml-2 pl-2 pr-2 pt-1 pb-1;
+
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    .item-status {
+      @apply text-brand_color bg-brand_color_special_02 ml-2 pl-2 pr-2 pt-1 pb-1;
+
+      font-size: 12px;
+      border-radius: 4px;
+    }
+  }
+
+  .assets-wrap {
+    flex: 3;
+    min-width: 240px;
+    @apply mt-4;
+    @apply h-10 flex items-center justify-between;
+
+    .sub-title {
+      @apply text-text_color_03;
+    }
+  }
+
+  .price-wrap {
+    flex: 3;
+    min-width: 240px;
+    @apply mt-4;
+  }
+
+  .number-wrap {
+    @apply mt-1;
+  }
+
+  .number-row {
+    @apply h-10 flex items-center justify-between;
+
+    .sub-title {
+      @apply text-text_color_03;
+    }
+
+    .text {
+      @apply text-text_color_01;
+    }
+  }
+
+
+  .price-row {
+    @apply h-10 flex items-center justify-between;
+
+    .sub-title {
+      @apply text-text_color_03;
+    }
+      
+    .text {
+      @apply text-text_color_01;
+    }
+      
+  }
+
+
+  .opt-wrap {
+    @apply flex;
+    
+    .opt-button {
+      @apply block rounded text-sm h-10 text-center px-4 bg-brand_color text-text_color_01;
+
+      line-height: 40px;
+
+      &:hover {
+        @apply bg-brand_color_hover;
+      }
+    }
+
+    .opt-button-gray {
+      @apply block rounded text-sm h-10 text-center px-4 bg-bg_sr_color text-text_color_01;
+
+      line-height: 40px;
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+:local(.scope) {
+  .c2c-my-status-container {
+    @apply flex justify-between items-center w-full h-10 bg-card_bg_color_01 rounded px-4;
+
+    .left {
+      @apply text-text_color_01;
+
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+
+      .green {
+        @apply text-buy_up_color;
+
+        font-weight: 500;
+      }
+
+      .grey {
+        @apply text-text_color_04;
+
+        font-weight: 500;
+      }
+    }
+
+    .right {
+      @apply flex items-center;
+
+      .text-box {
+        @apply text-text_color_01 mr-60;
+
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+      }
+
+      .btn {
+        @apply text-brand_color cursor-pointer;
+
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+    }
+  }
+
+ 
+}
+
+:local(.modal) {
+  .title {
+    @apply text-text_color_01;
+
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+  }
+
+  .radio-group {
+    @apply w-full my-8;
+
+    .arco-radio-group {
+      @apply block;
+    }
+
+    .radio-group-item {
+      @apply w-full mt-4;
+
+      .tips {
+        @apply bg-card_bg_color_02 text-text_color_02 p-3 mt-2;
+
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        line-height: 18px;
+      }
+
+      .text {
+        @apply text-text_color_02 my-2;
+
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+
+      .time {
+        @apply text-text_color_02 mt-4 mb-2;
+
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+
+      .date {
+        @apply flex items-center;
+
+        flex-flow: wrap;
+
+        .date-item {
+          @apply bg-bg_sr_color flex items-center justify-center h-8 mr-2 mb-2 rounded;
+
+          width: 89px;
+
+          &:nth-child(4) {
+            @apply mr-0;
+          }
+
+          & > span {
+            @apply text-text_color_01;
+
+            font-weight: 400;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 18px;
+          }
+
+          &.touch {
+            @apply bg-brand_color_special_02;
+
+            border: 0.5px solid var(--brand_color);
+
+            & > span {
+              @apply text-brand_color;
+
+              font-weight: 400;
+              font-size: 12px;
+              font-style: normal;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+
+      .time-control {
+        @apply flex justify-between items-center;
+
+        .time-control-text {
+          @apply text-text_color_02 mx-2.5;
+
+          font-weight: 400;
+          font-size: 12px;
+          font-style: normal;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}

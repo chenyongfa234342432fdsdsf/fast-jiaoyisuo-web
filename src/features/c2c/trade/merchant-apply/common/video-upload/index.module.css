@@ -1,0 +1,5 @@
+:local(.scope) {
+  .arco-upload {
+    @apply w-full h-full;
+  }
+}

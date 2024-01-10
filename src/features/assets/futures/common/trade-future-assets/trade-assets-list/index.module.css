@@ -1,0 +1,79 @@
+:local(.assets-list-wrapper) {
+  @apply mt-4;
+
+  .arco-table thead > .arco-table-tr > .arco-table-th,
+  .arco-table .arco-table-td {
+    @apply text-xs border-none;
+  }
+
+  .arco-table-td {
+    @apply bg-transparent py-2;
+  }
+
+  .arco-table-tr:first-child {
+    .arco-table-td {
+      @apply pt-4;
+    }
+  }
+
+  .arco-table-tr:last-child {
+    .arco-table-td {
+      @apply pb-4;
+    }
+  }
+
+  .arco-spin {
+    @apply block;
+  }
+
+  .assets-table-light {
+    .arco-table-scroll-position-left .arco-table-col-fixed-right-first::after, .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+      box-shadow: inset -6px 0 8px -6px var(--nc-16) !important;
+    }
+  }
+
+  .assets-table-dark {
+    .arco-table-scroll-position-left .arco-table-col-fixed-right-first::after, .arco-table-scroll-position-middle .arco-table-col-fixed-right-first::after {
+      box-shadow: none;
+    }
+  }
+
+  /* 无数据时隐藏滚动条 */
+  &.no-data {
+    .arco-table-content-inner,
+    .arco-table-body {
+      @apply h-full overflow-hidden;
+
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+    }
+
+    .arco-table table {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &.auto-width {
+    .arco-table {
+      .arco-table-td {
+        .arco-table-cell {
+          .arco-table-cell-wrap-value {
+            >div {
+              @apply whitespace-nowrap overflow-x-hidden;
+            }
+          }
+        }
+      }
+
+      .arco-table-th {
+        .arco-table-th-item {
+          .arco-table-th-item-title {
+            @apply whitespace-nowrap overflow-x-hidden inline-block;
+          }
+        }
+      }
+    }
+  }
+}

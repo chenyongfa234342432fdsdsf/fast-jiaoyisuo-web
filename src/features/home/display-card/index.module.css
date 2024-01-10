@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply border-none flex flex-col items-center m-auto w-64 h-full text-center;
+
+  svg {
+    @apply aspect-square w-11 h-11 rounded-lg;
+  }
+
+  > :first-child {
+    @apply mb-5 cursor-default;
+  }
+
+  > :last-child {
+    @apply text-left mt-4;
+  }
+}

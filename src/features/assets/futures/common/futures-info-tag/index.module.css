@@ -1,0 +1,19 @@
+:local(.futures-info-tag-root) {
+  @apply flex items-center text-xs;
+
+  .name {
+    @apply text-text_color_01 mr-2 text-base font-medium;
+  }
+
+  .direction-tag {
+    @apply px-1 h-5 flex items-center justify-center rounded-sm mr-2;
+  }
+
+  .futures-tag {
+    @apply px-1 h-5 leading-5 rounded-sm bg-brand_color_special_02 text-brand_color;
+  }
+
+  .lever-tag {
+    @apply flex items-center mr-2 bg-card_bg_color_02 rounded-sm px-1 h-5 leading-5 text-center text-xs text-text_color_02;
+  }
+}

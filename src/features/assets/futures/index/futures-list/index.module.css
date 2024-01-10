@@ -1,0 +1,22 @@
+:local(.scoped) {
+  .futures-list-root {
+    @apply flex flex-col mt-8 mb-12;
+
+    .opt-item {
+      @apply flex justify-end;
+
+      .coin-icon {
+        @apply w-8 h-8 mr-4;
+      }
+
+      .arco-btn {
+        height: 38px;
+        @apply text-text_color_01 text-sm px-6 !important;
+      }
+    }
+
+    tbody .arco-table-td {
+      @apply cursor-pointer;
+    }
+  }
+}

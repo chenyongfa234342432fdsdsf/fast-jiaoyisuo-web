@@ -1,0 +1,30 @@
+:local(.scoped) {
+  .notice-center-menu {
+    @apply px-8 py-3.5 cursor-pointer flex items-center relative;
+
+    &.is-selected {
+      @apply text-text_color_01;
+    }
+
+    &.is-selected,
+    &:hover {
+      @apply bg-card_bg_color_02;
+    }
+
+    .status-bar {
+      @apply absolute top-0 left-0 bg-brand_color h-full w-1;
+    }
+
+    .notice-center-title {
+      @apply flex-1 truncate text-sm font-medium text-text_color_01;
+    }
+
+    .notice-center-icon {
+      @apply mr-3 w-5 h-5;
+
+      .icon-image {
+        @apply w-full h-full;
+      }
+    }
+  }
+}

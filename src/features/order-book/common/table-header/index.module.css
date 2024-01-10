@@ -1,0 +1,17 @@
+:local(.scoped) {
+  line-height: 18px;
+  @apply flex px-4 mt-4;
+
+  .price, .amount, .total {
+    @apply flex-1;
+  }
+
+  .amount, .total {
+    @apply text-right ml-1;
+  }
+
+  label {
+    font-size: 12px;
+    @apply text-text_color_03 leading-none;
+  }
+}

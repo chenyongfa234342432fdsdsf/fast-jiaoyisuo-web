@@ -1,0 +1,19 @@
+:local(.scoped) {
+  .kyc-certification-title {
+    @apply font-medium  flex  mb-4;
+    
+    span:first-child {
+      font-size: 22px;
+      @apply whitespace-nowrap mr-2;
+    }
+    
+    
+    .kyc-check-image {
+      @apply flex items-center text-brand_color ml-2 text-base;
+    }
+    
+    .kyc-cursor-pointer {
+      @apply cursor-pointer;
+    }
+  }
+}

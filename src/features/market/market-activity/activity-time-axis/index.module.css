@@ -1,0 +1,115 @@
+:local(.scoped) {
+  @apply m-auto;
+
+  .activity-wrap-axis {
+    width: 1200px;
+    @apply m-auto;
+
+    .date-title {
+      @apply pt-7 pb-4 text-base font-medium text-text_color_01 bg-card_bg_color_03 sticky top-0 z-100;
+    } 
+  
+    .activity-header {
+      height: 42px;
+      @apply flex mt-6 p-6 bg-card_bg_color_02 rounded-lg box-border items-center;
+    }
+
+    .activity-timeline {
+      .activity-item {
+        @apply box-border;
+      }
+    }
+
+    .arco-spin {
+      @apply block;
+    }
+
+    .arco-timeline-item {
+      min-height: 48px;
+    }
+
+    .arco-timeline-item-label {
+      @apply w-16 text-sm text-text_color_02;
+    }
+
+    .arco-timeline-item-content-wrapper {
+      @apply flex flex-row-reverse;
+    }
+
+    .arco-timeline-item-content {
+      @apply flex-1 mb-0;
+    }
+
+    .arco-timeline-item-dot-line {
+      width: 2px;
+      @apply bg-line_color_02 border-0;
+    }
+
+    .arco-timeline-item-dot-content {
+      @apply w-3;
+
+      .arco-timeline-item-dot {
+        @apply w-3 h-3;
+      }
+    } 
+
+    .content-axis-wrap {
+      .content-wrap {
+        @apply flex flex-1 p-6  cursor-pointer text-sm text-text_color_01;
+  
+        .item-time {
+          @apply w-16;
+        }
+  
+        .item-name {
+          @apply flex-1;
+        }
+  
+        .item-price, .item-value {
+          @apply flex-1 text-right;
+        } 
+  
+        .item-operation {
+          @apply ml-1 flex justify-end items-center cursor-pointer flex-1;
+  
+          .operation-text {
+            @apply mx-2;
+
+            img {
+              border-radius: 50%;
+            }
+  
+            svg {
+              @apply w-4 h-4;
+            }
+          }
+        }
+      }
+    }
+
+    .arco-timeline-item-dot-content .arco-timeline-item-dot {
+      @apply w-2.5 h-2.5 border-4 
+    }
+
+    .arco-timeline-item-dot-content {
+      @apply flex justify-center
+    }
+
+    .arco-timeline-item-dot-line {
+      @apply top-3
+    }
+
+    .arco-timeline-item-label {
+      @apply mt-1
+    }
+
+    .arco-timeline-item-dot-wrapper {
+      @apply mt-1
+    }
+
+    .arco-timeline-item.arco-timeline-item-last> .arco-timeline-item-dot-wrapper .arco-timeline-item-dot-line {
+      @apply flex
+    }
+  }
+
+}

@@ -1,0 +1,360 @@
+:local(.scoped) {
+  @apply w-full bg-bg_color;
+
+  .header {
+    @apply bg-card_bg_color_01;
+
+    height: 108px;
+    line-height: 108px;
+
+    .invitaion-center-header {
+      width: 1200px;
+      @apply flex justify-between mx-auto overflow-hidden;
+
+      .title {
+        @apply flex items-center;
+      }
+
+      .title {
+        label {
+          font-size: 32px;
+          @apply font-medium text-text_color_01;
+        }
+      }
+    }
+  }
+
+  .invitation-center-wrap {
+    width: 1200px;
+    @apply mx-auto bg-bg_color relative justify-between pb-10 mt-8;
+
+    .container {
+      .table-fillter {
+        .btn {
+          @apply h-9 px-5 text-sm text-text_color_02 font-medium mr-2;
+        }
+
+        .arco-btn-secondary {
+          @apply text-text_color_01;
+        }
+
+        .search {
+          @apply h-8 bg-bg_sr_color float-right text-text_color_04 text-sm font-normal;
+
+          width: 214px;
+
+          .arco-input-group {
+            @apply inline-block;
+          }
+
+          input {
+            @apply my-0 text-text_color_01 text-sm;
+          }
+
+          .arco-input-inner-wrapper {
+            border: none !important;
+          }
+        }
+
+        .filter-btn {
+          @apply float-right;
+
+          svg {
+            @apply ml-4 text-2xl;
+
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+
+    .invitation-table {
+      height: 50vh;
+      @apply block mt-6;
+
+      /* sorter */
+      .arco-table-sorter {
+        > :nth-child(2) {
+          transform: translateY(-1px);
+        }
+
+        vertical-align: -1px;
+        @apply ml-1;
+
+        .arco-table-sorter-icon {
+          height: 6px;
+        }
+
+        svg {
+          @apply text-icon_color;
+
+          top: 0;
+          font-size: 8px;
+        }
+
+        .arco-table-sorter-icon-active {
+          svg {
+            @apply text-brand_color;
+          }
+        }
+      }
+
+      .arco-table-th-item {
+        @apply text-xs text-text_color_02 font-normal;
+      }
+
+      .arco-table {
+        height: 50vh;
+      }
+
+      .arco-empty {
+        height: 40vh;
+      }
+
+      table {
+        display: block;
+        height: 50vh;
+        overflow: auto;
+
+        thead {
+          * {
+            max-height: 40px;
+          }
+        }
+
+        td {
+          max-height: 40px;
+        }
+
+        tbody {
+          tr:nth-child(1) {
+            > * {
+              @apply pt-5;
+            }
+          }
+        }
+      }
+
+      .return-button-wrapper {
+        position: relative;
+        bottom: 48px;
+        @apply flex justify-end;
+      }
+
+      .return-button {
+        height: 30px;
+        background: var(--bg_color_04);
+        @apply flex items-center px-3 py-1 text-button_text_01 mr-4 cursor-pointer;
+      }
+
+      .uid-wrapper {
+        @apply text-brand_color;
+      }
+    }
+
+    .invitation-table-body {
+      .arco-table-container {
+        @apply border-none;
+      }
+
+      .arco-table-th {
+        @apply bg-card_bg_color_01 border-none;
+      }
+
+      .arco-table-td {
+        @apply border-none bg-transparent;
+      }
+
+      .arco-table-container::before {
+        @apply hidden;
+      }
+
+      .arco-table-pagination {
+        @apply hidden;
+      }
+    }
+
+    .invitation-tips {
+      @apply mt-20 bg-card_bg_color_01 px-5 py-3 relative;
+
+      p {
+        @apply text-text_color_02 text-xs font-normal;
+      }
+
+      .out {
+        @apply absolute right-5 top-5 text-brand_color text-xs;
+      }
+    }
+  }
+
+  .table-pagination {
+    .arco-select-view-value,
+    .arco-pagination-total-text {
+      @apply text-text_color_03;
+    }
+    @apply flex items-center justify-end mt-4 mb-4;
+
+    .arco-pagination-jumper {
+      @apply inline-flex items-center order-3;
+    }
+
+    .arco-pagination-list {
+      @apply inline-flex order-2;
+    }
+
+    .arco-select {
+      @apply inline-flex order-1;
+    }
+
+    .arco-pagination-item {
+      @apply inline-flex justify-center items-center h-8;
+
+      min-width: 32px;
+    }
+
+    .arco-pagination-option {
+      @apply inline-flex justify-center items-center;
+    }
+
+    .arco-select-view-value {
+      @apply inline-flex items-center;
+    }
+
+    .arco-pagination-jumper-input,
+    .arco-select-view {
+      @apply h-8;
+    }
+
+    .table-pagination-extra {
+      @apply ml-2;
+
+      color: var(--color-text-3);
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+    }
+  }
+
+  .arco-table-tr {
+    > * {
+      @apply whitespace-nowrap;
+    }
+  }
+
+  .out {
+    svg {
+      @apply h-4 w-4;
+    }
+  }
+
+  .arco-table-empty-row {
+    .arco-table-no-data {
+      width: 1200px;
+    }
+  }
+}
+
+:local(.agent-form) {
+  .arco-form-item {
+    @apply pb-2;
+  }
+
+  .arco-space {
+    @apply w-full;
+
+    .arco-form-message {
+      @apply text-xs pt-1;
+    }
+
+    .arco-space-item {
+      height: 60px;
+      @apply flex-1;
+
+      .arco-picker {
+        @apply w-full;
+      }
+
+      &:last-child {
+        @apply ml-2;
+      }
+    }
+
+    .arco-space-item-split {
+      margin-bottom: 12px;
+      font-size: 12px;
+      @apply text-text_color_01 font-normal;
+    }
+  }
+
+  .arco-picker {
+    .arco-picker-suffix {
+      @apply hidden;
+    }
+  }
+
+  .btn {
+    @apply flex;
+
+    .arco-btn {
+      @apply flex-1;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  input,
+  .arco-btn,
+  .arco-form-item-wrapper,
+  .arco-form-item-control-wrapper,
+  .arco-form-item-control,
+  .arco-form-item-control-children {
+    @apply h-10 !important;
+  }
+
+  input {
+    font-size: 14px;
+
+    &::placeholder {
+      @apply text-text_color_04;
+    }
+  }
+
+  .arco-form-label-item {
+    @apply text-text_color_01;
+  }
+
+  .arco-btn,
+  .arco-space-item-split {
+    @apply text-sm;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply bg-bg_sr_color;
+
+    border: none;
+
+    &:hover {
+      border-color: transparent;
+      @apply bg-bg_sr_color;
+    }
+  }
+
+  .arco-input-inner-wrapper-focus {
+    border: 1px solid var(--line_color_01);
+  }
+
+  .reset-btn {
+    @apply text-text_color_02 border-line_color_01 bg-card_bg_color_03;
+  }
+
+  .arco-btn-secondary {
+    @apply bg-card_bg_color_03 border-line_color_01;
+  }
+}

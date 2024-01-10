@@ -1,0 +1,8 @@
+:local(.scoped) {
+  padding: 16px;
+
+  .logo img {
+    border-radius: 10px;
+  }
+}
+

@@ -1,0 +1,43 @@
+:local(.scoped) {
+  @apply flex-1 bg-bg_color;
+
+  .community-groups-header {
+    @apply h-80 w-full relative box-border text-center;
+
+    .groups-header-image {
+      @apply w-full h-full;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    .groups-header-first {
+      transform: translateX(-50%);
+      @apply w-full absolute top-20 left-1/2 mb-8 text-6xl font-semibold text-button_text_02;
+    }
+
+    .groups-header-second {
+      transform: translateX(-50%);
+      @apply w-full absolute text-lg top-52 left-1/2 font-medium text-button_text_02;
+    }
+  }
+
+  .community-groups-content {
+    @apply w-full;
+
+    .fixed-container {
+      @apply w-full bg-bg_color;
+    }
+  }
+
+  .community-groups-body {
+    width: 1200px;
+    min-height: 557px;
+    @apply m-auto box-border;
+
+    .groups-body-item {
+      @apply pt-12;
+    }
+  }
+}

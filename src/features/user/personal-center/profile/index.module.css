@@ -1,0 +1,304 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .header {
+    @apply bg-card_bg_color_01;
+
+    .personal-center-header {
+      width: 1200px;
+      @apply flex justify-between py-6 mb-8 mx-auto overflow-hidden;
+
+      .title, .area {
+        @apply flex items-center;
+      }
+
+      .title {
+        svg {
+          font-size: 40px;
+          @apply ml-4;
+        }
+
+        label {
+          font-size: 32px;
+          @apply font-medium text-text_color_01;
+        }
+      }
+
+      .area {
+        label {
+          @apply mr-4 text-sm text-text_color_02;
+        }
+
+        .select-area {
+          width: 214px;
+
+          .arco-select-view {
+            @apply bg-bg_color rounded-3xl text-text_color_01 border-0;
+          }
+
+          .arco-select-prefix {
+            width: 40px;
+            @apply mr-0;
+          }
+          
+          .arco-select-arrow-icon {
+            @apply invisible;
+          }
+          
+          .arco-image-img {
+            @apply rounded-full w-6 h-6;
+          }
+        }
+      }
+    }
+  }
+
+  .personal-center-profile-wrap {
+    width: 1200px;
+    @apply mx-auto bg-bg_color flex relative justify-between pb-10;
+
+    .container {
+      @apply flex;
+
+      .rights-and-interests {
+        width: 380px;
+        height: 617px;
+        margin-right: 74px;
+        @apply bg-card_bg_color_01 pt-8 pb-6 rounded-lg relative;
+        
+        .rights-and-interests-header {
+          @apply flex;
+
+          margin-bottom: 32px;
+        }
+
+        .rights-and-interests-container, .rights-and-interests-footer {
+          @apply flex justify-center items-center;
+        }
+
+        .rights-and-interests-header, .rights-and-interests-container {
+          @apply flex-col;
+        }
+        
+        .rights-and-interests-container { 
+          .icon {
+            img {
+              @apply w-24 h-24 !important;
+            }
+          }
+        }
+
+        .rights-and-interests-header {
+          .icon {
+            svg {
+              font-size: 23px;
+              @apply mb-1;
+            }
+          }
+
+          .text {
+            @apply font-medium ml-10;
+
+            label {
+              font-size: 28px;
+              @apply text-text_color_01;
+            }
+          }
+        }
+
+        .rights-and-interests-container {
+          .not-certified {
+            margin-top: 121px;
+            @apply flex flex-col items-center;
+
+            .icon {
+              @apply mb-3;
+  
+              svg {
+                font-size: 86px;
+              }
+            }
+  
+            .text {
+              p {
+                @apply text-center;
+  
+                &:first-child {
+                  @apply font-medium text-base  text-text_color_01 mb-1;
+                }
+  
+                &:last-child {
+                  @apply font-medium	text-sm text-text_color_03;
+                }
+              }
+            }
+          }
+
+          .rights-and-interests-result {
+            @apply w-full pl-8;
+
+            .tips {
+              .item {
+                @apply flex my-2;
+
+                .icon {
+                  @apply mr-4;
+
+                  svg {
+                    font-size: 24px;
+                  }
+                }
+
+                .text {
+                  p {
+                    &:first-child {
+                      font-size: 16px;
+                      @apply text-text_color_01 mb-1 font-medium;
+                    }
+      
+                    &:last-child {
+                      font-size: 14px;
+                      @apply text-text_color_02;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .company-footer {
+          @apply w-full absolute justify-center flex flex-col items-center;
+
+          bottom: 24px;
+
+          .rights-and-interests-footer {
+            .enterprise-certification {
+              @apply flex items-center;
+
+              .first-icon {
+                svg {
+                  font-size: 28px;
+                }
+              }
+
+              .last-icon {
+                svg {
+                  width: 18px;
+                  height: 14px;
+                }
+              }
+
+              label {
+                @apply mx-1 text-base font-medium text-brand_color cursor-pointer;
+              }
+            }
+          }
+
+          .company-button {
+            @apply mx-auto mt-2 px-3 text-xs  rounded-2xl text-center py-1;
+          }
+          
+          .company-button-underreview {
+            @apply bg-brand_color_special_02  text-brand_color;
+          }
+          
+          .company-button-complete {
+            @apply bg-buy_up_color_special_02 cursor-default mt-32 text-success_color;
+          }
+          
+          .company-button-adopt {
+            @apply text-warning_color bg-warning_color_disable cursor-pointer;
+          }
+          
+          .company-button-notapproved {
+            @apply bg-card_bg_color_04 text-text_color_04;
+          
+          }
+        }
+ 
+      }
+
+      
+      .authentication-item {
+        width: 336px;
+        height: 617px;
+        margin-right: 74px;
+        @apply flex  pb-6 pt-8 flex-col last:mr-0;
+
+        .title {
+          @apply mb-6 font-medium;
+
+          font-size: 28px;
+
+          label {
+            @apply text-text_color_01;
+          }
+        }
+
+        .under-review-button {
+          @apply bg-brand_color_special_02 text-brand_color;
+        }
+        
+        .completed-button {
+          @apply bg-buy_up_color_special_02 cursor-default text-success_color !important;
+        }
+      
+        .not-applicable-button {
+          width: 336px;
+          @apply bg-bg_button_disabled text-text_color_04;
+        }
+        
+        .not-adopt-button {
+          @apply text-warning_color bg-warning_color_disable;
+        }
+
+        .credential {
+          min-height: 134px;
+
+          .item {
+            @apply mb-4 last:mb-0 flex items-center;
+
+            svg {
+              font-size: 20px;
+            }
+  
+            label {
+              font-size: 14px;
+              @apply ml-2 text-text_color_02;
+            }
+          }
+        }
+
+        .arco-btn {
+          @apply my-6 font-medium;
+        }
+
+        .tips {
+          min-height: 145px;
+
+          .item {
+            @apply mb-4;
+
+            p {
+              font-size: 14px;
+
+              &:first-child {
+                @apply text-text_color_02 mb-2;
+              }
+
+              &:last-child {
+                @apply text-text_color_01 font-medium;
+              }
+            }
+
+            &:last-child {
+              @apply mb-0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

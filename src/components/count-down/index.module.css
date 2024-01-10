@@ -1,0 +1,5 @@
+:local(.scoped) {
+  .mark-price {
+    @apply text-text_color_01 font-medium;
+  }
+}

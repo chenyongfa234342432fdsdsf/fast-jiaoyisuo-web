@@ -1,0 +1,81 @@
+:local(.scoped) {
+  .tip-text {
+    @apply border-text_color_03 border-b border-dashed cursor-pointer;
+  }
+
+  .payment-text {
+    @apply flex flex-col items-start;
+  }
+
+  .trade-type-text {
+    @apply px-1 py-0.5 rounded-sm text-xs;
+  }
+
+  .trade-type-in {
+    @apply bg-success_color_special_02 text-success_color;
+  }
+
+  .trade-type-out {
+    @apply bg-brand_color_special_02 text-brand_color;
+  }
+
+  .list-opt-button {
+    @apply w-full h-full text-center text-brand_color !important;
+  }
+
+  .list-opt-button:hover {
+    @apply cursor-pointer;
+  }
+  
+  .arco-modal-header {
+    @apply px-8 pt-8
+  }
+
+  .arco-table {
+    tbody {
+      .arco-table-tr {
+        .arco-table-td {
+          @apply py-6 !important;
+        }
+      }
+
+      .arco-table-tr:not(:last-child) {
+        .arco-table-td {
+          border-style: solid !important;
+          @apply border-b border-b-line_color_02 !important;
+        }
+      }
+    }
+  }
+
+  .price-limit {
+    min-width: 58px;
+    @apply mr-1 text-text_color_02;
+  }
+
+  .arco-modal-close-icon {
+    @apply text-xl right-8;
+
+    top: 26px;
+  }
+
+  .arco-modal-content {
+    @apply pt-8
+  }
+
+  .arco-table-no-data {
+    @apply cursor-auto;
+  }
+
+  .header-operate {
+    @apply text-brand_color font-medium flex justify-end;
+
+    .is-disable {
+      @apply text-text_color_03 cursor-not-allowed;
+    }
+
+    .operate-line {
+      @apply mx-2 text-line_color_02;
+    }
+  }
+}

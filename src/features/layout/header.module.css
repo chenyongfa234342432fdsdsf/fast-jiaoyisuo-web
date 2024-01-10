@@ -1,0 +1,113 @@
+:local(.scoped) {
+  @apply flex flex-row flex-wrap justify-between bg-bg_color;
+
+  .row-wrap-between {
+    @apply flex flex-row flex-wrap justify-between;
+  }
+
+  .menu-wrap {
+    @apply flex-1 flex text-text_color_01;
+
+    .menu-item-wrap {
+      @apply mr-8 flex items-center;
+
+      /* .is-active {
+        @apply text-brand_color;
+      } */
+
+      svg {
+        @apply transition-transform;
+      }
+
+      &:hover {
+        @apply text-brand_color;
+
+        svg {
+          @apply rotate-180;
+        }
+      }
+    }
+
+    .multiple-menu-icon {
+      margin-top: -4px;
+      font-size: 8px;
+    }
+
+  }
+
+  .home-wrap {
+    @apply flex items-center ml-8 text-lg text-brand_color mr-8;
+  }
+
+  .personalization-wrap {
+    @apply flex flex-row flex-wrap items-center pr-6;
+
+    height: 60px;
+
+    .btn-wrap {
+      @apply mr-8;
+    }
+
+    .login-btn-wrap, .text-wrap {
+      @apply text-text_color_01 hover:text-brand_color cursor-pointer;
+
+      svg {
+        @apply text-2xl w-6 h-6;
+      }
+    }
+
+    .login-btn-wrap {
+      @apply mr-4;
+    }
+
+    .login-btn-wrap-line {
+      @apply w-px h-4 bg-line_color_01 ml-2 mr-6;
+    }
+
+    > :last-child {
+      @apply mr-0;
+    }
+  }
+
+}
+
+.header-menu-wrap {
+  width: 338px;
+
+  .submenu-wrap {
+    @apply flex flex-col rounded py-4 pr-10 relative text-base text-text_color_01 pl-16;
+
+    .arrow-icon {
+      @apply inline-flex opacity-0 right-4;
+    }
+
+    .main-icon {
+      @apply inline-flex left-4 text-2xl;
+    }
+
+    &:hover {
+      @apply bg-card_bg_color_02 ;
+
+      .arrow-icon {
+        @apply opacity-100 ;
+      }
+    }
+
+    .icon {
+      @apply absolute;
+    }
+
+    .subtitle-wrap {
+      @apply text-text_color_03 text-xs mt-1;
+    }
+
+  }
+}
+
+.i18n-select-wrap {
+  @apply flex text-text_color_01;
+
+  .it {
+    @apply hover:text-brand_color cursor-pointer;
+  }
+}

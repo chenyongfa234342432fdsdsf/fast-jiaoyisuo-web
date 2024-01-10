@@ -1,0 +1,61 @@
+:local(.scoped) {
+  @apply flex-1 bg-bg_color;
+
+  .title {
+    @apply h-28 flex justify-center items-center bg-card_bg_color_01;
+  
+    h1 {
+      @apply text-4xl text-text_color_01 font-medium;
+    }
+  }
+
+  .wrap {
+    width: 1200px;
+    @apply m-auto;
+  }
+
+  .trade-fee-wrap {
+    @apply mt-6 bg-bg_color;
+  }
+
+  .coin-wrap {
+    @apply flex flex-row items-center;
+
+    img {
+      @apply h-6 w-6;
+
+      border-radius: 50%;
+    }
+  }
+
+  .futures-type {
+    @apply ml-2 px-1.5 py-1 text-text_color_02 font-medium bg-card_bg_color_02 rounded text-xs scale-75;
+  }
+
+  .tip-text {
+    @apply border-text_color_03 border-b border-dashed cursor-pointer;
+  }
+
+  div.trade-fee-list-wrapper {
+    @apply mt-6 overflow-y-auto;
+
+    .arco-table thead > .arco-table-tr > .arco-table-th,
+    .arco-table .arco-table-td {
+      @apply text-text_color_01 h-10;
+
+      border: none;
+    }
+  
+    .arco-table-th {
+      @apply text-base bg-card_bg_color_01;
+    }
+
+    .arco-table-th-item-title {
+      @apply text-xs text-text_color_02
+    }
+  }
+
+  .arco-input {
+    @apply text-sm
+  }
+}

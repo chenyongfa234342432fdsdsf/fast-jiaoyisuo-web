@@ -1,0 +1,19 @@
+:local(.scoped) {
+  @apply bg-transparent hover:bg-white;
+
+  .arco-table-td {
+    border-bottom: 0;
+  }
+
+  .snippet-header {
+    @apply flex flex-row justify-between px-4 py-1 my-3 rounded-lg cursor-pointer hover:bg-bg_sr_color items-center;
+  }
+
+  .arco-table-td:nth-child(2) {
+    @apply text-center;
+  }
+
+  .arco-table-td:nth-child(3) {
+    @apply text-right;
+  }
+}

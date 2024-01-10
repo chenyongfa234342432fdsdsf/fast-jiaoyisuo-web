@@ -1,0 +1,38 @@
+:local(.layout-options-wrapper) {
+  @apply flex py-1;
+
+  .layout-option {
+    @apply flex flex-col items-center text-xs text-text_color_03 mr-4 last:mr-0 cursor-pointer;
+
+    .icon {
+      width: 52px;
+      height: 38px;
+      margin-bottom: 10px;
+
+      svg {
+        @apply w-full h-full;
+      }
+
+      &.selected {
+        @apply hidden;
+      }
+
+      
+    }
+
+    &.is-selected,
+    &:hover {
+      @apply text-text_color_01;
+
+      .icon {
+        &.selected {
+          @apply block;
+        }
+
+        &.default {
+          @apply hidden;
+        }
+      }
+    }
+  }
+}

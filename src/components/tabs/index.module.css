@@ -1,0 +1,180 @@
+:local(.scoped) {
+  @apply flex text-sm;
+
+  .tab-fill {
+    @apply flex-1 flex justify-end;
+  }
+
+  &.mode-tab {
+    @apply bg-card_bg_color_01;
+
+    .tab:first-child {
+      .line {
+        &.left {
+          @apply w-0 !important;
+        }
+      }
+    }
+
+    .tab-fill {
+      border-bottom: 1px solid var(--line_color_02);
+    }
+
+    .tab {
+      @apply relative h-12 flex cursor-pointer text-text_color_02;
+
+      width: 120px;
+      border-bottom: 1px solid var(--line_color_02);
+
+      .item {
+        @apply flex-1 inline-flex justify-center items-center font-medium;
+      }
+
+      &.active {
+        @apply text-text_color_01;
+
+        border-top: 2px solid var(--brand_color);
+        border-bottom: 1px solid transparent;
+
+        .line {
+          @apply inline-flex h-full bg-line_color_02 w-px;
+        }
+      }
+    }
+  }
+
+  /* line */
+  &.mode-line {
+    .tab-fill {
+    }
+
+    .tab {
+      @apply relative h-11 flex cursor-pointer text-text_color_02;
+
+      .item {
+        @apply flex-1 inline-flex justify-center items-center px-4 font-medium hover:text-text_color_01;
+      }
+
+      &.active {
+        @apply text-text_color_01 font-medium;
+
+        .item {
+          @apply relative;
+
+          &::after {
+            @apply absolute transform -translate-x-1/2 left-1/2 bottom-0 bg-brand_color h-0.5 rounded-sm;
+
+            width: 50%;
+            content: '';
+          }
+        }
+
+
+        .line {
+          @apply inline-flex h-full bg-line_color_02 w-px;
+        }
+      }
+    }
+  }
+
+  /* done */
+  &.mode-text {
+    @apply gap-8;
+
+    .tab {
+      @apply relative flex cursor-pointer;
+
+
+      .item {
+        @apply flex-1 inline-flex justify-center items-center text-text_color_02 font-medium;
+      }
+
+      &.active {
+        .item {
+          @apply text-brand_color_animate;
+        }
+      }
+    }
+
+    .scrollable-tab {
+      .icon-circle {
+        @apply w-6 h-6;
+      }
+    }
+  }
+
+  &.mode-button {
+    &.size-default {
+      @apply gap-4;
+
+      .tab {
+        @apply relative flex cursor-pointer;
+
+
+        .item {
+          @apply flex-1 inline-flex justify-center items-center font-medium;
+        }
+
+        .button-item {
+          @apply h-10 px-8 py-3  rounded-sm;
+
+          &:hover {
+            @apply text-text_color_01;
+          }
+        }
+
+        &.active {
+          @apply text-brand_color_animate ;
+
+          .button-item {
+            @apply bg-card_bg_color_02;
+
+          }
+
+        }
+      }
+    }
+
+
+    &.size-small {
+      @apply gap-1;
+
+      .tab {
+        @apply relative flex cursor-pointer;
+
+
+        .item {
+          @apply flex-1 inline-flex justify-center items-center text-text_color_02 font-medium;
+        }
+
+        .button-item {
+          @apply px-1.5 py-1  rounded-sm;
+        }
+
+        &.active {
+          .button-item {
+            @apply bg-card_bg_color_02 text-text_color_01;
+          }
+        }
+      }
+    }
+  }
+
+  .max-width-tabs-wrapper {
+    @apply flex overflow-x-auto whitespace-nowrap;
+
+    &::-webkit-scrollbar {
+      @apply h-0.5;
+    }
+
+    &:not(:hover) {
+      &::-webkit-scrollbar {
+        @apply bg-transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @apply bg-transparent;
+      }
+    }
+  }
+}

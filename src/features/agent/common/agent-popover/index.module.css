@@ -1,0 +1,12 @@
+:local(.scoped) {
+  @apply bg-toast_bg_color rounded;
+
+  .arco-popover-content {
+    width: 232px;
+    @apply bg-toast_bg_color rounded text-button_text_01 text-xs font-normal border-none !important;
+  }
+
+  .arco-trigger-arrow {
+    @apply bg-toast_bg_color border-none !important;
+  }
+}

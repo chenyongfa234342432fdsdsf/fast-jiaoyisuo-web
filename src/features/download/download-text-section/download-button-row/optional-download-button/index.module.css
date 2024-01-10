@@ -1,0 +1,29 @@
+:local(.scoped) {
+  button {
+    @apply pl-14;
+  }
+
+  .button-text {
+    @apply text-xs font-normal !important;
+  }
+
+  .arco-btn-secondary:not(.arco-btn-disabled):hover {
+    @apply hover:bg-text_color_02 !important;
+  }
+
+  .download-button {
+    @apply flex flex-row items-center gap-x-2;
+  }
+
+  .download-button-disabled {
+    @apply bg-card_bg_color_02 !important;
+
+    svg, span {
+      @apply cursor-not-allowed;
+    }
+
+    .button-text {
+      @apply text-text_color_04;
+    }
+  }
+}

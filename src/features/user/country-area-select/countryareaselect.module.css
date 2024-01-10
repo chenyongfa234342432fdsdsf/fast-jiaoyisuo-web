@@ -1,0 +1,26 @@
+:local(.container) { 
+  .useful-expressions {
+    @apply px-3 inline-block;
+    
+    .country-input {
+      @apply h-12 mt-3;
+    }
+
+    .useful-expressions-item {
+      @apply h-12 flex items-center font-medium border-line_color_01 border-b pl-3;
+    }
+  }
+
+  li {
+    @apply h-12 flex items-center;
+  }
+  
+  .country-select-img {
+    @apply w-10 h-6 mr-2 !important;
+  }
+  
+  .country-select-nodata {
+    @apply flex justify-center mt-3 font-medium;
+  }
+
+}

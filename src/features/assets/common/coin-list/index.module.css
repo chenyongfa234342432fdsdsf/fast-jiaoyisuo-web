@@ -1,0 +1,89 @@
+:local(.scoped) {
+  .arco-modal-header {
+    @apply px-8 pt-8;
+  }
+
+  .arco-modal-close-icon {
+    top: 30px;
+
+    @apply text-xl right-8;
+  }
+
+  .arco-modal-content {
+    @apply px-0 pb-8;
+  }
+
+  .search-form {
+    height: 46px;
+
+    @apply w-full text-sm;
+  }
+
+  .search-title {
+    @apply flex justify-between;
+  }
+
+  .label-name {
+    @apply text-sm text-text_color_01 font-medium;
+  }
+
+  .search-history {
+    @apply flex flex-wrap cursor-pointer;
+
+    .search-coin-item {
+      @apply flex items-center h-8 bg-card_bg_color_02 px-3 rounded mt-3 mr-2.5
+    }
+  }
+
+  .hot-coin {
+    @apply flex flex-wrap mt-2 pb-2 cursor-pointer border-b border-line_color_02;
+    
+    .hot-coin-item {
+      @apply flex items-center h-8 bg-card_bg_color_02 mr-2.5 px-3 mb-4 rounded;
+
+      img {
+        @apply mr-1 w-4 h-4 rounded-lg m-auto;
+      }
+    }
+  }
+
+  .coin-list-wrap {
+    height: 472px;
+
+    @apply overflow-y-auto pt-6;
+  }
+
+  ::-webkit-scrollbar {
+    @apply bg-bg_color;
+  }
+
+  .coin-list {
+    @apply w-full flex flex-col;
+
+    .coin-item {
+      @apply flex items-center px-8 cursor-pointer h-14;
+    }
+
+    .coin-item:hover, .coin-item:active {
+      @apply bg-card_bg_color_02;
+    }
+
+    .coin-name {
+      @apply px-2 font-medium;
+    }
+
+    .coin-state {
+      font-size: 10px;
+
+      @apply ml-2 px-2 h-5 leading-5 bg-bg_button_disabled rounded-tr rounded-bl text-text_color_04;
+    }
+
+    img {
+      @apply w-6 h-6 rounded-xl m-auto;
+    }
+  }
+
+  .arco-input {
+    @apply text-sm
+  }
+}

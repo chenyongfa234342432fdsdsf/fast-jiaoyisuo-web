@@ -1,0 +1,46 @@
+:local(.scoped) {
+  @apply flex items-center w-full;
+  
+      
+  .creates-advertisements-title-detail {     
+    .creates-advertisements-title {
+      @apply font-bold text-base pl-3  ml-3 border-l-4 border-brand_color;
+    } 
+  }
+  
+  .creates-advertisements-c2cset {
+    @apply py-10;
+    
+    span {
+      @apply text-brand_color;
+    }
+  }
+  
+  .creates-advertisements-paymentmethod {
+    @apply flex items-center py-10 w-full border-b;
+    
+    div {
+      @apply flex items-center;
+    }
+    
+    span {
+      @apply px-2;
+    }
+    
+    img {
+      @apply w-4 h-4;
+    }
+    
+    .creates-wechat {
+      @apply pl-4;
+    }
+    
+    .creates-name {
+      @apply px-4;
+    }
+  }
+
+  .creates-advertisements-popover {
+    @apply w-72 !important;
+  }
+}

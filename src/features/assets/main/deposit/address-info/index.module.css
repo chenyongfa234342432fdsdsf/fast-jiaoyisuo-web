@@ -1,0 +1,53 @@
+:local(.pay-address) {
+  .pay-qr-code {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .pay-tips {
+    @apply mt-2 text-text_color_01 text-sm text-center;
+
+    line-height: 22px;
+  }
+      
+  .address-form {
+    @apply flex justify-between p-3 bg-bg_sr_color rounded items-center break-all;
+    
+    min-height: 46px;
+    
+    .info {
+      @apply mr-8;
+    }
+    
+    .copy-icon {
+      svg {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .warning-info {
+    @apply mt-2 text-warning_color text-xs;
+  }
+
+  .confirm-wrap {
+    @apply mt-6 p-3 bg-card_bg_color_01 rounded text-xs text-text_color_02;
+
+    .confirm-item {
+      @apply flex justify-between pb-3 last:pb-0;
+
+      line-height: 22px;
+
+      .label {
+        @apply flex;
+
+        svg {
+          @apply w-3 h-3 ml-1;
+        }
+      }
+
+      .value {
+        @apply text-right text-text_color_01;
+      }
+    }
+  }
+}

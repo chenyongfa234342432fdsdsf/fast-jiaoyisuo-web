@@ -1,0 +1,74 @@
+:local(.scoped) {
+  @apply h-full overflow-hidden;
+
+  .trade-activity-list {
+    @apply h-full overflow-y-scroll flex-1 px-3.5;
+
+    .arco-spin {
+      @apply w-full h-full;
+    }
+
+    .activity-table-header {
+      font-size: 12px;
+      @apply sticky bg-bg_color top-0 w-full z-10 pb-1 left-0 grid-cols-3 grid  text-text_color_03  last:text-right;
+
+      div:first-child {
+        @apply text-start;
+      }
+      
+      div {
+        @apply w-full last:text-center;
+      }
+
+            
+      div:nth-child(2) {
+        @apply text-right pr-3;
+      }
+    }
+    
+    .activity-table-body {
+      .activity-note-date {
+        @apply mt-4;
+
+        img {
+          @apply w-28;
+        }
+
+        .suppor-lazy-image {
+          .rv-image {
+            @apply flex justify-center;
+          }
+        }
+      }
+
+      .activity-table-tr {
+        @apply grid-cols-3 grid py-1 relative;
+        
+        div {
+          @apply text-center break-all py-0.5 flex items-center text-xs cursor-pointer;
+        }
+
+        .item-operation {
+          width: 90px;
+          @apply text-right justify-end;
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        .item-value {
+          @apply justify-end pr-3;
+        }
+        
+        .item-name {
+          @apply w-24;
+
+          .title {
+            @apply text-left;
+          }
+        }
+      }
+    }
+  }}

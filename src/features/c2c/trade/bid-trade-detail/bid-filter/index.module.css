@@ -1,0 +1,86 @@
+:local(.container) {
+  .bid-tab-item {
+    width: 1200px;
+    @apply flex  py-6 items-center mx-auto bg-bg_color;
+
+    .arco-form-item {
+      @apply mb-0;
+    }
+    
+    .coin-select-width {
+      width: 150px;
+      
+      .select-img {
+        @apply w-4 h-4 !important;
+      }
+    }
+    
+    .coin-select-form-label {
+      @apply inline-block;
+
+      .arco-input {
+        font-weight: 400;
+      }
+
+      .arco-input-group-suffix {
+        padding-left: 10px;
+        color: black
+      }
+    }
+    
+    .arco-form-item-wrapper {
+      @apply border-none rounded !important;
+      
+      .arco-input {
+        @apply border-none pl-3 !important;
+      }
+      
+      .country-icon {
+        svg {
+          @apply w-2 h-2;
+        }
+      }
+    }
+
+    .arco-select-view {
+      @apply bg-bg_sr_color  border-none !important;
+    }
+    
+    .arco-select-view-value {
+      @apply text-text_color_01 font-normal;
+      
+      .shortcut-short {
+        @apply flex;
+        
+        div:last-child {
+          @apply font-normal !important;
+        }
+        
+        .shortcut-short-img {
+          @apply mr-2;
+          
+          img {
+            @apply w-4 h-4 rounded-full;
+          }
+        }
+      }
+    }
+
+    .c2c-coins-type {
+      width: 200px;
+    }
+
+    .arco-input-inner-wrapper {
+      @apply border-none;
+    }
+  }
+
+  .filter-limit {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    color: #7F7F81;
+    font-size: 12px;;
+    line-height: 18px;
+  }
+}

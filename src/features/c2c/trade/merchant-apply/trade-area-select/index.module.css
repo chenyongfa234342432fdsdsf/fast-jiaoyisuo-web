@@ -1,0 +1,50 @@
+:local(.scope) {
+  @apply text-base font-medium text-text_color_01;
+
+  .arco-select-view {
+    height: 46px !important;
+
+    .arco-input-tag {
+      @apply flex;
+    }
+  }
+  
+  .option-list-wrapper {
+    .option-wrapper .arco-checkbox.arco-select-checkbox {
+      display: none !important;
+    }
+
+    .arco-select-checkbox {
+      display: none;
+    }
+
+    .arco-select-option-wrapper.arco-select-checkbox {
+      display: none;
+    }
+  }
+
+  .arco-input-inner-wrapper {
+    @apply border-none;
+  }
+
+  .arco-input-group {
+    @apply bg-bg_sr_color rounded;
+  }
+
+  .option-wrapper .arco-checkbox.arco-select-checkbox {
+    display: none !important;
+  }
+
+  .search-wrapper {
+    @apply p-4;
+  }
+
+  .arco-select-option-wrapper {
+    padding: 0 16px;
+  }
+
+  .arco-select-popup {
+    padding: 0;
+    @apply pb-4;
+  }
+}

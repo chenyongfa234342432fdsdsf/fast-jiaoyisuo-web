@@ -1,0 +1,9 @@
+:local(.scoped) {
+  @apply mr-4 flex h-10 items-center flex-shrink-0;
+
+  img {
+    width: 30px;
+    height: 30px;
+    @apply mr-2 rounded-full;
+  }
+}

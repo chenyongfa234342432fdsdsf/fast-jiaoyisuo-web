@@ -1,0 +1,86 @@
+:local(.scoped) {
+  padding: 5px 0;
+  @apply flex px-4 items-center;
+
+  .price {
+    @apply text-3xl flex-1 justify-start font-semibold whitespace-nowrap;
+
+    font-size: 20px;
+
+    svg {
+      font-size: 16px;
+      @apply leading-none;
+    }
+
+    .buy, .sell, .primary {
+      font-size: 20px;
+
+      label {
+        @apply font-medium;
+      }
+    }
+  
+    .buy, .sell {
+      svg {
+        font-size: 16px;
+        @apply leading-none;
+      }
+    }
+  
+    .buy {
+      label, svg {
+        @apply text-sell_down_color;
+      }
+    }
+  
+    .sell {
+      label, svg {
+        @apply text-buy_up_color;
+      }
+    }
+  
+    .primary {
+      @apply flex items-center;
+  
+      span {
+        @apply w-4 h-4 block;
+      }
+    }
+  }
+
+  .rate, .more {
+    line-height: 2.5;
+  }
+
+  .rate {
+    @apply flex-1;
+  }
+
+  .rate, .more {
+    label, a {
+      font-size: 12px;
+      @apply leading-none;
+    }
+  }
+
+  .rate {
+    label {
+      @apply text-text_color_02;
+    }
+  }
+
+  .futures-rate {
+    label {
+      border-bottom: 1px dashed var(--text_color_02);
+      @apply cursor-pointer;
+    }
+  }
+
+  .more {
+    @apply text-right;
+
+    a {
+      @apply text-brand_color;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+:local(.scoped) {
+  @apply flex;
+  
+  svg {
+    @apply w-5 h-5;
+  }
+
+}

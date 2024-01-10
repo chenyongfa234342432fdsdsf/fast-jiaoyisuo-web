@@ -1,0 +1,246 @@
+:local(.scope) {
+  .user-setting-container {
+    @apply w-full;
+
+    .user-setting-chat {
+      @apply mt-8;
+
+      .chat-header {
+        @apply flex items-center;
+
+        .chat-title {
+          @apply text-text_color_01;
+
+          font-weight: 500;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 22px;
+        }
+
+        .chat-edit {
+          @apply text-brand_color ml-4 cursor-pointer;
+
+          font-weight: 500;
+          font-size: 12px;
+          font-style: normal;
+          line-height: 18px;
+        }
+      }
+
+      .text-box {
+        @apply bg-card_bg_color_01 text-text_color_01 py-2 px-3;
+
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 22px;
+      }
+
+      .img-box {
+        @apply flex justify-center items-center;
+        
+        width: 84px;
+        height: 84px;
+
+        .img {
+          @apply flex items-center justify-center w-full h-full;
+
+          img {
+            @apply max-w-full max-h-full;
+          }
+        }
+      }
+    }
+
+    .user-setting-tabs {
+      @apply flex mt-8;
+
+      .tab-box {
+        @apply flex flex-col items-center mr-8 cursor-pointer;
+
+        .tab-item {
+          @apply text-text_color_02;
+
+          font-weight: 500;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 22px;
+
+          &.active {
+            @apply text-text_color_01;
+          }
+        }
+
+        .x-line {
+          @apply bg-brand_color w-7 h-0.5 mt-2;
+        }
+      }
+    }
+
+    .table-container {
+      @apply mx-auto mt-4;
+
+      width: 1200px;
+
+      /* .arco-table-tr {
+        @apply last:mb-8;
+      } */
+
+      .arco-table-body {
+        height: 226px !important;
+      }
+
+      .arco-table-header {
+        @apply overflow-hidden !important;
+
+        /* padding-right: 8px; */
+      }
+
+      .arco-table-col-fixed-right-first::after {
+        @apply absolute bg-card_bg_color_01;
+
+        display: none;
+      }
+
+      .arco-spin-children {
+        max-width: 1200px;
+      }
+
+      .table {
+        @apply w-full;
+
+        .arco-table-th {
+          @apply text-right bg-card_bg_color_01;
+
+          &:first-child {
+            @apply text-left;
+          }
+
+          border-bottom: none;
+
+          .arco-table-th-item {
+            .arco-table-th-item-title {
+              @apply text-text_color_02 text-xs font-normal not-italic;
+            }
+          }
+        }
+
+        .arco-table-td {
+          @apply text-right border-transparent;
+        }
+
+        .table-ceil {
+          @apply flex justify-end items-center;
+
+          &.left {
+            @apply justify-start;
+          }
+
+          .table-ceil-text {
+            @apply text-text_color_01 text-sm font-normal not-italic;            
+
+            &.brand {
+              @apply text-brand_color cursor-pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .table-pagination {
+      @apply flex items-center justify-end mt-6 mb-28;
+
+      .arco-pagination-jumper {
+        @apply inline-flex items-center order-3;
+      }
+
+      .arco-pagination-list {
+        @apply inline-flex order-2;
+      }
+
+      .arco-select {
+        @apply inline-flex order-1;
+      }
+
+      .arco-pagination-item {
+        @apply inline-flex justify-center items-center h-8;
+
+        min-width: 32px;
+      }
+
+      .arco-pagination-option {
+        @apply inline-flex justify-center items-center;
+      }
+
+      .arco-select-view-value {
+        @apply inline-flex items-center;
+      }
+
+      .arco-pagination-jumper-input,
+      .arco-select-view {
+        @apply h-8;
+      }
+
+      .table-pagination-extra {
+        @apply ml-2 text-sm font-normal not-italic;
+
+        color: var(--color-text-3);
+      }
+    }
+  }
+}
+
+:local(.modal) {
+  .title {
+    @apply text-text_color_01;
+
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+  }
+
+  .black-title {
+    @apply text-text_color_01;
+
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+  }
+
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .content {
+    .text {
+      @apply text-text_color_01 text-center my-6;
+  
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+    }
+
+    .textarea-box {
+      @apply mt-4 mb-8;
+
+      .textarea {
+        @apply bg-bg_color;
+  
+        border: 1px solid var(--line_color_01);
+      }
+
+      .appeal-upload-item {
+        width: 140px;
+        height: 140px;
+        @apply mr-3.5 mb-3 relative border-line_color_01 border-dashed border rounded;
+        
+        .upload-icon {
+          @apply absolute -top-1 -right-1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply m-auto;
+
+  .sector-header {
+    .header-top {
+      @apply flex items-center justify-between my-4;
+
+      .header-left {
+        @apply flex items-center;
+
+        label {
+          @apply mr-2 text-base font-medium;
+        }
+
+        .icon-box svg {
+          @apply w-4 h-4;
+        }
+      }
+
+      .header-right {
+        @apply flex items-center font-normal text-sm text-text_color_03 cursor-pointer;
+      }
+    }
+  }
+
+  .sector-body {
+    @apply mt-8;
+
+    min-height: 40vh;
+
+    .sector-body-box {
+      @apply flex items-center justify-between mb-6;
+
+      .body-top {
+        @apply flex text-base font-medium text-text_color_02;
+
+        .body-text {
+          @apply py-2 px-4 mr-4 inline-block cursor-pointer rounded;
+
+          &:hover {
+            @apply bg-bg_sr_color;
+          }
+        }
+
+        .body-bgcolor {
+          @apply bg-bg_sr_color text-text_color_01;
+        }
+      }
+
+      .body-top-button {
+        @apply flex items-center font-normal text-sm text-text_color_03 cursor-pointer;
+      }
+    }
+  }
+}

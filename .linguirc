@@ -1,0 +1,39 @@
+{
+  "locales": [
+    "en-US",
+    "zh-CN",
+    "zh-HK",
+    "ta-IN",
+    "hi-IN",
+    "pt-BR",
+    "vi-VN",
+    "ko-KR",
+    "id-ID",
+    "th-TH",
+    "ja-JP"
+  ],
+  "sourceLocale": "zh-CN",
+  "compileNamespace": "ts",
+  "catalogs": [
+    {
+      "path": "src/locales/{locale}/messages",
+      "include": [
+        "src"
+      ]
+    }
+  ],
+  "orderBy": "origin",
+  "formatOptions": {
+    "origins": false,
+    "lineNumbers": false
+  },
+  "format": "minimal",
+  "fallbackLocales": {
+    "default": "zh-CN"
+  },
+  "extractBabelOptions": {
+    "presets": [
+      "@babel/preset-typescript"
+    ]
+  }
+}

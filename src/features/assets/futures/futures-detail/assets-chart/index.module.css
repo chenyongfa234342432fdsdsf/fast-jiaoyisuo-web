@@ -1,0 +1,92 @@
+:local(.scoped) {
+  @apply flex flex-1 flex-col;
+
+  .chart-title {
+    @apply flex items-center justify-between;
+  }
+
+  .trigger-wrapper {
+    @apply cursor-pointer mx-2 font-medium;
+      
+    .icon {
+      @apply ml-1 w-2 h-auto;
+      
+      transition: transform 0.3s ease;
+    }
+      
+    &:hover {
+      .icon {
+        @apply rotate-180;
+      }
+    }
+  }
+
+  .chart-wrap {
+    @apply flex justify-between;
+  }
+
+  .pie-wrap {
+    width: 230px;
+    height: 180px;
+    @apply pt-4;
+  }
+
+  .pie-legend {
+    @apply flex flex-1 flex-col ml-8 justify-center;
+
+    .legend {
+      @apply flex flex-col text-xs mb-4 last:mb-0;
+
+      .legend-header {
+        height: 18px;
+        @apply flex items-center;
+
+        .legend-icon {
+          @apply w-2.5 h-2.5;
+        }
+
+        .legend-title {
+          @apply text-text_color_01 mx-1 font-medium;
+        }
+
+        .legend-tag {
+          height: 18px;
+          transform: scale(0.83);
+          @apply px-2;
+        }
+
+        .direction-tag {
+          @apply ml-2 px-2 h-4 flex items-center justify-center rounded mr-2;
+        }
+      }
+
+      .legend-num {
+        @apply text-text_color_02 ml-3.5 mt-px;
+      }
+    }
+  }
+}
+
+:local(.menu-cells) {
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-bg_color rounded py-2;
+    
+  .cell-wrap {
+    @apply flex cursor-pointer px-5 py-2 items-center text-text_color_01 text-sm;
+    
+    .icon {
+      @apply w-2 h-2 ml-1;  
+    }
+
+    .is-selected {
+      @apply text-brand_color;
+    }
+  
+    &:hover {
+      @apply bg-bg_color_03;
+    }
+  }
+}
+    
+
+    

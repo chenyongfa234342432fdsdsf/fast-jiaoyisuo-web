@@ -1,0 +1,154 @@
+:local(.modal) {
+  .arco-modal-close-icon {
+    @apply text-xl !important;
+  }
+
+  .arco-modal-header {
+    height: auto;
+    padding-left: 16px;
+  }
+
+  .arco-modal-content {
+    height: auto;
+    @apply border-t border-solid border-line_color_02 py-0 px-8;
+  }
+
+  .modal-tab-wrap {
+    @apply pt-4 h-16;
+  }
+
+  .arco-modal-close-icon {
+    top: 24px !important;
+  }
+
+  .content-wrap {
+    @apply flex h-full;
+
+    .left, .right {
+      @apply h-full;
+
+
+    }
+
+    .left {
+      width: 356px;
+      @apply border-r border-solid border-line_color_02 pr-6;
+
+      .arco-form-item-wrapper {
+        @apply w-full flex-1;
+
+      }
+
+      .row {
+        @apply mt-6;
+
+
+
+        .arco-form-item {
+          @apply my-0;
+        }
+
+        .arco-input-number {
+          input {
+            @apply text-right pr-2 !important;
+          }
+        }
+
+        .arco-input-group {
+          .arco-input-inner-wrapper {
+            .arco-input-group-prefix {
+              @apply text-text_color_02;
+            }
+
+            .arco-input-group-suffix {
+              @apply text-text_color_01;
+            }
+
+            input {
+              &.arco-input-disabled {
+                -webkit-text-fill-color: var(--text_color_04);
+              }
+
+              &::placeholder {
+                @apply text-text_color_04;
+              }
+            }
+          }
+        }
+
+        .price-text {
+          .arco-input-inner-wrapper {
+            @apply pr-1 !important;
+          }
+        }
+
+
+
+        .arco-select-suffix {
+          @apply ml-0 !important;
+        }
+
+        .arco-input-number-suffix {
+          .arco-select-single {
+            @apply w-5 !important;
+
+            .arco-select-view {
+              @apply pl-0 !important;
+            }
+          }
+        }
+
+
+
+        .arco-input-inner-wrapper-disabled {
+          @apply bg-bg_button_disabled !important;
+
+          -webkit-text-fill-color: var(--text_color_02) !important;
+
+        }
+
+        .arco-form-item-control-children {
+          @apply h-full;
+        }
+
+        .submit-btn {
+          @apply h-10 font-medium;
+        }
+
+      }
+
+      .futures-income-wrap {
+        @apply mt-1.5 !important;
+
+        margin-bottom: 18px !important;
+
+        .futures-income-input-wrap {
+          .arco-input-number {
+            input {
+              @apply text-left pr-2 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 323px;
+      padding-top: 70px;
+      @apply pl-6;
+
+      .title {
+        @apply text-text_color_01 font-medium;
+      }
+
+      .row {
+        @apply mt-4 text-text_color_01 flex justify-between;
+
+        .label {
+          @apply text-text_color_02;
+
+        }
+      }
+    }
+  }
+}

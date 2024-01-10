@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply text-center;
+
+  .stop-service-tips {
+    @apply mt-2 mb-8 text-text_color_03 text-sm font-medium;
+  }
+
+  .stop-service-icon svg {
+    @apply mt-20 w-20 h-20;
+  }
+
+  .gray-bg-button {
+    @apply bg-bg_sr_color;
+  }
+}

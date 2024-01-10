@@ -1,0 +1,81 @@
+:local(.scoped) {
+  @apply flex pt-36;
+
+  .set-password-back {
+    @apply h-6 flex items-center;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      @apply mr-1;
+    }
+
+    label {
+      @apply text-text_color_02 text-base leading-4 font-medium cursor-pointer;
+    }
+  }
+
+  .set-password-wrap {
+    width: 388px;
+    @apply pb-8 m-auto;
+
+    p {
+      font-size: 32px;
+      @apply mb-8 font-semibold text-text_color_01;
+    }
+
+    .content-text {
+      @apply block text-text_color_03;
+    }
+
+    .form {
+      .invitation-code {
+        @apply mt-6 mb-2;
+
+        label {
+          @apply text-text_color_03 text-sm font-normal mr-2;
+        }
+      }
+
+      .login {
+        font-size: 14px;
+        line-height: 14px;
+        @apply text-text_color_03 font-normal mt-8;
+      }
+
+      .arco-checkbox {
+        @apply text-text_color_03 text-xs leading-3 font-normal pl-0 break-all;
+
+        svg {
+          @apply w-3 h-3 mr-2;
+        }
+      }
+
+      .service-agreement {
+        @apply flex;
+      }
+
+      .arco-select-prefix {
+        @apply mr-0;
+      }
+
+      .arco-image {
+        margin-right: 10px;
+        @apply mt-1;
+        @apply w-4 h-4;
+
+        img {
+          @apply w-full;
+        }
+      }
+    }
+  }
+
+  .set-password-footer {
+    @apply mt-4 text-center;
+
+    span {
+      @apply text-xs cursor-pointer text-text_color_03;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:local(.scoped) {
+  .user-modify-name-wrap {
+    .user-tips {
+      margin: 18px 0 32px;
+    }
+
+    .arco-btn {
+      @apply mb-0 mt-4;
+    }
+  }
+}

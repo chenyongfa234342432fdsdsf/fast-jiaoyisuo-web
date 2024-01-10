@@ -1,0 +1,364 @@
+:local(.custom-font-size) {
+  font-size: 12px !important;
+}
+
+:local(.popover) {
+  width: 460px !important;
+  max-width: 460px !important;
+  height: 386px !important;
+  max-height: 386px !important;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+
+  .arco-popover-content {
+    @apply bg-card_bg_color_03;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-y: hidden;
+    border: none;
+  }
+
+  .arco-popover-arrow {
+    display: none;
+  }
+}
+
+:local(.price-hover-popover) {
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+:local(.scoped) {
+  @apply pt-4;
+
+  .header {
+    @apply inline-flex justify-between items-center w-full text-base pb-2 px-4;
+
+    font-size: 14px;
+  }
+
+  .content-title {
+    font-size: 14px;
+    @apply text-text_color_01;
+  }
+
+  .market-list-spot-trade-search-wrapper {
+  }
+
+  .search-bar {
+    padding-bottom: 4px;
+    @apply px-4;
+
+    .arco-input-group {
+      border-radius: 4px;
+      @apply bg-bg_sr_color;
+    }
+
+    .arco-input,
+    .arco-input-size-default {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .arco-input-inner-wrapper {
+      border: none !important;
+    }
+
+    .arco-input-group-prefix {
+      @apply mr-1;
+    }
+  }
+
+  .default-nav-row {
+    height: 34px;
+    @apply flex items-center justify-between mb-[2px] w-full px-4;
+
+    border-bottom: 1px solid var(--line_color_02);
+
+    .categories {
+      @apply whitespace-nowrap;
+
+      .horizontal-scroll-bar {
+        .right-0 {
+          transform: translateX(6px);
+        }
+
+        .bar-wrapper {
+          > :last-child {
+            @apply pr-4
+          }
+
+          @apply flex justify-start items-center;
+
+          max-width: 330px;
+        }
+      }
+    }
+
+    .base-currency-selection-dropdown {
+      width: 76px;
+      height: 26px;
+
+      /* @apply translate-y-[-6px]; */
+
+      .arco-select-view {
+        height: 26px;
+      }
+
+      @apply ml-4;
+
+      .arco-select-view-value {
+        font-size: 12px;
+      }
+
+      .arco-select-view {
+        @apply inline-flex justify-center items-center;
+      }
+    }
+
+    .tab .item,
+    .bar-wrapper {
+      font-size: 12px !important;
+    }
+
+    .tab {
+      padding-top: 8px;
+      padding-bottom: 6px;
+    }
+
+    .tab.active {
+      .item {
+        color: var(--text_color_01) !important;
+      }
+
+      > ::after {
+        height: 2px;
+        border-radius: 3px;
+        content: '';
+        @apply bg-brand_color w-full bottom-0 absolute;
+      }
+    }
+  }
+
+  .on-default {
+    tbody {
+      max-height: 256px;
+    }
+  }
+
+  .on-focus {
+    &.content {
+      padding-top: 4px;
+    }
+
+    tbody {
+      max-height: 208px;
+    }
+
+    .selected-coin-history-panel {
+      max-height: 86px;
+      overflow: hidden;
+      @apply pb-2;
+
+      .spot-coin-selected-list {
+        @apply px-4;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: left;
+        column-gap: 8px;
+        row-gap: 8px;
+
+        .item-block {
+          @apply h-6;
+          @apply bg-card_bg_color_01;
+          @apply p-1 flex items-center justify-center cursor-pointer;
+        }
+      }
+    }
+
+    .spot-hot-table {
+      @apply pt-2;
+    }
+
+    .hot-searching-table {
+      thead {
+        display: none;
+      }
+    }
+
+    .hot-name-column {
+      @apply inline-flex;
+
+      .index-wrapper {
+        width: 20px;
+        @apply pr-2;
+
+        .index-number {
+          @apply text-text_color_02;
+        }
+      }
+    }
+  }
+
+  .on-result {
+    padding-top: 2px;
+
+    tbody {
+      max-height: 318px;
+    }
+
+    thead {
+      display: none;
+    }
+  }
+
+  .arco-table-container {
+    &::before {
+      display: none;
+    }
+    @apply border-none !important;
+
+    .arco-table-tr {
+      .arco-table-td,
+      .arco-table-th {
+        @apply border-none bg-transparent;
+      }
+
+      .arco-table-th {
+        @apply text-xs font-normal bg-card_bg_color_01 text-text_color_02;
+
+        .arco-table-cell-mouseenter {
+          @apply bg-transparent;
+        }
+      }
+
+      .arco-table-th {
+        height: 22px;
+        padding-top: 8px;
+        padding-bottom: 2px;
+
+        .arco-table-cell-with-sorter {
+          @apply py-0;
+        }
+      }
+
+      .arco-table-td {
+        height: 32px;
+        @apply py-0;
+      }
+
+      .arco-table-sorter {
+        @apply ml-1 hover:bg-none;
+
+        vertical-align: -2px;
+
+        .arco-table-sorter-icon {
+          height: 6px;
+
+          svg {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .arco-table-cell-with-sorter {
+        @apply hover:bg-none;
+      }
+
+      .arco-table-col-has-sorter {
+        .arco-table-th-item {
+          @apply hover:bg-none;
+        }
+
+        svg {
+          @apply text-icon_color;
+        }
+
+        .arco-table-sorter-icon-active {
+          svg {
+            @apply text-brand_color;
+          }
+        }
+      }
+
+      .arco-table-th,
+      .arco-table-th-item {
+        @apply border-none bg-transparent;
+      }
+    }
+
+    .arco-table-col-sorted {
+      @apply bg-card_bg_color_01;
+    }
+  }
+
+  .arco-table-tr {
+    /* name column width */
+    > :nth-child(1) {
+      width: 160px;
+    }
+
+    /* price column width */
+    > :nth-child(2) {
+      width: 120px;
+    }
+  }
+
+  /* to align right aligned sorter header with the column */
+  th:nth-child(2),
+  th:nth-child(3) {
+    .arco-table-cell-with-sorter {
+      transform: translateX(2px);
+    }
+  }
+
+  table {
+    th,
+    td {
+      font-size: 12px;
+    }
+  }
+
+  tbody {
+    display: block;
+    overflow: auto;
+    @apply pb-10;
+  }
+
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+    > :nth-child(1) {
+      @apply pl-4;
+    }
+
+    > :last-child {
+      @apply pr-4;
+    }
+  }
+
+  table {
+    @apply whitespace-nowrap;
+  }
+
+  .reminder-message {
+    @apply text-xs;
+  }
+
+  .star {
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+:local(.scoped) {
+  .understand-limit-coincidence {
+    color: var(--nc-05);
+    @apply mb-1.5 text-base;
+  }
+
+  .coincidencepop-box {
+    color: var(--nc-01);
+
+    > div {
+      @apply text-base font-normal;
+    }
+
+    div:last-child {
+      @apply m-0;
+    }
+  }
+
+  .coincidencepop-text {
+    color: var(--text_color_01);
+    @apply text-center text-base font-medium;
+  }
+
+  .play-icon-container {
+    left: 46%;
+    @apply absolute right-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .play-box {
+    @apply mt-6;
+
+    .play-box-video {
+      @apply relative w-full h-full;
+    }
+
+    video {
+      @apply mt-6 w-full h-full;
+    }
+  }
+}

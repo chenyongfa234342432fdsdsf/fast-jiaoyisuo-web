@@ -1,0 +1,49 @@
+:local(.table-wrapper) {
+  .arco-table {
+    .arco-table-th {
+      @apply bg-card_bg_color_01 border-none;
+  
+      .arco-table-th-item-title {
+        @apply text-text_color_02 font-normal;
+      }
+    }
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-td, {
+      @apply text-sm border-none whitespace-nowrap;
+
+      &:not(:hover) {
+        @apply bg-transparent;
+      }
+    }
+
+    .arco-table-td {
+      @apply py-4;
+    }
+
+    .arco-table-body,
+    .arco-table-header {
+      @apply bg-transparent;
+    }
+  }
+}
+
+:local(.radio-group-wrapper) {
+  .arco-radio-group.arco-radio-group-type-button {
+    height: 36px;
+
+    @apply bg-card_bg_color_01 text-text_color_03;
+
+    .arco-radio-button {
+      .arco-radio-button-inner {
+        @apply px-4;
+      }
+
+      &.arco-radio-checked {
+        @apply text-text_color_01 bg-bg_color;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,49 @@
+:local(.scoped) {
+  .kyc-requirement-standard {
+    @apply flex;
+
+    .requirement-standard-item {
+      width: 76px;
+      @apply flex flex-col items-center mr-4;
+
+      .requirement-standard-img {
+        img {
+          width: 76px;
+          height: 46px;
+        }
+      }
+      
+      .requirement-standard-text {
+        margin-top: 9px;
+        @apply flex items-center;
+
+        span {
+          @apply ml-2 text-xs  text-text_color_03;
+        }
+        
+        svg {
+          @apply text-xs;
+        }
+      }
+    }
+  }
+  
+
+  .kyc-requirement-title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    @apply text-base;
+  }
+  
+  .kyc-requirement-detail {
+    @apply mb-2 flex;
+
+    div:last-child {
+      @apply ml-2 text-text_color_03;
+    }
+
+    svg {
+      @apply text-xs;
+    }
+  }
+}

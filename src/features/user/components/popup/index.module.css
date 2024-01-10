@@ -1,0 +1,205 @@
+:local(.scoped) {
+  .popup-icon {
+    @apply flex justify-center items-center my-8;
+
+    svg {
+      width: 78px;
+      height: 78px;
+    }
+  }
+
+  .slot-content {
+    @apply mb-8;
+
+    h1, h2, h3, h4, h5 {
+      @apply text-text_color_01 text-2xl leading-6 font-medium text-center;
+    }
+
+    p, label {
+      line-height: 22px;
+      @apply text-text_color_01 text-base mb-1;
+
+      span, a {
+        @apply text-tips_color;
+      }
+
+      label {
+        @apply text-brand_color;
+      }
+    }
+  }
+}
+
+.user-popup {
+  width: 444px;
+  @apply px-8 pb-8 rounded-lg;
+
+  .arco-modal-close-icon {
+    right: 28px;
+    @apply top-8;
+
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+
+  .arco-modal-header, .arco-modal-content, .arco-modal-footer {
+    @apply px-0 py-0;
+  }
+
+  .arco-modal-header {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    @apply text-text_color_01 font-medium text-xl leading-5 border-none;
+
+    .arco-modal-title {
+      font-size: 20px;
+    }
+  }
+
+  .arco-modal-content {
+    .arco-select-popup .arco-select-option {
+      svg {
+        width: 22px;
+        height: 22px;
+        @apply mr-2;
+      }
+    }
+
+    .arco-select-view-value, .arco-select-popup {
+      .arco-image {
+        margin-bottom: 2px;
+        @apply mr-2;
+
+        img {
+          @apply w-5 h-5 rounded-full;
+        }
+      }
+    }
+
+    .arco-select-popup .arco-select-option-selected {
+      @apply text-brand_color;
+    }
+  }
+
+  .arco-modal-footer {
+    @apply flex border-none;
+
+    .arco-btn {
+      &:first-child {
+        @apply mr-2;
+      }
+  
+      &:last-child {
+        @apply ml-2;
+      }
+    }
+
+    button {
+      height: 46px;
+      @apply flex-1 text-base leading-4 font-normal;
+    }
+  }
+
+  .arco-form {
+    .arco-form-item-wrapper {
+      .arco-btn, .arco-form-item-control-children, .arco-select-view {
+        height: 46px;
+      }
+
+      .arco-select {
+        .arco-select-view-value {
+          line-height: 46px;
+
+          svg {
+            width: 22px;
+            height: 22px;
+            @apply mr-2;
+          }
+        }
+
+        .arco-select-arrow-icon {
+          svg {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+
+      .arco-btn {
+        @apply w-full text-text_color_01;
+      }
+
+      .arco-input-group-wrapper {
+        @apply h-full;
+      }
+    }
+
+    .arco-form-item-status-error .arco-select:not(.arco-select-disabled) .arco-select-view {
+      @apply bg-bg_sr_color;
+    }
+
+    .popup-tips-text {
+      @apply mb-4;
+
+      svg {
+        @apply w-3 h-3 mr-2;
+      }
+
+      label {
+        @apply text-text_color_03 text-xs leading-3 font-normal;
+      }
+    }
+  }
+
+  .arco-input-search {
+    .arco-input-group {
+      height: 46px;
+
+      .arco-input-inner-wrapper {
+        input {
+          @apply h-full pl-2 text-text_color_01;
+
+          &::placeholder {
+            font-size: 14px;
+            line-height: 14px;
+            @apply text-text_color_03 font-normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-popup-tips {
+  .arco-modal-footer {
+    & > button:first-child {
+      margin-right: 10px;
+      @apply text-text_color_02 bg-transparent border border-line_color_01 ml-0 ;
+    }
+
+    & > button:last-child {
+      margin-left: 10px;
+      @apply text-text_color_01;
+    }
+  }
+}
+
+.user-popup-success {
+  .arco-modal-footer {
+    button {
+      @apply text-text_color_01;
+
+      &:focus-visible {
+        @apply shadow-none;
+      }
+    }
+  }
+
+  .register-icon {
+    svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

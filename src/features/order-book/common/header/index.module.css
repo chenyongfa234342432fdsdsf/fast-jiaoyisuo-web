@@ -1,0 +1,44 @@
+:local(.scoped) {
+  @apply flex justify-between items-center px-4 pt-4;
+
+  .buy-sell-btn {
+    @apply flex-1 flex items-center h-5;
+
+    .arco-btn {
+      @apply px-0 mr-3;
+
+      &:hover {
+        @apply bg-transparent;
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .tick {
+    @apply flex justify-end items-center;
+
+    .tick-wrap {
+      width: 114px;
+      @apply rounded-lg;
+
+      .arco-select-view {
+        @apply h-5 leading-5 rounded-sm;
+        @apply bg-bg_sr_color !important;
+
+        span {
+          font-size: 12px;
+          @apply text-text_color_01;
+        }
+
+        .arco-select-suffix-icon {
+          svg {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}

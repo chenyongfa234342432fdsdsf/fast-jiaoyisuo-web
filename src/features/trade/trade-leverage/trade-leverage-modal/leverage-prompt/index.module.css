@@ -1,0 +1,10 @@
+:local(.scoped) {
+  svg {
+    font-size: 10px;
+    @apply mr-1 mt-0.5;
+  }
+
+  span {
+    @apply text-xs;
+  }
+}

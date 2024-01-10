@@ -1,0 +1,78 @@
+:local(.scoped) {
+  padding: 4px 7px;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 2px;
+  @apply bg-brand_color_special_02 font-medium text-brand_color cursor-pointer;
+
+  .name-with-icon {
+    .next-icon {
+      padding-left: 6px;
+      transform: translateY(1px);
+
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+:local(.modal) {
+  .arco-modal {
+    width: 444px;
+    min-height: 304px;
+    border-radius: 8px;
+  }
+
+  .title-wrapper {
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+
+      @apply text-text_color_01;
+    }
+
+    .close-icon {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .inner-content-wrapper {
+    .reminder {
+      @apply text-text_color_02 text-sm pt-2 pb-4;
+    }
+
+    .list-wrapper {
+      @apply flex flex-wrap;
+    }
+
+    .item-wrapper {
+      @apply bg-bg_sr_color flex items-center justify-center whitespace-nowrap text-sm;
+
+      padding: 4px 12px;
+      font-weight: 500;
+      border-radius: 2px;
+    }
+
+    .item-wrapper:first-child {
+      @apply text-brand_color bg-brand_color_special_02;
+    }
+
+    .actions {
+      @apply flex;
+
+      .ok-btn {
+        width: 100%;
+        height: 40px;
+        font-weight: 500;
+        border-radius: 4px;
+        @apply text-button_text_02 text-sm bg-brand_color mt-8 flex items-center justify-center;
+      }
+    }
+  }
+}

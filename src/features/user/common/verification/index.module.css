@@ -1,0 +1,33 @@
+:local(.scoped) {
+  .user-verification-wrap {
+    .title {
+      @apply mb-8 mt-10;
+
+      label {
+        @apply text-text_color_01 font-medium text-4xl leading-9 break-all;
+      }
+    }
+
+    .text {
+      @apply mb-8;
+
+      label {
+        font-size: 14px;
+        line-height: 14px;
+        @apply text-text_color_01 font-normal;
+      }
+    }
+
+    .form {
+      .security-item {
+        @apply mb-5;
+
+        a {
+          font-size: 14px;
+          line-height: 14px;
+          @apply text-brand_color font-medium;
+        }
+      }
+    }
+  }
+}

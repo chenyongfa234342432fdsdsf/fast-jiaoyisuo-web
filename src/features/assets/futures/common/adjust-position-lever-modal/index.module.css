@@ -1,0 +1,11 @@
+:local(.leverage-modal) {
+  @apply mx-8 mt-6;
+
+  .leverage-prompts {
+    @apply flex flex-col gap-y-2 bg-card_bg_color_01 p-3 rounded mt-6 mb-4;
+  }
+
+  .lever-hint {
+    @apply text-xs text-warning_color mt-2;
+  }
+}

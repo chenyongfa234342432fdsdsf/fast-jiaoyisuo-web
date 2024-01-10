@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply flex-row flex;
+
+  .dash-underline {
+    @apply relative inline-block;
+  }
+
+  .dash-underline::after {
+    border-bottom: 0.5px;
+    content: '';
+    @apply inline-block absolute -bottom-0.5 left-2 right-2 border-dashed;
+  }
+}

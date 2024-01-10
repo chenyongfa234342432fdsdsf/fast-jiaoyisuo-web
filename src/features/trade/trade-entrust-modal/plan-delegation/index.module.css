@@ -1,0 +1,104 @@
+:local(.scope) {
+  .plandelegation-order-tip {
+    @apply text-sm;
+  }
+
+  .plandelegation-order-illustration {
+    @apply mt-2;
+
+    .plandelegation-illustration-title {
+      @apply text-text_color_05  flex justify-between;
+
+      .plandelegation-illustration-handle {
+        @apply flex;
+
+        .illustration-handle-buy {
+          @apply first:mr-4;
+        }
+
+        .plandelegation-illustration-handle-buy {
+          @apply text-text_color_01;
+        }
+
+        .plandelegation-illustration-handle-sell {
+          @apply text-text_color_03;
+        }
+
+      }
+    }
+
+    .plandelegation-illustration-img {
+      @apply flex items-center my-2;
+
+      .plandelegation-illustration-merit {
+        @apply w-9 relative h-24;
+
+        .illustration-merit-sell {
+          top: 26px;
+          @apply absolute;
+        }
+
+        .illustration-merit-middle {
+          top: 6px;
+          @apply absolute;
+        }
+
+        .illustration-merit-middle-back {
+          top: 26px;
+          @apply absolute;
+        }
+
+        .illustration-merit-buy {
+          top: 48px;
+          @apply absolute;
+        }
+      }
+
+      .illustration-img-detail {
+        width: 304px;
+        @apply h-24 ml-1;
+      }
+
+      img {
+        width: 304px;
+        @apply h-24;
+      }
+    }
+
+    .plandelegation-illustration-explain {
+      @apply text-text_color_03 flex justify-center text-sm;
+
+      .illustration-explain-entrust {
+        @apply relative ml-4;
+      }
+
+      .illustration-explain-entrust::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-text_color_02;
+      }
+
+      .illustration-explain-text {
+        @apply relative ml-4;
+      }
+
+      .illustration-explain-text::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-success_color;
+      }
+
+      .illustration-explain-not-text {
+        @apply relative;
+      }
+
+      .illustration-explain-not-text::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-brand_color;
+      }
+
+    }
+  }
+
+  .plandelegation-order-content {
+    @apply text-text_color_03 mt-2 text-sm;
+  }
+}

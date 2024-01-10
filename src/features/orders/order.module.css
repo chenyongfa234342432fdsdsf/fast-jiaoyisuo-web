@@ -1,0 +1,239 @@
+:local(.order-header-wrapper) {
+  @apply flex py-6 px-8 justify-between items-center;
+
+  /* stylelint-disable-next-line color-function-notation */
+  background-image: linear-gradient(0deg, rgb(250, 250, 250) 0%, rgba(245, 245, 245, 75%) 100%);
+}
+
+:local(.order-detail-table-wrapper) {
+  @apply bg-bg_color;
+
+  .summary-info {
+    @apply p-4 flex;
+
+    background-color: var(--color-fill-1);
+  }
+
+  .arco-table {
+    @apply py-4;
+
+    margin-top: 0 !important;
+
+    .arco-table-th {
+      background-color: transparent !important;
+    }
+  }
+}
+
+:local(.order-table-layout-wrapper) {
+  @apply py-4 px-8 h-full;
+
+  .arco-table-expand-content .arco-table-td .arco-table .arco-table-container {
+    border-top: 1px solid var(--color-neutral-3);
+  }
+
+  /** 操作栏除外 */ 
+  .arco-table-tr.disabled-row {
+    .arco-table-td:not(.arco-table-col-fixed-right) {
+      * {
+        color: var(--text_color_03) !important;
+      }
+    }
+  }
+
+  .arco-table {
+    .arco-table-th {
+      .arco-table-th-item-title {
+        @apply text-xs text-text_color_02 font-normal;
+      }
+    }
+
+    .arco-table-header {
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar,
+      ::-webkit-scrollbar-thumb {
+        @apply bg-transparent;
+      }
+    }
+
+    .arco-table-body,
+    .arco-table-header,
+    .arco-table-td,
+    .arco-table-th {
+      /* 设置 border-none 会导致有多余的滚动条，原因未知 */
+      @apply text-sm border-transparent;
+    }
+
+    .arco-table-body {
+      @apply bg-bg_color;
+
+      /* 不设为透明是因为透明会出现遮挡 */
+      .arco-table-td {
+        @apply bg-bg_color;
+      }
+    }
+
+    .arco-table-header,
+    .arco-table-th {
+      @apply bg-card_bg_color_01;
+    }
+  }
+
+  .arco-table-pagination {
+    .arco-pagination-total-text,
+    .arco-select-view {
+      @apply text-text_color_03;
+    }
+  }
+
+ 
+
+  &.in-trade {
+    @apply bg-transparent py-2 px-0;
+
+    .arco-table {
+      .arco-table-td,
+      .arco-table-th {
+        &:first-child {
+          @apply pl-8;
+
+          .arco-table-th-item {
+            @apply pl-0;
+          }
+        }
+      }
+
+      .arco-table-td {
+        @apply py-2;
+      }
+
+      .arco-table-th {
+        .arco-table-th-item-title {
+          @apply text-xs;
+        }
+      }
+
+      .arco-table-body,
+      .arco-table-header,
+      .arco-table-td,
+      .arco-table-th {
+        @apply text-xs;
+      }
+      
+
+      .arco-table-tr {
+        &:first-child, {
+          .arco-table-td {
+            @apply pt-4;
+          }
+        }
+
+        &:last-child {
+          .arco-table-td {
+            @apply pb-4;
+          }
+        }
+      }
+    }
+
+    .arco-table-pagination {
+      @apply pr-6;
+    }
+
+    &.no-data {
+      .arco-table-content-inner,
+      .arco-table-body {
+        .arco-table-td {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+
+  /* 无数据时隐藏滚动条 */
+  &.no-data {
+    .arco-table-content-inner,
+    .arco-table-body {
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+
+      .arco-table-no-data {
+        @apply py-0;
+      }
+      
+      table {
+        @apply h-full;
+      }
+    }
+  }
+
+  &.auto-width {
+    .arco-table {
+      .arco-table-td {
+        .arco-table-cell {
+          .arco-table-cell-wrap-value {
+            >div {
+              @apply whitespace-nowrap overflow-x-hidden;
+            }
+          }
+        }
+      }
+
+      .arco-table-th {
+        .arco-table-th-item {
+          .arco-table-th-item-title {
+            @apply whitespace-nowrap overflow-x-hidden inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .arco-table-th-item {
+    @apply py-2.5 inline-flex;
+  }
+
+  .arco-table-td {
+    @apply py-4;
+  }
+}
+
+:local(.order-layout-wrapper) {
+  @apply bg-white;
+
+  .header-wrapper-box {
+    @apply pt-14 pb-20 bg-card_bg_color_01;
+  }
+
+  .content-wrapper {
+    @apply pb-4 mx-auto max-w-7xl px-10;
+
+    .arco-tabs-header-nav {
+      /* .arco-tabs-header-title-text {
+        @apply text-white text-base;
+      } */
+    }
+
+    .arco-tabs-content {
+      @apply px-10;
+    }
+  }
+}
+
+:local(.no-data-element-wrapper) {
+  @apply flex justify-center items-center flex-col text-sm text-center; 
+
+  .empty-img {
+    width: 104px;
+    height: 90px;
+
+    svg {
+      @apply h-full cursor-auto;
+    }
+  }
+
+  .arco-btn {
+    @apply text-xs;
+  }
+}

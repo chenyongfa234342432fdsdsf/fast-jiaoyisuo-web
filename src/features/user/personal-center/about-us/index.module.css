@@ -1,0 +1,44 @@
+:local(.scoped) {
+  .user-about-us-wrap {
+    @apply mt-2;
+
+    .cell-wrap {
+      .cell {
+        @apply flex mb-6 cursor-pointer;
+
+        .icon {
+          svg {
+            @apply mr-2;
+          }
+        }
+      }
+
+      .text {
+        @apply flex-1;
+
+        label {
+          @apply text-text_color_01 text-sm font-normal cursor-pointer;
+        }
+      }
+    }
+
+    .about-us {
+      .title {
+        @apply mt-8 mb-2;
+
+        label {
+          @apply text-text_color_01 text-sm font-normal;
+        }
+      }
+
+      .content {
+        max-height: 200px;
+        @apply overflow-y-auto;
+
+        p {
+          @apply text-text_color_03 text-xs leading-5 font-normal;
+        }
+      }
+    }
+  }
+}

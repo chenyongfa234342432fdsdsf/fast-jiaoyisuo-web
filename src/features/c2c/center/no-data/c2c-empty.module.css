@@ -1,0 +1,23 @@
+:local(.scope) {
+  @apply flex justify-center items-center flex-col w-full;
+
+  .empty {
+    @apply text-sm text-text_color_03;
+
+    svg, img {
+      @apply cursor-auto;
+
+      width: 104px;
+      height: 92px;
+    }
+  }
+
+  .arco-empty-description {
+    @apply text-text_color_03;
+
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+  }
+}

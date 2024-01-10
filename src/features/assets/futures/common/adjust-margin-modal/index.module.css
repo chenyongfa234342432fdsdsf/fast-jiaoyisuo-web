@@ -1,0 +1,142 @@
+:local(.adjust-margin-warp) {
+  .arco-modal-close-icon {
+    right: 28px;
+
+    @apply top-6;
+    
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+
+  .arco-modal-header {
+    height: 60px;
+    @apply px-4 pt-8 pb-4 border-b border-line_color_02;
+  }
+
+  .arco-modal-header {
+    @apply border-b !important;
+  }
+
+  .arco-modal-close-icon svg {
+    @apply text-icon_color;
+  }
+
+  .arco-modal-content {
+    @apply px-8 pb-8;
+  }
+
+  .futures-tabs-wrap {
+    .tab .item {
+      @apply text-xl font-medium;
+    }
+  }
+
+  .arco-select-view {
+    @apply h-10 bg-bg_sr_color border-0 !important;
+  }
+
+  .arco-select-popup {
+    @apply py-0;
+  }
+
+  .arco-select-option {
+    @apply border-b border-b-line_color_02 last:border-b-0;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply h-10 bg-bg_sr_color border-transparent;
+
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }  
+  }
+
+  .arco-form-item-error {
+    .arco-input, .arco-input:focus, .arco-input:hover {
+      @apply h-10 bg-transparent border-transparent !important;
+    }
+
+    .arco-picker:hover, .arco-picker {
+      @apply bg-transparent border-warning_color !important;
+    }
+  }
+
+  .footer {
+    @apply flex;
+
+    .arco-btn {
+      @apply flex-1 h-10 text-sm font-medium;
+    }
+
+    .arco-btn-secondary {
+      @apply ml-0 h-10 text-sm font-medium;
+    }
+  }
+ 
+}
+
+:local(.adjust-margin-form) {
+  .coin-select {
+    @apply flex justify-between px-3 mb-6 items-center w-full;
+  }
+
+  .coin-name {
+    @apply flex items-center text-sm font-medium;
+
+    img {
+      border-radius: 50%;
+      @apply mr-2.5 w-6 h-6;
+    }
+  }
+
+  .currency-val {
+    @apply text-xs text-text_color_02 mb-4;
+  }
+
+  .arco-select-view-value {
+    @apply flex !important;
+  }
+
+  .coin-item {
+    @apply py-2 flex justify-between text-text_color_01;
+
+    .item-value {
+      @apply flex flex-col items-end;
+
+      .currency {
+        @apply text-xs text-text_color_02;
+      }
+    }
+  }
+
+  .assets-label {
+    @apply mb-2 text-sm text-text_color_02;
+  }
+
+  .arco-col-19 {
+    @apply w-full flex-1;
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+
+  .arco-form-item.arco-form-item-error {
+    @apply mb-6;
+  }
+
+  .arco-slider-with-marks {
+    @apply px-1 mt-2;
+  }
+
+}
+
+
+
+

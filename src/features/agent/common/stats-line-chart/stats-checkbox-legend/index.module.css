@@ -1,0 +1,25 @@
+:local(.scoped) {
+  .arco-checkbox-group {
+    @apply flex flex-row gap-x-56 mt-4;
+
+    .arco-checkbox {
+      @apply p-0 mb-2;
+
+      .arco-checkbox-icon-hover {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .legend-icon {
+    @apply w-1.5 h-1.5 rounded-full mr-2;
+  }
+
+  .arco-checkbox-mask-icon {
+    @apply fill-white;
+  }
+
+  .arco-checkbox-mask {
+    @apply w-4 h-4;
+  }
+}

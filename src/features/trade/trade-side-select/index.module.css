@@ -1,0 +1,38 @@
+:local(.trade-side-select-wrapper) {
+  @apply flex items-center rounded bg-bg_sr_color text-text_color_02 text-sm;
+
+  .buy,
+  .sell {
+    @apply flex-1 text-center cursor-pointer py-1.5;
+
+    &.selected {
+      @apply text-button_text_01;
+    }
+  }
+
+  .buy {
+    &.selected {
+      @apply bg-buy_up_color relative rounded-l;
+
+      &::after {
+        @apply cursor-default absolute left-full top-0 border-transparent border-solid border-l-buy_up_color;
+
+        border-width: 16px;
+        content: "";
+      }
+    }
+  }
+
+  .sell {
+    &.selected {
+      @apply bg-sell_down_color relative rounded-r;
+
+      &::after {
+        @apply cursor-default absolute right-full top-0 border-transparent border-solid border-r-sell_down_color;
+
+        border-width: 16px;
+        content: "";
+      }
+    }
+  }
+}

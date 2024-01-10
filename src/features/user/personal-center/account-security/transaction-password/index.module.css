@@ -1,0 +1,21 @@
+:local(.scoped) {
+  @apply mt-36;
+
+  .user-modify-password-wrap {
+    @apply flex;
+
+    .form, .placeholder {
+      @apply flex-1;
+    }
+
+    .form {
+      .title {
+        @apply mb-8;
+
+        label {
+          @apply text-text_color_01 text-4xl leading-9 font-medium;
+        }
+      }
+    }
+  }
+}

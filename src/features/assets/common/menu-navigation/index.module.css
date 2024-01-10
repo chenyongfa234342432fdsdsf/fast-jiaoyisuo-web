@@ -1,0 +1,76 @@
+:local(.scoped) {
+  min-width: 210px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-bg_color rounded p-4;
+
+  .cell {
+    .cell-wrap {
+      @apply flex py-4 cursor-pointer px-4 items-center;
+
+      .icon {
+        @apply mr-6;
+
+        svg {
+          @apply w-5 h-5;
+        }
+      }
+
+      .text {
+        @apply flex-1;
+
+        label {
+          @apply text-text_color_01 text-base leading-4  cursor-pointer;
+        }
+      }
+
+      .text-wrap {
+        @apply flex flex-col flex-1;
+
+        .label-text {
+          @apply text-text_color_01 text-base leading-4  cursor-pointer;
+        }
+
+        .subtext {
+          @apply mt-1 text-text_color_03 text-xs;
+        }
+      }
+
+      .subfix-icon {
+        width: 14px;
+        @apply ml-3;
+
+        svg {
+          width: 14px;
+          height: 14px;
+          @apply hidden;
+        }
+      }
+    }
+
+    &:hover {
+      @apply bg-card_bg_color_02 rounded;
+
+      .subfix-icon {
+        svg {
+          @apply block;
+        }
+      }
+    }
+  }
+}
+
+:local(.trigger-wrapper) {
+  @apply cursor-pointer mr-4 hover:text-brand_color;
+
+  .icon {
+    @apply ml-1 w-2 h-auto;
+
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    .icon {
+      @apply rotate-180;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+:local(.advantage-wrap) {
+  @apply flex flex-1 mt-8;
+    
+  .advantage-info {
+    @apply flex flex-1 flex-col items-center text-text_color_01
+  }
+
+  svg {
+    @apply w-8 h-8 mb-2;
+  }
+}

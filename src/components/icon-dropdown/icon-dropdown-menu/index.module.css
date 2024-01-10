@@ -1,0 +1,19 @@
+:local(.scoped) {
+  @apply p-1 rounded-md shadow-md;
+
+  .arco-card-body {
+    @apply grid grid-flow-col auto-cols-fr gap-x-5 p-0;
+  }
+
+  .arco-card-cover {
+    @apply h-24 w-24 m-auto;
+
+    canvas, img {
+      @apply h-24 w-24 object-contain !important;
+    }
+  }
+
+  .arco-card-meta-title {
+    @apply text-sm;
+  }
+}

@@ -1,0 +1,223 @@
+:local(.scoped) {
+  @apply w-full h-full bg-bg_color;
+
+  .k-set-wrap {
+    @apply relative flex justify-between items-center  box-border w-full  px-8 bg-bg_color;
+
+    height: 42px;
+
+    .left-wrap {
+      width: calc(100% - 312px);
+      @apply flex items-center h-full;
+
+      .tile {
+        @apply flex items-center w-full h-full;
+
+        .tile-scroll {
+          height: 42px;
+          @apply flex items-center font-medium;
+
+          .tile-time {
+            @apply text-brand_color rounded;
+          }
+
+          .tile-unuse-time {
+            @apply text-text_color_03;
+          }
+
+          .tile-unuse-time:hover {
+            @apply text-text_color_01;
+          }
+        }
+
+        div {
+          @apply ml-6 cursor-pointer text-xs whitespace-nowrap;
+
+          line-height: 18px;
+        }
+
+        .select-temp {
+          @apply text-brand_color font-medium;
+        }
+
+        .more {
+          @apply text-text_color_03 font-medium;
+        }
+
+        .more-icon {
+          @apply ml-1;
+
+          svg {
+            height: 5px;
+            @apply w-2;
+          }
+        }
+      }
+    }
+
+    .right-wrap {
+      height: 42px;
+      @apply flex items-center;
+
+      .chart-tab .item {
+        @apply text-xs leading-3 ml-2 font-normal font-medium;
+      }
+
+      .chart-tab .item:hover {
+        @apply text-text_color_01;
+      }
+
+      .chart-tab .active .item:hover {
+        @apply text-brand_color_animate;
+      }
+
+      .full-icon {
+        @apply ml-6;
+
+        svg {
+          @apply text-base;
+        }
+      }
+
+      .tab {
+        @apply text-text_color_03;
+      }
+
+      .active {
+        @apply text-brand_color;
+      }
+    }
+
+    .k-set-icon {
+      @apply cursor-pointer;
+
+      svg {
+        @apply text-base;
+      }
+    }
+
+    .tradingview-set-icon {
+      @apply ml-4;
+    }
+  }
+
+  .chart-wrap {
+    width: 100%;
+    height: calc(100% - 42px);
+
+    .not-avi {
+      @apply w-full h-full;
+    }
+
+    .chart-common {
+      @apply w-full h-full;
+
+      .show {
+        display: block;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .expand-icon {
+        svg {
+          @apply text-sm;
+        }
+      }
+    }
+
+    .spin-wrap {
+      @apply flex items-center justify-center w-full h-full;
+    }
+  }
+}
+
+:local(.time) {
+  .arco-popover-content {
+    @apply p-0 !important;
+  }
+
+  .time-wrap {
+    width: 312px;
+    height: 222px;
+    @apply relative px-4 pt-2 pb-4 box-border;
+
+    .edit {
+      @apply absolute top-2 right-4 text-brand_color text-sm cursor-pointer;
+
+      line-height: 18px;
+    }
+
+    .have-select {
+      margin-top: 26px;
+      @apply flex flex-wrap gap-2;
+
+      .time {
+        border: 1px solid var(--line_color_01);
+
+        @apply relative flex items-center justify-center w-16 h-7 text-text_color_01 text-xs rounded cursor-pointer;
+
+        .sub-icon {
+          top: -6px;
+          right: -6px;
+          @apply absolute;
+
+          svg {
+            @apply text-sm;
+          }
+        }
+      }
+    }
+
+    .add-title {
+      @apply mt-4 mb-2 text-sm  text-text_color_03;
+
+      line-height: 18px;
+    }
+
+    .not-select {
+      @apply flex flex-wrap gap-2;
+
+      .time {
+        border: 1px solid var(--line_color_01);
+        @apply relative flex items-center justify-center w-16 h-7 text-text_color_01 text-xs rounded cursor-pointer;
+
+        .add-icon {
+          top: -6px;
+          right: -6px;
+          @apply absolute;
+
+          svg {
+            @apply text-sm;
+          }
+        }
+      }
+    }
+  }
+}
+
+:local(.price) {
+  .arco-popover-content {
+    @apply p-0 !important;
+  }
+
+  .time-wrap {
+    height: 120px;
+    @apply relative  box-border;
+
+    .row {
+      @apply px-4 flex items-center justify-center  h-10 cursor-pointer;
+    }
+
+    .row:hover {
+      @apply text-brand_color;
+    }
+
+    .add-title {
+      @apply mt-4 mb-2 text-sm  text-text_color_03;
+
+      line-height: 18px;
+    }
+  }
+}

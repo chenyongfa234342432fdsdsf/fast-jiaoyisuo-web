@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .title {
+    @apply pt-10 pb-6 text-text_color_01 text-base font-medium;
+  }
+}

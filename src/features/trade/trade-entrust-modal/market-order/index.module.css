@@ -1,0 +1,64 @@
+:local(.scope) {
+  .market-order-tip {
+    @apply text-sm;
+  }
+
+  .market-order-illustration {
+    @apply mt-2;
+
+    .market-illustration-title {
+      @apply text-text_color_05 ;
+    }
+
+    .market-illustration-img {
+      @apply flex items-center my-2;
+
+      .market-illustration-merit {
+        div {
+          @apply relative -top-3;
+        }
+      }
+
+      .illustration-img-detail {
+        width: 304px;
+        @apply h-24 ml-1;
+      }
+
+      img {
+        width: 304px;
+        @apply h-24;
+      }
+
+
+    }
+
+    .market-illustration-explain {
+      @apply text-text_color_03 flex justify-center text-sm;
+
+      .illustration-explain-text {
+        @apply relative;
+      }
+
+      .illustration-explain-text::before {
+        content: "";
+        @apply absolute bottom-2 w-1 h-1 -left-2 bg-brand_color;
+      }
+    }
+  }
+
+  .market-order-content {
+    @apply text-text_color_03 mt-2 text-sm;
+  }
+
+  .market-order-remarks {
+    @apply mt-4 text-text_color_03 ;
+
+    .order-remarks {
+      @apply text-text_color_03 mt-2;
+    }
+
+    div {
+      @apply last:mt-3;
+    }
+  }
+}

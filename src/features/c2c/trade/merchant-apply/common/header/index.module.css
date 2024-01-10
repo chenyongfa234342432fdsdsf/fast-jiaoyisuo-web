@@ -1,0 +1,32 @@
+:local(.header) {
+  height: 108px;
+  @apply flex items-center w-full;
+
+  .title-wrapper {
+    width: 1200px;
+    @apply m-auto flex justify-between items-center;
+
+    .title {
+      font-weight: 500;
+      font-size: 32px;
+      @apply text-text_color_01 flex items-center;
+
+      .merchant-icon {
+        @apply cursor-default pl-2 pt-1;
+      }
+
+      .svg {
+        width: 28px;
+        height: 32px;
+      }
+    }
+
+    .back-button {
+      @apply text-text_color_02 text-sm mr-1 cursor-pointer;
+
+      .svg {
+        @apply bg-icon_color;
+      }
+    }
+  }
+}

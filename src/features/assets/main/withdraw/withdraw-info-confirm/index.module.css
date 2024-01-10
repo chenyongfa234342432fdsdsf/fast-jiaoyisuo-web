@@ -1,0 +1,83 @@
+:local(.scoped) {
+  .withdraw-info {
+    @apply bg-card_bg_color_02 p-6 rounded;
+
+    .info-item {
+      @apply flex text-sm pt-4;
+
+      .label {
+        @apply text-text_color_02 w-24;
+      }
+
+      .value {
+        @apply text-text_color_01;
+
+        width: 272px;
+        word-break: break-all;
+      }
+
+      .assets-user-icon {
+        @apply ml-2;
+
+        svg {
+          @apply w-4 h-4
+        }
+      }
+    }
+
+    .info-item:first-child {
+      @apply pt-0;
+    }
+  }
+
+  .withdraw-hint {
+    @apply my-6 text-xs text-text_color_02;
+    
+    p {
+      line-height: 24px;
+    }
+    
+    svg {
+      @apply mr-1;
+    }
+
+    .withdraw-hint-item {
+      @apply flex flex-row items-start;
+
+      .withdraw-hint-icon {
+        @apply mt-1;
+
+        svg {
+          @apply w-1.5 h-1.5
+        }
+      }
+    }
+  }
+
+  .arco-modal-header {
+    @apply border-b-0;
+  }
+
+  .arco-modal-content {
+    @apply px-8 pt-3;
+  }
+
+  .arco-modal-header {
+    @apply px-8 pt-8
+  }
+
+  .arco-modal-close-icon {
+    top: 26px;
+
+    @apply text-xl right-8;
+  }
+
+  .arco-modal-content {
+    @apply px-8 pt-6 pb-8
+  }
+
+  .arco-checkbox-mask {
+    @apply w-4 h-4   
+  }
+}
+  

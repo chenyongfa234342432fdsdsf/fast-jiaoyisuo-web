@@ -1,0 +1,53 @@
+.c2c-input {
+  width: 221px;
+  @apply relative flex items-center;
+
+  .c2c-input-detail {
+    @apply text-text_color_01 text-sm flex items-center;
+  }
+
+  .coin-select {
+    @apply absolute top-0 right-0;
+
+    .useful-expressions {
+      @apply px-4;
+    }
+    
+    .arco-input-group {
+      width: 118px;
+      height: 32px;
+    }
+
+    .arco-select-view {
+      width: 98px;
+      @apply relative h-full;
+
+    
+    
+      .country-icon {
+        @apply relative ;
+      }
+    
+      .select-img {
+        @apply mr-2 relative w-4 h-4 rounded-full;
+
+        top: 2px;
+      }
+    
+      .select-text {
+        @apply relative top-0.5;
+      }
+    }
+  }
+  
+  .arco-trigger-position-bottom {
+    left: -52px !important;
+    width: 150px !important;
+  }
+  
+  .search {
+    top: 13px;
+    right: 98px;
+    @apply absolute h-4  text-brand_color font-medium  border-l border-line_color_01;
+  }
+}

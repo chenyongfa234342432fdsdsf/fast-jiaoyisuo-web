@@ -1,0 +1,20 @@
+:local(.scoped) {
+  @apply h-full;
+
+  thead .arco-table-th {
+    @apply bg-bg_color;
+  }
+
+  .arco-table-th-item-title {
+    @apply text-xs font-normal;
+  }
+
+  tbody .arco-table-td {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .arco-table-sorter {
+    @apply ml-0;
+  }
+}

@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply whitespace-nowrap;
+
+  .spot-market-list-table-content-wrapper {
+    tr {
+      @apply cursor-pointer;
+    }
+
+    .quote-price {
+      font-size: 12px;
+    }
+  }
+}

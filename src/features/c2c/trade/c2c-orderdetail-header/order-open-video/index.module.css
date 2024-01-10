@@ -1,0 +1,16 @@
+:local(.container) { 
+  .open-video-container {
+    @apply fixed left-0 top-0 w-full h-full bg-bg_color_02 flex justify-center items-center z-100;
+
+    .open-video {
+      width: 54%;
+      height: 54%;
+      @apply bg-black;
+
+      video {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+}

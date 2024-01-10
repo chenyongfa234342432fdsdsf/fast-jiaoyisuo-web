@@ -1,0 +1,146 @@
+:local(.container) { 
+  width: 840px;
+  @apply m-auto mt-8 pb-8 bg-bg_color;
+  /* stylelint-disable-next-line selector-class-pattern */
+  .company-directorlist-container {
+    @apply flex items-center justify-between;
+
+    .company-all-directorlist {
+      @apply flex items-center;
+
+      .company-directorlist-select {
+        @apply flex mr-2 justify-center items-center w-28 h-10 bg-bg_sr_color rounded;
+
+        span {
+          font-size: 16px;
+          @apply text-text_color_01;
+        }
+
+        .delete-icon {
+          @apply ml-2;
+
+          svg {
+            font-size: 20px;
+          }
+        }
+      }
+      
+      .company-selected {
+        @apply bg-button_hover_01 !important;
+      }
+      
+      .company-directorlist {
+        @apply flex mr-2 justify-center items-center w-28 h-10 border border-brand_color bg-brand_color_light_bg rounded;
+      }
+    }
+
+    
+    .company-directorlist-add {
+      @apply text-brand_color;
+
+      span {
+        @apply ml-1;
+      }
+
+      svg {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .arco-col-12:nth-child(even) {
+    padding-right: 8px !important;
+  }
+  
+  .arco-col-12:nth-child(odd) {
+    padding-left: 8px !important;
+  }
+
+  .arco-checkbox-checked {
+    .arco-checkbox-mask {
+      @apply border-0 !important;
+    }
+  }
+  
+  .kycexample-trade-modal {
+    .arco-modal {
+      @apply p-0 rounded-lg bg-card_bg_color_03;
+
+      .arco-modal-header {
+        padding: 0 32px;
+        @apply h-auto py-8;
+      }
+      
+      .arco-modal-content {
+        @apply pt-0;
+      }
+    }
+  }
+  
+  .kyc-certification-title {
+    @apply mt-0 !important;
+  }
+
+  .arco-form-label-item {
+    label {
+      @apply flex items-center;
+
+      strong {
+        @apply hidden;
+      }
+    }
+  }
+  
+  .arco-form-message {
+    @apply invisible;
+
+    div {
+      @apply relative top-1;
+    }
+  }
+  
+  .company-certification-showerror {
+    .arco-form-message {
+      @apply visible flex items-center justify-center;
+    }
+  }
+
+  .company-certification {
+    @apply mt-4;
+    
+    .company-certification-title {
+      @apply font-medium text-xl  mt-3  mb-4;
+    }
+  }
+  
+  .verified-submit {
+    @apply flex justify-center my-10;
+    
+    .verified-go-back {
+      @apply w-80 h-12 rounded-lg font-medium border-brand_color border-2 flex justify-center items-center text-brand_color;
+    }
+    
+    .verified-go-submit {
+      @apply w-80 ml-6 h-12 bg-brand_color font-medium rounded-lg flex justify-center items-center text-bg_color;
+    }
+  }
+  
+  .arco-form-label-item {
+    label {
+      @apply flex items-center;
+    }
+  }
+  
+  .arco-picker-size-default {
+    @apply w-full;
+  }
+
+  .company-directorlist-requirement {
+    @apply mt-4;
+  }
+
+  /* .add-director {
+    @apply w-full h-16 border border-brand_color rounded-lg text-brand_color flex justify-center items-center;
+  } */
+
+}

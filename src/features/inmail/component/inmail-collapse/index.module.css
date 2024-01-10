@@ -1,0 +1,144 @@
+:local(.scoped) {
+  .inmail-collapse {
+    @apply pr-4 pl-10;
+
+    .arco-collapse-item {
+      @apply pt-8 border-line_color_02;
+
+      .arco-collapse-item-header {
+        @apply border-none bg-bg_color;
+        
+        .arco-collapse-item-icon-hover-right {
+          >.arco-collapse-item-header-icon-down {
+            transform: rotate(-180deg);
+          }
+        }
+
+        .arco-collapse-item-header-extra {
+          @apply mr-3 mt-1;
+        }
+
+        .arco-collapse-item-header-icon {
+          svg {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .arco-collapse-item-header-right {
+        @apply pl-0;
+      }
+
+      .arco-collapse-item-content {
+        @apply bg-bg_color;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid var(--color-neutral-3);
+        @apply border-line_color_02;
+      }
+    }
+
+    .arco-collapse-item-header {
+      @apply items-start;
+
+      .arco-icon-hover {
+        top: 16px;
+        transform: translateY(0);
+
+        /* @apply top-3.5; */
+      }
+    }
+
+    .more {
+      @apply mb-6;
+
+      a {
+        @apply text-brand_color;
+      }
+    }
+
+    .inmail-collapse-time {
+      @apply text-xs font-normal text-text_color_03;
+    }
+
+    .inmail-collapse-content {
+      @apply flex mb-2;
+
+      .collapse-content-text {
+        max-width: 740px;
+        @apply text-sm break-words font-normal text-text_color_02;
+      }
+
+      .collapse-content-chg {
+        @apply mx-72 w-28 text-sm font-normal;
+      }
+
+      .rise-color {
+        @apply text-buy_up_color;
+      }
+
+      .fall-color {
+        @apply text-sell_down_color;
+      }
+
+      .collapse-content-num {
+        .content-num-button {
+          @apply inline-block py-1 px-3 rounded text-button_text_01;
+        }
+
+        .rise-bg-color {
+          @apply bg-buy_up_color;
+        }
+
+        .fall-bg-color {
+          @apply bg-sell_down_color;
+        }
+      }
+    }
+
+    .header-title {
+      .header-title-top {
+        @apply flex items-center;
+
+        .icon-type {
+          @apply w-6 h-6;
+
+          svg {
+            @apply w-6 h-6;
+          }
+        }
+
+        .header-title-text {
+          max-width: 570px;
+          @apply ml-3 text-base font-medium text-text_color_01;
+        }
+
+        .only-read-text {
+          @apply text-text_color_02;
+        }
+
+        .hidden-text {
+          @apply truncate;
+        }
+      }
+
+      .header-title-bottom {
+        max-width: 740px;
+        @apply mt-3 mb-4 text-sm font-normal truncate text-text_color_02;
+      }
+    }
+
+    .inmail-expand-icon {
+      @apply w-2 h-2;
+
+      svg {
+        @apply w-full h-full;
+      }
+    }
+
+    .arco-collapse-item-content-box {
+      @apply pt-2 px-3 pb-0;
+    }
+  }
+}

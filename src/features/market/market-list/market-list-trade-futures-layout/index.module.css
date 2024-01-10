@@ -1,0 +1,15 @@
+:local(.futures-default-categories) {
+  @apply whitespace-nowrap;
+
+  .horizontal-scroll-bar {
+    .right-0 {
+      transform: translateX(6px);
+    }
+
+    .bar-wrapper {
+      @apply flex justify-start items-center;
+
+      max-width: 422px;
+    }
+  }
+}

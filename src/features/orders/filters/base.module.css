@@ -1,0 +1,38 @@
+:local(.base-select-wrapper) {
+  @apply mr-3 inline-flex items-center;
+}
+
+:local(.base-select-options-wrapper) {
+  .arco-select-option.arco-select-option-selected {
+    @apply text-brand_color;
+  }
+}
+
+:local(.date-select-modal-wrapper) {
+  .arco-picker-cell-in-view .arco-picker-date-value,
+  .arco-picker-header-value {
+    @apply font-normal;
+  }
+
+  &.in-trade {
+    .arco-picker-cell-in-view .arco-picker-date-value,
+    .arco-picker-header-value,
+    .arco-picker-week-list-item {
+      font-size: 12px;
+    }
+  }
+}
+
+:local(.date-select-wrapper) {
+  width: 240px;
+
+  &.in-trade {
+    @apply bg-transparent h-6 border-transparent hover:border-transparent;
+
+    &.arco-picker-size-default input {
+      @apply text-xs;
+    }
+  }
+
+  
+}

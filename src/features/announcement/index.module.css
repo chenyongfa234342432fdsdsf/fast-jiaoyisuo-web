@@ -1,0 +1,41 @@
+:local(.scoped) {
+  @apply flex-1 flex;
+
+  .notice-center-content {
+    @apply flex-1 flex;
+
+    .navigation-menu {
+      width: 360px;
+      min-height: 687px;
+      @apply bg-bg_color border-r border-line_color_02;
+
+      .arco-spin-children {
+        @apply h-full;
+      }
+    }
+
+    .navigation-content {
+      @apply flex-1 flex flex-col;
+
+      .arco-spin-children {
+        @apply h-full w-full;
+      }
+
+      .navigation-content-header {
+        @apply w-full px-9;
+      }
+
+      .navigation-content-body {
+        @apply flex-1 bg-bg_color p-10 pt-0;
+
+        .content-body-title {
+          @apply my-8;
+
+          label {
+            @apply text-2xl font-medium text-text_color_01;
+          }
+        }
+      }
+    }
+  }
+}

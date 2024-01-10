@@ -1,0 +1,185 @@
+:local(.scoped) {
+  @apply bg-bg_color w-full h-full;
+
+
+  .company-verified {
+    width: 620px;
+    @apply mx-auto bg-bg_color  overflow-hidden;
+      
+    .arco-alert {
+      @apply items-start;
+    }
+    
+    .arco-badge-status-dot {
+      @apply w-1 h-1 bg-text_color_01 !important;
+    }
+
+    .company-verified-alert {
+      margin-bottom: 33px;
+      padding: 11px;
+      font-size: 12px;
+      border-radius: 4px;
+      @apply text-brand_color bg-brand_color_special_02 flex;
+      
+      .arco-alert-content {
+        @apply text-brand_color;
+      }
+
+      .arco-alert-icon-wrapper {
+        @apply h-auto;
+      }
+
+    }
+    
+    .company-verified-rights {
+      border-radius: 4px;
+      @apply w-full  flex;
+      
+      .company-rights {
+        @apply w-20 h-20 mx-8;
+      }
+
+      .company-verified-badge {
+        .company-badge-detail {
+          margin-bottom: 26px;
+          @apply flex;
+
+          .icon {
+            svg {
+              font-size: 24px;
+            }
+          }
+          
+          .text {
+            span:first-child {
+              padding-right: 16px;
+              padding-left: 11px;
+              font-size: 14px;
+              @apply text-text_color_02;
+            }
+          }
+        }
+        
+        .company-badge-detail:last-child {
+          @apply mb-0;
+        }
+      }
+ 
+    }
+    
+    .company-select-type {
+      .company-information-title {
+        margin-top: 33px;
+        @apply font-bold text-base mb-6;
+      }
+
+      .company-select-radio {
+        @apply w-full my-1 flex items-center bg-success_color_special_02 h-11 rounded;
+
+        .company-select-item {
+          padding-left: 12px;
+          @apply flex items-center;
+
+          span {
+            @apply pl-1 text-success_color;
+          }
+          
+          svg {
+            font-size: 12px !important;
+          }
+        }
+
+        .company-kyc-select {
+          padding-left: 13px;
+          @apply flex;
+        }
+      }
+      
+      .company-not-select-radio {
+        @apply w-full my-1 h-11 flex items-center rounded border border-line_color_01;
+        
+        .company-select-item {
+          @apply flex pl-3 items-center;
+
+          span {
+            @apply pl-1 text-text_color_02;
+          }
+
+          svg {
+            font-size: 12px !important;
+          }
+        }
+      }
+       
+      .company-select-disable {
+        @apply bg-line_color_01 cursor-not-allowed;
+      }
+    }
+
+    .company-verified-button {
+      @apply w-full bg-brand_color h-10 mx-auto font-medium justify-center rounded my-8 flex items-center text-button_text_02;
+    }
+    
+  }
+
+
+}
+
+.enterprise-modal {
+  width: 400px;
+  
+  /* .enterprise-modal {
+    width: 400px;
+    
+    .arco-btn-size-default:first-child {
+      @apply p-0;
+    }
+  
+    .arco-btn-secondary {
+      border: 0 solid !important;
+      box-shadow: 0 !important;
+      @apply border-0 text-text_color_02 !important;
+  
+      span {
+        @apply flex justify-center items-center w-full h-full border border-line_color_01;
+      }
+    }
+  
+    .arco-btn-secondary:hover {
+      @apply border-line_color_01 text-text_color_02 bg-transparent !important;
+    }
+  
+
+  } */
+    
+
+  .arco-modal-footer {
+    .arco-btn-size-default {
+      width: 180px;
+      height: 40px;
+      @apply p-0;
+    }
+
+    .arco-btn-secondary {
+      border: 0 !important;
+      @apply text-text_color_02 !important;
+      
+      span {
+        outline: 1px;
+        outline-style: solid;
+        outline-color: var(--line_color_01);
+        @apply flex rounded justify-center items-center w-full h-full;
+      }
+    }
+  }
+
+  .arco-btn-secondary:hover {
+    border: 1px !important;
+    @apply border-line_color_01 text-text_color_02 bg-transparent !important;
+  }
+
+  /* @apply w-96; */
+}
+  
+
+

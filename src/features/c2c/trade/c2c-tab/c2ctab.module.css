@@ -1,0 +1,46 @@
+
+:local(.scope) { 
+  .buy-tabs {
+    top: 60px;
+    z-index: 9;
+    @apply w-full bg-toast_bg_color text-lg;
+    
+    .default-tab-header {
+      width: 1200px;
+      @apply relative   m-auto bg-toast_bg_color;
+
+      .account-center {
+        @apply mx-4 h-14 inline-flex items-center text-text_color_02;
+
+        span {
+          @apply text-base font-medium;
+        }
+      }
+      
+      .account-center:hover {
+        @apply text-button_text_01;
+      }
+
+      .account-center:first-child {
+        @apply ml-0;
+      }
+      
+      .order-forms-border {
+        /* @apply border-b-2 border-b-brand_color; */
+        @apply relative text-button_text_01;
+      }
+      
+      .order-forms-border::before {
+        width: 28px;
+        height: 2px;
+        margin-left: -14px;
+        content: '';
+        @apply bg-brand_color left-1/2 absolute bottom-0 block;
+      }
+    }
+  }
+  
+  .buy-tabs-sticky {
+    @apply sticky;
+  }
+}

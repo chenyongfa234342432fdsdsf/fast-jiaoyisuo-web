@@ -1,0 +1,13 @@
+:local(.root) {
+  @apply whitespace-nowrap;
+  
+  tr {
+    @apply cursor-pointer;
+  }
+
+  .logo-column {
+    img {
+      @apply rounded-full;
+    }
+  }
+}

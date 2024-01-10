@@ -1,0 +1,35 @@
+:local(.scoped) { 
+  .community-menu-title {
+    @apply mb-8 flex items-center;
+
+    .menu-title-icon {
+      @apply w-8 h-8;
+
+      svg {
+        @apply w-8 h-8;
+      }
+    }
+
+    .menu-title-text {
+      @apply ml-2 text-xl font-medium text-text_color_01;
+    }
+  }
+
+  .community-menu-container {
+    @apply flex items-center flex-wrap;
+
+    .menu-container-item {
+      @apply pr-5 mb-4 w-1/4 box-border cursor-pointer;
+
+      .container-item-box {
+        border: 1px solid var(--line_color_01);
+        @apply p-4 w-full rounded truncate overflow-hidden;
+
+        &:hover {
+          border: 1px solid var(--brand_color);
+          @apply text-brand_color;
+        }
+      }
+    }
+  }
+}

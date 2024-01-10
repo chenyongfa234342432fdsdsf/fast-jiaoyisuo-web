@@ -1,0 +1,144 @@
+:local(.message-popup-wrapper) {
+  @apply p-4 rounded bg-card_bg_color_03;
+
+  width: 480px;
+  min-height: 296px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+
+  .unread-action-wrapper {
+    @apply flex items-center justify-between p-3 mb-2 bg-card_bg_color_02 rounded text-xs;
+  }
+
+  .unread-more {
+    @apply mr-2;
+
+    &:hover {
+      @apply text-brand_color;
+    }
+  }
+}
+
+:local(.message-center-wrapper) {
+  .message-badge {
+    /** 固定用白色*   */
+    color: #FFFFFF;
+    border-radius: 50%;
+    @apply block top-0 right-0 h-4 w-4 leading-4 overflow-hidden tracking-normal text-center;
+  }
+
+  .arco-badge-number {
+    @apply min-w-0 p-0 box-content;
+  
+    span {
+      transform: calc(0.83);
+      @apply inline-block;
+    }
+  }
+}
+
+:local(.message-item) {
+  @apply flex flex-col p-4 cursor-pointer rounded overflow-hidden;
+
+  &:hover {
+    @apply bg-card_bg_color_02;
+  }
+
+  .cell {
+    @apply flex items-center mb-1;
+
+    .icon {
+      @apply mr-2;
+
+      .cell-left-icon {
+        @apply w-6 h-6;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .content {
+      @apply w-full text-sm truncate text-text_color_01;
+    }
+  }
+
+  .message-content {
+    @apply w-full text-sm truncate text-text_color_02;
+  }
+}
+
+:local(.message-modal-wrapper) {
+  .arco-modal-title {
+    @apply pr-3 truncate;
+  }
+
+  .message-modal-icon {
+    @apply w-5 h-5;
+
+    svg {
+      @apply w-full h-full;
+    }
+  }
+
+  .arco-modal-close-icon {
+    @apply top-8 right-8;
+  }
+
+  .arco-modal-content {
+    @apply pt-8 px-8 overflow-hidden;
+  }
+
+  .modal-wrapper-header {
+    @apply text-center font-medium text-base text-text_color_01;
+  }
+
+  .modal-header {
+    @apply text-sm font-medium;
+  }
+
+  .modal-time {
+    @apply mt-2 mb-4 text-xs text-text_color_03;
+  }
+
+  .modal-body {
+    @apply text-xs font-medium;
+  }
+
+  .arco-modal-footer {
+    border: 1px solid transparent;
+    @apply px-8 pb-8 pt-0;
+  }
+
+  .modal-wrapper-content {
+    @apply flex flex-col items-center;
+
+    .content-header {
+      @apply w-full flex items-center justify-between mb-6;
+
+      .content-header-text {
+        @apply text-xl font-medium text-text_color_01;
+      }
+
+      .modal-close-icon {
+        @apply w-5 h-5;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .message-modal-icon {
+      @apply text-center w-20 h-20 mb-6;
+
+      .message-modal-setting {
+        @apply w-20 h-20;
+      }
+
+      svg {
+        @apply w-20 h-20;
+      }
+    }
+  }
+}

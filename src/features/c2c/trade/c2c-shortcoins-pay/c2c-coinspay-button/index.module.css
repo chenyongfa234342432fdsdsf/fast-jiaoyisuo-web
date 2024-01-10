@@ -1,0 +1,37 @@
+:local(.scope) { 
+  .coinspay-button-container {
+    width: 380px;
+    height: 46px;
+    @apply flex  justify-center items-center text-button_text_01 rounded text-base font-medium !important;
+  }
+
+  .coinspay-button-purchase {
+    @apply bg-buy_up_color !important;
+  }
+
+  .coinspay-button-sell {
+    @apply bg-sell_down_color !important;
+  }
+}
+
+
+:local(.coins-trade-modal) { 
+  width: 360px;
+  @apply rounded-lg;
+
+  .arco-modal-title {
+    @apply flex justify-center mt-8 text-text_color_01 font-medium text-base;
+  }
+  
+  .arco-modal-close-icon {
+    @apply mt-1.5 text-base;
+  }
+  
+  .coins-trade-content {
+    @apply flex justify-center text-text_color_01 mb-6;;
+  }
+  
+  .coins-trade-button {
+    @apply w-full h-10 bg-brand_color flex justify-center items-center mb-2 rounded text-button_text_02 font-medium;
+  }
+}

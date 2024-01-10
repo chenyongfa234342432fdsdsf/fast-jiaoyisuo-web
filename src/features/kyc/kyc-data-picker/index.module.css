@@ -1,0 +1,26 @@
+:local(.scoped) {
+  .kyc-data-picker {
+    @apply flex items-center;
+
+    .kyc-interval {
+      @apply px-2 text-base text-text_color_03;
+    }
+
+    .kyc-data-checkbox {
+      @apply w-32 inline-block ml-2;
+
+      .arco-checkbox-mask {
+        @apply w-4 h-4 border-icon_color border;
+      }
+    }
+    
+    .arco-checkbox {
+      @apply flex items-center;
+
+      .arco-checkbox-text {
+        min-width: 40px;
+        @apply -mt-1 text-base max-w-xs;
+      }
+    }
+  }
+}

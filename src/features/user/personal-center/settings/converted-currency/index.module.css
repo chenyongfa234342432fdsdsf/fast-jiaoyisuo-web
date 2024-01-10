@@ -1,0 +1,23 @@
+:local(.scoped) {
+  .user-personal-center-settings-wrap {
+    @apply mt-6;
+  }
+
+  .arco-image {
+    @apply mb-1 w-5 h-5;
+
+    img {
+      @apply w-5 h-5 rounded-full;
+    }
+  }
+
+  .arco-trigger {
+    .arco-image {
+      @apply w-5 h-5;
+  
+      img {
+        @apply w-5 h-5 rounded-full;
+      }
+    }
+  }
+}

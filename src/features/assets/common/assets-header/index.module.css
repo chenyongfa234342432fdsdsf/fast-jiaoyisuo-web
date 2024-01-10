@@ -1,0 +1,30 @@
+:local(.assets-header) {
+  @apply flex justify-between items-center font-medium text-4xl w-full;
+
+  .header-left {
+    @apply flex flex-row items-end;
+
+    .title-name {
+      font-size: 32px;
+      @apply mr-8;
+    }
+
+    .header-operate {
+      @apply flex items-center text-sm cursor-pointer;
+  
+      svg {
+        @apply w-4 h-4 mr-1;
+      }
+    }
+  }
+
+  .header-right {
+    @apply flex items-center;
+
+    .arco-btn {
+      width: 142px;
+      height: 40px;
+      font-weight: 500 !important;
+    }
+  }
+}

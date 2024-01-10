@@ -1,0 +1,96 @@
+:local(.scoped) {
+  @apply w-full h-full flex justify-between items-center px-8 box-border whitespace-nowrap;
+
+  font-size: 12px;
+
+  .horizontal-scroll-bar {
+    .bar-wrapper {
+      @apply flex justify-start items-center pt-2 pb-1 pr-8;
+
+      max-width: calc(100%);
+    }
+
+    max-width: calc(100% - 180px);
+
+    .icon-circle {
+      width: 16px;
+      height: 42px;
+      @apply bg-transparent drop-shadow-none rounded-none;
+    }
+
+    .right-0 {
+      .icon-circle {
+        background: linear-gradient(270deg, var(--bg_color) 64.58%, rgb(255 255 255 / 0%) 100%);
+      }
+    }
+
+    .left-0 {
+      .icon-circle {
+        background: linear-gradient(90deg, var(--bg_color) 64.58%, rgb(255 255 255 / 0%) 100%);
+      }
+    }
+  }
+
+  .history-list {
+    max-width: calc(100% - 180px);
+    @apply flex items-center gap-6 overflow-x-auto;
+
+    /* 高量当前选择的币对 */
+    .selected-item {
+      .quote-name {
+        * {
+          @apply text-brand_color;
+        }
+      }
+    }
+
+    .history-item:hover {
+      @apply bg-card_bg_color_01;
+    }
+
+    .history-item {
+      @apply flex flex-row items-center justify-center cursor-pointer p-2;
+      @apply hover:bg-card_bg_color_01;
+
+      .visiable {
+        @apply visible;
+      }
+
+      .invisiable {
+        @apply invisible;
+      }
+
+      .quote-name,
+      .close-icon {
+        @apply pr-1;
+      }
+
+      .value {
+        @apply flex ml-1;
+      }
+    }
+  }
+
+  .char-tab-wrapper {
+    border-left: 1px solid var(--line_color_02);
+    @apply pl-8;
+    @apply ml-8;
+
+    .chart-tab {
+      @apply gap-8 !important;
+    }
+
+    .chart-tab .active .item {
+      @apply text-xs font-medium text-text_color_01 !important;
+    }
+
+
+    .chart-tab .tab .item {
+      @apply text-xs font-medium text-text_color_02;
+    }
+
+    .chart-tab .item:hover {
+      @apply text-text_color_01;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+:local(.scoped) {
+  @apply bg-card_bg_color_01 ;
+
+  height: 108px;
+
+  .header-search-wrap {
+    @apply w-full h-full flex items-center justify-between;
+
+    .title {
+      @apply font-medium text-text_color_01;
+
+      font-size: 2rem;
+
+    }
+
+    .search {
+      width: 296px;
+      height: 38px;
+
+      .arco-input-search {
+        @apply h-full;
+
+        .arco-input-group {
+          @apply h-full block;
+
+          .arco-input-group-suffix {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+}

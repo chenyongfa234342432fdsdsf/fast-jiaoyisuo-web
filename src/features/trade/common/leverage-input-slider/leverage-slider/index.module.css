@@ -1,0 +1,33 @@
+:local(.scoped) {
+  @apply px-2;
+
+  .arco-slider-marks {
+    >:last-child {
+      @apply -translate-x-2/3;
+    }
+  }
+
+  .arco-slider-road::before {
+    @apply bg-line_color_02 h-1;
+  }
+
+  .arco-slider-button::after {
+    transform: translateY(-2px);
+    @apply border-4 w-4 h-4 bg-button_text_01 !important;
+  }
+
+
+  .arco-slider-dot {
+    @apply bg-line_color_02 border-line_color_02 !important;
+  }
+
+  .arco-slider-dot-active {
+    @apply bg-brand_color border-brand_color !important;
+  }
+
+  .arco-slider-marks-text {
+    margin-top: 6px;
+
+    @apply text-xs text-text_color_01;
+  }
+}

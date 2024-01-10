@@ -1,0 +1,10 @@
+:local(.container) { 
+  .success-button {
+    @apply h-10 flex justify-center items-center border-none bg-button_hover_01;
+
+    span {
+      @apply font-medium;
+    }
+  }
+
+}

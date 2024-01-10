@@ -1,0 +1,26 @@
+:local(.scoped) {
+  width: 1200px;
+  @apply mx-auto;
+
+  >:last-child {
+    > * {
+      min-height: 40vh;
+    }
+  }
+
+  .market-list-spot-base-panel {
+    @apply flex justify-between items-center;
+
+    .market-list-spot-quotes {
+      @apply flex justify-between items-center text-base text-brand_color cursor-pointer;
+
+      .market-list-spot-icon {
+        @apply mr-1;
+      }
+    }
+  }
+
+  > * {
+    @apply my-5;
+  }
+}

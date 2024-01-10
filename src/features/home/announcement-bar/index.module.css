@@ -1,0 +1,11 @@
+:local(.scoped) {
+  @apply flex justify-between mb-10 mt-6 items-center;
+
+  > * {
+    @apply flex flex-row items-center;
+  }
+
+  .arco-carousel-indicator-wrapper {
+    display: none;
+  }
+}

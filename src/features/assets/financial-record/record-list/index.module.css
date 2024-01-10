@@ -1,0 +1,38 @@
+:local(.scoped) {
+  .arco-select-view {
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .list-opt-button {
+    @apply w-full h-full text-brand_color !important;
+  }
+
+  .list-opt-button:hover {
+    @apply cursor-pointer;
+  }
+  
+  .arco-modal-header {
+    @apply px-8 pt-8
+  }
+
+  .arco-modal-close-icon {
+    @apply text-xl right-8;
+
+    top: 26px;
+  }
+
+  .arco-modal-content {
+    @apply pt-8
+  }
+
+  .arco-table-no-data {
+    @apply cursor-auto;
+  }
+
+  .info-transfer {
+    .transfer-separate {
+      @apply mx-1;
+    }
+  }
+}

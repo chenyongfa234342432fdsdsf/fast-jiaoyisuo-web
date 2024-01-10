@@ -1,0 +1,44 @@
+:local(.header-title) {
+  .title {
+    @apply text-text_color_01 font-medium text-base flex flex-row items-center;
+
+    line-height: 24px;
+  }
+
+  .all-num {
+    @apply text-text_color_01 font-semibold text-2xl;
+
+    line-height: 36px;
+  }
+}
+
+:local(.header-info) {
+  .day-title {
+    @apply text-text_color_01 text-sm font-normal flex flex-row items-center gap-x-1;
+
+    line-height: 22px;
+  }
+
+  .day-nums {
+    @apply font-medium text-xl;
+
+    line-height: 30px;
+  }
+
+}
+
+:local(.header-layout) {
+  @apply bg-brand_color_special_02 rounded mx-auto mt-10 grid grid-cols-3 p-8 gap-y-8;
+}
+
+:local(.header-gains) {
+  >:first-child {
+    @apply col-span-full;
+  }
+}
+
+:local(.header-invite) {
+  >:nth-child(2) {
+    @apply col-span-2;
+  }
+}

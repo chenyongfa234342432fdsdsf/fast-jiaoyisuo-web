@@ -1,0 +1,11 @@
+:local(.scoped) {
+  @apply py-2 px-1 text-xs;
+  
+  .details-item-info {
+    @apply flex flex-row items-center py-1;
+  
+    /* span:nth-child(1) {
+      @apply mr-1;
+    } */
+  }
+}

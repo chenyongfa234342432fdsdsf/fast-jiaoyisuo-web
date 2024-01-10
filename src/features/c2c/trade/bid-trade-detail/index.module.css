@@ -1,0 +1,235 @@
+:local(.container) {
+  /* stylelint-disable selector-class-pattern */
+  @apply bg-bg_color;
+  
+  .table-list-is {
+    .arco-table-empty-row { 
+      .arco-table-td {
+        @apply hidden;
+      }
+    }
+  }
+  
+  .arco-table-empty-row {
+    height: 500px !important;
+    @apply table-row;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0 !important;height: 0;
+  }
+
+  .free-table-list {
+    width: 1200px;
+
+
+    @apply mx-auto overflow-y-scroll;
+    
+    .business { 
+      @apply flex items-center;
+
+      .business-name {
+        @apply flex items-center cursor-pointer whitespace-nowrap;
+
+        .business-name-avater {
+          @apply w-5 h-5 rounded-full text-button_text_02 text-xs text-center leading-5 relative bg-brand_color;
+
+
+          .business-name-badge {
+            right: 0.5px;
+            bottom: -6px;
+            @apply absolute;
+          }
+        }
+        
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      .business-num {
+        @apply text-text_color_02 text-xs mt-1.5 ml-7;
+
+        .order-rate {
+          border-left: 1px solid; 
+          @apply ml-2 pl-2 border-line_color_01;
+        }
+      }
+    }
+    
+    .norm {
+      .norm-title {
+        div:last-child {
+          max-width: 150px;
+        }
+      }
+
+      .norm-money {
+        @apply mt-1;
+        
+
+        span:last-child {
+          @apply ml-3;
+        }
+      }
+    }
+    
+    .handle {
+      width: 104px;
+      height: 38px;
+      @apply flex items-center justify-center cursor-pointer text-sm font-medium rounded;
+    }
+    
+    .transaction-type {
+      svg {
+        @apply w-4 h-2 m-0.5;
+      }
+    }
+    
+    .pay-methods-container {
+      .paymethods-icon {
+        svg {
+          @apply w-4 h-2 m-0.5;
+        }
+      }
+    }
+  }
+
+  thead {
+    .arco-table-tr {
+      @apply bg-card_bg_color_01 h-10;
+    }
+
+    .arco-table-th {
+      @apply bg-card_bg_color_01 h-10 border-none;
+    }
+    
+    .arco-table-th-item-title {
+      @apply text-text_color_02 text-xs;
+    }
+  }
+  
+  tbody {
+    .arco-table-tr {
+      height: 122px;
+
+      .arco-table-td {
+        @apply bg-bg_color border-b-line_color_02 !important;
+      }
+    }
+  }
+
+
+  .affix-name {
+    top: 116px;
+    @apply sticky bg-bg_color z-1;
+  }
+
+  .freeTrade-result {
+    @apply h-96 flex items-center justify-center flex-col text-text_color_04;
+
+    .arco-result-title {
+      @apply text-text_color_04;
+    }
+
+    .iconFile {
+      @apply text-text_color_04;
+    }
+  }
+
+  .freeTrade-tab {
+
+    @apply w-full m-auto bg-bg_color ;
+
+    .freeTrade-tabPane {
+      width: 1200px;
+      padding-top: 35px;
+      padding-bottom: 27px;
+      border-bottom: 1px solid;
+      @apply flex items-center justify-between m-auto border-b-line_color_02;
+
+      .free-publish-ads {
+        width: 102px;
+        @apply flex cursor-pointer h-10 items-center justify-center bg-brand_color rounded text-sm text-button_text_02 font-medium;
+      }
+      
+      .freeTrade-tabPane-select {
+        width: 1200px;
+        @apply flex items-center mx-auto;
+
+        .arco-form-item {
+          @apply mb-0;
+        }
+      }
+      
+      .trade-select-sell {
+        .arco-radio-group {
+          @apply border-sell_down_color !important;
+        }
+      }
+
+      .trade-select {
+        .arco-radio-group {
+          width: 160px;
+          padding: 3px;
+          border: 1px solid;
+          @apply border-buy_up_color flex bg-bg_color bg-opacity-25 rounded;
+        }
+
+        .trade-radio-button {
+          width: 76px;
+          height: 34px;
+          @apply flex items-center justify-center rounded-sm bg-bg_color;
+        }
+        
+        .trade-radio-purchase {
+          @apply bg-buy_up_color text-button_text_01;
+        }
+        
+        .trade-radio-sell {
+          @apply bg-sell_down_color text-button_text_01;
+        }
+
+        .arco-radio-group .arco-radio {
+          @apply mr-0 p-0;
+        }
+      }
+
+    }
+  }
+}
+
+:local(.transaction-type-container) {
+  .transaction-type-trigger {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    @apply bg-card_bg_color_03 p-3 rounded;
+    
+    span {
+      @apply text-text_color_01 mr-2.5;
+    }
+
+    span:last-child {
+      @apply mr-0;
+    }
+  }
+}
+
+:local(.pay-methods) {
+  .pay-methods-trigger {
+    max-width: 318px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    @apply bg-card_bg_color_03 pt-2 pb-2 pr-3 rounded;
+    
+    .pay-methods-trigger-item {
+      @apply ml-3;
+    }
+
+  }
+  
+}
+

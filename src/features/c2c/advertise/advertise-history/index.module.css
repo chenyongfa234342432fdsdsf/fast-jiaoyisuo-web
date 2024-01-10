@@ -1,0 +1,36 @@
+:local(.scoped) {
+  @apply flex bg-bg_color flex-1 mt-6;
+
+  .history-wrapper {
+    width: 1200px;
+    min-height: 450px;
+    @apply m-auto
+  }
+  
+
+  .arco-select-view {
+    height: 40px !important;
+    line-height: 38px !important;
+  }
+
+  .page-wrap {
+    @apply flex justify-end mt-2;
+
+    .arco-select-view, .arco-pagination .arco-pagination-jumper-input {
+      height: 40px !important;
+      line-height: 38px !important;
+    }
+  }
+
+  .arco-spin {
+    @apply block;
+  }
+
+  .assets-tabs-button {
+    .tab {
+      .item {
+        @apply p-0 !important;
+      }
+    }
+  }
+}

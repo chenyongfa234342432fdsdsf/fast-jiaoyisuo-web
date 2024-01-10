@@ -1,0 +1,15 @@
+:local(.scoped) {
+  @apply w-full;
+
+  .title {
+    @apply flex justify-between pt-10 text-text_color_01 text-sm font-medium;
+
+    .link-title {
+      @apply text-brand_color font-normal cursor-pointer;
+
+      svg {
+        @apply font-normal;
+      }
+    }
+  }
+}

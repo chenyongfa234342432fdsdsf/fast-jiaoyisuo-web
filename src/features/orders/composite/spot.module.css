@@ -1,0 +1,37 @@
+:local(.spot-full-wrapper) {
+  @apply h-full flex flex-col;
+
+  .order-types {
+    @apply flex px-8 pt-6 mb-4 justify-between items-center;
+  }
+
+  .cancel-all-button {
+    @apply text-brand_color cursor-pointer text-sm whitespace-nowrap mb-4;
+  }
+  
+  .filters-wrapper {
+    @apply px-8 pt-4 flex items-center justify-between;
+  }
+
+  .action-btn {
+    @apply font-normal h-10 text-sm;
+
+    min-width: 90px;
+  }
+
+  .mb-filter-block {
+    @apply mb-4;
+  }
+
+  &.in-trade {
+    .action-btn {
+      @apply h-6 px-2 text-xs rounded-sm;
+
+      min-width: unset;
+    }
+    
+    .mb-filter-block {
+      @apply mb-2;
+    }
+  }
+}

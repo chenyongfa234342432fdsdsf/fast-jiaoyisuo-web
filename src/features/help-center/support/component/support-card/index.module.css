@@ -1,0 +1,26 @@
+:local(.scoped) {
+  .support-card-grid {
+    @apply grid grid-cols-2 gap-y-8 gap-x-16;
+
+    .support-card-items {
+      border-bottom: 1px solid var(--line_color_02);
+      @apply pb-4 flex items-center cursor-pointer;
+
+      .card-items-image {
+        @apply w-6 h-6 overflow-hidden;
+
+        img {
+          @apply w-6 h-6;
+        }
+      }
+
+      .card-items-text {
+        @apply text-sm text-text_color_01 ml-2;
+
+        &:hover {
+          @apply text-brand_color;
+        }
+      }
+    }
+  }
+}

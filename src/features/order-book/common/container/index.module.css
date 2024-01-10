@@ -1,0 +1,110 @@
+:local(.scoped) {
+  @apply flex-1 px-4 overflow-hidden;
+
+  .trade-order-book-containe-wrap {
+    @apply w-full;
+
+    .buy, .sell {
+      height: 20px;
+      padding: 0 2px;
+      @apply relative flex;
+
+      .price, .amount, .total {
+        @apply flex-1 truncate flex items-center;
+
+        label {
+          @apply font-medium;
+        }
+      }
+
+      .amount, .total {
+        @apply text-right ml-1 justify-end;
+      }
+
+      .progress {
+        @apply absolute inset-y-0 right-0 max-w-full;
+      }
+
+      label {
+        font-size: 12px;
+        @apply leading-none;
+      }
+
+      .entrust {
+        top: 7px;
+        left: -10px;
+        width: 6px;
+        height: 6px;
+        @apply rounded-full absolute bottom-0;
+      }
+
+      .buy-entrust {
+        background-color: var(--buy_up_color);
+      }
+
+      .sell-entrust {
+        background-color: var(--sell_down_color);
+      }
+    }
+
+    .buy .price label {
+      @apply text-buy_up_color;
+    }
+
+    .sell .price label {
+      @apply text-sell_down_color;
+    }
+
+    .buy .progress {
+      @apply bg-buy_up_color_special_02;
+    }
+
+    .sell .progress {
+      @apply bg-sell_down_color_special_02;
+    }
+
+    .buy, .sell {
+      &:hover {
+        background-color: var(--bg_color_03);
+
+        label {
+          @apply font-medium;
+        }
+      }
+    }
+
+    .buy:hover {
+      border-bottom: 1px dashed var(--nc-01);
+    }
+
+    .sell:hover {
+      border-top: 1px dashed var(--nc-01);
+    }
+
+    .buy-hover, .sell-hover {
+      background-color: var(--bg_color_03);
+    }
+  }
+}
+
+.order-book-popover {
+  width: 216px;
+
+  .popover-container {
+    .average-price, .total {
+      @apply flex justify-between;
+    }
+
+    .total {
+      @apply mt-4
+    }
+  }
+}
+
+:local(.trade-order-book-sell-container) {
+  @apply flex flex-col justify-end;
+}
+
+:local(.trade-order-book-height-full) {
+  height: 440px;
+}

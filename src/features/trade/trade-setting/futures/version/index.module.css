@@ -1,0 +1,208 @@
+:local(.scoped) {
+  .container {
+    @apply flex;
+
+    .options {
+      @apply flex flex-col justify-between flex-1 mb-6;
+
+      &:first-child {
+        @apply mr-4;
+      }
+
+      &:last-child {
+        @apply ml-4;
+      }
+
+      .options-wrap {
+        border: 1px solid var(--card_bg_color_01);
+        @apply flex-1 flex rounded-lg p-2 bg-card_bg_color_01;
+
+        .options-content {
+          @apply flex-1 p-3 cursor-pointer rounded-lg relative bg-card_bg_color_03;
+  
+          label {
+            @apply cursor-pointer;
+          }
+  
+          .title {
+            @apply flex flex-col items-center;
+    
+            label {
+              &:first-child {
+                font-size: 16px;
+                @apply mb-2 text-text_color_01 font-medium;
+              }
+  
+              &:last-child {
+                font-size: 14px;
+                @apply mb-4 text-text_color_02 font-normal;
+              }
+            }
+          }
+
+          .image {
+            @apply mb-4;
+          }
+  
+          .content {
+            .content-title, .text {
+              label {
+                font-size: 12px;
+                @apply font-normal;
+              }
+            }
+  
+            .content-title {
+              @apply mb-3 text-text_color_02;
+            }
+  
+            .text {
+              line-height: 18px;
+              @apply text-text_color_01 mb-2;
+            }
+          }
+  
+          .checked-icon {
+            @apply absolute right-0 top-0;
+  
+            & > div {
+              margin-top: -1px;
+              @apply align-super;
+            }
+  
+            svg {
+              width: 22px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+      .link {
+        @apply text-right mb-6 mt-2;
+
+        span, a {
+          @apply font-normal text-brand_color mr-2 cursor-pointer;
+        }
+      }
+
+      .btn {
+        .arco-btn {
+          @apply w-full;
+        }
+      }
+    }
+
+    .checked {
+      .options-wrap {
+        border: 1px solid var(--brand_color);
+      }
+    }
+  }
+
+  .tips {
+    @apply mb-4;
+
+    svg {
+      @apply w-2 h-2 mr-1;
+    }
+
+    label {
+      font-size: 12px;
+      @apply font-normal text-text_color_02;
+
+      span {
+        @apply text-brand_color;
+      }
+    }
+  }
+}
+
+:local(.version-tips-popup-show) {
+  .version-tips-popup {
+    .container {
+      .icon, .title, .text, .assets {
+        @apply text-center mb-4;
+      }
+  
+      .icon {
+        svg {
+          font-size: 78px;
+        }
+      }
+  
+      .title {
+        label {
+          font-size: 16px;
+          @apply text-text_color_01 font-medium;
+        }
+      }
+  
+      .text {
+        @apply flex flex-col;
+  
+        label {
+          @apply text-text_color_02;
+        }
+  
+        span {
+          @apply text-brand_color;
+        }
+      }
+  
+      .assets {
+        @apply py-4 bg-card_bg_color_01 rounded-lg;
+  
+        .assets-text {
+          @apply mb-2;
+  
+          label {
+            @apply text-text_color_02;
+          }
+        }
+  
+        .assets-value {
+          label {
+            font-size: 16px;
+            @apply text-text_color_01 font-medium;
+          }
+        }
+      }
+  
+      .recharge {
+        @apply flex mb-8;
+  
+        .arco-btn {
+          font-size: 14px;
+          @apply flex-1 font-medium;
+  
+          span {
+            @apply ml-2;
+          }
+  
+          svg {
+            font-size: 20px;
+          }
+  
+          &:first-child {
+            margin-right: 10px;
+          }
+  
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .placeholder {
+        @apply mb-2 h-2;
+      }
+    }
+  }
+
+  .arco-modal-footer {
+    .arco-btn {
+      @apply mx-0 !important;
+    }
+  }
+}

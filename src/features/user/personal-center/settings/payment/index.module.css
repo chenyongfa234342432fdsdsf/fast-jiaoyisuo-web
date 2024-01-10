@@ -1,0 +1,16 @@
+:local(.scoped) {
+  .personal-center-settings-payment-wrap {
+    @apply flex flex-col justify-center items-center;
+
+    .user-settings-header-info {
+      .operate {
+        @apply flex items-center;
+      }
+    }
+
+    .list {
+      width: 1200px;
+      @apply mb-4;
+    }
+  }
+}

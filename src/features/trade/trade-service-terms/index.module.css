@@ -1,0 +1,17 @@
+:local(.scoped) {
+  .content{
+
+  }
+
+  .footer {
+    @apply flex mt-8;
+
+    .arco-btn {
+      @apply flex-1 h-10;
+    }
+
+    .arco-btn-secondary {
+      @apply ml-0;
+    }
+  }
+}

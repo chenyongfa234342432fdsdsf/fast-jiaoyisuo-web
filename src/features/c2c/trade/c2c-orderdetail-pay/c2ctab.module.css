@@ -1,0 +1,66 @@
+
+:local(.scope) { 
+  .orderdetail-pay {
+    @apply flex justify-between;
+    
+    .qr-hover {
+      svg {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .appeal-upload-item {
+    width: 84px;
+    height: 84px;
+    @apply mr-3.5 mb-3 relative border-line_color_01 border-dashed border rounded overflow-hidden;
+    
+        
+    img {
+      width: 84px;
+      height: 84px;
+    }
+      
+    .appeal-upload-item:last-child {
+      @apply mr-0;
+    }
+    
+    .re-upload-img {
+      @apply absolute top-1/2 left-1/2 -ml-2 -mt-2.5 z-10;
+
+      svg {
+        @apply w-6 h-6;
+      }
+    }
+  
+  }
+  
+  .appeal-reason {
+    >div {
+      @apply mb-0 !important;
+    }
+  }
+  
+  .downlaod {
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+  
+  .appeal-upload-result {
+    width: 180px;
+    @apply flex items-center h-10 rounded bg-bg_sr_color px-3;
+    
+    svg {
+      @apply w-5 h-5;
+    }
+  }
+}
+
+:local(.download-img-modal) { 
+  img {
+    height: 404px;
+    @apply w-full mb-8;
+  }
+}
+

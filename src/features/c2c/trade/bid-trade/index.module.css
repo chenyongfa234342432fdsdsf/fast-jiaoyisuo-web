@@ -1,0 +1,24 @@
+:local(.scoped) {
+  @apply w-full flex-1;
+
+  .arco-select-view {
+    width: 150px;
+    @apply bg-bg_sr_color border-none !important;
+  }
+
+  .arco-empty {
+    svg {
+      @apply w-32 h-32
+    }
+  }
+
+  .coin-select-option-text {
+    @apply text-text_color_01 ml-2;
+  }
+
+  .arco-select-option-hover {
+    .coin-select-option-text {
+      @apply text-brand_color;
+    }
+  }
+}

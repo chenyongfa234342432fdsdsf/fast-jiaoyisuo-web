@@ -1,0 +1,102 @@
+:local(.table) {
+  table {
+    display: block;
+    min-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    th {
+      height: 40px;
+    }
+
+    td {
+      height: 62px;
+    }
+  }
+
+  .arco-empty {
+    height: 40vh;
+  }
+
+  .arco-table-th-item {
+    @apply text-xs text-text_color_02 font-normal py-3;
+  }
+
+
+  .table-body {
+    .arco-table-container {
+      @apply border-none;
+    }
+
+    .arco-table-th {
+      @apply bg-card_bg_color_01 border-none;
+    }
+
+    .arco-table-td {
+      @apply border-none bg-bg_color;
+    }
+
+    .arco-table-container::before {
+      @apply hidden;
+    }
+
+    .arco-table-pagination {
+      @apply hidden;
+    }
+  }
+
+  .table-pagination {
+    .arco-select-view-value,
+    .arco-pagination-total-text {
+      @apply text-text_color_03;
+    }
+    @apply flex items-center justify-end mt-4 mb-4;
+
+    .arco-pagination-jumper {
+      @apply inline-flex items-center order-3;
+    }
+
+    .arco-pagination-list {
+      @apply inline-flex order-2;
+    }
+
+    .arco-select {
+      @apply inline-flex order-1;
+    }
+
+    .arco-pagination-item {
+      @apply inline-flex justify-center items-center h-8;
+
+      min-width: 32px;
+    }
+
+    .arco-pagination-option {
+      @apply inline-flex justify-center items-center;
+    }
+
+    .arco-select-view-value {
+      @apply inline-flex items-center;
+    }
+
+    .arco-pagination-jumper-input,
+    .arco-select-view {
+      @apply h-8;
+    }
+
+    .table-pagination-extra {
+      @apply ml-2;
+
+      color: var(--color-text-3);
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+    }
+  }
+
+  .arco-table-tr {
+    > * {
+      @apply whitespace-nowrap;
+    }
+  }
+}

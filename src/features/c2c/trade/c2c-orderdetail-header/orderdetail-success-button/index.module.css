@@ -1,0 +1,13 @@
+:local(.container) { 
+  .success-button {
+    @apply h-10 flex justify-center items-center border-none;
+
+    span {
+      @apply font-medium;
+    }
+  }
+
+  .arco-btn-size-default {
+    @apply p-0;
+  }
+}

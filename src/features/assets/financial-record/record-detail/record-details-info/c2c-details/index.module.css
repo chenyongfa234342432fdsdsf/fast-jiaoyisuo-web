@@ -1,0 +1,23 @@
+:local(.c2c-details-root) {
+  @apply flex flex-col mt-2;
+
+  .transfer-info {
+    @apply flex flex-col border-b border-line_color_02;
+  }
+
+  .sell-info {
+    @apply flex flex-col px-4;
+  }
+
+  .info-item {
+    @apply w-full flex items-center justify-between mb-4;
+  }
+
+  .info-item-left {
+    @apply flex items-center w-3/4;
+    
+    .sell-label-adress {
+      @apply w-1/4;
+    }
+  }
+}

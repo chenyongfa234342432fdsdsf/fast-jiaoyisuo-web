@@ -1,0 +1,121 @@
+:local(.asset-popup-form) {
+  @apply flex flex-col;
+
+  .form-item {
+    @apply flex flex-col mt-6 first:mt-0;
+
+    .form-labels {
+      @apply flex mb-2 items-center justify-between text-sm text-text_color_02;
+    }
+
+    .form-input {
+      .arco-form-item {
+        @apply mb-0;
+      }
+    }
+
+    .form-slider {
+      @apply px-1;
+    }
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+
+  /** 表单输入框样式 */
+  .form-item {
+    .form-input {
+      .arco-col-19 {
+        @apply w-full flex-1;
+      }
+
+      .arco-select-view {
+        @apply h-10 bg-bg_sr_color border-0 !important;
+      }
+
+      .arco-input, .arco-input-inner-wrapper {
+        font-size: 14px !important;
+      }
+    
+      .arco-input-inner-wrapper {     
+        @apply h-10 bg-bg_sr_color border-transparent;
+    
+    
+        &:focus {
+          @apply bg-bg_sr_color border-brand_color !important;
+        }
+    
+        &:hover {
+          @apply bg-bg_sr_color;
+        }  
+      }
+
+      .arco-input-inner-wrapper-disabled {
+        @apply bg-bg_button_disabled text-text_color_02 placeholder-text_color_01 !important;
+
+        .arco-input-disabled {
+          -webkit-text-fill-color: var(--text_color_02) !important;;
+        }
+      }
+
+      .arco-form-item-error {
+        .arco-input, .arco-input:focus, .arco-input:hover {
+          @apply h-10 bg-transparent border-transparent !important;
+        }
+
+        .arco-picker:hover, .arco-picker {
+          @apply bg-transparent border-warning_color !important;
+        }
+      }
+    }
+
+    .form-input-between {
+      @apply flex flex-1 justify-between;
+
+      .right-item {
+        width: 108px;
+        @apply ml-2;
+      }
+
+      .left-item {
+        width: 264px;
+      }
+    }
+
+    .profit-disabled-content {
+      @apply flex flex-col text-sm mt-1;
+
+      .profit-disabled-labels {
+        @apply flex items-center justify-between mt-3.5 text-text_color_02 mb-2;
+
+        .revoke {
+          @apply text-brand_color cursor-pointer;
+        }
+      }
+
+      .disabled-input {
+        @apply w-full h-10 bg-bg_button_disabled rounded px-3 text-sm text-text_color_04 leading-10;
+      }
+    }
+  }
+
+  .price-hint {
+    @apply mt-2 mb-6 text-xs text-text_color_03;
+
+    .hint-name {
+      @apply text-text_color_01;
+    }
+  }
+
+  /** 信息或价格展示 */
+  .info-list-wrap {
+    .info-item {
+      @apply flex items-center justify-between text-sm text-text_color_02 mb-4 last:mb-0;
+  
+      .value {
+        @apply text-text_color_01;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+:local(.tip-content-modal-wrapper) {
+  width: 360px;
+
+  .arco-modal-footer {
+    & > button:first-child {
+      margin-right: 10px;
+      @apply text-text_color_02 bg-transparent border border-line_color_01 ml-0 ;
+    }
+
+    & > button:last-child {
+      margin-left: 10px;
+      @apply text-text_color_01;
+    }
+  }
+
+  .arco-modal-header {
+    @apply opacity-0 mb-0;
+  }
+
+}

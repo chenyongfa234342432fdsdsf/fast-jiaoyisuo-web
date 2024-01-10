@@ -1,0 +1,106 @@
+:local(.scoped) {
+  @apply pt-4;
+
+  overflow-y: auto;
+
+  .arco-spin {
+    @apply block;
+  }
+
+  .coin-wrap {
+    @apply flex flex-row items-center;
+
+    .icon,
+    img {
+      border-radius: 50%;
+      @apply w-6 h-6;
+    }
+  }
+
+  div.trade-assets-list-arco-table-wrapper {
+    @apply overflow-auto;
+
+  
+    .arco-table-content-inner {
+      @apply overflow-x-auto;
+
+      table {
+        table-layout: auto;
+
+        thead {
+          @apply sticky top-0 z-1;
+        }
+      }
+    }
+
+    .arco-table thead > .arco-table-tr > .arco-table-th,
+    .arco-table .arco-table-td {
+      @apply text-text_color_01 py-0 text-xs whitespace-nowrap;
+
+      border: none;
+    }
+
+    .arco-table .arco-table-td {
+      @apply py-4 bg-bg_color;
+    }
+
+    .arco-table-td,
+    .arco-table-th {
+      &:first-child {
+        @apply pl-8;
+
+        .arco-table-th-item {
+          @apply pl-0;
+        }
+      }
+    }
+    
+    .arco-table-body {
+      @apply bg-bg_color;
+    }
+  
+    .arco-table-th {
+      @apply text-xs bg-card_bg_color_01;
+
+      .arco-table-sorter-icon {
+        &:not(.arco-table-sorter-icon-active) {
+          svg {
+            @apply text-icon_color;
+          }
+        }
+      }
+      
+      .arco-table-cell-with-sorter {
+        @apply py-2.5;
+      }
+
+      .arco-table-sorter {
+        @apply translate-y-px ml-0.5;
+      }
+    }
+
+    .arco-table-th-item-title {
+      @apply text-xs text-text_color_02;
+    }
+  }
+  
+  /* 无数据时隐藏滚动条 */
+  &.no-data {
+    .arco-table-content-inner,
+    .arco-table-body {
+      &::-webkit-scrollbar {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+:local(.coin-popup-wrapper) {
+  .arco-popover-content {
+    @apply px-0;
+  }
+
+  .coin-item {
+    @apply flex text-text_color_01 py-1 px-4;
+  }
+}

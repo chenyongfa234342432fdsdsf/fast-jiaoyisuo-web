@@ -1,0 +1,75 @@
+:local(.scoped) {
+  .root {
+    @apply flex flex-1 flex-col;
+
+    .header {
+      @apply flex flex-row justify-between items-end;
+
+      .header-left {
+        @apply flex flex-col;
+
+        .assets-warp {
+          @apply flex flex-row text-sm text-text_color_03 ;
+    
+          align-items: center;
+    
+          .eyes-icon {
+            svg {
+              @apply ml-2 w-5 h-5 cursor-pointer;
+            }  
+          }
+        }
+    
+        .assets-total {
+          @apply text-2xl text-text_color_01 mt-6;
+    
+          font-weight: bold;
+        }
+      }
+
+      .buy-button {
+        @apply right-0 w-40 h-11 bg-brand_color rounded text-sm text-text_color_01 flex items-center justify-center
+      }
+    }
+
+    .assets-info {
+      @apply flex flex-row mt-8 items-center ;
+
+      .info-item {
+        @apply flex flex-col pt-4 pb-4 pl-3 pr-5 bg-card_bg_color_01 rounded mr-4 relative;
+
+        .item-title {
+          @apply text-base text-text_color_03 mb-4 p-0 h-6 mr-auto;
+        }
+        
+        .item-num {
+          @apply text-base text-text_color_01 ;
+
+          font-weight: bold;
+        }
+
+        .item-bottom {
+          @apply flex flex-row text-base text-text_color_01 mt-10 items-center justify-between w-60;
+
+          font-weight: bold;
+
+          .bottom-title {
+            @apply text-base text-text_color_03;
+
+            font-weight: 400;
+          }
+        }
+
+        .item-date {
+          @apply absolute text-xs text-text_color_03 top-20
+        }
+      }
+
+      
+    }
+
+    .arco-select-view {
+      @apply text-base text-text_color_03 pl-0 mr-auto ml-0 h-6 mb-4 !important
+    }    
+  }
+}

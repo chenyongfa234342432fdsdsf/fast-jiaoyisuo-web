@@ -1,0 +1,104 @@
+:local(.scoped) {
+  height: calc(100% - 64px);
+  @apply w-full overflow-y-auto box-border mx-0 my-8;
+
+  
+  padding: 0 64px;
+
+  .quote-wrap {
+    @apply w-full;
+
+    .row-wrap {
+      max-width: 100%;
+      @apply flex justify-between gap-16 mt-8;
+
+      .des-wrap {
+        flex: 7;
+
+        .des-title {
+          @apply text-xl leading-6;
+        }
+      }
+
+      .price-wrap {
+        flex: 3;
+        min-width: 365px;
+        @apply mt-4;
+      }
+
+      .base-info {
+        @apply text-base leading-4;
+      }
+    }
+        
+    .coin-name {
+      font-size: 40px;
+      @apply h-12 mt-1 flex items-center;
+
+      .en-name {
+        @apply text-2xl leading-6 ml-4;
+      }
+
+      .img {
+        @apply w-12 h-12 mr-4 rounded-3xl;
+      }
+    }
+
+    .info {
+      @apply relative;
+
+      .des {
+        
+        @apply w-full mt-6 break-all text-sm text-text_color_01;
+
+        line-height: 22px;
+      }
+
+      .expand-or-hide {
+        @apply text-brand_color text-sm cursor-pointer;
+
+        line-height: 22px;
+      }
+    }
+        
+
+    .web-link {
+      @apply mb-3 mt-8;
+    }
+
+    .title {
+      @apply text-text_color_01 font-bold;
+    }
+
+    .sub-title {
+      @apply text-text_color_03;
+    }
+
+    .link {
+      @apply h-10 flex items-center text-brand_color cursor-pointer;
+    }
+
+    .pop-row {
+      @apply h-10 flex items-center justify-between;
+
+      .is-link {
+        @apply text-brand_color cursor-pointer;
+      }
+        
+      .not-link {
+        @apply text-text_color_01;
+      }
+        
+      .copy {
+        @apply ml-2;
+      }
+
+      .info-border {
+        border-bottom: 1px dashed var(--text_color_02);
+      }
+    }
+  }
+
+}
+
+

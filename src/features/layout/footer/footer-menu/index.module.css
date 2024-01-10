@@ -1,0 +1,13 @@
+:local(.scoped) {
+  width: 70%;
+  @apply flex;
+
+  .footer-menu-item {
+    @apply flex flex-col flex-1;
+
+    .footer-title {
+      @apply text-xl font-medium mb-6;
+    }
+  }
+
+}

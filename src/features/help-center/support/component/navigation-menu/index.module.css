@@ -1,0 +1,17 @@
+:local(.scoped) {
+  .navigation-menu-content {
+    @apply grid grid-cols-4 gap-8;
+
+    .navigation-menu-item {
+      @apply w-full truncate py-6 px-8 rounded bg-card_bg_color_01 text-sm text-text_color_01 font-medium cursor-pointer text-center;
+
+      &:hover {
+        @apply bg-card_bg_color_02;
+      }
+
+      .arco-menu-light .arco-menu-item.arco-menu-selected {
+        border-left: 4px solid #F1AE3D;
+      }
+    }
+  }
+}

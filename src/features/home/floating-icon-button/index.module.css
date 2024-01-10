@@ -1,0 +1,7 @@
+:local(.scoped) {
+  @apply fixed bottom-8 right-8 m-0 z-100;
+
+  svg {
+    @apply w-16 h-16
+  }
+}

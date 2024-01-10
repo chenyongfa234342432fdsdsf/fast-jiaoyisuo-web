@@ -1,0 +1,37 @@
+
+:local(.scope) {
+  @apply flex flex-col items-center;
+  
+  svg {
+    width: 280px;
+    height: 280px;
+    @apply cursor-default;
+  }
+
+  .msg {
+    @apply text-text_color_02 text-base pt-3; 
+  }
+}
+
+
+:local(.title-wrapper) {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    @apply text-text_color_01;
+  }
+  
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+:local(.modal-class-name) {
+  width: 444px;
+  height: 432px;
+
+  .modal-content {
+    @apply flex justify-center;
+  }
+}

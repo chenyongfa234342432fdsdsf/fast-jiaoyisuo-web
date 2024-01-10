@@ -1,0 +1,26 @@
+:local(.scope) {
+  @apply relative;
+
+  .dot-img,
+  .rectangle-img {
+    @apply absolute;
+  }
+
+  .dot-img {
+    border-radius: 50%;
+    transform: translate(-4px, 6px);
+    opacity: 0.8;
+    @apply top-0 left-0 bg-brand_color h-4 w-4;
+  }
+
+  .rectangle-img {
+    transform: translate(2px, -2px);
+    @apply bottom-0 right-0;
+  }
+
+  .title-text {
+    font-weight: 500;
+    font-size: 32px;
+    @apply text-text_color_01;
+  } 
+}

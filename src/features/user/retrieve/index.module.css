@@ -1,0 +1,9 @@
+:local(.scoped) {
+  .user-retrive-wrap {
+    @apply pt-36 pb-8;
+  }
+
+  .user-tips {
+    @apply mb-8;
+  }
+}

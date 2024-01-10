@@ -1,0 +1,105 @@
+:local(.scoped) {
+  @apply flex flex-1 flex-row mt-2;
+
+  .asset-total-wrap {
+    @apply flex flex-col w-2/5;
+  }
+
+  .asset-pie-wrap {
+    @apply flex flex-1 ml-10;
+  }
+
+  .detail-total-wrapper {
+    @apply flex flex-row text-text_color_02;
+
+    .total-title {
+      @apply flex flex-row items-center text-base;
+    }
+
+    .total-num {
+      @apply flex text-2xl text-text_color_01 my-1 font-medium;
+    }
+  }
+  
+  .asset-label {
+    @apply text-sm text-text_color_02;
+  }
+  
+  .asset-item-wrap {
+    @apply mt-6 flex flex-row last:mb-6; 
+  }
+
+  .asset-item {
+    @apply flex flex-col w-1/2;
+  
+    .label {
+      @apply text-text_color_02 text-sm;
+
+      .icon {
+        @apply ml-1;  
+
+        svg {
+          @apply font-normal;
+        }
+      }
+    }
+  
+    .value {
+      @apply mt-1 text-text_color_01 whitespace-nowrap text-xl font-medium;;
+  
+      .percent {
+        @apply p-1 ml-1 rounded;
+      }     
+    }
+
+    .currency-value {
+      @apply text-sm text-text_color_02;
+    }
+
+    .msg-icon {
+      @apply px-2;
+
+      svg {
+        @apply w-3 h-3
+      }
+    }
+
+    .detail-btn {
+      @apply text-sm text-brand_color ml-4 cursor-pointer;
+    }
+  }
+}
+
+:local(.position-content-wrapper) {
+  width: 480px;
+
+  .position-title {
+    @apply text-xl font-medium
+  }
+
+  .position-content {
+    @apply pt-8 text-text_color_01 text-sm
+  }
+
+  .position-btn {
+    @apply w-full h-11 mt-8 text-sm font-medium
+  }
+
+  .position-item {
+    .label {
+      @apply text-text_color_02 pr-8 py-2;
+    }
+  
+    .value {
+      @apply ml-2 py-2;
+    }
+  }
+
+  .arco-modal-close-icon {
+    @apply top-8 text-xl right-8
+  }
+
+  .arco-modal-content {
+    @apply p-8
+  }
+}

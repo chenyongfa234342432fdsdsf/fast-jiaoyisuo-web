@@ -1,0 +1,15 @@
+:local(.scoped) {
+  .universal-security-verification-wrap {
+    .safety-items {
+      @apply mt-8 text-left;
+
+      span {
+        @apply text-sm cursor-pointer;
+      }
+    }
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+}

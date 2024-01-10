@@ -1,0 +1,59 @@
+:local(.scope) {
+  height: 40px;
+
+  @apply flex mb-6 items-center;
+
+  .arco-form {
+    @apply flex-row;
+  }
+
+  .arco-form-item-wrapper {
+    width: 100%;
+    @apply flex flex-1;
+  }
+
+  .form-field {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    @apply mr-6;
+    
+    .arco-input-inner-wrapper {
+      @apply rounded-lg;
+    }
+  }
+
+  .select-text {
+    @apply text-text_color_02;
+  }
+  
+  .arco-select .arco-select-view {
+    @apply text-text_color_02 !important;
+  }
+
+  .form-field-search {
+    width: 214px;
+  }
+
+  .reset-button {
+    height: 40px;
+    @apply flex justify-center items-center bg-bg_sr_color text-text_color_01 px-1;
+  }
+
+  .arco-form-item-control-children {
+    @apply h-full;
+
+  }
+
+  .selected-tag-wrapper,
+  .select-text {
+    font-weight: 400;
+  }
+
+  .arco-select-suffix-icon {
+    .arco-icon {
+      @apply h-2 w-2;
+    }
+  }
+
+}

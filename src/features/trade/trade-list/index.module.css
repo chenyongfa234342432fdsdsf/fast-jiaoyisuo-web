@@ -1,0 +1,92 @@
+:local(.trade-list-wrapper) {
+  height: inherit;
+
+  .list-body {
+    @apply overflow-auto;
+
+    height: 250px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 6px;
+    }
+  }
+
+  .list-header {
+    @apply flex justify-between items-center text-sm px-4 py-2 text-text_color_03;
+  }
+
+  .empty-wrapper {
+    @apply flex justify-center items-center;
+
+    height: 250px;
+  }
+
+  .col-1 {
+    @apply flex-1 text-left justify-start;
+  }
+
+  .col-2 {
+    @apply flex-1 text-right justify-end;
+  }
+
+  .col-3 {
+    @apply flex-1 text-right justify-end;
+  }
+}
+
+:local(.trade-list-item-wrapper) {
+  /* pr-3 是为了适配滚动条 */
+  @apply flex items-center justify-between cursor-pointer text-xs pl-4 pr-3 mb-2;
+
+  .price {
+    @apply text-buy_up_color;
+  }
+
+  &.is-sell {
+    .price {
+      @apply text-sell_down_color;
+    }
+  }
+}
+
+/* 最外层的容器 */
+:local(.trade-list-outer-layout-wrapper) {
+  @apply flex flex-col h-full;
+
+  .header-tabs-wrapper {
+    @apply flex items-center px-4;
+  
+    /* 和网格一致 */
+    height: 50px;
+
+    .header-tabs {
+
+    }
+
+    .header-tabs {
+      @apply gap-8 !important;
+    }
+
+    .header-tabs .active .item {
+      @apply text-sm font-medium text-text_color_01 !important;
+    }
+
+
+    .header-tabs .tab .item {
+      @apply text-sm font-medium text-text_color_02;
+    }
+
+    .header-tabs .item:hover {
+      @apply text-text_color_01;
+    }
+  }
+  
+  .content-wrapper {
+    @apply flex-1 h-0;
+
+    .content-wrapper-container {
+      @apply h-full overflow-auto;
+    }
+  }
+}

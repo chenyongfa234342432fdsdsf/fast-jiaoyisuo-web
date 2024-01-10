@@ -1,0 +1,65 @@
+:local(.scoped) {
+  @apply bg-bg_color w-full h-full;
+
+  .company-material {
+    @apply overflow-hidden;
+
+    .company-material-content {
+      width: 620px;
+      @apply mx-auto;
+    }
+
+    .company-material-alert {
+      padding: 11px;
+      font-size: 12px;
+      border-radius: 4px;
+      @apply text-brand_color bg-brand_color_special_02 rounded-sm;
+      
+      .arco-alert-content {
+        @apply text-brand_color;
+      }
+
+      .arco-alert-icon-wrapper {
+        @apply h-auto;
+      }
+    }
+    
+    .arco-alert {
+      @apply rounded items-start;
+    }
+    
+    .company-select-type {
+      .company-information-title {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        @apply font-bold text-base;
+      }
+    }
+    
+    .company-material-tips {
+
+      @apply text-text_color_01;
+
+      margin-bottom: 16px;
+
+      span {
+        @apply text-brand_color;
+      }
+    }
+
+    .material-button {
+      @apply flex justify-between my-8;
+
+      .company-material-modify {
+        width: 294px;
+        @apply h-10 text-text_color_01 font-medium  flex items-center justify-center  rounded;
+      }
+  
+      .company-material-button {
+        width: 294px;
+        @apply font-medium h-10 mx-auto justify-center rounded  flex items-center text-button_text_02;
+      }
+    }
+  }
+
+}

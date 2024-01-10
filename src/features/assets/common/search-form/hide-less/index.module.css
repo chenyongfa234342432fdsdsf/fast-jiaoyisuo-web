@@ -1,0 +1,14 @@
+:local(.scoped) {    
+  .tip-text {
+    @apply text-text_color_02 text-sm ml-2 border-text_color_03 border-b border-dashed;
+  }
+  
+  .arco-switch-checked {
+    @apply bg-brand_color !important
+  }
+
+  .arco-switch {
+    @apply bg-bg_sr_color;
+  }
+  
+}  

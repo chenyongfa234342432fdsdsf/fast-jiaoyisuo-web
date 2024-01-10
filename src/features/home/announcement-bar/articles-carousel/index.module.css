@@ -1,0 +1,29 @@
+:local(.scoped) {
+  @apply grow;
+
+  > a {
+    @apply pr-1;
+
+    svg {
+      @apply w-4 h-4;
+    }
+  }
+
+  .arco-carousel {
+    height: 21px;
+    @apply grow;
+
+    .arco-divider {
+      @apply mx-4;
+    }
+
+    a {
+      @apply grow;
+    }
+
+    .arco-carousel-item-slide-in, .arco-carousel-item-slide-out {
+      @apply grid !important;
+    }
+  }
+} 
+

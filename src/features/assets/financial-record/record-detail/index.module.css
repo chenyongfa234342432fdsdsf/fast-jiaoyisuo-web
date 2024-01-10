@@ -1,0 +1,50 @@
+:local(.scoped) {
+  .detail-wrap {
+    @apply text-sm text-text_color_01;
+
+    .serial-no {
+      @apply flex justify-between h-9 px-3 bg-bg_sr_color text-text_color_02 rounded items-center;
+
+      align-items: center;
+    }
+
+    .copy-icon {
+      svg {
+        @apply w-4 h-4
+      }
+    }
+
+    .detail-item {
+      @apply flex flex-1 py-2 flex-wrap items-center;
+    }
+
+    .detail-item .value {
+      @apply flex flex-1 flex-wrap break-all;
+    }
+
+    .detail-item .label {
+      @apply text-text_color_02;
+
+      width: 25%
+    }
+
+    .reminder {
+      @apply text-tips_color pt-3 text-sm cursor-pointer;
+    }
+
+    .tab-title {
+      @apply -translate-x-4 mt-2;
+
+      .item {
+        @apply text-base;
+      }
+    }
+
+    .tab-title-no-line {
+      .tab.active .item::after {
+        @apply w-0;
+      }
+    }
+  }
+}
+

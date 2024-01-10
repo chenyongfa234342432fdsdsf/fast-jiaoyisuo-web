@@ -1,0 +1,50 @@
+:local(.scoped) {
+  @apply bg-bg_color flex-1 flex flex-col;
+
+  .detail-wrap {
+    width: 1200px;
+    @apply m-auto;
+  }
+
+  .sub-title {
+    font-size: 22px;
+    line-height: 34px;
+    @apply flex mt-8 mb-6 font-medium text-text_color_01 text-xl;
+  }
+
+  .detail-content {
+    border-width: 1px;
+    border-radius: 10px;
+    @apply flex flex-col px-6 border-line_color_02 border-solid;
+
+    .detail-row {
+      @apply w-full mt-6 flex flex-row text-sm text-text_color_01 last:mb-6;
+    }
+
+    .detail-col {
+      @apply flex flex-1 flex-col;
+    }
+
+    .labels {
+      @apply w-full mb-2 flex text-text_color_02;
+    }
+
+    .remark {
+      line-height: 22px;
+    }
+  }
+
+  .trade-content {
+    @apply flex;
+
+    .trade-info {
+      border-width: 1px;
+      border-radius: 10px;
+      @apply flex flex-1 flex-col items-center py-4 border-line_color_02 border-solid text-text_color_02 text-sm mr-5 last:mr-0;
+
+      .value {
+        @apply mb-2 text-xl text-text_color_01;
+      }
+    }    
+  }
+}

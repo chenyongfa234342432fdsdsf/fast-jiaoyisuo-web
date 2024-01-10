@@ -1,0 +1,236 @@
+:local(.scoped) {
+  @apply bg-bg_color flex-1 flex flex-col;
+
+  /* 行情页面需要撑满页面 去除 header 60px 和 异动的高度 60px */
+  min-height: calc(100vh - 120px);
+
+  .page-content {
+    width: 1200px;
+    @apply mx-auto;
+  }
+
+  .market-title-wrapper {
+    height: 108px;
+    @apply mb-8;
+
+    > ::before {
+      top: 60px;
+      height: 108px;
+      content: '';
+      @apply bg-card_bg_color_01 absolute left-0 right-0;
+    }
+
+    .title-container {
+      width: 1200px;
+      @apply m-auto text-4xl font-medium;
+
+      > div {
+        @apply absolute;
+      }
+    }
+  }
+
+  .module-search-panel {
+    width: 1200px;
+    @apply flex justify-between mx-auto items-center;
+  }
+
+  .global-search-content {
+    width: 1200px;
+    @apply mx-auto;
+  }
+
+  .arco-table-border .arco-table-container::before {
+    @apply h-0;
+  }
+
+  .logo-column {
+    img {
+      @apply rounded-full;
+    }
+  }
+
+  .arco-table-container {
+    @apply border-none !important;
+
+    .arco-table-tr {
+      .arco-table-td,
+      .arco-table-th {
+        @apply border-none bg-transparent;
+      }
+
+      .arco-table-th {
+        @apply h-11 text-xs font-normal bg-card_bg_color_01;
+
+        .arco-table-cell-mouseenter {
+          @apply bg-transparent;
+        }
+      }
+
+      .arco-table-td {
+        height: 46px;
+      }
+
+      .arco-table-sorter {
+        @apply ml-1 hover:bg-none;
+      }
+
+      .arco-table-cell-with-sorter {
+        @apply hover:bg-none;
+      }
+
+      .arco-table-col-has-sorter {
+        .arco-table-th-item {
+          @apply hover:bg-none;
+        }
+      }
+    }
+
+    .arco-table-col-sorted {
+      @apply bg-card_bg_color_01;
+    }
+
+    /* sorter */
+    .arco-table-sorter {
+      vertical-align: -1px;
+      @apply ml-1;
+
+      .arco-table-sorter-icon {
+        height: 6px;
+      }
+
+      svg {
+        @apply text-icon_color;
+
+        top: -1px;
+        font-size: 10px;
+      }
+
+      .arco-table-sorter-icon-active {
+        svg {
+          @apply text-brand_color;
+        }
+      }
+    }
+  }
+
+  .currency-tab-bar {
+    .bar-wrapper {
+      @apply whitespace-nowrap;
+
+      max-width: 1200px;
+
+      > * {
+        @apply mr-8;
+      }
+
+      > :last-child {
+        @apply mr-0;
+      }
+    }
+
+    .icon-circle {
+      transform: translateY(-4px);
+    }
+  }
+
+  .categroy-tab-bar {
+    .bar-wrapper {
+      max-width: 1200px;
+
+      /* to fix scroll bar issues by using gap */
+      > * {
+        @apply mr-8;
+      }
+
+      > :last-child {
+        @apply mr-0;
+      }
+      @apply whitespace-nowrap;
+
+      .tab {
+        height: 26px;
+        border-radius: 4px;
+
+        .button-item {
+          padding: 4px 13px;
+          @apply h-full text-xs text-text_color_02 !important;
+        }
+      }
+
+      .active {
+        @apply text-text_color_01;
+      }
+    }
+
+    .icon-circle {
+      @apply w-6 h-6;
+    }
+  }
+
+  .arco-table-hover .arco-table-tr:hover .arco-table-td {
+    @apply bg-card_bg_color_01 !important;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply h-10;
+
+    .arco-icon-search {
+      @apply ml-4 mr-2 w-4 h-4;
+    }
+  }
+
+  .spot-base-currency-tab,
+  .search-result-tab,
+  .categroy-tab-bar {
+    @apply my-4;
+  }
+
+  .market-sector-table-title-column {
+    @apply flex min-w-fit;
+
+    > span {
+      @apply pr-2;
+    }
+
+    > * {
+      @apply flex items-center;
+    }
+  }
+
+  .categroy-tab-bar .tab.active {
+    .button-item {
+      @apply text-button_text_02;
+    }
+  }
+
+  .currency-tab-bar,
+  .search-result-tab {
+    .tab {
+      @apply pb-2;
+    }
+
+    .tab.active {
+      .item {
+        color: var(--text_color_01) !important;
+        @apply mb-[2px];
+      }
+
+      > ::after {
+        height: 2px;
+        content: '';
+        @apply bg-brand_color w-3/4 bottom-0 absolute;
+      }
+    }
+  }
+
+  .module-tabs .tab.active {
+    .item {
+      color: var(--text_color_01) !important;
+    }
+  }
+
+  .search-result-tab > :first-child {
+    @apply gap-x-8;
+  }
+}

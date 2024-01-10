@@ -1,0 +1,232 @@
+:local(.scope) {
+  .ad-account-container {
+    @apply flex justify-between w-full;
+
+    min-height: 300px;
+
+    .panel {
+      @apply flex justify-between w-full;
+
+      .left {
+        @apply mt-8;
+
+        .h-box {
+          @apply flex items-center;
+
+          .search-box {
+            .search {
+              @apply bg-bg_sr_color h-10 rounded;
+
+              .arco-input-group {
+                @apply block;
+
+                .arco-input-inner-wrapper {
+                  @apply border-none;
+                }
+              }
+            }
+          }
+        }
+
+        .table {
+          @apply mt-6 overflow-hidden;
+
+          width: 640px;
+          height: 424px;
+
+          .thead {
+            @apply flex items-center bg-card_bg_color_01 h-10;
+
+            padding: 0 22px;
+
+            & > div {
+              @apply flex-1 text-center text-text_color_02 font-normal not-italic text-xs;
+
+              &:first-child {
+                @apply text-left;
+              }
+
+              &:last-child {
+                @apply text-right;
+              }
+            }
+          }
+
+          .tbody {
+            @apply -mr-2 overflow-y-scroll;
+
+            max-height: 384px;
+            padding: 0 22px;
+          }
+        }
+      }
+
+      .right {
+        @apply mt-24;
+
+        .logs {
+          @apply overflow-hidden;
+
+          width: 400px;
+          height: 400px;
+
+          .logs-header {
+            @apply flex justify-between items-center;
+
+            .logs-header-left {
+              @apply text-text_color_01 font-medium not-italic text-base;
+            }
+
+            .logs-header-right {
+              @apply text-brand_color cursor-pointer font-medium not-italic text-sm;
+            }
+          }
+
+          .logs-body {
+            @apply mt-2;
+          }
+        }
+      }
+    }
+
+    .no-data {
+      @apply flex justify-center items-center flex-col w-full;
+
+      .btn {
+        @apply flex justify-center items-center py-1.5 px-2;
+
+        height: 30px;
+
+        & > span {
+          @apply text-button_text_02 font-normal not-italic text-xs;
+        }
+      }
+    }
+  }
+
+  .table-item {
+    @apply flex justify-between items-center pt-6;
+
+    & > div {
+      @apply flex-1;
+    }
+
+    .table-item-left {
+      @apply flex items-center;
+
+      .icon {
+        @apply w-6 h-6 mr-2 rounded-full overflow-hidden;
+
+        /* background: #999999; */
+      }
+
+      .text-box {
+        .text {
+          @apply text-text_color_01 font-medium not-italic text-sm;
+        }
+
+        .sub-text {
+          @apply text-text_color_02 font-normal not-italic text-xs;
+        }
+      }
+    }
+
+    .table-item-center {
+      @apply text-right pr-32;
+
+      .center-text {
+        @apply text-text_color_01 font-normal not-italic text-sm;
+      }
+
+      .center-sub-text {
+        @apply text-text_color_02 font-normal not-italic text-xs;
+      }
+    }
+
+    .table-item-right {
+      @apply text-brand_color flex flex-row-reverse font-normal not-italic text-sm;
+
+      & > span {
+        @apply cursor-pointer;
+      }
+    }
+  }
+
+  .log-item {
+    @apply flex justify-between py-4;
+
+    border-bottom: 1px solid var(--line_color_02);
+
+    .log-item-left {
+      .log-item-text {
+        @apply text-text_color_01 font-normal not-italic text-sm;
+      }
+
+      .log-item-sub-text {
+        @apply text-text_color_03 mt-1 font-normal not-italic text-xs;
+      }
+    }
+
+    .log-item-right {
+      @apply font-medium not-italic text-sm;
+
+      &.red {
+        @apply text-sell_down_color;
+      }
+
+      &.green {
+        @apply text-buy_up_color;
+      }
+    }
+  }
+}
+
+:local(.modal) {
+  @apply pb-8;
+
+  .title {
+    @apply text-text_color_01 font-medium not-italic text-xl;
+  }
+
+  .coin-name {
+    @apply text-text_color_01 mt-8 font-normal not-italic text-sm;
+  }
+
+  .cut-num {
+    @apply mt-6;
+
+    .header {
+      @apply flex justify-between items-center;
+
+      .left {
+        @apply text-text_color_01 font-normal not-italic text-sm;
+      }
+
+      .right {
+        @apply text-text_color_01 font-normal not-italic text-xs;
+      }
+    }
+
+    .input-box {
+      @apply mt-2;
+
+      .input-suffix-box {
+        @apply flex justify-between items-center;
+
+        .suffix-coin-name {
+          @apply text-text_color_01 font-normal not-italic text-sm;
+        }
+
+        .y-line {
+          @apply bg-line_color_02 h-5 mx-2;
+
+          width: 1px;
+        }
+
+        .text-btn {
+          @apply text-brand_color cursor-pointer font-normal not-italic text-sm;
+        }
+      }
+    }
+  }
+}

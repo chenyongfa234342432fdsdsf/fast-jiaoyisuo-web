@@ -1,0 +1,32 @@
+:local(.table-component-wrapper) {
+  /** 关闭滚动 */
+  &.width-false {
+    .arco-table-body,
+    .arco-table-header {
+      /** arco 会计算滚动条，加上 margin 负值 所以这里取消掉 */
+      margin-bottom: 0 !important;
+      overflow-x: hidden;
+    }
+  }
+
+  &.height-false {
+    .arco-table-body {
+      overflow-y: hidden;
+    }
+  }
+  
+  /** 隐藏 header 滚动条 */
+  .arco-table-header {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb {
+      @apply bg-transparent;
+    }
+  }
+
+
+  /** 对排序表头调整样式以获取宽度 */
+  .arco-table-cell-with-sorter {
+    @apply inline-block;
+  }
+}

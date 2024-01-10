@@ -1,0 +1,106 @@
+:local(.scoped) {
+  min-width: 240px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  @apply bg-card_bg_color_03 rounded;
+
+  .user-personal-center-menu-wrap {
+    @apply px-4 pb-1 pt-8;
+
+    .header {
+      @apply mb-3 relative;
+
+      .name {
+        @apply mb-2;
+
+        label {
+          font-size: 18px;
+          line-height: 18px;
+          @apply text-text_color_01 font-normal mr-2 cursor-pointer;
+        }
+      }
+
+      .uid {
+        label {
+          @apply text-text_color_03 text-xs leading-3 mr-2;
+        }
+      }
+
+      .tag {
+        height: 26px;
+        padding: 0 14px;
+        line-height: 26px;
+        @apply absolute -right-4 bottom-0 rounded-tl-3xl rounded-bl-3xl;
+
+        svg {
+          @apply mr-1;
+        }
+
+        label {
+          @apply text-xs leading-3;
+        }
+      }
+
+      .on {
+        background: rgb(80 177 108 / 20%);
+        @apply text-success_color;
+      }
+
+      .off {
+        background: rgb(241 174 61 / 20%);
+        @apply text-tips_color;
+      }
+    }
+  }
+
+  .cell {
+    .cell-wrap {
+      padding-right: 16px;
+      padding-left: 21px;
+      @apply flex py-4 cursor-pointer;
+
+      .icon {
+        @apply mr-6;
+      }
+
+      .text {
+        @apply flex-1;
+
+        label {
+          @apply text-text_color_01 text-base leading-4 cursor-pointer;
+        }
+      }
+
+      .subfix-icon {
+        width: 14px;
+        @apply ml-3;
+
+        svg {
+          @apply hidden;
+        }
+      }
+    }
+
+    &:hover {
+      @apply bg-card_bg_color_02 rounded;
+
+      .subfix-icon {
+        svg {
+          @apply block;
+        }
+      }
+    }
+  }
+
+  .login-out {
+    @apply border-t-2 border-line_color_02;
+
+    .cell {
+      @apply px-4;
+    }
+  }
+
+}
+
+.user-menu-icon {
+  @apply ml-2;
+}

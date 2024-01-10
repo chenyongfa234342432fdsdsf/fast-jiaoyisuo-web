@@ -1,0 +1,96 @@
+:local(.scoped) {
+  .transaction-bulletin-board-wrap {
+    padding-right: 22px;
+    @apply pl-8 flex overflow-hidden;
+
+    .arco-carousel, .content-wrap {
+      .item {
+        .item-wrap {
+          @apply truncate bg-bg_color mr-8;
+
+
+          label {
+            font-size: 12px;
+            @apply text-text_color_02 cursor-pointer;
+
+            &:hover {
+              @apply text-brand_color;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1658px) {
+          .item-wrap {
+            width: 286px;
+          }
+        }
+      }
+    }
+
+    .arco-carousel {
+      @apply flex-1;
+
+      .item {
+        @apply flex flex-row;
+
+        .item-wrap {
+          @apply flex-1 h-10 leading-10;
+        }
+      }
+    }
+
+    .content-wrap {
+      padding: 10px 0;
+      @apply flex-1 grid gap-y-3 gap-x-5 grid-cols-3 grid-flow-row;
+
+      .item {
+        line-height: 19px;
+      }
+    }
+
+    .drop-down, .close {
+      padding-top: 10px;
+    }
+
+    .drop-down {
+      @apply ml-4;
+    }
+
+    .close {
+      margin-left: 144px;
+    }
+  }
+
+  .show-list {
+    @apply h-10;
+  }
+
+  .arco-carousel-item-slide-in, .arco-carousel-item-slide-out {
+    @apply flex;
+  }
+
+  .arco-carousel-arrow-top, .arco-carousel-arrow-bottom {
+    @apply hidden;
+  }
+}
+
+:local(.user-popup-customize-brand-btn) {
+  .arco-modal-footer {
+    .arco-btn {
+      &:first-child {
+        @apply text-brand_color border-brand_color !important;
+      }
+    }
+  }
+
+  .user-popup-tips {
+    .slot-content {
+      margin: 0 auto 32px;
+      @apply text-center;
+
+      p {
+        @apply text-left w-auto inline-block
+      }
+    }
+  }
+}

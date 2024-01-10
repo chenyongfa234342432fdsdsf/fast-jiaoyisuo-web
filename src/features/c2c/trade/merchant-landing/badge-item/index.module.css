@@ -1,0 +1,26 @@
+:local(.scope) {
+  width: 580px;
+  height: 120px;
+  border-radius: 8px;
+
+  /* padding: 20px 24px 20px 24px; */
+  @apply bg-card_bg_color_01;
+
+  .left-img {
+    width: 80px;
+    height: 80px;
+    @apply mr-4;
+  }
+
+  .name-row {
+    font-weight: 500;
+    font-size: 24px;
+    @apply text-text_color_01 mb-2;
+  }
+
+  .subname-row {
+    font-weight: 400;
+    font-size: 16px;
+    @apply text-text_color_02;
+  }
+}

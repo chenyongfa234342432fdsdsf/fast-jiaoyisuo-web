@@ -1,0 +1,136 @@
+:local(.scoped) {
+  @apply flex flex-col flex-1;
+
+  .deposit-wrap {
+    @apply flex flex-1 mb-10;
+  }
+
+  .item-wrap {
+    @apply w-1/2;
+  }
+
+  .first .form-wrap {
+    @apply pr-20;
+  }
+
+  .second {
+    .form-wrap, .sub-title {
+      @apply pl-20;
+    }
+  }
+
+  .sub-title {
+    @apply flex mb-8;
+
+    .num {
+      @apply flex justify-center items-center w-6 h-6 bg-brand_color rounded-[50%] text-lg font-bold text-button_text_01;
+
+      line-height: 22px;
+    }
+
+    .info {
+      @apply ml-2 font-semibold text-base text-text_color_01;
+    }
+
+    .svg {
+      @apply w-6 h-6;
+    }
+      
+    .lottie-wrap {
+      margin-top: -6px;
+      @apply flex-1 ml-16;
+    }
+  }
+
+  .assets-input {
+    height: 46px;
+  }
+    
+  .assets-label {
+    @apply flex;
+    
+    svg {
+      @apply w-3 h-3 ml-1;
+    }
+  }
+
+  .address-select-icon {
+    svg {
+      @apply w-6 h-6;
+    }
+  }
+    
+  .form-amount {
+    @apply flex items-center;
+    
+    .amount-opt {
+      @apply flex items-center h-full;
+    }
+    
+    .coin-name {
+      @apply mr-4;
+    }
+    
+    .all-btn {
+      @apply flex items-center leading-none text-brand_color;
+    
+      .all-btn-line {
+        @apply w-px h-7 bg-bg_sr_color;
+      }
+    
+      .all-btn-text {
+        @apply text-sm text-brand_color font-medium pl-4 pr-2 cursor-pointer;
+      }
+    }
+  }
+    
+  .network-confirm {
+    @apply flex items-start mt-2 bg-brand_color_special_02 rounded;
+    
+    padding: 6px 16px;
+    
+    svg {
+      @apply w-4 h-4 mt-1;
+    }
+    
+    .remind-info {
+      @apply ml-1 w-full text-xs text-brand_color break-words whitespace-pre-wrap;
+          
+      line-height: 20px;
+    }
+  }
+    
+  .waring-wrap {
+    @apply w-full mt-4 text-center;
+    
+    svg {
+      @apply mb-2;
+    
+      width: 104px;
+      height: 92px;
+    }
+    
+    img {
+      width: 104px;
+      height: 92px;
+    }
+    
+    p {
+      @apply text-text_color_03;
+    }
+  }
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+}
+
+:local(.withdraw-type-option) {
+  li {
+    @apply flex items-center;
+  }
+
+  svg {
+    @apply w-5 h-5 mr-2;
+  }
+}

@@ -1,0 +1,593 @@
+/* scrollbar 配置 */
+html {
+  --scroll-bar-width: 8px;
+  --scroll-bar-width-custom: 4px;
+
+  /* firefox */
+  scrollbar-width: auto;
+
+  /* Chrome, Safari */
+  ::-webkit-scrollbar {
+    @apply bg-card_bg_color_01;
+
+    width: var(--scroll-bar-width);
+    height: var(--scroll-bar-width);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-line_color_01;
+
+    border-radius: 40px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-card_bg_color_01;
+  }
+
+  /* firefox */
+  tbody,
+  .arco-table-body {
+    scrollbar-width: thin;
+  }
+
+  /* 以便下为自定义 scrollbar class 以便复用 */
+
+  /* 自定义 scrollbar class */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+      /* display: block; */
+      @apply bg-card_bg_color_01;
+
+      width: var(--scroll-bar-width-custom);
+      height: var(--scroll-bar-width-custom);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      /* display: block; */
+      @apply bg-line_color_01;
+
+      border-radius: 29px;
+    }
+  }
+
+  /* 隐藏 scrollbar */
+  .no-scrollbar {
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* IE and Edge */
+    -ms-overflow-style: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    ::-moz-scrollbar {
+      display: none;
+    }
+  }
+
+  /* 在不 active 时隐藏 scrollbar，配合 scrollbar custom 一起使用 */
+  .hide-scrollbar-on-not-active {
+    &:not(:hover) {
+      /* firefox */
+      scrollbar-color: transparent transparent;
+
+      ::-webkit-scrollbar {
+        @apply bg-transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        @apply bg-transparent;
+      }
+    }
+  }
+}
+
+
+/* 自定义字体配置，数字和字母采用 MonkeyFont
+unicode-range: U+0020-00FF https://www.ssec.wisc.edu/~tomw/java/unicode.html
+*/
+@font-face {
+  font-weight: 300;
+  font-family: MonkeyFont;
+  src: url('/font/Monkey/Monkey-Regular.woff2') format('woff2'), url('/font/Monkey/Monkey-Regular.woff') format('woff');
+  unicode-range: U+0020-00FF;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-weight: 400;
+  font-family: MonkeyFont;
+  src: url('/font/Monkey/Monkey-Regular.woff2') format('woff2'), url('/font/Monkey/Monkey-Regular.woff') format('woff');
+  unicode-range: U+0020-00FF;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-weight: 500;
+  font-family: MonkeyFont;
+  src: url('/font/Monkey/Monkey-Medium.woff2') format('woff2'), url('/font/Monkey/Monkey-Medium.woff') format('woff');
+  unicode-range: U+0020-00FF;
+  font-display: swap;
+} 
+
+@font-face {
+  font-weight: 600;
+  font-family: MonkeyFont;
+  src: url('/font/Monkey/Monkey-Bold.woff2') format('woff2'), url('/font/Monkey/Monkey-Bold.woff') format('woff');
+  unicode-range: U+0020-00FF;
+  font-display: swap;
+} 
+
+@font-face {
+  font-weight: 700;
+  font-family: MonkeyFont;
+  src: url('/font/Monkey/Monkey-Bold.woff2') format('woff2'), url('/font/Monkey/Monkey-Bold.woff') format('woff');
+  unicode-range: U+0020-00FF;
+  font-display: swap;
+} 
+
+body {
+  min-width: 1200px;
+  font-size: 14px;
+  font-family: MonkeyFont, -apple-system, system-ui, 'PingFang SC', 'Microsoft Yahei', 'Heiti SC', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+
+  /*
+  * tabular-nums = fixed all font number width
+   */
+  @apply text-text_color_01 bg-card_bg_color_01 tabular-nums;
+
+  img {
+    /*
+    * prevent img highlight
+    */
+    user-select: none;
+  }
+}
+
+/** dashed border */
+.dashed-border {
+  border-bottom: 1px dashed var(--text_color_02);
+  user-select: none;
+}
+
+.popup-wrap {
+  @apply p-4 rounded;
+
+  /* TODO: 待修改 */
+  background-color: var(--color-bg-popup);
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+}
+
+/** 订单相关表格通用样式  */
+div.markcoin-order-arco-table-wrapper {
+  .arco-table-container {
+    @apply border-r-transparent;
+  }
+
+  .arco-table-th {
+    @apply bg-transparent text-text_color_03;
+  }
+
+  .arco-table-th,
+  .arco-table-td {
+    border-left-color: transparent !important;
+  }
+
+  &.mini {
+    .arco-table-th,
+    .arco-table-td {
+      @apply text-xs;
+    }
+  }
+
+  .arco-table-expand-content {
+    > .arco-table-td {
+      @apply bg-transparent pt-0;
+
+      padding: 0 !important;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      /* 设置 td padding-right 0 会有表格显示 bug，所以这里重置 margin */
+      .arco-table {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+div.assets-wrapper {
+  .arco-select-size-default.arco-select-single .arco-select-view {
+    height: 46px;
+  }
+
+  .arco-select-view-value {
+    @apply flex items-center;
+  }
+
+  .arco-tabs-content {
+    @apply pt-8;
+  }
+
+  .arco-table thead > .arco-table-tr > .arco-table-th,
+  .arco-table .arco-table-td {
+    @apply border-none;
+  }
+
+  .arco-table .arco-table-td {
+    @apply bg-bg_color;
+  }
+
+  .arco-pagination {
+    .arco-pagination-item-active {
+      @apply bg-card_bg_color_02 text-text_color_01;
+    }
+  }
+}
+
+/** user 用户模块表单样式 (只用于 user 模块，其他模块慎用) */
+.user-form-style {
+  .arco-form {
+    .arco-form-item {
+      @apply mt-6 mb-0;
+
+      .arco-input,
+      .arco-btn,
+      .arco-select-view {
+        height: 46px;
+      }
+
+      .arco-btn {
+        @apply w-full;
+      }
+
+      .arco-input-group-addbefore ~ .arco-input-inner-wrapper {
+        width: 272px;
+        @apply ml-2;
+      }
+
+      .arco-input-group-addbefore {
+        @apply bg-bg_color border-0;
+
+
+        .arco-select-view {
+          height: 48px;
+          @apply rounded;
+
+          .arco-select-prefix {
+            @apply mr-0;
+          }
+
+          .arco-image {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            border: 1px solid;
+            @apply mt-0 rounded-full border-card_bg_color_02;
+
+            img {
+              @apply w-4 h-4 rounded-full;
+            }
+          }
+        }
+      }
+
+      .arco-input-group-suffix {
+        svg {
+          font-size: 20px;
+          @apply mr-3;
+        }
+
+        & > div:last-child {
+          svg {
+            @apply mr-0;
+          }
+        }
+      }
+
+      .arco-input-inner-wrapper {
+        @apply rounded;
+      }
+
+      .arco-image-error-icon > svg {
+        vertical-align: 8px;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        appearance: none;
+      }
+
+      input[type= 'number'] {
+        appearance: textfield;
+      }
+    }
+  }
+}
+
+.arco-modal {
+  @apply bg-card_bg_color_03;
+
+  .arco-modal-title {
+    @apply text-start text-xl;
+  }
+
+  .arco-modal-header {
+    @apply border-b-0;
+  }
+
+  /** 弹窗 footer 按钮样式兼容 */
+  .arco-modal-footer {
+    @apply flex;
+
+    .arco-btn {
+      @apply flex-1 h-10 text-button_text_02 font-medium;
+    }
+
+    .arco-btn-secondary {
+      @apply font-medium ml-0 border border-line_color_01 border-solid text-text_color_02 bg-card_bg_color_03 hover:bg-card_bg_color_01 !important;
+    }
+  }
+
+  .arco-modal-close-icon {
+    top: 34px;
+    right: 34px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+/** 修复 checkbox hover 灰色异样 */
+.arco-checkbox {
+  &:hover .arco-checkbox-icon-hover::before {
+    @apply bg-transparent !important;
+  }
+}
+
+/** 比较难修改的 global css */
+.arco-input-group {
+  .arco-input-group-suffix,
+  .arco-input-group-prefix {
+    @apply text-sm;
+  }
+}
+
+/* todo 待修改 arco 源码 */
+.arco-btn-secondary:not(.arco-btn-disabled) {
+  @apply text-text_color_01 bg-bg_sr_color;
+}
+
+.arco-btn-primary.arco-btn-disabled {
+  @apply bg-button_hover_01 text-text_color_04 !important;
+}
+
+.arco-table .arco-table-body, .arco-table-col-has-sorter {
+  @apply bg-transparent;
+}
+
+.arco-select-popup .arco-select-popup-inner {
+  @apply max-h-96 !important;
+}
+
+.arco-drawer {
+  @apply bg-card_bg_color_03 !important;
+}
+
+.arco-tooltip-content {
+  @apply bg-toast_bg_color !important;
+}
+
+.arco-table-hover .arco-table-tr:not(.arco-table-empty-row):hover .arco-table-td:not(.arco-table-col-fixed-left):not(.arco-table-col-fixed-right) {
+  @apply bg-bg_color_03;
+}
+
+.arco-input-inner-wrapper {
+  input {
+    @apply text-sm;
+
+    &::placeholder {
+      @apply text-sm;
+    }
+  }
+}
+
+.arco-select-view {
+  .arco-select-view-input::placeholder {
+    @apply text-text_color_04;
+  }
+}
+
+/** add word break to arco typography */
+.arco-typography {
+  @apply break-normal;
+}
+
+.arco-input-number-mode-button {
+  @apply relative;
+
+  .arco-input-group-addbefore,
+  .arco-input-group-addafter {
+    @apply bg-transparent absolute z-1 border-transparent w-auto top-0 !important;
+
+    .arco-input-number-step-button {
+      @apply bg-transparent border-transparent text-icon_color w-8 !important;
+    }
+  }
+
+  .arco-input-group-addbefore {
+    @apply left-0;
+  }
+
+  .arco-input-group-addafter {
+    @apply right-0;
+  }
+
+  .arco-input-inner-wrapper {
+    @apply px-8;
+  }
+}
+
+.arco-select-popup .arco-select-option-selected {
+  @apply text-brand_color !important;
+}
+
+/** select 弹框  */
+.arco-select-popup {
+  @apply bg-card_bg_color_03 !important;
+
+  .arco-select-option {
+    @apply bg-card_bg_color_03 !important;
+    
+    &.arco-select-option-hover {
+      @apply bg-bg_color_03 !important;
+    }
+  }
+
+  
+}
+
+/** popover */
+.arco-popover-content {
+  @apply bg-card_bg_color_03 !important;
+}
+
+.customize-link-style {
+  @apply text-brand_color;
+
+  &:hover {
+    @apply text-brand_color_hover;
+  }
+}
+
+/* 去除浏览器自动填充背景色 */
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--nc-01);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.trade-main-wrap {
+  input,
+  .arco-btn-primary {
+    @apply text-sm !important;
+  }
+
+  .arco-btn-primary {
+    @apply h-10 !important;
+  }
+}
+
+.arco-btn {
+  font-weight: 400;
+}
+
+.arco-drawer-header-title {
+  font-weight: 400;
+}
+
+.arco-menu-light {
+  --color-menu-light-bg: var(--bg_color);
+}
+
+/* 表格高度自适应，前提是表格所处容器拥有分配固定高度 */
+.arco-table-body-full {
+  @apply h-full;
+
+  .arco-table,
+  .arco-spin,
+  .arco-spin-children,
+  .arco-table-content-scroll,
+  .arco-table-content-inner {
+    @apply h-full;
+  }
+
+  .arco-spin-children {
+    @apply flex flex-col;
+  }
+
+  .arco-table-container {
+    @apply h-0 flex-1;
+  }
+
+  .arco-table-content-inner {
+    @apply grid;
+
+    grid-template-rows: auto 1fr 0;
+
+    &::after {
+      content: '';
+    }
+
+    .arco-table-body {
+      @apply overflow-y-auto;
+
+      max-height: unset !important;
+    }
+  }
+
+  /* 默认 body 充满剩余高度，加入这个类可以变成自动 */
+  &.arco-table-body-auto {
+    .arco-table-content-inner {
+      grid-template-rows: auto auto 1fr;
+    }
+  }
+}
+
+.arco-input-number-illegal-value input {
+  @apply text-text_color_01;
+}
+
+.arco-spin-children::after {
+  background-color: transparent;
+}
+
+.arco-layout-footer {
+  @apply bg-bg_color;
+}
+
+/* 表格内文字按钮 */
+.table-text-button {
+  @apply text-brand_color cursor-pointer mr-4 last:mr-0 text-xs;
+
+  &:hover {
+    @apply text-brand_color_hover;
+  }
+}
+
+
+.arco-modal {
+  @apply rounded-lg !important;
+}
+
+.arco-slider-wrapper {
+  .arco-slider-bar {
+    height: 4px;
+  }
+}
+
+/** 融合模式弹窗样式 */
+.merge-mode-pop-up-style {
+  .arco-modal-title {
+    span {
+      svg {
+        font-size: 24px;
+        vertical-align: -4px;
+        @apply font-medium;
+      }
+    }
+  }
+
+  .arco-modal-title, .arco-modal-content {
+    @apply text-center;
+  }
+}

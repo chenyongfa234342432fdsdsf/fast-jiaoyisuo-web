@@ -1,0 +1,63 @@
+:local(.scoped) {
+  @apply mt-3 mb-4 w-full min-w-full flex text-text_color_01 flex-wrap;
+
+  .search-item {
+    @apply flex flex-wrap items-center;  
+  }
+
+  .arco-select, .arco-input-inner-wrapper {
+    height: 40px;
+    @apply w-36 !important;
+  }
+
+  .arco-select {  
+    .arco-select-arrow-icon {
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .arco-form-item {
+    @apply justify-center;
+  }
+
+  .label-name {
+    @apply mr-2.5;
+  }
+
+  .arco-btn {
+    height: 40px;
+    @apply text-sm !important; 
+  }
+
+  .arco-form-label-item> label {
+    @apply text-text_color_01 font-medium;
+  }
+  
+  .arco-select-view, .arco-picker, .arco-input-inner-wrapper {
+    @apply bg-bg_sr_color border-transparent !important;
+
+    &:focus {
+      @apply bg-bg_sr_color border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }
+    
+  }
+
+  .arco-picker-focused .arco-picker-input-active input, .arco-picker-focused:hover .arco-picker-input-active input {
+    @apply bg-transparent;
+  }
+
+  input, textarea {
+    &::placeholder {
+      @apply relative text-text_color_04 text-sm;
+
+      top: -1px;
+    }
+  }
+}

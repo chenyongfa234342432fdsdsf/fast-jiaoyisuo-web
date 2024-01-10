@@ -1,0 +1,23 @@
+:local(.scoped) {
+  @apply flex text-sm px-3 py-2 mb-2 leading-4 text-tips_color bg-brand_color_special_02 rounded;
+
+  .icon {
+    @apply pr-1;
+
+    svg {
+      @apply w-3 h-3 align-baseline;
+    }
+  }
+
+  .slot {
+    @apply flex flex-col;
+  }
+
+  p, label, a {
+    @apply text-xs mb-1;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+:local(.scoped) {
+  .password-validate-tips-wrap {
+    .tips {
+      @apply flex mt-2;
+
+      .icon {
+        @apply mr-2;
+
+        svg {
+          @apply w-3 h-3 align-middle text-text_color_02;
+        }
+      }
+
+      .text {
+        label {
+          @apply text-sm font-normal text-text_color_02;
+        }
+      }
+    }
+
+    .success {
+      .icon {
+        svg {
+          @apply text-success_color;
+        }
+      }
+
+      .text {
+        label {
+          @apply text-success_color;
+        }
+      }
+    }
+  }
+}

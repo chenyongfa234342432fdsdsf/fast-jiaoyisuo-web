@@ -1,0 +1,8 @@
+:local(.scoped) {
+  @apply overflow-hidden h-full flex flex-col;
+
+  .trade-order-book-main {
+    margin: 5px 0;
+    @apply flex flex-1 flex-col;
+  }
+}

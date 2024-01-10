@@ -1,0 +1,43 @@
+:local(.scoped) {
+  @apply flex flex-col;
+
+  .arco-table-container {
+    @apply border-none;
+  }
+
+  table {
+    .arco-table-th, .arco-table-td {
+      @apply border-none !important;
+    }
+
+    .arco-table-th {
+      @apply bg-card_bg_color_01;
+
+      .arco-table-th-item-title {
+        @apply text-xs text-text_color_02;
+      }
+    }
+
+    .arco-table-th-item {
+      @apply px-1;
+    }
+
+    .arco-table-td {
+      @apply bg-bg_color h-20 px-1 text-text_color_01;
+    }
+
+    .arco-btn-secondary.arco-btn-disabled {
+      @apply bg-bg_button_disabled !important;
+    }
+
+    .arco-table-tr {
+      >:first-child {
+        padding-left: 22px;
+      }
+
+      >:last-child {
+        padding-right: 22px;
+      }
+    }
+  }
+}

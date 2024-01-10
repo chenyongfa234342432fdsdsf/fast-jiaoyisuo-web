@@ -1,0 +1,50 @@
+:local(.scoped) {
+  @apply mb-10;
+
+  span {
+    font-size: 14px;
+    @apply text-text_color_02 cursor-pointer mr-6;
+
+    &:last-child {
+      @apply text-text_color_01 cursor-text;
+    }
+  }
+
+  .checked {
+    @apply text-brand_color font-normal;
+  }
+
+  .arco-picker, .arco-input-inner-wrapper {
+    border-color: transparent;
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-input-active input, .arco-picker-focused .arco-picker-input-active input {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker:hover {
+    @apply bg-bg_sr_color;
+  }
+
+  .arco-picker-suffix-icon {
+    @apply hidden;
+  }
+  
+}
+
+:local(.analytic-modal) {
+  width: 360px;
+
+  .arco-modal-title {
+    @apply text-center;
+  }
+
+  .arco-btn-secondary {
+    @apply hidden;
+  }
+
+  .arco-modal-footer {
+    @apply border-none;
+  }
+}

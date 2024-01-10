@@ -1,0 +1,34 @@
+:local(.scoped) {
+  @apply flex flex-1 flex-col;
+
+  .main-wrap {
+    @apply flex flex-1;
+
+    .content {
+      border-left: 1px solid var(--card_bg_color_02);
+      @apply flex-1 bg-bg_color;
+
+      .arco-spin, .arco-spin-children {
+        @apply w-full h-full;
+      }
+
+      .content-wrap {
+        @apply h-full;
+
+        .content-collapse-wrap {
+          min-height: 557px;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    @apply my-6 flex flex-row-reverse;
+  }
+}
+
+.inmail-popover {
+  .popover-item {
+    @apply cursor-pointer;
+  }
+}

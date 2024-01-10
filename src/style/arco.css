@@ -1,0 +1,184 @@
+body {
+  /* --color-fill-2: var(--bg_button_disabled); */
+
+  /* input 颜色全局颜色设置 */
+  .arco-input, .arco-input-inner-wrapper {
+    @apply bg-transparent border-line_color_01;
+
+
+    &:focus {
+      @apply bg-transparent border-brand_color !important;
+    }
+
+    &:hover {
+      @apply bg-transparent  border-line_color_01;
+    }
+    
+    &::placeholder {
+      @apply text-text_color_04;
+    }
+    
+  }
+
+  .arco-input-inner-wrapper-focus { 
+    @apply bg-transparent border-brand_color !important;
+  }
+  
+  /** 此处是为了避免和之前的样式冲突，自行加入，后续会去掉 */
+  .arco-input.newbit-input-custom-style,
+  .arco-input-inner-wrapper.newbit-input-custom-style,
+  .arco-input-number.newbit-input-custom-style .arco-input-inner-wrapper,
+  .arco-input-group-wrapper.newbit-input-custom-style .arco-input-inner-wrapper, {
+    @apply bg-bg_sr_color border-bg_sr_color !important;
+
+    &.arco-input-inner-wrapper-focus,
+    &:focus {
+      @apply bg-transparent border-brand_color !important;
+    }
+    
+    input::placeholder,
+    &::placeholder {
+      @apply text-text_color_04 !important;
+    }
+  }
+  
+  /* input 颜色全局颜色设置 */
+  .arco-modal-mask {
+    @apply bg-bg_color_02;
+  }
+  
+  .arco-modal {
+    @apply bg-card_bg_color_03;
+  }
+  
+  /* button 颜色全局颜色设置 */
+  
+  .arco-btn-secondary {
+    /* &:not(.arco-btn-disabled):hover {
+      @apply bg-button_hover_01 !important;
+    } */
+  }
+  
+  .arco-btn-primary {
+    @apply text-button_text_02 !important;
+  }
+  
+  .arco-btn-status-danger, .arco-btn-status-success {
+    @apply text-button_text_01 !important;
+  }
+  
+  .arco-btn-disabled {
+    @apply bg-bg_button_disabled text-text_color_04;
+  }
+  
+  .arco-form-item-error {
+    .arco-input:hover {
+      @apply bg-bg_color border-warning_color !important;
+    }
+    
+    .arco-input {
+      height: 46px;
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+  
+  .arco-input-inner-wrapper-error, .arco-select-error, .arco-textarea-error {
+    @apply bg-bg_color border-warning_color !important;
+
+  }
+
+  /* select 颜色全局颜色设置  */
+  .arco-select-view {
+    @apply bg-bg_color border-line_color_01 !important;
+  }
+
+  /** 此处是为了避免和之前的样式冲突，自行加入，后续会去掉 */
+  .arco-select.newbit-select-custom-style {
+    &.arco-select-focused {
+      .arco-select-view {
+        @apply border-brand_color bg-transparent !important;
+      }
+
+    }
+
+    .arco-select-view {
+      @apply bg-bg_sr_color border-bg_sr_color !important;
+    }
+  }
+  
+  
+  .arco-form-item-status-error {
+    .arco-select-view {
+      @apply border-warning_color  !important;
+    }
+  }
+  
+  /* DatePicker 颜色全局颜色设置  */
+  .arco-picker {
+    @apply bg-transparent border-line_color_01;
+
+
+    &:hover {
+      @apply bg-transparent  border-line_color_01;
+    }
+  }
+  
+  .arco-picker-disabled {
+    @apply bg-card_bg_color_02 border-line_color_01;
+
+    &:hover {
+      @apply bg-card_bg_color_02  border-line_color_01;
+    }
+  }
+  
+  .arco-picker-range-container {
+    .arco-picker-cell-selected {
+      .arco-picker-date-value {
+        @apply text-button_text_02;
+      }
+    }
+  }
+
+  /** 同上，为了防止以前的组件出问题 */
+  .arco-picker.newbit-picker-custom-style {
+    @apply bg-bg_sr_color border-bg_sr_color;
+
+    &:hover {
+      @apply bg-transparent border-brand_color;
+    }
+  }
+  
+  /* Dropdown 全局样式修改 */
+  
+  .arco-dropdown-menu {
+    @apply border-0;
+  }
+  
+  /* Breadcrumb 全局样式修改 */
+  
+  .arco-breadcrumb {
+    .arco-breadcrumb-item:last-child {
+      @apply font-medium text-text_color_01;
+    }
+
+    .arco-breadcrumb-item {
+      @apply text-text_color_02;
+    }
+  }
+  
+  /* Popconfirm 全局样式修改 */
+  
+  .arco-popconfirm-content {
+    @apply border-0;
+
+    .arco-btn-primary {
+      @apply ml-2;
+    }
+  }
+  
+  /* Drawer 全局样式修改 */
+  
+  .arco-drawer-mask {
+    @apply bg-bg_color_02;
+  }
+}

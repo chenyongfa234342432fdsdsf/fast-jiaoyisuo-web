@@ -1,0 +1,43 @@
+:local(.scoped) {
+  .user-register-residence-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .tips {
+        font-size: 14px;
+        line-height: 14px;
+        @apply text-text_color_01 font-normal;
+      }
+
+      .form-wrap {
+        .text {
+          @apply text-xs leading-3 font-normal mt-4;
+  
+          label {
+            @apply text-text_color_03;
+  
+            span {
+              @apply text-brand_color;
+            }
+          }
+        }
+  
+        .arco-select-prefix {
+          @apply mr-0;
+  
+          label {
+            @apply ml-2;
+          }
+        }
+  
+        .arco-image {
+          @apply w-4 h-4;
+  
+          img {
+            @apply w-4 h-4 rounded-full;
+          }
+        }
+      }
+    }
+  }
+}

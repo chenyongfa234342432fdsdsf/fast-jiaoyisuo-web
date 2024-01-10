@@ -1,0 +1,9 @@
+:local(.scoped) {
+  @apply flex h-9 items-center text-xs pl-4 bg-bg_color border-line_color_01 border-b border-solid -mt-px text-text_color_02 ;
+
+  svg {
+    @apply ml-1 mr-2;
+
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,26 @@
+:local(.scoped) {
+  /* @apply bg-bg_sr_color; */
+
+  .arco-input {
+    font-size: 30px;
+    @apply text-center pl-0 text-text_color_01 font-medium;
+  }
+
+  .arco-input-group {
+    @apply w-1/2 mx-auto;
+
+    .arco-input-inner-wrapper {
+      @apply border-transparent hover:border-transparent;
+
+    }
+
+    .arco-input-inner-wrapper:focus, .arco-input-inner-wrapper-focus {
+      @apply border-transparent !important;
+    }
+  }
+
+  .arco-input-group .arco-input-group-addafter .arco-input-number-step-button, .arco-input-group .arco-input-group-addbefore .arco-input-number-step-button {
+    @apply bg-bg_sr_color w-6 h-6 top-1/2 -translate-y-1/2 rounded !important;
+  }
+
+}

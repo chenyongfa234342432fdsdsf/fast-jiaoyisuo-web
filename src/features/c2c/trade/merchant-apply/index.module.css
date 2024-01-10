@@ -1,0 +1,139 @@
+:local(.scope) {
+  @apply bg-bg_color;
+
+  .arco-form-label-item {
+    @apply text-text_color_01;
+
+    :first-child {
+      @apply flex items-center;
+    }
+  }
+
+  /* stylelint-disable selector-class-pattern */
+
+  .icon-arrow_open_black,
+  .icon-arrow_open_white {
+    @apply w-2 h-2;
+  }
+  /* stylelint-enable selector-class-pattern */
+
+
+
+
+  .arco-form-message {
+    @apply mt-1;
+  }
+
+  .arco-form-item {
+    @apply mb-0;
+  }  
+  
+  .group-gap,
+  .arco-row {
+    @apply mb-8;
+  }
+
+  .group-inner-gap {
+    @apply mb-4;
+  }
+
+  .content-wrapper {
+    width: 840px;
+    @apply mx-auto pt-8 pb-6;
+  }
+
+  .info-message {
+    height: 34px;
+    border-radius: 4px;
+    @apply bg-brand_color_special_02 text-xs text-brand_color flex items-center mb-6 px-4;
+
+    .msg-icon {
+      @apply pr-1 cursor-default;
+    }
+  }
+
+  .submit-button {
+    height: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    @apply bg-brand_color flex items-center justify-center text-button_text_02 cursor-pointer;
+  }
+
+  .reminder-msg {
+    font-weight: 400;
+    @apply text-xs text-text_color_03 mt-1;
+  }
+
+  .example-text {
+    @apply text-brand_color text-xs pl-2 cursor-pointer;
+  }
+
+  .ic-group {
+    @apply mb-2;
+  }
+
+  .frame-block {
+    width: 343px;
+    height: 200px;
+    border: 2px dashed var(--line_color_01);
+    border-radius: 8px;
+    @apply flex justify-center items-center;
+
+    .frame-content-wrapper {
+      .message {
+        @apply text-text_color_01 text-center;
+      }
+    }
+
+    .re-upload-img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @apply absolute;
+    }
+
+    .bg-img-ic {
+      svg {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    .bg-img-video {
+      svg {
+        width: 220px;
+        height: 130px;
+      }
+    }
+
+    .bg-img {
+      @apply mb-2;
+    }
+
+    .top-icon {
+      width: 46px;
+      height: 46px;
+      @apply bg-bg_color;
+    }
+
+    .upload-img {
+      @apply m-auto;
+
+      img {
+        width: auto;
+        height: 160px;
+      }
+
+      video {
+        width: auto;
+        height: 160px;
+      }
+    }
+  }
+
+  .spin {
+    position: fixed;
+    background-color: var(--nc-16);
+  }
+}

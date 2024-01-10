@@ -1,0 +1,6 @@
+:local(.scoped) {
+  /* 防止 table 被加载出来之前 footer 提前显示出来，出现闪烁 */
+  .table-placeholder {
+    min-height: 80vh;
+  }
+}

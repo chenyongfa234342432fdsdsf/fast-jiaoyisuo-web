@@ -1,0 +1,46 @@
+:local(.container) { 
+  .order-header-container {
+    height: 110px;
+    @apply w-full bg-card_bg_color_01;
+    
+    .order-header {
+      width: 1200px;
+      @apply mx-auto h-full flex justify-between items-center;
+      
+      .order-header-icon {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      
+      .order-header-status {
+        @apply ml-4;
+        
+        >div:first-child {
+          @apply text-text_color_01 font-medium text-2xl;
+        }
+        
+        .order-time-remaining {
+          @apply flex mt-1;
+
+          .order-time {
+            @apply text-text_color_02;
+          }
+        }
+      }
+      
+      .success-button {
+        @apply h-10 flex justify-center items-center border-none;
+
+        span {
+          @apply font-medium;
+        }
+      }
+
+      .arco-btn-size-default {
+        @apply p-0;
+      }
+    }
+  }
+}

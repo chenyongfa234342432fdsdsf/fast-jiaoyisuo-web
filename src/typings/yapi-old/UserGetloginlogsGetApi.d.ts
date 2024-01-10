@@ -1,0 +1,70 @@
+/* prettier-ignore-start */
+/* tslint:disable */
+/* eslint-disable */
+
+/* 该文件由 yapi-to-typescript 自动生成，请勿直接修改！！！ */
+
+/**
+ * 接口 [获取登录记录（最近10条）↗](https://yapi.coin-online.cc/project/72/interface/api/2084) 的 **请求类型**
+ *
+ * @分类 [hotcoin优化相关接口↗](https://yapi.coin-online.cc/project/72/interface/api/cat_401)
+ * @标签 `hotcoin优化相关接口`
+ * @请求头 `GET /user/getLoginLogs`
+ * @更新时间 `2022-08-29 13:58:29`
+ */
+export interface YapiGetUserGetLoginLogsApiRequest {}
+
+/**
+ * 接口 [获取登录记录（最近10条）↗](https://yapi.coin-online.cc/project/72/interface/api/2084) 的 **返回类型**
+ *
+ * @分类 [hotcoin优化相关接口↗](https://yapi.coin-online.cc/project/72/interface/api/cat_401)
+ * @标签 `hotcoin优化相关接口`
+ * @请求头 `GET /user/getLoginLogs`
+ * @更新时间 `2022-08-29 13:58:29`
+ */
+export interface YapiGetUserGetLoginLogsApiResponse {
+  code?: number
+  data?: YapiDtoLoginLogVO[]
+  msg?: string
+  pageNum?: number
+  startDate?: string
+  time?: number
+  totalCount?: number
+  totalPages?: number
+}
+export interface YapiDtoLoginLogVO {
+  /**
+   * 城市
+   */
+  city?: string
+  /**
+   * 登陆方式: 1-web，2-android, 3-api, 4-h5, 5-ios
+   */
+  client?: number
+  /**
+   * 时间
+   */
+  createTime?: number
+  /**
+   * 设备id
+   */
+  deviceId?: string
+  /**
+   * id
+   */
+  id?: number
+  /**
+   * 登录ip
+   */
+  ipAddress?: string
+  /**
+   * 登陆结果: 1-成功, 2-失败
+   */
+  status?: number
+  /**
+   * UID
+   */
+  uid?: number
+}
+
+/* prettier-ignore-end */

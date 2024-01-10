@@ -1,0 +1,13 @@
+:local(.scoped) {
+  @apply flex-1;
+
+  svg {
+    width: 14px;
+    height: 14px;
+    @apply mr-1;
+  }
+  
+  label {
+    @apply text-text_color_02 text-base leading-4 font-medium cursor-pointer;
+  }
+}

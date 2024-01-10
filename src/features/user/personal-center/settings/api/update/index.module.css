@@ -1,0 +1,29 @@
+:local(.scoped) {
+  @apply flex items-center justify-center;
+
+  .user-settings-update-open-api-wrap {
+    width: 1200px;
+    @apply flex my-8;
+
+    .form, .placeholder {
+      @apply flex-1;
+    }
+
+    .form {  
+      .no-bind-ip-tips {
+        @apply flex;
+  
+        .icon {
+          @apply mr-2;
+        }
+  
+        .text {
+          label {
+            font-size: 14px;
+            @apply text-brand_color;
+          }
+        }
+      }
+    }
+  }
+}

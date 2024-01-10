@@ -1,0 +1,76 @@
+:local(.container) { 
+  /* stylelint-disable selector-class-pattern */
+  width: 1200px;
+  @apply m-auto;
+  
+  .creates-advertisements-form {
+    @apply flex items-start border-b w-full  pt-10 pb-4;
+    
+    .creates-advertisements-title-detail {     
+      .creates-advertisements-title {
+        @apply font-bold text-base pl-3 mt-2 border-l-4 border-brand_color;
+      }
+    }
+    
+    .creates-advertisements-input {
+      @apply resize-none;
+    }
+    
+  }
+  
+  .creates-advertisements-form-paymentmethod { 
+    @apply flex items-center border-b w-full;
+    
+    .arco-form-message {
+      @apply pl-6;
+    }
+  }
+  
+  .creates-advertisements-tip {
+    @apply relative;
+    
+    .creates-advertisements-name {
+      @apply absolute right-7 top-2.5;
+    }
+    
+    .creates-advertisements-limit {
+      @apply absolute right-4 top-10;
+    }
+    
+    .creates-advertisements-maxlimit {
+      @apply absolute right-2 top-10;
+      
+      span {
+        @apply text-brand_color border-l-2 pl-2 ml-2;
+      }
+    }
+
+    .arco-input-number-size-default {
+      @apply m-0 w-56 !important;
+    }
+    
+    label {
+      @apply flex items-center;
+    }
+  }
+  
+  .creates-advertisements-link {
+    @apply text-brand_color font-bold text-lg mt-1;
+  }
+  
+  .creates-advertisements-preferential {
+    @apply pt-2;
+    
+    .creates-preferential-tip {
+      @apply rounded-sm bg-brand_color text-xs p-1 text-text_color_04;
+    }
+  }
+
+  .reates-advertisements-referenceprice {
+    @apply text-text_color_03 pt-2;
+  }
+  
+  .creates-advertisements-button {
+    @apply w-96 h-12 flex justify-center font-medium text-lg items-center text-text_color_04 rounded-sm bg-brand_color mx-auto my-10;
+  }
+}

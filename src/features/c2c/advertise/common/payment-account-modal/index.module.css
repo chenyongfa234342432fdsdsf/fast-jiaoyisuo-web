@@ -1,0 +1,31 @@
+:local(.payment-type-info-root) {
+  .info-title {
+    @apply mb-3 mt-6 first:mt-0;
+  }
+
+  .info-item {
+    line-height: 22px;
+    @apply flex flex-1 items-center justify-between mb-4 text-sm;
+
+    .info-label {
+      @apply text-text_color_02;
+    }
+
+    .info-value {
+      max-width: 70%;
+      @apply text-text_color_01 font-medium overflow-hidden whitespace-nowrap text-ellipsis;
+    }
+  }
+
+  .info-item-gray {
+    @apply text-text_color_04;
+
+    .info-label {
+      @apply text-text_color_04;
+    }
+
+    .info-value {
+      @apply text-text_color_04;
+    }
+  }
+}

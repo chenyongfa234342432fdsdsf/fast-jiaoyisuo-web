@@ -1,0 +1,83 @@
+:local(.search-select-wrapper) {
+  @apply border border-solid border-bg_sr_color px-4 flex items-center rounded cursor-pointer bg-bg_sr_color;
+
+
+  &:hover {
+    /* TODO: 颜色待定 */
+  }
+
+  &.no-border {
+    @apply border-0;
+  }
+
+  &.transparent {
+    @apply bg-transparent
+  }
+
+  &.focused {
+    @apply border-brand_color bg-transparent;
+  }
+
+}
+
+:local(.popup-search-select-wrapper) {
+  @apply text-text_color_01;
+
+  .search-box {
+    @apply p-4 pb-2;
+
+    .arco-input-inner-wrapper {
+      @apply px-3;
+    }
+
+    .arco-input {
+      @apply pl-2 text-sm py-2;
+    }
+  }
+
+  .list-wrapper {
+    @apply overflow-y-auto pb-4;
+
+    max-height: 180px;
+  }
+
+  .option-item {
+    @apply px-4 py-2 cursor-pointer;
+
+    &.is-selected {
+      @apply text-brand_color;
+    }
+
+    &:hover {
+      @apply bg-bg_color_03;
+    }
+  }
+
+  &.default {
+    .search-box {
+      @apply px-3 pt-2;
+
+      .arco-input {
+        @apply text-xs py-1.5 pl-1;
+
+        &::placeholder {
+          @apply text-xs
+        }
+      }
+
+      .arco-input-inner-wrapper {
+        height: 30px;
+      }
+    }
+
+    .option-item {
+      @apply px-3;
+    }
+  }
+}
+
+:local(.popup-outer) {
+  .arco-popover-content {
+    @apply p-0;
+  }
+}

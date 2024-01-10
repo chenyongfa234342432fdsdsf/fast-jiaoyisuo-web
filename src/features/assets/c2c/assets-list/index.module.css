@@ -1,0 +1,43 @@
+:local(.scoped) {
+  .coin-item {
+    @apply py-3 text-sm flex justify-between items-center hover:bg-card_bg_color_01;
+
+    .coin-name {
+      @apply flex flex-row ml-4 items-center text-text_color_01 text-base font-medium;
+    }
+
+    .full-name {
+      @apply text-sm text-text_color_02 ml-6;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    .coin-val-wrap {
+      @apply flex items-center;
+
+      .coin-val {
+        @apply flex flex-col items-end mr-6;
+      }
+
+      .total-amount {
+        @apply text-base text-text_color_01 font-medium border-text_color_03 border-b border-dashed;
+
+        line-height: 1rem;
+
+        /* border-bottom: 1px dashed; */
+      }
+
+      .total-price {
+        @apply text-sm text-text_color_02 pt-1 font-medium;
+      }
+
+      .arrow-icon {
+        svg {
+          @apply w-4 h-4
+        }
+      }
+    }
+  }
+}

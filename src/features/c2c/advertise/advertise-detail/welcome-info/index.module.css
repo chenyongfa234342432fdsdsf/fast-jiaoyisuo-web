@@ -1,0 +1,8 @@
+:local(.preview-img-root) {
+  @apply flex flex-col w-full h-full bg-bg_color_02 justify-center items-center !important;
+
+  .arco-modal-footer {
+    @apply border-none;
+  }
+
+}

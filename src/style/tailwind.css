@@ -1,0 +1,24 @@
+/* stylelint-disable selector-class-pattern */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .absolute-center {
+    @apply absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2;
+  }
+
+  .absolute-left-center {
+    @apply absolute transform -translate-x-1/2 left-1/2;
+  }
+
+  .absolute-top-center {
+    @apply absolute transform -translate-y-1/2 top-1/2;
+  }
+
+  /* 不是特别常用且不是特别长的 tailwindcss 不要写在这里 */
+}
+
+@layer base {
+  /* 这里从 tailwindcss 层可以覆盖基础样式 */
+}

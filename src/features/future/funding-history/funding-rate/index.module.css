@@ -1,0 +1,7 @@
+:local(.rate-info-chart-wrapper) {
+  @apply mb-4;
+
+  .header {
+    @apply flex items-center justify-between;
+  }
+}

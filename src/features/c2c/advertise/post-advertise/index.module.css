@@ -1,0 +1,266 @@
+:local(.scoped) {
+  @apply bg-bg_color flex-1 flex flex-col;
+
+  .header-wrap {
+    height: 108px;
+    @apply flex w-full flex-col bg-card_bg_color_01 text-text_color_01;
+
+    .title-container {
+      width: 1200px;
+      font-size: 32px;
+      @apply m-auto font-medium;
+
+      .icon-wrap {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .arco-select-popup {
+    .arco-select-option {
+      @apply px-4;
+    }
+
+    .arco-select-option-selected {
+      @apply bg-bg_color_03;
+    }
+  }
+
+  .arco-btn {
+    @apply font-medium;
+  }
+
+  .arco-checkbox {
+    @apply text-base !important;
+  }
+
+  .arco-checkbox-mask {
+    @apply w-4 h-4 !important;
+  }
+
+  /* .arco-select-multiple .arco-select-view {
+    @apply pl-3;
+  } */
+
+  .arco-select-size-default.arco-select-single .arco-select-view {
+    line-height: 44px;
+  }
+
+  .arco-form-item-status-error {
+    .arco-select-view {
+      @apply border-warning_color bg-bg_color;
+    }
+
+    .arco-select-view:hover {
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+
+  .arco-tag {
+    margin-right: 3px;
+    margin-left: 9px;
+    @apply border-none;
+
+    .arco-input-tag-tag {
+      @apply text-sm;
+    }
+
+    .arco-tag-close-btn > svg {
+      @apply text-icon_color;
+    }
+  }
+
+  .arco-input-tag-size-default .arco-input-tag-view {
+    min-height: 44px;
+  }
+
+  .c2c-advertise-form {
+    width: 840px;
+    @apply m-auto;
+
+    .sub-title {
+      margin-top: 32px;
+      font-size: 22px;
+      line-height: 34px;
+      @apply flex font-medium text-text_color_01;
+    }
+
+    .form-item {
+      @apply w-full mt-4 overflow-hidden whitespace-nowrap text-ellipsis;
+    }
+
+    .form-labels {
+      @apply w-full mt-6 mb-2 flex items-center justify-between text-sm text-text_color_01;
+    }
+
+    .form-labels-sub {
+      @apply w-full my-2 flex items-center justify-between text-xs text-text_color_02;
+    }
+
+    .opt-labels-wrap {
+      @apply text-brand_color cursor-pointer;
+    }
+
+    .form-row-wrap {
+      @apply flex flex-1 mb-2 justify-between;
+
+      .form-item {
+        @apply ml-4 first:ml-0;
+      }
+    }
+
+    .advertise-content-container .form-row-wrap:last-child {
+      @apply mb-0;
+    }
+
+    .form-other-row-wrap {
+      @apply flex flex-1 justify-between;
+
+      .form-item {
+        @apply mt-0;
+      }
+
+      .span-tag {
+        @apply flex h-10 w-4 px-2 items-center justify-center;
+      }
+    }
+
+    .footer {
+      @apply mt-6;
+    }
+
+    .arco-form-label-item label {
+      @apply flex mb-2 items-center justify-between text-sm text-text_color_01;
+    }
+
+    .arco-form-item {
+      @apply mb-0 !important;
+    }
+
+    .arco-textarea {
+      @apply bg-bg_color border-line_color_01;
+    }
+
+    .form-item {
+      .arco-col-19 {
+        @apply w-full flex-1;
+      }
+
+      .arco-space-wrap,
+      .arco-space-item {
+        @apply w-full flex-1;
+      }
+
+      input,
+      textarea {
+        &::placeholder {
+          @apply relative text-text_color_04 text-sm;
+
+          top: -1px;
+        }
+      }
+
+      .arco-picker-size-default {
+        height: 44px !important;
+
+        input {
+          &::placeholder {
+            @apply text-text_color_04 text-sm;
+
+            top: 0;
+          }
+        }
+      }
+
+      .arco-input-inner-wrapper {
+        height: 46px !important;
+
+        input {
+          height: 44px !important;
+        }
+      }
+
+      .arco-select-view,
+      .arco-textarea {
+        height: 46px !important;
+
+        .country-render-format {
+          margin-top: 3px;
+        }
+
+        input {
+          &::placeholder {
+            @apply relative text-sm;
+
+            top: 0;
+          }
+        }
+
+        .arco-select-arrow-icon {
+          svg {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+
+      .arco-textarea {
+        height: 80px !important;
+      }
+
+      .arco-input-tag .arco-input-tag-tag {
+        @apply bg-card_bg_color_02;
+      }
+    }
+
+    .payment-item {
+      @apply flex items-center justify-center;
+
+      .line {
+        @apply w-0.5 h-2.5 mr-1 rounded-2xl;
+      }
+    }
+
+    .arco-form-message {
+      @apply mt-1;
+    }
+  }
+
+  .price-fluctuation-alerts {
+    .price-fluctuation-prompt {
+      line-height: 18px !important;
+      @apply font-normal text-xs;
+    }
+  }
+
+  .price-fluctuation-slider {
+    padding: 0 4px !important;
+  }
+
+  .arco-slider-marks > div {
+    color: var(--nc-01) !important;
+  }
+
+  .arco-slider-marks > div:nth-child(5) {
+    left: 98% !important;
+  }
+
+  .ad-tip-style {
+    color: var(--nc-06);
+    line-height: 18px !important;
+    @apply font-normal text-xs;
+  }
+
+  .price-fluctuation-pattern {
+    @apply flex justify-between items-center
+  }
+
+}
+
+:local(.select-option-wrap) {
+  .tag {
+    @apply text-xs font-normal text-text_color_04 absolute px-3 py-1 top-2 bg-bg_button_disabled origin-top-right rounded-bl rounded-tr;
+
+    transform: scale(0.8);
+  }
+}

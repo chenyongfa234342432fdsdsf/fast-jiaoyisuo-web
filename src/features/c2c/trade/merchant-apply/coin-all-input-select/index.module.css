@@ -1,0 +1,22 @@
+:local(.scope) {
+  @apply w-full;
+
+  .c2c-input {
+    @apply w-full;
+  }
+}
+
+
+:local(.popover) {
+  width: 408px;
+  max-width: 408px !important;
+  transform: translateY(-8px);
+    
+  .arco-trigger-arrow.arco-popover-arrow {
+    display: none !important;
+  }
+
+  .arco-popover-content {
+    @apply p-0;
+  }
+}

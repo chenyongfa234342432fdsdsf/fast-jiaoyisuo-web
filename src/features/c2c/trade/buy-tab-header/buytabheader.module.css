@@ -1,0 +1,155 @@
+:local(.scope) { 
+  .buy-links {
+    @apply absolute flex items-center top-0 text-lg h-full;
+    
+    
+    right: calc(calc(100% - 1200px)/2);
+    
+    .arco-icon {
+      @apply pl-1;
+    }
+    
+    .tab-forms-border {
+      /* @apply border-b-2 border-b-brand_color; */
+      @apply relative text-button_text_01;
+
+      span {
+        @apply text-brand_color;
+      }
+    }
+    
+    .tab-forms-border::before {
+      width: 28px;
+      height: 2px;
+      margin-left: -6px;
+      content: '';
+      @apply bg-brand_color left-1/2 absolute bottom-0 block;
+    }
+    
+    .buy-help {
+      @apply px-4;
+
+      span {
+        @apply text-base;
+      }
+    }
+    
+    
+    .account-header:hover {
+      .orders-detail {
+        @apply text-brand_color;
+      }
+    }
+
+    .account-header {
+      @apply mr-10 h-full flex items-center text-button_text_01;
+
+      .orders-detail {
+        @apply text-sm cursor-pointer;
+
+        svg {
+          @apply text-base;
+        }
+        
+        .order-history {
+          svg {
+            @apply text-base;
+          }
+        }
+        
+      }
+      
+   
+      
+      
+      span {
+        @apply text-sm ml-1;
+      }
+    }
+    
+    .more {
+      @apply text-base;
+
+      .more-icon {
+        @apply flex items-center;
+        
+        .more-arrow {
+          @apply w-3;
+        }
+        
+        .more-icon-msg {
+          margin-top: 1px;
+        }
+        
+        span {
+          @apply text-sm;
+        }
+        
+        .text-more {
+          @apply text-sm text-brand_color !important;
+        }
+      }
+      
+      .more-icon:hover {
+        span {
+          @apply text-brand_color;
+        }
+      }
+      
+      .arco-select-option {
+        @apply py-3 text-base;
+      }
+      
+      .arco-select-popup {
+        top: -0.5px;
+        width: 222px;
+        @apply relative p-4 right-14 mt-3.5 border-0 rounded-sm;
+        
+        .more-select:hover {
+          .next-arrow {
+            @apply block !important;
+          }
+        }
+        
+        .more-select {
+          .more-select-icon {
+            svg {
+              @apply w-6 h-6  !important;
+            }
+          }
+        }
+        
+
+        li:hover {
+          @apply bg-card_bg_color_02 !important;
+        }
+        
+        li {
+          @apply rounded py-0 h-14 bg-transparent flex items-center relative;
+
+          svg {
+            @apply text-lg h-4;
+          }
+          
+          .next-arrow {
+            right: 23px;
+            @apply top-4 hidden absolute;
+          
+            svg {
+              height: 10px;
+              @apply text-sm h-4;
+            }
+          }
+        }
+      }
+      
+      .icon-more-vertical {
+        @apply mr-1 h-6 w-6;
+      }
+    }
+    
+    .order-forms:hover .order-list {
+      @apply block;
+    }
+  }
+}

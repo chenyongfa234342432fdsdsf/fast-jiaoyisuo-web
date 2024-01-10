@@ -1,0 +1,36 @@
+:local(.scoped) {
+  .hot-gainers-content {
+    @apply w-full h-96;
+
+    .gainers-tree-map {
+      @apply flex flex-col justify-center items-center cursor-pointer rounded-lg box-border border-0 absolute;
+
+      .map-text {
+        @apply px-1 w-full truncate font-medium text-center text-button_text_01;
+      }
+
+      .map-grey {
+        @apply text-text_color_04;
+      }
+    }
+  }
+
+  .no-result {
+    @apply w-full flex flex-col justify-center items-center;
+
+    .icon {
+      svg {
+        width: 175px;
+        height: 158px;
+      }
+    }
+
+    .text {
+      @apply mb-6 mt-3;
+
+      label {
+        @apply text-text_color_03 text-sm;
+      }
+    }
+  }
+}

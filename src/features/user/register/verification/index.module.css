@@ -1,0 +1,46 @@
+:local(.scoped) {
+  .register-wrap {
+    @apply pt-36 pb-8;
+
+    .form {
+      .tips {
+        @apply text-xs mb-2;
+
+        label {
+          @apply text-sm text-text_color_03;
+        }
+      }
+    }
+
+    .success-info {
+      @apply flex flex-col justify-center items-center h-screen;
+
+      .success-icon {
+        svg {
+          width: 132px;
+          height: 105px;
+        }
+      }
+
+      .success-title {
+        @apply text-2xl font-medium text-center text-text_color_01 mt-5;
+      }
+
+      .success-subtitle {
+        @apply text-sm font-normal mt-4 mb-14;
+      }
+    }
+
+    .not-received-validate {
+      @apply mt-6;
+
+      label {
+        @apply text-sm text-brand_color cursor-pointer;
+      }
+    }
+
+    input {
+      @apply pr-20;
+    }
+  }
+}

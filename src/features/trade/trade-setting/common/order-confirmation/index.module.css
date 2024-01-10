@@ -1,0 +1,23 @@
+:local(.scoped) {
+  .arco-drawer-header {
+    .arco-drawer-header-title {
+      @apply w-full;
+
+      .title {
+        @apply flex items-center;
+  
+        .text {
+          @apply flex-1 ml-4;
+        }
+
+        & > div {
+          @apply mt-0;
+        }
+
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

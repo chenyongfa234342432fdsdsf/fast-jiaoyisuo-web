@@ -1,0 +1,68 @@
+:local(.help-center-support-search-wrap) {
+  @apply flex-1 flex flex-col;
+
+  .support-search-header {
+    width: 1200px;
+    @apply m-auto;
+  }
+
+  .support-search-body {
+    @apply flex-1 py-8 bg-bg_color;
+
+    .support-search-content {
+      width: 1200px;
+      min-height: 557px;
+      @apply m-auto;
+
+      .search-title {
+        font-size: 18px;
+      }
+
+      .arco-breadcrumb-item {
+        a {
+          @apply text-text_color_03;
+        }
+      }
+
+      .arco-spin {
+        @apply w-full;
+      }
+
+      .support-search-button {
+        @apply my-8 flex;
+
+        .search-header-button {
+          @apply py-2 px-5 mr-4 text-base;
+
+          &:hover {
+            @apply bg-card_bg_color_02;
+          }
+        }
+
+        .select-color {
+          @apply bg-card_bg_color_02 text-text_color_01;
+        }
+      }
+
+      .search-article-button {
+        @apply mt-2.5 inline-block py-2 px-4 text-sm bg-card_bg_color_02;
+      }
+
+      .search-content-pagination {
+        @apply mt-8 flex justify-end;
+      }
+
+      .support-back-button {
+        @apply mt-8 m-auto w-96 py-3 text-center text-base font-medium box-border cursor-pointer bg-brand_color rounded-md;
+      }
+    }
+  }
+
+  .support-search-text {
+    @apply font-medium text-text_color_02 rounded cursor-pointer;
+  }
+
+  .card-items-title {
+    @apply text-lg font-medium w-full truncate;
+  }
+}

@@ -1,0 +1,74 @@
+:local(.scope) {
+  .coin-select-search-container {
+    @apply flex justify-between items-center w-full h-10 rounded;
+
+    .left {
+      @apply flex items-center;
+
+      .image {
+        @apply flex justify-center items-center mr-2 w-5 h-5 rounded-full overflow-hidden;
+      }
+    }
+  }
+
+  .arco-select-view {
+    height: inherit;
+    @apply bg-bg_sr_color border-transparent !important;
+  }
+}
+
+:local(.select-content) {
+  /* @apply relative pt-11; */
+
+  .select-search-box {
+    @apply mx-4 mt-3;
+
+    .select-search {
+      @apply bg-bg_sr_color h-8 rounded;
+
+      .arco-input-group {
+        @apply block;
+
+        .arco-input-inner-wrapper {
+          @apply border-none;
+        }
+      }
+    }
+  }
+
+  .select-all-btn {
+    @apply text-brand_color cursor-pointer inline-block mt-4 ml-4 mb-2.5;
+
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 22px;
+  }
+
+  .select-option-scroll {
+    @apply overflow-y-scroll;
+
+    height: 178px;
+
+    .select-option {
+      @apply flex justify-between items-center hover:bg-bg_color_03 cursor-pointer px-4 text-text_color_01;
+
+      height: 42px;
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 22px;
+
+      .left {
+        @apply flex items-center;
+
+        .image {
+          @apply flex justify-center items-center mr-2 w-5 h-5 rounded-full overflow-hidden;
+        }
+      }
+
+      .right {
+      }
+    }
+  }
+}

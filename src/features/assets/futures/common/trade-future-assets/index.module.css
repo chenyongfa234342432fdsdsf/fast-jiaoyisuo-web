@@ -1,0 +1,55 @@
+:local(.futures-assets-table) {
+  overflow-y: auto;
+  @apply flex flex-col;
+
+  .arco-table-header {
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--card_bg_color_01);
+    }
+  }
+
+  .arco-table-col-fixed-right-first::after {
+    @apply bottom-0;
+  }
+
+  .arco-spin {
+    @apply block;
+  }
+
+  .arco-table-body .arco-table-col-fixed-right {
+    @apply bg-bg_color;
+  }
+
+  .arco-table-body {
+    @apply bg-bg_color;
+
+    /* 不设为透明是因为透明会出现遮挡 */
+    .arco-table-td {
+      @apply bg-bg_color;
+    }
+  }
+
+  .btn-group {
+    @apply text-xs;
+  }
+
+  .list {
+    @apply flex flex-col;
+
+    .list-item {
+      @apply flex flex-row items-center;
+
+      .coin-icon {
+        @apply w-8 h-8 mr-4
+      }
+
+      .arco-btn {
+        height: 38px;
+        @apply text-text_color_01 text-sm px-6 !important
+      }
+    }
+    
+  }
+}

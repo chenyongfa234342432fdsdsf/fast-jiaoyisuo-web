@@ -1,0 +1,5 @@
+:local(.trade-pair-title-column) {
+  img {
+    border: 1px solid var(--card_bg_color_02);
+  }
+}

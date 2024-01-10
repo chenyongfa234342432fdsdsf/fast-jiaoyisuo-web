@@ -1,0 +1,31 @@
+:local(.mainnet-selection-modal-root) {
+  @apply flex;
+
+  .mainnet-selection-modal {
+    @apply w-full flex flex-col;
+
+    .modal-header {
+      @apply flex items-center justify-between px-4 pt-4;
+    }
+
+    .modal-list {
+      @apply flex flex-1 flex-col px-4 py-6;
+
+      .select-item {
+        @apply mb-4 last:mb-0;
+
+        .rv-checkbox {
+          @apply justify-between text-sm text-text_color_01;
+        }
+      }
+    }
+
+    .modal-bottom {
+      @apply w-full fixed bottom-0 px-4 pb-10 bg-card_bg_color_03;
+    }
+
+    .commit-btn {
+      @apply w-full h-10 rounded;
+    }
+  }
+}

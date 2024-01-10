@@ -1,0 +1,26 @@
+:local(.menu-cells) {
+  .cell-wrap {
+    line-height: 22px;
+    @apply flex cursor-pointer px-0 py-2 items-center text-text_color_01 text-sm;
+
+    span {
+      @apply px-4;
+    }
+    
+    .icon {
+      @apply w-2 h-2 ml-1;  
+    }
+
+    .is-selected {
+      @apply text-brand_color;
+    }
+
+    .is-disabled {
+      @apply text-text_color_04;
+    }
+  
+    &:hover {
+      @apply bg-bg_color_03;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+:local(.scoped) {
+  .arco-drawer-content {
+    @apply pr-6 -mr-6 overflow-y-auto !important;
+  }
+}

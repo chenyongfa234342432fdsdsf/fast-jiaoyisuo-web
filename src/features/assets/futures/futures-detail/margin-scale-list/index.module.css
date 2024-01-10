@@ -1,0 +1,47 @@
+:local(.margin-scale-root) {
+  .arco-modal-header {
+    @apply px-8 pt-8;
+  }
+  
+  .arco-modal-content {
+    @apply p-8 h-2/3;
+  }
+
+  .header {
+    @apply flex flex-col;
+
+    .titles {
+      @apply flex items-center justify-between text-xl font-medium;
+      
+      .close-icon {
+        @apply text-xl;
+      }
+    }
+      
+    .list-header {
+      @apply flex items-center justify-between mt-3 py-3 border-b border-line_color_02 text-sm text-text_color_03;
+    }
+  }
+
+  .list {
+    min-height: 350px;
+    max-height: 350px;
+    @apply flex flex-col flex-1 my-4 overflow-y-auto;
+
+    .list-item {
+      @apply flex items-center justify-between mb-4 last:mb-0 text-sm text-text_color_01 font-medium;
+
+      .coin-info {
+        @apply flex items-center;
+      }
+    }
+
+    .empty {
+      @apply w-full h-full flex items-center justify-center; 
+    }
+  }
+
+  .bottom-btn {
+    @apply static w-full h-10 rounded self-end mt-4;
+  }
+}

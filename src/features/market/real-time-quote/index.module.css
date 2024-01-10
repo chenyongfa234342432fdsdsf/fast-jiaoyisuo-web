@@ -1,0 +1,136 @@
+:local(.scoped) {
+  @apply w-full h-full flex flex-row flex-1 w-0 justify-center items-center relative;
+
+  .symbol-wrap {
+    /* width: 210px; */
+    @apply h-10 flex items-center text-lg font-medium pl-8;
+
+    .icon {
+      @apply ml-2 w-4 h-4;
+    }
+
+    .market-icon {
+      > :first-child {
+        /* push popover down to align with the horizontal line */
+        height: 33px;
+        @apply flex justify-center items-center;
+      }
+
+      .icon-wrap {
+        @apply m-0 w-2;
+      }
+
+      @apply pr-2;
+    }
+
+    .divide {
+      @apply w-px h-10 mx-6 bg-line_color_02;
+    }
+
+    .market-popover-wrap {
+      height: 62px;
+    }
+
+    .symbol-title {
+      @apply cursor-pointer;
+      @apply flex flex-col mx-2 text-base font-medium text-text_color_01;
+
+      .pair-name {
+        /* add fixed height so onload it will not jump */
+        height: 24px;
+      }
+
+      .full-name {
+        /* add fixed height so onload it will not jump */
+        height: 17px;
+
+        @apply text-text_color_02 text-xs;
+
+        line-height: 17px;
+      }
+    }
+  }
+
+  .price-wrap {
+    @apply flex flex-1 w-0 mr-8 items-center text-xs text-text_color_02;
+
+    .last-price {
+      @apply font-medium text-base text-text_color_01;
+    }
+
+    .col-price {
+      @apply flex flex-col mr-9 whitespace-nowrap;
+
+      /* add fixed height so onload it will not jump */
+      > :last-child {
+        @apply h-4;
+      }
+
+      .change {
+        span:nth-child(1) {
+          @apply mr-2;
+        }
+      }
+
+      .mark-price,
+      .change {
+        @apply font-medium;
+      }
+    }
+
+    .cny {
+      @apply text-xs font-medium;
+    }
+
+    .mark-price {
+      @apply text-text_color_01;
+    }
+
+    .horizontal-scroll-bar {
+      @apply flex-1 w-0;
+
+ 
+      .icon-circle {
+        width: 16px;
+        height: 42px;
+        @apply bg-transparent drop-shadow-none rounded-none;
+      }
+
+      .right-0 {
+        .icon-circle {
+          background: linear-gradient(270deg, var(--bg_color) 64.58%, rgb(255 255 255 / 0%) 100%);
+        }
+      }
+
+      .left-0 {
+        .icon-circle {
+          background: linear-gradient(90deg, var(--bg_color) 64.58%, rgb(255 255 255 / 0%) 100%);
+        }
+      }
+    }
+  }
+
+  .star-wrap {
+    border-radius: 50%;
+    @apply absolute flex items-center justify-center right-4 w-4 h-4 bg-card_bg_color_02 cursor-pointer;
+
+    .star {
+      @apply text-text_color_03;
+    }
+  }
+
+  .trade-setting-wrap {
+    @apply absolute transform -translate-y-1/2 top-1/2 right-8 text-lg;
+
+    svg {
+      font-size: 16px;
+    }
+  }
+
+  .testing-csss-name {
+    width: 474px;
+    max-width: 474px;
+    height: 566px;
+    max-height: 566px;
+  }
+}

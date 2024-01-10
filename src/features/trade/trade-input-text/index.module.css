@@ -1,0 +1,5 @@
+:local(.scoped) {
+  .arco-input {
+    @apply text-right pr-2 text-sm;
+  }
+}

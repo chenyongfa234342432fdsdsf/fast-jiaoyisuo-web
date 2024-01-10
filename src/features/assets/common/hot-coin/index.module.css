@@ -1,0 +1,13 @@
+:local(.scoped) {
+  .hot-coin {
+    @apply flex flex-wrap cursor-pointer;
+    
+    .hot-coin-item {
+      @apply flex items-center h-8 bg-card_bg_color_02 mr-2.5 px-3 mb-4 rounded;
+
+      img {
+        @apply mr-1 w-4 h-4 rounded-lg m-auto;
+      }
+    }
+  }
+}

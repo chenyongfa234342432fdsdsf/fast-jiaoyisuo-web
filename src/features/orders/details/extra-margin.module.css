@@ -1,0 +1,18 @@
+:local(.extra-margin-wrapper) {
+  .slider-wrapper {
+    @apply px-1;
+
+    .arco-slider-marks-text {
+      &:first-child {
+        left: 0 !important;
+        transform: none;
+      }
+
+      &:last-child {
+        right: 0;
+        left: unset !important;
+        transform: none;
+      }
+    }
+  }
+}

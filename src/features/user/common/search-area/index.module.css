@@ -1,0 +1,122 @@
+:local(.scoped) {
+  .user-search-area-wrap {
+    @apply mt-4;
+
+    .search {
+      @apply mb-5;
+
+      .arco-input-group-suffix {
+        @apply hidden;
+      }
+  
+      .arco-input-group-prefix {
+        padding-top: 2px;
+  
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+
+    .search-list {
+      height: 500px;
+      margin-right: -30px;
+      scrollbar-width: none;
+      @apply overflow-y-scroll -mr-8 -ml-8;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .item {
+        height: 60px;
+        padding-right: 15px;
+        @apply flex items-center pr-8 pl-8;
+
+        &:hover {
+          @apply bg-card_bg_color_02;
+        }
+
+        .item-wrap {
+          @apply flex flex-1 items-center;
+
+          .icon {
+            margin-right: 10px;
+            border: 1px solid;
+            @apply rounded-full border-card_bg_color_02;
+
+            img {
+              width: 22px;
+              height: 22px;
+              @apply rounded-full;
+            }
+          }
+
+          .name {
+            @apply flex flex-1 items-center;
+
+            label {
+              font-size: 14px;
+              line-height: 14px;
+              @apply text-text_color_01 font-normal;
+            }
+
+            .enable {
+              background-color: #DBDBDB;
+              @apply px-2 py-1 rounded-tr rounded-bl leading-none transform scale-75;
+
+              label {
+                @apply text-xs left-3 text-text_color_03;
+              }
+            }
+          }
+
+          .un-enable {
+            label {
+              @apply text-text_color_04;
+            }
+          }
+
+          .area-number {
+            label {}
+          }
+        }
+
+        .checked {
+          .name, .area-number {
+            label {
+              @apply text-brand_color;
+            }
+          }
+        }
+      }
+
+      .checked {
+        .item-wrap {
+          .name, .area-number {
+            label {
+              @apply text-brand_color;
+            }
+          }
+        }
+
+      }
+
+      .no-result {
+        @apply flex-1 flex flex-col justify-center items-center;
+  
+        svg {
+          @apply mb-5;
+        }
+
+        label {
+          @apply text-text_color_03 text-sm font-normal;
+        }
+      }
+
+      .search-list-spin {
+        @apply h-full flex justify-center items-center;
+      }
+    }
+  }}

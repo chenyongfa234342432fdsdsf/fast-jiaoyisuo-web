@@ -1,0 +1,11 @@
+:local(.scoped) {
+  .arco-input-number {
+    .arco-select-view-value {
+      @apply text-text_color_02 hidden;
+    }
+
+    .arco-select-view {
+      @apply pr-0 z-10 pl-1;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+:local(.scoped) {
+  .gains-title {
+    @apply mt-10 font-medium text-text_color_01;
+    
+    font-size: 22px;
+    line-height: 34px;
+    
+    svg {
+      font-size: 32px;
+    }
+  }
+    
+  .gains-pie-view {
+    @apply my-8 relative;
+
+    .gains-pie {
+      width: 150px;
+      height: 150px;
+    }
+
+    .gains-item {
+      @apply absolute w-full h-full top-0 pt-16;
+
+      padding-left: 230px;
+
+      .gains-pie-item {
+        @apply float-left mr-20 text-base font-normal text-text_color_01;
+
+        span {
+          @apply inline-block mr-2 relative;
+
+          top: -3px;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

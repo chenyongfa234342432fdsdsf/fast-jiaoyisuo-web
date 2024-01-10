@@ -1,0 +1,196 @@
+:local(.scoped) {
+  @apply flex-1 flex;
+
+  .help-center-support-article {
+    @apply flex flex-1;
+
+    .article-menu {
+      width: 360px;
+      min-height: 687px;
+      @apply bg-bg_color overflow-hidden border-r border-line_color_02;
+
+      .arco-spin-children {
+        @apply h-full;
+      }
+    }
+
+    .article-content {
+      @apply flex-1 flex flex-col;
+
+      .arco-spin-children {
+        @apply h-full;
+      }
+
+      .article-content-header {
+        @apply px-9;
+      }
+
+      .article-content-body {
+        @apply h-full bg-bg_color px-10 pb-10 pt-8;
+
+        .article-main-content {
+          min-height: 357px;
+          @apply flex;
+
+          .article-content-left {
+            @apply flex-1;
+
+            .breadcrumb-icon {
+              @apply w-2 h-2;
+              
+              svg {
+                @apply w-2 h-2;
+              }
+            }
+
+            .arco-breadcrumb-item a:hover {
+              @apply text-text_color_01 bg-transparent;
+            }
+
+            .arco-breadcrumb-item {
+              a {
+                @apply text-text_color_03;
+              }
+            }
+    
+            .breadcrumb-color a {
+              @apply text-text_color_01;
+            }
+
+            .article-body-header {
+              @apply mt-8 mb-2 text-2xl font-medium text-text_color_01;
+            }
+
+            .article-body-time {
+              @apply mb-8 text-xs font-medium text-text_color_03;
+            }
+
+            .article-body-title {
+              @apply box-border overflow-hidden break-words;
+
+              p, li, span {
+                @apply font-normal text-text_color_01 leading-6 pt-1 pb-3;
+
+                font-size: 16px;
+                line-height: 28px;
+
+                strong {
+                  
+                }
+              }
+
+              div {
+                @apply pt-1 pb-3;
+
+                font-size: 16px;
+                line-height: 28px;
+              }
+
+              figcaption {
+                margin-top: -12px;
+                margin-bottom: 32px;
+                font-size: 12px;
+                line-height: 24px;
+              }
+
+              ul {
+                text-indent: 24px;
+              }
+      
+              a {
+                @apply text-base font-normal text-brand_color leading-6;
+              }
+
+              img {
+                @apply py-3;
+              }
+
+              table {
+                border-right: 1px solid var(--line_color_01);
+                border-bottom: 1px solid var(--line_color_01);
+
+                @apply mt-1 mb-3;
+      
+                td {
+                  border-top: 1px solid var(--line_color_01);
+                  border-left: 1px solid var(--line_color_01);
+
+                  @apply py-1 px-4;
+
+                  p {
+                    @apply py-2;
+                  }
+                } 
+              }
+
+              video {
+                @apply w-full;
+              }
+            }
+
+            .article-body-user {
+              @apply mt-8 mb-4 text-lg font-medium text-text_color_01;
+            }
+
+            .article-footer-user {
+              @apply mt-4 text-base font-medium text-text_color_01;
+            }
+
+          }
+
+          .article-content-right {
+            @apply w-60 ml-20;
+
+            .content-right-header {
+              @apply flex items-center;
+
+              .header-icon {
+                @apply w-5 h-5 mr-2;
+
+                svg {
+                  @apply w-5 h-5;
+                }
+              }
+
+              label {
+                @apply text-sm font-medium text-text_color_01;
+              }
+            }
+
+            .content-right-body {
+              @apply mt-4 w-full;
+
+              .new-article-text {
+                /* stylelint-disable-next-line value-no-vendor-prefix */
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                @apply w-full mb-4 max-h-10 text-xs cursor-pointer text-text_color_02 overflow-hidden;
+
+                &:hover {
+                  @apply text-text_color_01;
+                }
+              }
+            }
+          }
+        }
+
+        .article-share-button {
+          width: 343px;
+          border: 0.5px solid var(--line_color_01);
+          @apply mt-8 mb-6 py-2 rounded flex justify-center items-center bg-card_bg_color_01 cursor-pointer;
+
+          .share-button-icon {
+            @apply mt-px;
+          }
+
+          .share-button-text {
+            @apply ml-2 text-base text-text_color_01 font-normal;
+          }
+        }
+      }
+    }
+  }
+}

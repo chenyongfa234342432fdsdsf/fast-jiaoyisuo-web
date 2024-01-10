@@ -1,0 +1,14 @@
+:local(.scoped) {
+  @apply flex flex-row justify-around mt-8 px-4;
+
+  > span {
+    min-width: 80px;
+    @apply whitespace-nowrap;
+  }
+
+  
+}
+
+.grid-layout {
+  @apply grid grid-cols-2 justify-center items-center gap-y-4;
+}

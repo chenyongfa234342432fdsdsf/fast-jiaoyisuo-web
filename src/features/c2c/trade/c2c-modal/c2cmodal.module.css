@@ -1,0 +1,27 @@
+
+.kyc-modal-container {
+  .free-trade-modal {
+    .arco-modal {
+      @apply rounded-xl bg-line_color_02 p-5;
+    }
+    /* stylelint-disable*/
+    .modal-title {
+      @apply flex justify-between items-center text-left font-bold text-lg;
+    }
+    
+    .arco-modal-header {
+      @apply border-0; 
+    }
+    
+    .arco-modal-footer {
+      @apply border-0;
+    }
+  
+    .arco-modal-content {
+      .modal-detail {
+        @apply mx-auto break-all;
+      }
+    }
+  
+  }
+}

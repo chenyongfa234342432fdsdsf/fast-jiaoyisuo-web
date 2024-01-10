@@ -1,0 +1,73 @@
+:local(.container) { 
+  .success-button {
+    @apply h-10 flex justify-center items-center border-none;
+
+    span {
+      @apply font-medium;
+    }
+  }
+  
+
+  .arco-btn-size-default {
+    @apply p-0;
+  }
+  
+}
+
+:local(.appealcontainers) { 
+  .arco-select-view {
+    @apply bg-card_bg_color_03 !important;
+  }
+  
+  .arco-select-popup {
+    @apply py-2 !important;
+  }
+  
+  .country-icon {
+    svg {
+      @apply w-2 h-2;
+    }
+  }
+
+  .appeal-alert {
+    @apply mb-6;
+
+    .arco-alert {
+      @apply items-start !important;
+    }
+    
+    .arco-alert-info {
+      @apply bg-brand_color_special_02 !important;
+    }
+    
+    .arco-alert-content {
+      @apply text-brand_color text-xs !important;
+    }
+  }
+    
+  .cancal-trade-button {
+    @apply w-full h-10 flex justify-between items-center  rounded;
+    
+    .cancal-trade-ok {
+      @apply flex w-full justify-center items-center text-button_text_02 text-sm h-10;
+    }
+  }
+  
+  .submit-trade-button {
+    @apply flex justify-between;
+
+    .cancal-trade-ok {
+      width: 180px;
+      @apply flex justify-center items-center text-sm text-button_text_02 rounded h-10;
+    }
+
+    .cancal-trade-cancal {
+      width: 180px;
+      @apply flex justify-center items-center text-sm text-text_color_02 rounded border border-line_color_01  h-10;
+    }
+  }
+
+  .appeal-form {
+    /* @apply mb-4; */
+  }
+}

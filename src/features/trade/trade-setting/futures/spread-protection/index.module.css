@@ -1,0 +1,79 @@
+:local(.scoped) {
+  .list-wrap {
+    .trade-list {
+      margin-top: 6px;
+      margin-bottom: 18px!important;
+    }
+
+    .function-title {
+      @apply mt-4 mb-2;
+
+      .label {
+        @apply text-text_color_01;
+      }
+    }
+  }
+
+  .image {
+    @apply relative;
+
+    .last-price, .mark-price {
+      right: 16px;
+      padding: 0 6px;
+      border: 1px solid;
+      @apply absolute rounded-sm transform scale-75 bg-bg_color;
+
+      label {
+        @apply font-normal;
+      }
+    }
+
+    .last-price {
+      top: 34px;
+      @apply border-brand_color;
+
+      label {
+        @apply text-brand_color;
+      }
+    }
+
+    .mark-price {
+      top: 59px;
+      @apply border-success_color;
+
+      label {
+        @apply text-success_color;
+      }
+    }
+  }
+
+  .explanation {
+    @apply mb-8;
+
+    p {
+      font-size: 14px;
+      @apply text-text_color_02;
+
+      label {
+        @apply text-brand_color cursor-pointer;
+
+        span {
+          @apply border-b border-dashed border-brand_color;
+        }
+      }
+    }
+  }
+
+  .function-tips {
+    @apply flex items-start;
+
+    & > div {
+      margin-top: 3px;
+    }
+
+    p {
+      font-size: 12px;
+      @apply text-text_color_02 ml-1;
+    }
+  }
+}

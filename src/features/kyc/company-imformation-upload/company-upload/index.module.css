@@ -1,0 +1,62 @@
+:local(.scoped) {
+  @apply flex items-center;
+  
+  .company-button {
+    width: 148px;
+    height: 46px;
+    @apply border border-line_color_01 bg-card_bg_color_02 rounded justify-center flex items-center text-text_color_01;
+    
+    .company-button-icon {
+      @apply w-6;
+
+      svg {
+        font-size: 16px;
+      }
+    }
+  
+  }
+  
+  .company-button-error {
+    @apply border-warning_color text-text_color_05 bg-bg_color;
+  }
+  
+  .company-button-not {
+    @apply bg-bg_button_disabled cursor-not-allowed;
+  }
+  
+  .company-button-uploadfile {
+    width: 200px;
+    height: 46px;
+    @apply ml-6 rounded text-text_color_02 bg-bg_sr_color flex items-center justify-between;
+    
+    .company-button-uploadfile-detail {
+      @apply flex items-center;
+      
+      .company-button-success {
+        margin-top: 0.5px;
+        @apply ml-4 mr-2;
+
+        svg {
+          font-size: 20px;
+        }
+      }
+      
+      .company-button-success-text {
+        line-height: 18px;
+        word-break: break-all;
+        line-break: anywhere;
+        @apply w-28;
+      }
+  
+    }
+
+    .company-button-close {
+      margin-top: 0.5px;
+      @apply mr-4;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}

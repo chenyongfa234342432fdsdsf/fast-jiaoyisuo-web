@@ -1,0 +1,27 @@
+:local(.trade-wrapper) {
+  @apply text-base border-t border-line_color_02 py-10;
+
+  .trade-title {
+    @apply text-text_color_01 font-medium;
+  }
+
+  .trade-list {
+    @apply flex flex-wrap;
+
+    .trade-item {
+      @apply w-52 rounded p-4 bg-card_bg_color_01 mr-4 mt-6 text-text_color_03;
+
+      .name {
+        @apply text-text_color_01 font-medium;
+      }
+    
+      .price-container {
+        @apply flex justify-between mt-1 text-sm font-medium;
+
+        .price-num {
+          @apply text-text_color_01 w-3/5 overflow-hidden text-ellipsis font-normal
+        }
+      }
+    }
+  }
+}

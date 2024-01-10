@@ -1,0 +1,64 @@
+
+.modal-container {
+  .arco-modal-close-icon {
+    @apply mt-2;
+  }
+
+  .kycexample-trade-modal {
+    .arco-modal {
+      width: 444px;
+      @apply rounded bg-card_bg_color_03 p-2;
+    } 
+
+    .modal-title {
+      @apply text-left flex items-center justify-between font-bold text-lg;
+
+      .arco-icon {
+        @apply mr-0;
+      }
+
+      svg {
+        @apply text-xl;
+      }
+    }
+    
+    .arco-modal-header {
+      @apply border-0; 
+    }
+    
+    .arco-modal-footer {
+      @apply border-0;
+    }
+  
+    .arco-modal-content {
+      @apply flex items-center;
+    }
+    
+
+
+    .modal-content {
+      @apply w-full flex flex-col items-center;
+      
+      .modal-content-img {
+        @apply w-full flex justify-center;
+      }
+
+      img {
+        width: 380px;
+        height: 224px;
+      }
+
+      .modal-content-text {
+        @apply font-medium text-text_color_03 my-2 text-base;
+      }
+    }
+    
+    .hand-example-img {
+      img {
+        width: 280px;
+        height: 280px;
+      }
+    }
+  }
+  
+}

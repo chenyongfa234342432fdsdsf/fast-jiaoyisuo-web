@@ -1,0 +1,12 @@
+:local(.scoped) {
+  @apply text-sm text-text_color_03;
+
+  svg {
+    @apply h-32 w-32 cursor-auto;
+  }
+
+  .arco-empty-description {
+    @apply cursor-auto;
+  }
+  
+}

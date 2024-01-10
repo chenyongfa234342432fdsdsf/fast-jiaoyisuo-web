@@ -1,0 +1,27 @@
+:local(.scope) { 
+  .arco-select-view {
+    height: 46px !important;
+  }
+  
+  @apply text-base font-medium text-text_color_01;
+  
+  .select-img {
+    width: 20px;
+    height: 20px;
+    @apply mr-1;
+  }
+    
+  .arco-select-option {
+    .select-img {
+      @apply mr-2;
+    }
+  }
+  
+  .arco-input-inner-wrapper {
+    @apply border-none;
+  }
+  
+  .arco-input-group {
+    @apply bg-bg_sr_color rounded;
+  }
+}

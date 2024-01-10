@@ -1,0 +1,9 @@
+:local(.scoped) {
+  width: 100px;
+  height: 24px;
+  @apply my-auto bg-bg_sr_color flex flex-row items-center justify-between px-3 rounded text-text_color_01 text-xs cursor-pointer;
+
+  svg {
+    @apply w-2 h-2;
+  }
+}

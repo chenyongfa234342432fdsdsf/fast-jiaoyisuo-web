@@ -1,0 +1,27 @@
+:local(.future-selector-wrapper) {
+  @apply bg-bg_sr_color px-4 py-2 rounded cursor-pointer ;
+
+  width: 320px;
+}
+
+:local(.popup-future-list-wrapper) {
+  width: 320px;
+
+  .future-item {
+    @apply px-6 py-4 cursor-pointer;
+
+    &.is-selected {
+      @apply bg-bg_sr_color text-brand_color;
+    }
+
+    &:hover {
+      @apply bg-bg_sr_color;
+    }
+  }
+}
+
+:local(.popup-outer) {
+  .arco-popover-content {
+    @apply p-0;
+  }
+}

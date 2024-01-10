@@ -1,0 +1,26 @@
+:local(.scoped) {
+  .header-right-btn {
+    @apply bg-brand_color mr-6 font-medium leading-10;
+
+    font-size: 14px;
+    border: solid #01BC94 1px;
+
+    .header-right-btn-mumu {
+      color: #01BC94 !important;
+    }
+  }
+
+  .financial-record {
+    @apply font-medium leading-10;
+
+    padding-left: 7px;
+    font-size: 14px;
+  }
+
+
+  .header-right-btn:hover {
+    @apply bg-brand_color !important;
+
+    border: solid #01BC94 1px !important;
+  }
+}

@@ -1,0 +1,27 @@
+:local(.withdraw-rule) {
+  p {
+    @apply text-text_color_02;
+  }
+
+  .confirm-wrap {
+    @apply mt-6 mb-8 p-3 bg-card_bg_color_01 rounded text-xs text-text_color_02;
+
+    .confirm-item {
+      @apply flex justify-between pb-3 last:pb-0;
+
+      line-height: 22px;
+
+      .label {
+        @apply flex;
+
+        svg {
+          @apply w-3 h-3 ml-1;
+        }
+      }
+
+      .value {
+        @apply text-right text-text_color_01;
+      }
+    }
+  }
+}

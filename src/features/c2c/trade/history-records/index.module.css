@@ -1,0 +1,9 @@
+:local(.scope) {
+  min-height: 80vh;
+  @apply bg-bg_color;
+
+  .content-wrapper {
+    width: 1200px;
+    @apply mx-auto;
+  }
+}

@@ -1,0 +1,191 @@
+:local(.scoped) {
+  .user-settings-api-management-wrap {
+    @apply flex flex-col justify-center items-center;
+
+    .create-api, .list {
+      width: 1200px;
+      @apply my-4;
+
+      .header {
+        @apply flex items-center mb-3 px-3;
+
+        .title {
+          label {
+            font-size: 16px;
+            @apply text-text_color_01 font-medium mr-2;
+          }
+        }
+
+      }
+    }
+
+    .create-api {
+      .container {
+        @apply flex bg-bg_color p-8;
+
+        .form, .tips {
+          @apply flex-1;
+        }
+
+        .form {
+          @apply mr-5 pr-20;
+
+          .no-bind-ip-tips {
+            @apply flex mb-5;
+
+            .icon {
+              @apply mr-2;
+            }
+
+            .text {
+              label {
+                font-size: 14px;
+                @apply text-brand_color;
+              }
+            }
+          }
+
+          .arco-btn {
+            @apply w-40;
+          }
+        }
+
+        .tips {
+          @apply ml-5;
+
+          .title {
+            @apply mb-4;
+
+            label {
+              font-size: 14px;
+              @apply text-text_color_01;
+            }
+          }
+
+          .content {
+            ul {
+              li {
+                @apply flex mb-3;
+
+                .marker {
+                  span {
+                    width: 6px;
+                    height: 6px;
+                    @apply rounded-full bg-brand_color inline-block align-middle;
+                  }
+                }
+
+                .text {
+                  @apply ml-3;
+
+                  label {
+                    font-size: 14px;
+                    @apply text-text_color_03 break-all;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .list {
+      .operate {
+        .arco-btn {
+          @apply mr-3;
+        }
+      }
+    }
+  }
+}
+
+:local(.api) {
+  .create-open-api-success-wrap {
+    .header-tips, .access-or-secret-key, .settings-wrap {
+      @apply mb-5;
+
+      .title, .text {
+        label {
+          font-size: 14px;
+        }
+      }
+
+      .title {
+        label {
+          @apply text-text_color_03;
+        }
+      }
+
+      .text {
+        label {
+          @apply text-text_color_01;
+        }
+      }
+    }
+
+    .header-tips {
+      @apply flex my-6;
+
+      .icon {
+        @apply mr-3;
+
+        svg {
+          font-size: 18px;
+        }
+      }
+
+      .text {
+        label {
+          @apply text-brand_color;
+        }
+      }
+    }
+
+    .access-or-secret-key {
+      @apply mb-5;
+
+      .key-wrap {
+        @apply flex;
+
+        .key {
+          @apply flex-1;
+
+          label {
+            font-size: 14px;
+            @apply text-text_color_01;
+          }
+        }
+
+        .copy-btn {
+          @apply pl-5;
+
+          span {
+            font-size: 14px;
+            @apply text-brand_color cursor-pointer;
+          }
+        }
+      }
+    }
+
+    .footer-tips {
+      @apply mb-5 p-3 bg-brand_color_special_02;
+
+      .title {
+        @apply mb-2;
+
+        label {
+          font-size: 16px;
+          @apply text-text_color_01;
+        }
+      }
+
+      .content {
+        p {
+          font-size: 14px;
+          @apply text-text_color_03;
+        }
+      }
+    }
+  }
+}

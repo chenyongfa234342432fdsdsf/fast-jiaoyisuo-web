@@ -1,0 +1,20 @@
+:local(.scoped) {
+  .third-party {
+    button {
+      height: 46px;
+      @apply mb-8 bg-bg_color border-line_color_01 rounded;
+
+      svg {
+        @apply w-4 h-4 mr-2;
+      }
+    }
+  }
+
+  .rv-divider {
+    @apply my-6;
+  }
+
+  button {
+    @apply w-full;
+  }
+}

@@ -1,0 +1,5 @@
+:local(.scoped) {
+  label {
+    @apply text-text_color_01 text-4xl leading-9 font-medium;
+  }
+}

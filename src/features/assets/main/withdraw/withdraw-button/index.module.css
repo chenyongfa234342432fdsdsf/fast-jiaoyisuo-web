@@ -1,0 +1,15 @@
+:local(.withdraw-button-wrap) { 
+  .withdraw-money {
+    @apply mt-8;
+        
+    .money-item {
+      @apply flex justify-between mt-2 text-text_color_02;
+        
+      word-break: break-all;
+
+      .value {
+        @apply text-text_color_01;
+      }
+    }
+  }
+}

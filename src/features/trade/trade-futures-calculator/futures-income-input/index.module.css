@@ -1,0 +1,18 @@
+:local(.scoped) {
+
+  @apply flex;
+
+  .futures-income-select-wrap {
+    width: auto !important;
+    @apply bg-bg_sr_color h-10 rounded text-xs px-3;
+
+    .arco-select-view {
+      @apply h-full px-1;
+    }
+
+    input, .arco-select-view-value {
+      @apply flex items-center text-sm;
+    }
+  }
+
+}

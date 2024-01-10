@@ -1,0 +1,59 @@
+:local(.transfer) {
+  .arco-spin {
+    @apply block;
+  }
+
+  .arco-select-view {
+    height: inherit;
+    @apply bg-bg_sr_color border-transparent !important;
+  }
+
+  .arco-select-disabled .arco-select-view {
+    @apply text-text_color_01;
+  }
+
+  .fixed-text {
+    line-height: 22px;
+    @apply pb-2 text-text_color_01 text-sm;
+  }
+
+  .check-error {
+    .arco-input-inner-wrapper {
+      @apply bg-bg_color border-warning_color !important;
+    }
+  }
+
+  .amount-wrapper {
+    @apply mt-6;
+
+    .header {
+      @apply pb-2 flex justify-between items-center;
+
+      .left {
+        @apply text-text_color_01 font-normal not-italic text-sm;
+      }
+
+      .right {
+        @apply text-text_color_01 font-normal not-italic text-xs;
+      }
+    }
+
+    .input-suffix-box {
+      @apply flex justify-between items-center;
+
+      .suffix-coin-name {
+        @apply text-text_color_01 font-normal not-italic text-sm;
+      }
+
+      .y-line {
+        @apply bg-line_color_02 h-5 mx-2;
+
+        width: 1px;
+      }
+
+      .text-btn {
+        @apply text-brand_color cursor-pointer font-normal not-italic text-sm;
+      }
+    }
+  }
+}

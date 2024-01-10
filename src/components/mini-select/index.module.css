@@ -1,0 +1,32 @@
+:local(.mini-select-wrapper) {
+  
+}
+
+:local(.trigger-wrapper) {
+  @apply cursor-pointer flex bg-bg_sr_color px-2 py-1 justify-center;
+
+  .trigger-icon {
+    /* svg 可以生效 */
+    font-size: 8px;
+  }
+
+  &.opened {
+    .trigger-icon {
+      @apply rotate-180;
+    }
+  }
+
+  &.in-thead {
+    @apply bg-transparent p-0;
+  }
+}
+
+:local(.mini-select-dropdown-menu) {
+  .arco-select-option {
+    @apply text-xs px-4 py-2;
+
+    &.arco-select-option-selected {
+      @apply text-brand_color;
+    }
+  }
+}
